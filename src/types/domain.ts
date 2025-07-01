@@ -1,15 +1,17 @@
 export interface PullRequest {
+  number: number;
   title: string;
   url: string;
   createdAt: string;
   mergedAt?: string;
   labels: string[];
   author: string;
+  reviewers: string[];
 }
 
 export interface Participation {
   pr: PullRequest;
-  reviewedAt?: string;
+  reviewSubmittedAt?: string;
   commentedAt?: string;
   responseTimeInHours?: number;
   respondedInTime?: boolean;
@@ -18,10 +20,10 @@ export interface Participation {
 
 export interface MonthlyActivityReport {
   createdPRs: PullRequest[];
-  participatedPRs: Participation[];
+  participations: Participation[];
   summary: {
     totalCreated: number;
     totalParticipated: number;
-    avgResponseTimeHours?: number;
+    averageResponseTimeHours?: number;
   };
 }
