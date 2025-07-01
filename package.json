@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Generate GitHub PR activity reports (created, participated, response time) for users or teams.",
   "main": "dist/index.js",
+  "type": "module",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
