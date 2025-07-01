@@ -1,4 +1,4 @@
-export interface PullRequest {
+export interface PR {
   number: number;
   title: string;
   url: string;
@@ -10,7 +10,7 @@ export interface PullRequest {
 }
 
 export interface Participation {
-  pr: PullRequest;
+  pr: PR;
   reviewSubmittedAt?: string;
   commentedAt?: string;
   responseTimeInHours?: number;
@@ -19,7 +19,7 @@ export interface Participation {
 }
 
 export interface MonthlyActivityReport {
-  createdPRs: PullRequest[];
+  createdPRs: PR[];
   participations: Participation[];
   summary: {
     totalCreated: number;
