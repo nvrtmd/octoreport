@@ -15,4 +15,16 @@ describe("getCreatedPRs", () => {
 
     expect(result).toEqual([]);
   });
+
+  it("returns pull requests created by the user within the specified date range", async () => {
+    const result = await getCreatedPRList({
+      githubToken: process.env.GITHUB_TOKEN ?? "",
+      username: "gaearon",
+      repository: "bluesky-social/social-app",
+      period: { startDate: "2024-11-20", endDate: "2024-11-30" },
+      targetBranch: "main",
+    });
+
+    expect(result).toMatchSnapshot();
+  });
 });
