@@ -1,1 +1,1 @@
-export * from "./getCreatedPRs";
+export * from "./pr";
