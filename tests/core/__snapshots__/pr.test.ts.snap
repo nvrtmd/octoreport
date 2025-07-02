@@ -1,5 +1,24 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`getCreatedPRs > filters pull requests that target a specific branch 1`] = `
+[
+  {
+    "author": "zpao",
+    "createdAt": "2021-04-13T17:45:36Z",
+    "labels": [
+      "CLA Signed",
+    ],
+    "mergedAt": "2021-04-13T23:33:32Z",
+    "number": 21251,
+    "reviewers": [
+      "gaearon",
+    ],
+    "title": "Update code of conduct",
+    "url": "https://github.com/facebook/react/pull/21251",
+  },
+]
+`;
+
 exports[`getCreatedPRs > returns pull requests created by the user within the specified date range 1`] = `
 [
   {

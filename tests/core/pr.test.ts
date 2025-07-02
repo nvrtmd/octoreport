@@ -27,4 +27,16 @@ describe("getCreatedPRs", () => {
 
     expect(result).toMatchSnapshot();
   });
+
+  it("filters pull requests that target a specific branch", async () => {
+    const result = await getUserCreatedPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN ?? "",
+      username: "zpao",
+      repository: "facebook/react",
+      period: { startDate: "2021-04-10", endDate: "2021-04-20" },
+      targetBranch: "facebook:master",
+    });
+
+    expect(result).toMatchSnapshot();
+  });
 });
