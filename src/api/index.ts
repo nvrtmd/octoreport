@@ -1,1 +1,1 @@
-// api/index.ts
+export * from "./github";
