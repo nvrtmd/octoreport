@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { getCreatedPRList } from "../../src/core";
+import { getUserCreatedPRListInPeriod } from "../../src/core";
 import { config } from "dotenv";
 config();
 
 describe("getCreatedPRs", () => {
   it("returns an empty array when the user has no pull requests in the given period", async () => {
-    const result = await getCreatedPRList({
+    const result = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? "",
       username: "gaearon",
       repository: "bluesky-social/social-app",
@@ -17,7 +17,7 @@ describe("getCreatedPRs", () => {
   });
 
   it("returns pull requests created by the user within the specified date range", async () => {
-    const result = await getCreatedPRList({
+    const result = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? "",
       username: "gaearon",
       repository: "bluesky-social/social-app",
