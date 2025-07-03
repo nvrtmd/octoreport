@@ -1,1 +1,1 @@
-// core/index.ts
+export * from "./pr";
