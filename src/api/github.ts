@@ -139,5 +139,6 @@ export async function fetchAllPRListInPeriod(
     })
   );
 
+  prList.sort((a, b) => a.number - b.number);
   return prList;
 }

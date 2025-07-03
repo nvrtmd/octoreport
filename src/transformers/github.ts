@@ -17,9 +17,9 @@ function transformPRDetail(
   detail: PRDetail
 ): Pick<PR, "labels" | "author" | "reviewers"> {
   return {
-    labels: detail.labels.nodes.map((label) => label.name),
+    labels: detail.labels.nodes.map((label) => label.name).sort(),
     author: detail.author.login,
-    reviewers: detail.reviews.nodes.map((review) => review.author.login),
+    reviewers: detail.reviews.nodes.map((review) => review.author.login).sort(),
   };
 }
 
