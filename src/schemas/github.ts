@@ -56,7 +56,7 @@ const PRDetailSchema = z.object({
       nodes: z.array(
         z.object({
           requestedReviewer: UserSchema,
-        })
+        }),
       ),
     })
     .optional(),
@@ -66,7 +66,7 @@ const PRDetailSchema = z.object({
         z.object({
           author: UserSchema,
           createdAt: z.string(),
-        })
+        }),
       ),
     })
     .optional(),

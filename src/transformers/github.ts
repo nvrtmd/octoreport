@@ -1,8 +1,8 @@
-import { PR } from "../types";
 import { PRListItem, PRDetail } from "../schemas/github";
+import { PR } from "../types";
 
 function transformPRListItem(
-  listItem: PRListItem
+  listItem: PRListItem,
 ): Omit<PR, "labels" | "author" | "reviewers"> {
   return {
     number: listItem.number,
@@ -14,7 +14,7 @@ function transformPRListItem(
 }
 
 function transformPRDetail(
-  detail: PRDetail
+  detail: PRDetail,
 ): Pick<PR, "labels" | "author" | "reviewers"> {
   return {
     labels: detail.labels.nodes.map((label) => label.name).sort(),

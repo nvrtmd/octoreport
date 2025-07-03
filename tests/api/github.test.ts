@@ -1,6 +1,7 @@
-import { describe, expect, it } from "vitest";
-import { fetchPRDetail, fetchPRListInPeriod } from "../../src/api";
 import { config } from "dotenv";
+import { describe, expect, it } from "vitest";
+
+import { fetchPRDetail, fetchPRListInPeriod } from "../../src/api";
 config();
 
 describe("fetchPRListInPeriod", () => {

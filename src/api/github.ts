@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { ActivityQueryOptions, PR } from "../types";
+
 import {
   PRListResponseSchema,
   PRDetailResponseSchema,
@@ -7,6 +7,7 @@ import {
   PRDetail,
 } from "../schemas/github";
 import { combinePRData } from "../transformers/github";
+import { ActivityQueryOptions, PR } from "../types";
 
 function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
   try {
@@ -20,7 +21,7 @@ function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
 }
 
 export async function fetchPRListInPeriod(
-  options: Pick<ActivityQueryOptions, "repository" | "period" | "githubToken">
+  options: Pick<ActivityQueryOptions, "repository" | "period" | "githubToken">,
 ): Promise<PRListItem[]> {
   let page = 1;
   const prList: PRListItem[] = [];
@@ -107,7 +108,7 @@ export async function fetchPRDetail({
 
   if (rawData.errors) {
     throw new Error(
-      `GraphQL error: ${rawData.errors[0]?.message || "Unknown error"}`
+      `GraphQL error: ${rawData.errors[0]?.message || "Unknown error"}`,
     );
   }
 
@@ -117,7 +118,7 @@ export async function fetchPRDetail({
 }
 
 export async function fetchAllPRListInPeriod(
-  options: Pick<ActivityQueryOptions, "repository" | "period" | "githubToken">
+  options: Pick<ActivityQueryOptions, "repository" | "period" | "githubToken">,
 ): Promise<PR[]> {
   const allPRListItems = await fetchPRListInPeriod(options);
   const prList: PR[] = [];
@@ -136,7 +137,7 @@ export async function fetchAllPRListInPeriod(
       } catch (error) {
         console.error(`Failed to process PR #${prItem.number}:`, error);
       }
-    })
+    }),
   );
 
   prList.sort((a, b) => a.number - b.number);

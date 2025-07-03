@@ -2,7 +2,7 @@ import { fetchAllPRListInPeriod } from "../api";
 import { ActivityQueryOptions, PR } from "../types";
 
 export async function getUserCreatedPRListInPeriod(
-  options: ActivityQueryOptions
+  options: ActivityQueryOptions,
 ): Promise<PR[]> {
   const prList = await fetchAllPRListInPeriod(options);
 

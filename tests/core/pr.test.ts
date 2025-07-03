@@ -1,6 +1,7 @@
-import { describe, expect, it } from "vitest";
-import { getUserCreatedPRListInPeriod } from "../../src/core";
 import { config } from "dotenv";
+import { describe, expect, it } from "vitest";
+
+import { getUserCreatedPRListInPeriod } from "../../src/core";
 config();
 
 describe("getCreatedPRs", () => {
