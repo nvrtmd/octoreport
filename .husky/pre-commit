@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# 1. ESLint 검사
+npm run lint
+if [ $? -ne 0 ]; then
+  echo "❌ Lint failed. Commit aborted."
+  exit 1
+fi
+
+# 2. 테스트 실행
+npm run test
+if [ $? -ne 0 ]; then
+  echo "❌ Tests failed. Commit aborted."
+  exit 1
+fi
+
+# 3. Lint-staged: 변경된 파일에 대해 eslint --fix, prettier --write 등 실행
+npx lint-staged
+if [ $? -ne 0 ]; then
+  echo "❌ Lint-staged failed. Commit aborted."
+  exit 1
+fi
