@@ -1,10 +1,10 @@
 import { config } from 'dotenv';
 import { describe, expect, it } from 'vitest';
 
-import { getUserCreatedPRListInPeriod } from '../../src/core';
+import { getUserCreatedPRListInPeriod, getUserCreatedPRListInPeriodByLabel } from '../../src/core';
 config();
 
-describe('getCreatedPRs', () => {
+describe('getUserCreatedPRListInPeriod', () => {
   it('returns an empty array when the user has no pull requests in the given period', async () => {
     const result = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
@@ -36,6 +36,21 @@ describe('getCreatedPRs', () => {
       repository: 'facebook/react',
       period: { startDate: '2021-04-10', endDate: '2021-04-20' },
       targetBranch: 'facebook:master',
+    });
+
+    expect(result).toMatchSnapshot();
+  });
+});
+
+describe('getUserCreatedPRListInPeriodByLabel', () => {
+  it('filters pull requests by provided labelFilter', async () => {
+    const result = await getUserCreatedPRListInPeriodByLabel({
+      githubToken: process.env.GITHUB_TOKEN ?? '',
+      username: 'gaearon',
+      repository: 'facebook/react',
+      period: { startDate: '2016-02-20', endDate: '2016-03-10' },
+      targetBranch: 'facebook:master',
+      labelFilter: ['Component: DOM'],
     });
 
     expect(result).toMatchSnapshot();
