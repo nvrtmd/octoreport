@@ -1,11 +1,11 @@
 const config = {
   printWidth: 100,
-  trailingComma: "all",
+  trailingComma: 'all',
   tabWidth: 2,
   semi: true,
   singleQuote: true,
   bracketSpacing: true,
-  arrowParens: "always",
+  arrowParens: 'always',
   useTabs: false,
 };
 

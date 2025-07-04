@@ -15,7 +15,7 @@ export interface Participation {
   commentedAt?: string;
   responseTimeInHours?: number;
   respondedInTime?: boolean;
-  role: "reviewer" | "commenter";
+  role: 'reviewer' | 'commenter';
 }
 
 export interface MonthlyActivityReport {

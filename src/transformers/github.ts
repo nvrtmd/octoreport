@@ -1,9 +1,7 @@
-import { PRListItem, PRDetail } from "../schemas/github";
-import { PR } from "../types";
+import { PRListItem, PRDetail } from '../schemas/github';
+import { PR } from '../types';
 
-function transformPRListItem(
-  listItem: PRListItem,
-): Omit<PR, "labels" | "author" | "reviewers"> {
+function transformPRListItem(listItem: PRListItem): Omit<PR, 'labels' | 'author' | 'reviewers'> {
   return {
     number: listItem.number,
     title: listItem.title,
@@ -13,9 +11,7 @@ function transformPRListItem(
   };
 }
 
-function transformPRDetail(
-  detail: PRDetail,
-): Pick<PR, "labels" | "author" | "reviewers"> {
+function transformPRDetail(detail: PRDetail): Pick<PR, 'labels' | 'author' | 'reviewers'> {
   return {
     labels: detail.labels.nodes.map((label) => label.name).sort(),
     author: detail.author.login,

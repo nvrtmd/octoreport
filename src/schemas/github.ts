@@ -1,11 +1,11 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 const PRListItemSchema = z.object({
   number: z.number(),
   title: z.string(),
   html_url: z.string(),
   created_at: z.string(),
-  state: z.enum(["open", "closed"]),
+  state: z.enum(['open', 'closed']),
   draft: z.boolean().optional(),
   user: z.object({
     login: z.string(),

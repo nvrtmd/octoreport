@@ -1,13 +1,13 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 import {
   PRListResponseSchema,
   PRDetailResponseSchema,
   PRListItem,
   PRDetail,
-} from "../schemas/github";
-import { combinePRData } from "../transformers/github";
-import { ActivityQueryOptions, PR } from "../types";
+} from '../schemas/github';
+import { combinePRData } from '../transformers/github';
+import { ActivityQueryOptions, PR } from '../types';
 
 function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
   try {
@@ -21,11 +21,11 @@ function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
 }
 
 export async function fetchPRListInPeriod(
-  options: Pick<ActivityQueryOptions, "repository" | "period" | "githubToken">,
+  options: Pick<ActivityQueryOptions, 'repository' | 'period' | 'githubToken'>,
 ): Promise<PRListItem[]> {
   let page = 1;
   const prList: PRListItem[] = [];
-  const [owner, repo] = options.repository.split("/");
+  const [owner, repo] = options.repository.split('/');
 
   while (true) {
     const url = `https://api.github.com/search/issues?q=repo:${owner}/${repo}+is:pr+created:${options.period.startDate}..${options.period.endDate}&sort=created&order=asc&per_page=100&page=${page}`;
@@ -33,7 +33,7 @@ export async function fetchPRListInPeriod(
     const response = await fetch(url, {
       headers: {
         Authorization: `Bearer ${options.githubToken}`,
-        Accept: "application/vnd.github+json",
+        Accept: 'application/vnd.github+json',
       },
     });
 
@@ -51,7 +51,7 @@ export async function fetchPRListInPeriod(
 
     prList.push(...validatedData.items);
 
-    if (!response.headers.get("Link")?.includes('rel="next"')) {
+    if (!response.headers.get('Link')?.includes('rel="next"')) {
       break;
     }
     page++;
@@ -69,7 +69,7 @@ export async function fetchPRDetail({
   githubToken: string;
   prNumber: number;
 }): Promise<PRDetail> {
-  const [owner, repo] = repository.split("/");
+  const [owner, repo] = repository.split('/');
   const query = `query ($owner: String!, $repo: String!, $number: Int!) {
     repository(owner: $owner, name: $repo) {
       pullRequest(number: $number) {
@@ -84,11 +84,11 @@ export async function fetchPRDetail({
     }
   }`;
 
-  const response = await fetch("https://api.github.com/graphql", {
-    method: "POST",
+  const response = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
     headers: {
       Authorization: `Bearer ${githubToken}`,
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       query,
@@ -107,9 +107,7 @@ export async function fetchPRDetail({
   const rawData = await response.json();
 
   if (rawData.errors) {
-    throw new Error(
-      `GraphQL error: ${rawData.errors[0]?.message || "Unknown error"}`,
-    );
+    throw new Error(`GraphQL error: ${rawData.errors[0]?.message || 'Unknown error'}`);
   }
 
   const validatedData = validateApiResponse(rawData, PRDetailResponseSchema);
@@ -118,7 +116,7 @@ export async function fetchPRDetail({
 }
 
 export async function fetchAllPRListInPeriod(
-  options: Pick<ActivityQueryOptions, "repository" | "period" | "githubToken">,
+  options: Pick<ActivityQueryOptions, 'repository' | 'period' | 'githubToken'>,
 ): Promise<PR[]> {
   const allPRListItems = await fetchPRListInPeriod(options);
   const prList: PR[] = [];
