@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`getCreatedPRs > filters pull requests that target a specific branch 1`] = `
+exports[`getUserCreatedPRListInPeriod > filters pull requests that target a specific branch 1`] = `
 [
   {
     "author": "zpao",
@@ -19,26 +19,7 @@ exports[`getCreatedPRs > filters pull requests that target a specific branch 1`]
 ]
 `;
 
-exports[`getCreatedPRs > filters pull requests that target a specific branch 2`] = `
-[
-  {
-    "author": "zpao",
-    "createdAt": "2021-04-13T17:45:36Z",
-    "labels": [
-      "CLA Signed",
-    ],
-    "mergedAt": "2021-04-13T23:33:32Z",
-    "number": 21251,
-    "reviewers": [
-      "gaearon",
-    ],
-    "title": "Update code of conduct",
-    "url": "https://github.com/facebook/react/pull/21251",
-  },
-]
-`;
-
-exports[`getCreatedPRs > returns pull requests created by the user within the specified date range 1`] = `
+exports[`getUserCreatedPRListInPeriod > returns pull requests created by the user within the specified date range 1`] = `
 [
   {
     "author": "gaearon",
@@ -449,6 +430,24 @@ exports[`getCreatedPRs > returns pull requests created by the user within the sp
     ],
     "title": "[Nicer Tabs] New native pager",
     "url": "https://github.com/bluesky-social/social-app/pull/6868",
+  },
+]
+`;
+
+exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests by provided labelFilter 1`] = `
+[
+  {
+    "author": "gaearon",
+    "createdAt": "2016-02-26T20:52:48Z",
+    "labels": [
+      "Component: DOM",
+      "Type: Enhancement",
+    ],
+    "mergedAt": "2016-02-26T20:56:38Z",
+    "number": 6129,
+    "reviewers": [],
+    "title": "Disable ViewportMetrics unless MouseEvent lacks support for pageX/pageY",
+    "url": "https://github.com/facebook/react/pull/6129",
   },
 ]
 `;
