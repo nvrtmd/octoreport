@@ -15,6 +15,8 @@ export async function getUserCreatedPRListInPeriodByLabel(
   return prList.filter(
     (pr) =>
       pr.author === options.username &&
-      pr.labels.some((label) => options.labelFilter?.includes(label)),
+      options.labelFilter?.some((filter) =>
+        pr.labels.some((label) => label.toLowerCase().includes(filter.toLowerCase())),
+      ),
   );
 }
