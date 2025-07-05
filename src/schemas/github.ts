@@ -55,7 +55,7 @@ const PRDetailSchema = z.object({
     .object({
       nodes: z.array(
         z.object({
-          requestedReviewer: UserSchema,
+          requestedReviewer: UserSchema.nullable(),
         }),
       ),
     })

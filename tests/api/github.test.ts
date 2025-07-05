@@ -8,8 +8,8 @@ describe('fetchPRListInPeriod', () => {
   it('returns every pull request in the given repository and period', async () => {
     const result = await fetchPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
-      repository: 'facebook/react',
-      period: { startDate: '2016-03-01', endDate: '2016-03-05' },
+      repository: 'mui/material-ui',
+      period: { startDate: '2025-05-01', endDate: '2025-05-31' },
     });
 
     expect(result).toMatchSnapshot();
@@ -20,8 +20,8 @@ describe('fetchPRDetail', () => {
   it('returns every pull request detail in the given repository and period', async () => {
     const result = await fetchPRDetail({
       githubToken: process.env.GITHUB_TOKEN ?? '',
-      repository: 'facebook/react',
-      prNumber: 6129,
+      repository: 'mui/material-ui',
+      prNumber: 374,
     });
 
     expect(result).toMatchSnapshot();
