@@ -55,4 +55,20 @@ describe('getUserCreatedPRListInPeriodByLabel', () => {
 
     expect(result).toMatchSnapshot();
   });
+  it('filters pull requests that include provided label keywords (case-insensitive, partial match)', async () => {
+    const result = await getUserCreatedPRListInPeriodByLabel({
+      githubToken: process.env.GITHUB_TOKEN ?? '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2025-05-01', endDate: '2025-05-10' },
+      targetBranch: 'mui:master',
+      labelFilter: ['regression'],
+    });
+
+    expect(result.length).toBe(3);
+    expect(result[0].labels).toContain('regression 🐛');
+    expect(result[1].labels).toContain('regression 🐛');
+    expect(result[2].labels).toContain('regression 🐛');
+    expect(result).toMatchSnapshot();
+  });
 });
