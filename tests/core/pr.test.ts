@@ -8,10 +8,10 @@ describe('getUserCreatedPRListInPeriod', () => {
   it('returns an empty array when the user has no pull requests in the given period', async () => {
     const result = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
-      username: 'gaearon',
-      repository: 'bluesky-social/social-app',
-      period: { startDate: '2020-11-01', endDate: '2020-11-30' },
-      targetBranch: 'main',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2015-01-01', endDate: '2015-01-10' },
+      targetBranch: 'mui:master',
     });
 
     expect(result).toEqual([]);
@@ -20,10 +20,10 @@ describe('getUserCreatedPRListInPeriod', () => {
   it('returns pull requests created by the user within the specified date range', async () => {
     const result = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
-      username: 'gaearon',
-      repository: 'bluesky-social/social-app',
-      period: { startDate: '2024-11-20', endDate: '2024-11-30' },
-      targetBranch: 'main',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2025-05-01', endDate: '2025-05-31' },
+      targetBranch: 'mui:master',
     });
 
     expect(result).toMatchSnapshot();
@@ -32,10 +32,10 @@ describe('getUserCreatedPRListInPeriod', () => {
   it('filters pull requests that target a specific branch', async () => {
     const result = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
-      username: 'zpao',
-      repository: 'facebook/react',
-      period: { startDate: '2021-04-10', endDate: '2021-04-20' },
-      targetBranch: 'facebook:master',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-10', endDate: '2024-09-20' },
+      targetBranch: 'mui:v5.x',
     });
 
     expect(result).toMatchSnapshot();
@@ -43,14 +43,14 @@ describe('getUserCreatedPRListInPeriod', () => {
 });
 
 describe('getUserCreatedPRListInPeriodByLabel', () => {
-  it('filters pull requests by provided labelFilter', async () => {
+  it('filters pull requests that exactly match provided label names (case-sensitive)', async () => {
     const result = await getUserCreatedPRListInPeriodByLabel({
       githubToken: process.env.GITHUB_TOKEN ?? '',
-      username: 'gaearon',
-      repository: 'facebook/react',
-      period: { startDate: '2016-02-20', endDate: '2016-03-10' },
-      targetBranch: 'facebook:master',
-      labelFilter: ['Component: DOM'],
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2025-05-01', endDate: '2025-05-31' },
+      targetBranch: 'mui:master',
+      labelFilter: ['docs'],
     });
 
     expect(result).toMatchSnapshot();
