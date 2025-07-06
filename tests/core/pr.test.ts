@@ -2,6 +2,7 @@ import { config } from 'dotenv';
 import { describe, expect, it } from 'vitest';
 
 import {
+  getUserCreatedPRCountInPeriod,
   getUserCreatedPRListInPeriod,
   getUserCreatedPRListInPeriodByLabel,
   getUserPRCountByLabelInPeriod,
@@ -43,6 +44,20 @@ describe('getUserCreatedPRListInPeriod', () => {
     });
 
     expect(result).toMatchSnapshot();
+  });
+});
+
+describe('getUserCreatedPRCountInPeriod', () => {
+  it('returns the number of pull requests created by the user within the specified period', async () => {
+    const result = await getUserCreatedPRCountInPeriod({
+      githubToken: process.env.GITHUB_TOKEN ?? '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-10', endDate: '2024-09-20' },
+      targetBranch: 'mui:v5.x',
+    });
+
+    expect(result).toEqual(14);
   });
 });
 
