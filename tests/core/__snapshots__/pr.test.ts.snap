@@ -4,6 +4,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
 [
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-11T12:44:25Z",
     "labels": [
       "scope: docs-infra",
@@ -13,13 +16,15 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "number": 43711,
     "reviewers": [
       "oliviertassinari",
-      "oliviertassinari",
     ],
     "title": "[docs-infra] Strengthen CSP",
     "url": "https://github.com/mui/material-ui/pull/43711",
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-11T13:30:02Z",
     "labels": [
       "core",
@@ -32,6 +37,10 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+      "oliviertassinari",
+    ],
     "createdAt": "2024-09-13T17:58:16Z",
     "labels": [
       "component: slider",
@@ -47,6 +56,10 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+      "oliviertassinari",
+    ],
     "createdAt": "2024-09-14T00:04:37Z",
     "labels": [
       "docs",
@@ -63,6 +76,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-14T13:38:28Z",
     "labels": [
       "docs",
@@ -78,6 +94,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-14T13:43:03Z",
     "labels": [
       "docs",
@@ -94,6 +113,10 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+      "oliviertassinari",
+    ],
     "createdAt": "2024-09-14T14:15:20Z",
     "labels": [
       "bug 🐛",
@@ -110,6 +133,10 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+      "oliviertassinari",
+    ],
     "createdAt": "2024-09-15T00:29:26Z",
     "labels": [
       "bug 🐛",
@@ -125,6 +152,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-18T12:15:03Z",
     "labels": [
       "docs",
@@ -133,7 +163,6 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "number": 43809,
     "reviewers": [
       "michaldudak",
-      "michaldudak",
       "oliviertassinari",
     ],
     "title": "[docs] Fix 301 to chromium",
@@ -141,6 +170,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-18T16:26:18Z",
     "labels": [
       "docs",
@@ -155,6 +187,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-19T19:34:40Z",
     "labels": [
       "core",
@@ -172,6 +207,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-19T22:49:09Z",
     "labels": [
       "website",
@@ -186,6 +224,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-20T20:37:20Z",
     "labels": [
       "website",
@@ -200,6 +241,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2024-09-20T23:47:01Z",
     "labels": [
       "regression 🐛",
@@ -218,6 +262,9 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
 [
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-01T00:27:00Z",
     "labels": [
       "MUI X",
@@ -228,11 +275,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "number": 46051,
     "reviewers": [
       "Janpot",
-      "Janpot",
       "jedwards1211",
-      "jedwards1211",
-      "oliviertassinari",
-      "oliviertassinari",
       "oliviertassinari",
     ],
     "title": "[core] Fix internal version duplication",
@@ -240,6 +283,9 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-02T13:29:40Z",
     "labels": [
       "regression 🐛",
@@ -255,6 +301,9 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-03T14:05:12Z",
     "labels": [
       "enhancement",
@@ -265,14 +314,15 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "reviewers": [
       "alexfauquette",
       "oliviertassinari",
-      "oliviertassinari",
-      "oliviertassinari",
     ],
     "title": "[docs-infra] Update feedback Node.js to v22",
     "url": "https://github.com/mui/material-ui/pull/46064",
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-03T15:34:05Z",
     "labels": [
       "regression 🐛",
@@ -288,6 +338,11 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mapache-salvaje",
+      "mui-bot",
+      "oliviertassinari",
+    ],
     "createdAt": "2025-05-05T22:16:02Z",
     "labels": [
       "docs",
@@ -304,6 +359,9 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-12T18:54:56Z",
     "labels": [
       "docs",
@@ -312,8 +370,6 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "number": 46135,
     "reviewers": [
       "0210shivam",
-      "0210shivam",
-      "ZeeshanTamboli",
       "ZeeshanTamboli",
     ],
     "title": "[docs] Fix GridLegacy docs order",
@@ -326,6 +382,9 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
 [
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-03T14:05:12Z",
     "labels": [
       "enhancement",
@@ -336,14 +395,17 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
     "reviewers": [
       "alexfauquette",
       "oliviertassinari",
-      "oliviertassinari",
-      "oliviertassinari",
     ],
     "title": "[docs-infra] Update feedback Node.js to v22",
     "url": "https://github.com/mui/material-ui/pull/46064",
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mapache-salvaje",
+      "mui-bot",
+      "oliviertassinari",
+    ],
     "createdAt": "2025-05-05T22:16:02Z",
     "labels": [
       "docs",
@@ -360,6 +422,9 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-12T18:54:56Z",
     "labels": [
       "docs",
@@ -368,8 +433,6 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
     "number": 46135,
     "reviewers": [
       "0210shivam",
-      "0210shivam",
-      "ZeeshanTamboli",
       "ZeeshanTamboli",
     ],
     "title": "[docs] Fix GridLegacy docs order",
@@ -382,6 +445,9 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
 [
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-01T00:27:00Z",
     "labels": [
       "MUI X",
@@ -392,11 +458,7 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
     "number": 46051,
     "reviewers": [
       "Janpot",
-      "Janpot",
       "jedwards1211",
-      "jedwards1211",
-      "oliviertassinari",
-      "oliviertassinari",
       "oliviertassinari",
     ],
     "title": "[core] Fix internal version duplication",
@@ -404,6 +466,9 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-02T13:29:40Z",
     "labels": [
       "regression 🐛",
@@ -419,6 +484,9 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
   },
   {
     "author": "oliviertassinari",
+    "comments": [
+      "mui-bot",
+    ],
     "createdAt": "2025-05-03T15:34:05Z",
     "labels": [
       "regression 🐛",
@@ -431,6 +499,914 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
     ],
     "title": "[website] Fix CSS alignment",
     "url": "https://github.com/mui/material-ui/pull/46065",
+  },
+]
+`;
+
+exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has participated in (via comments or reviews) within the specified period 1`] = `
+[
+  {
+    "author": "zekehernandez",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-20T15:11:25Z",
+    "labels": [
+      "component: list",
+      "docs",
+    ],
+    "mergedAt": "2019-08-21T08:49:53Z",
+    "number": 17074,
+    "reviewers": [
+      "joshwooding",
+      "oliviertassinari",
+    ],
+    "title": "[docs] Migration guide to v4: include change to dense Lists",
+    "url": "https://github.com/mui/material-ui/pull/17074",
+  },
+  {
+    "author": "netochaves",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-20T21:34:57Z",
+    "labels": [
+      "component: rating",
+      "docs",
+    ],
+    "mergedAt": "2019-08-22T08:27:19Z",
+    "number": 17078,
+    "reviewers": [
+      "joshwooding",
+      "oliviertassinari",
+    ],
+    "title": "[Rating] Add Custom prop-type to prop name",
+    "url": "https://github.com/mui/material-ui/pull/17078",
+  },
+  {
+    "author": "oliviertassinari",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-20T23:28:43Z",
+    "labels": [
+      "component: tree view",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-22T08:27:51Z",
+    "number": 17080,
+    "reviewers": [
+      "joshwooding",
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "title": "[TreeView] Support node label",
+    "url": "https://github.com/mui/material-ui/pull/17080",
+  },
+  {
+    "author": "devsumanmdn",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-21T02:32:24Z",
+    "labels": [
+      "component: CircularProgress",
+      "component: progress",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-22T08:26:56Z",
+    "number": 17081,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[CircularProgress] Document String format for size prop",
+    "url": "https://github.com/mui/material-ui/pull/17081",
+  },
+  {
+    "author": "elmeerr",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-21T11:45:49Z",
+    "labels": [
+      "bug 🐛",
+      "component: slider",
+    ],
+    "mergedAt": "2019-08-21T17:32:44Z",
+    "number": 17085,
+    "reviewers": [
+      "joshwooding",
+      "oliviertassinari",
+    ],
+    "title": "[Slider] Avoid mutating user's value prop",
+    "url": "https://github.com/mui/material-ui/pull/17085",
+  },
+  {
+    "author": "ZachStoltz",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-21T16:39:07Z",
+    "labels": [
+      "bug 🐛",
+      "component: drawer",
+    ],
+    "mergedAt": "2019-08-21T17:31:38Z",
+    "number": 17091,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Drawer] Fix ref forwarding when variant="persistent"",
+    "url": "https://github.com/mui/material-ui/pull/17091",
+  },
+  {
+    "author": "cmeeren",
+    "comments": [
+      "cmeeren",
+      "merceyz",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-21T17:33:55Z",
+    "labels": [
+      "component: rating",
+      "docs",
+    ],
+    "mergedAt": "2019-08-22T08:26:24Z",
+    "number": 17093,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Rating] Improve signature in docs",
+    "url": "https://github.com/mui/material-ui/pull/17093",
+  },
+  {
+    "author": "rbrishabh",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-21T18:15:53Z",
+    "labels": [
+      "bug 🐛",
+      "component: switch",
+    ],
+    "mergedAt": "2019-08-22T08:28:08Z",
+    "number": 17095,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Switch] Fix rendering in IE 11 and Safari",
+    "url": "https://github.com/mui/material-ui/pull/17095",
+  },
+  {
+    "author": "netochaves",
+    "comments": [
+      "mui-pr-bot",
+      "netochaves",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-21T21:20:53Z",
+    "labels": [
+      "bug 🐛",
+      "component: Popover",
+    ],
+    "mergedAt": "2019-08-23T08:38:33Z",
+    "number": 17097,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Popover] Fix update position action",
+    "url": "https://github.com/mui/material-ui/pull/17097",
+  },
+  {
+    "author": "JapuDCret",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-22T12:12:03Z",
+    "labels": [
+      "component: menu",
+      "typescript",
+    ],
+    "mergedAt": "2019-08-23T22:24:26Z",
+    "number": 17103,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[MenuItem] Add missing dense classkey",
+    "url": "https://github.com/mui/material-ui/pull/17103",
+  },
+  {
+    "author": "spaceexperiment",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-22T12:52:42Z",
+    "labels": [
+      "component: Popper",
+    ],
+    "mergedAt": "2019-08-23T08:33:03Z",
+    "number": 17104,
+    "reviewers": [
+      "adamdicarlo",
+      "behnammodi",
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "title": "[docs] Fix popover demo event.target is null",
+    "url": "https://github.com/mui/material-ui/pull/17104",
+  },
+  {
+    "author": "behnammodi",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-22T17:08:26Z",
+    "labels": [
+      "component: drawer",
+    ],
+    "mergedAt": undefined,
+    "number": 17108,
+    "reviewers": [],
+    "title": "improve sample code",
+    "url": "https://github.com/mui/material-ui/pull/17108",
+  },
+  {
+    "author": "ryanburr",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+      "ryanburr",
+    ],
+    "createdAt": "2019-08-22T17:17:19Z",
+    "labels": [
+      "bug 🐛",
+      "component: ButtonGroup",
+    ],
+    "mergedAt": "2019-08-23T22:27:39Z",
+    "number": 17109,
+    "reviewers": [
+      "behnammodi",
+      "oliviertassinari",
+      "ryanburr",
+    ],
+    "title": "[ButtonGroup] Fix border color when disabled and contained",
+    "url": "https://github.com/mui/material-ui/pull/17109",
+  },
+  {
+    "author": "behnammodi",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-22T19:28:13Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": undefined,
+    "number": 17114,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[docs] Improve drawer sample code",
+    "url": "https://github.com/mui/material-ui/pull/17114",
+  },
+  {
+    "author": "dominictwlee",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-22T19:40:01Z",
+    "labels": [
+      "component: backdrop",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-23T08:44:32Z",
+    "number": 17115,
+    "reviewers": [
+      "behnammodi",
+      "dominictwlee",
+      "oliviertassinari",
+    ],
+    "title": "[Backdrop] Render children inside div",
+    "url": "https://github.com/mui/material-ui/pull/17115",
+  },
+  {
+    "author": "behnammodi",
+    "comments": [
+      "behnammodi",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-22T23:01:25Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-23T22:37:39Z",
+    "number": 17118,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[docs] Improve custom styles of the demos",
+    "url": "https://github.com/mui/material-ui/pull/17118",
+  },
+  {
+    "author": "Shubhamchinda",
+    "comments": [
+      "Shubhamchinda",
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-23T05:38:32Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-23T22:28:28Z",
+    "number": 17120,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[docs] Fix edit dependencies extraction ",
+    "url": "https://github.com/mui/material-ui/pull/17120",
+  },
+  {
+    "author": "Shubhamchinda",
+    "comments": [
+      "Shubhamchinda",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-23T10:43:50Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-23T11:27:28Z",
+    "number": 17122,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[docs] Fix typo in modal demo",
+    "url": "https://github.com/mui/material-ui/pull/17122",
+  },
+  {
+    "author": "zekehernandez",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-23T16:01:32Z",
+    "labels": [
+      "bug 🐛",
+      "component: Popover",
+    ],
+    "mergedAt": "2019-08-23T22:47:21Z",
+    "number": 17128,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Popover] Fix anchorEl positioning within popup window",
+    "url": "https://github.com/mui/material-ui/pull/17128",
+  },
+  {
+    "author": "cmeeren",
+    "comments": [
+      "cmeeren",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-24T08:50:24Z",
+    "labels": [
+      "component: radio",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-25T11:44:38Z",
+    "number": 17132,
+    "reviewers": [
+      "cmeeren",
+      "oliviertassinari",
+    ],
+    "title": "[RadioGroup] Make value accept any",
+    "url": "https://github.com/mui/material-ui/pull/17132",
+  },
+  {
+    "author": "Janpot",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-24T14:33:52Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-26T16:18:33Z",
+    "number": 17133,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[examples] Fix warning in next.js example",
+    "url": "https://github.com/mui/material-ui/pull/17133",
+  },
+  {
+    "author": "egerardus",
+    "comments": [
+      "egerardus",
+      "mbrookes",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-24T21:27:15Z",
+    "labels": [
+      "component: table",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-28T14:02:27Z",
+    "number": 17139,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Table] Add sticky header support",
+    "url": "https://github.com/mui/material-ui/pull/17139",
+  },
+  {
+    "author": "keiohtani",
+    "comments": [
+      "keiohtani",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-25T09:51:28Z",
+    "labels": [
+      "component: table",
+      "docs",
+    ],
+    "mergedAt": "2019-08-26T16:19:35Z",
+    "number": 17141,
+    "reviewers": [
+      "keiohtani",
+      "oliviertassinari",
+    ],
+    "title": "[docs] Improve enhanced table variable name",
+    "url": "https://github.com/mui/material-ui/pull/17141",
+  },
+  {
+    "author": "lookfirst",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-26T06:02:50Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": undefined,
+    "number": 17143,
+    "reviewers": [
+      "eps1lon",
+      "lookfirst",
+      "oliviertassinari",
+    ],
+    "title": "[docs] minimizing bundle: simplify by using craco",
+    "url": "https://github.com/mui/material-ui/pull/17143",
+  },
+  {
+    "author": "kiransiluveru",
+    "comments": [
+      "eps1lon",
+      "mui-pr-bot",
+      "skirankumar7",
+    ],
+    "createdAt": "2019-08-26T13:54:44Z",
+    "labels": [
+      "bug 🐛",
+      "component: tooltip",
+    ],
+    "mergedAt": "2019-08-27T08:15:28Z",
+    "number": 17174,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Tooltip] Fix interactive + enterDelay combination",
+    "url": "https://github.com/mui/material-ui/pull/17174",
+  },
+  {
+    "author": "saltyshiomix",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+      "saltyshiomix",
+    ],
+    "createdAt": "2019-08-26T16:06:18Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-26T16:15:54Z",
+    "number": 17181,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[examples] Fix warnings Container in _app.js with Next.js ",
+    "url": "https://github.com/mui/material-ui/pull/17181",
+  },
+  {
+    "author": "simshaun",
+    "comments": [
+      "mbrookes",
+      "mui-pr-bot",
+      "oliviertassinari",
+      "simshaun",
+    ],
+    "createdAt": "2019-08-26T19:18:34Z",
+    "labels": [
+      "component: toggle button",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-28T09:52:36Z",
+    "number": 17187,
+    "reviewers": [
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "title": "[ToggleButton] Improve customizability",
+    "url": "https://github.com/mui/material-ui/pull/17187",
+  },
+  {
+    "author": "skube",
+    "comments": [
+      "mbrookes",
+      "mui-pr-bot",
+      "oliviertassinari",
+      "skube",
+    ],
+    "createdAt": "2019-08-26T20:55:22Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-26T21:46:30Z",
+    "number": 17189,
+    "reviewers": [],
+    "title": "[docs] Missing degree/option symbol",
+    "url": "https://github.com/mui/material-ui/pull/17189",
+  },
+  {
+    "author": "elmeerr",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-27T05:45:05Z",
+    "labels": [
+      "component: text field",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-28T09:48:53Z",
+    "number": 17192,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[TextField] Specs alignment",
+    "url": "https://github.com/mui/material-ui/pull/17192",
+  },
+  {
+    "author": "oliviertassinari",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-27T10:30:38Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-28T09:50:19Z",
+    "number": 17198,
+    "reviewers": [
+      "eps1lon",
+      "oliviertassinari",
+    ],
+    "title": "[docs] Better document the ref props in the API",
+    "url": "https://github.com/mui/material-ui/pull/17198",
+  },
+  {
+    "author": "skube",
+    "comments": [
+      "merceyz",
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-27T12:41:59Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-28T09:51:08Z",
+    "number": 17200,
+    "reviewers": [
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "title": "[docs] Minor Update to remove "n°" notations",
+    "url": "https://github.com/mui/material-ui/pull/17200",
+  },
+  {
+    "author": "ahtcx",
+    "comments": [
+      "ahtcx",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-27T19:08:46Z",
+    "labels": [
+      "component: badge",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-31T11:47:36Z",
+    "number": 17204,
+    "reviewers": [
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "title": "[Badge] Add alignment options to badges",
+    "url": "https://github.com/mui/material-ui/pull/17204",
+  },
+  {
+    "author": "rbrishabh",
+    "comments": [
+      "eps1lon",
+      "mui-pr-bot",
+      "oliviertassinari",
+      "rbrishabh",
+    ],
+    "createdAt": "2019-08-27T19:18:34Z",
+    "labels": [
+      "component: menu",
+      "typescript",
+    ],
+    "mergedAt": "2019-08-28T08:35:54Z",
+    "number": 17205,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Menu] Include 'list' in class key",
+    "url": "https://github.com/mui/material-ui/pull/17205",
+  },
+  {
+    "author": "rbrishabh",
+    "comments": [
+      "eps1lon",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-27T19:27:05Z",
+    "labels": [
+      "component: Typography",
+      "docs",
+    ],
+    "mergedAt": "2019-08-28T14:01:58Z",
+    "number": 17206,
+    "reviewers": [
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "title": "[Typography] noWrap requires display block",
+    "url": "https://github.com/mui/material-ui/pull/17206",
+  },
+  {
+    "author": "rbrishabh",
+    "comments": [
+      "mui-pr-bot",
+      "rbrishabh",
+    ],
+    "createdAt": "2019-08-27T19:33:57Z",
+    "labels": [
+      "package: system",
+    ],
+    "mergedAt": undefined,
+    "number": 17207,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "Fix - boxShadow property is not flowing through",
+    "url": "https://github.com/mui/material-ui/pull/17207",
+  },
+  {
+    "author": "eps1lon",
+    "comments": [
+      "eps1lon",
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-28T12:05:39Z",
+    "labels": [
+      "bug 🐛",
+      "typescript",
+    ],
+    "mergedAt": "2020-01-05T14:19:44Z",
+    "number": 17211,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[core] Fix missing type peer deps",
+    "url": "https://github.com/mui/material-ui/pull/17211",
+  },
+  {
+    "author": "eps1lon",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-28T13:49:10Z",
+    "labels": [
+      "docs",
+      "typescript",
+    ],
+    "mergedAt": "2019-08-29T21:49:50Z",
+    "number": 17214,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[docs] Require less strict tsconfig",
+    "url": "https://github.com/mui/material-ui/pull/17214",
+  },
+  {
+    "author": "Shubhamchinda",
+    "comments": [
+      "Shubhamchinda",
+      "eps1lon",
+      "kamami",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-28T17:25:45Z",
+    "labels": [
+      "component: text field",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-29T21:51:06Z",
+    "number": 17217,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[TextField] Update outlined label when prop changes",
+    "url": "https://github.com/mui/material-ui/pull/17217",
+  },
+  {
+    "author": "behnammodi",
+    "comments": [
+      "behnammodi",
+      "eps1lon",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-28T18:05:54Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-30T07:07:35Z",
+    "number": 17218,
+    "reviewers": [
+      "eps1lon",
+      "oliviertassinari",
+    ],
+    "title": "[docs] Improve style of the demos",
+    "url": "https://github.com/mui/material-ui/pull/17218",
+  },
+  {
+    "author": "ahtcx",
+    "comments": [
+      "ahtcx",
+      "mbrookes",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-28T18:15:34Z",
+    "labels": [
+      "accessibility",
+      "component: LinearProgress",
+      "component: progress",
+    ],
+    "mergedAt": "2019-08-31T11:56:37Z",
+    "number": 17219,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[LinearProgress] Make color adapt to theme type",
+    "url": "https://github.com/mui/material-ui/pull/17219",
+  },
+  {
+    "author": "stasiukanya",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+      "redblue9771",
+      "stasiukanya",
+    ],
+    "createdAt": "2019-08-28T20:36:00Z",
+    "labels": [
+      "bug 🐛",
+    ],
+    "mergedAt": "2019-08-30T07:06:09Z",
+    "number": 17221,
+    "reviewers": [],
+    "title": "[CardActionArea] Fix 'border-radius'",
+    "url": "https://github.com/mui/material-ui/pull/17221",
+  },
+  {
+    "author": "jasonkylefrank",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-29T20:11:37Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-08-30T07:05:33Z",
+    "number": 17230,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Button] Fix typo in demo text",
+    "url": "https://github.com/mui/material-ui/pull/17230",
+  },
+  {
+    "author": "sakulstra",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-30T06:55:17Z",
+    "labels": [
+      "component: button",
+    ],
+    "mergedAt": "2019-08-30T07:09:44Z",
+    "number": 17232,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "title": "[Button] Remove code leftover from < v4",
+    "url": "https://github.com/mui/material-ui/pull/17232",
+  },
+  {
+    "author": "city41",
+    "comments": [
+      "angel-langdon",
+      "city41",
+      "eps1lon",
+      "mbrookes",
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-30T16:22:21Z",
+    "labels": [
+      "accessibility",
+      "component: slider",
+    ],
+    "mergedAt": "2019-09-02T12:53:50Z",
+    "number": 17240,
+    "reviewers": [
+      "city41",
+      "eps1lon",
+      "oliviertassinari",
+    ],
+    "title": "[Slider] Add getAriaLabel prop",
+    "url": "https://github.com/mui/material-ui/pull/17240",
+  },
+  {
+    "author": "mbrookes",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+      "skirunman",
+    ],
+    "createdAt": "2019-08-31T13:29:00Z",
+    "labels": [
+      "component: badge",
+      "new feature",
+    ],
+    "mergedAt": "2019-09-01T09:30:16Z",
+    "number": 17247,
+    "reviewers": [
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "title": "[Badge] Improve shape of 2 digit badge",
+    "url": "https://github.com/mui/material-ui/pull/17247",
+  },
+  {
+    "author": "oliviertassinari",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-31T16:20:23Z",
+    "labels": [
+      "docs",
+    ],
+    "mergedAt": "2019-09-01T09:29:02Z",
+    "number": 17249,
+    "reviewers": [
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "title": "[docs] Only server-side render the popular languages",
+    "url": "https://github.com/mui/material-ui/pull/17249",
   },
 ]
 `;

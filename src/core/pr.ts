@@ -1,10 +1,38 @@
 import { fetchAllPRListInPeriod } from '../api';
 import { ActivityQueryOptions, PR } from '../types';
 
-export async function getUserCreatedPRListInPeriod(options: ActivityQueryOptions): Promise<PR[]> {
-  const userCreatedPRList = await fetchAllPRListInPeriod(options);
+export function uniqueArray<T>(array: T[]): T[] {
+  return Array.from(new Set(array));
+}
 
-  return userCreatedPRList.filter((pr) => pr.author === options.username);
+export async function getUserCreatedPRListInPeriod(options: ActivityQueryOptions): Promise<PR[]> {
+  const allPRList = await fetchAllPRListInPeriod(options);
+
+  return allPRList
+    .filter((pr) => pr.author === options.username)
+    .map((pr) => ({
+      ...pr,
+      comments: uniqueArray(pr.comments ?? []),
+      reviewers: uniqueArray(pr.reviewers),
+    }));
+}
+
+export async function getUserParticipatedPRListInPeriod(
+  options: ActivityQueryOptions,
+): Promise<PR[]> {
+  const allPRList = await fetchAllPRListInPeriod(options);
+
+  const participatedPRList = allPRList
+    .filter(
+      (pr) => pr.comments?.includes(options.username) || pr.reviewers.includes(options.username),
+    )
+    .map((pr) => ({
+      ...pr,
+      comments: uniqueArray(pr.comments ?? []),
+      reviewers: uniqueArray(pr.reviewers),
+    }));
+
+  return participatedPRList;
 }
 
 export async function getUserCreatedPRCountInPeriod(prList: PR[]): Promise<number> {

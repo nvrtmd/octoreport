@@ -7,6 +7,7 @@ export interface PR {
   labels: string[];
   author: string;
   reviewers: string[];
+  comments?: string[];
 }
 
 export interface Participation {
