@@ -18,7 +18,7 @@
   "author": "nvrtmd",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup src/cli.ts --target es2022 --format esm",
     "test": "vitest run",
     "dev:test": "vitest",
     "prepublishOnly": "npm run build && npm run test",
@@ -27,6 +27,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"
+  },
+  "bin": {
+    "octoreport": "./dist/cli.js"
   },
   "devDependencies": {
     "@types/node": "^24.0.8",
@@ -40,6 +43,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
   },
