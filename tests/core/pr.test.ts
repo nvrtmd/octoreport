@@ -6,6 +6,7 @@ import {
   getUserCreatedPRListInPeriod,
   getUserCreatedPRListInPeriodByLabel,
   getUserPRCountByLabelInPeriod,
+  getUserParticipatedPRListInPeriod,
 } from '../../src/core';
 config();
 
@@ -41,6 +42,26 @@ describe('getUserCreatedPRListInPeriod', () => {
       repository: 'mui/material-ui',
       period: { startDate: '2024-09-10', endDate: '2024-09-20' },
       targetBranch: 'mui:v5.x',
+    });
+
+    expect(result).toMatchSnapshot();
+  });
+});
+
+describe('getUserParticipatedPRListInPeriod', () => {
+  it('returns pull requests the user has participated in (via comments or reviews) within the specified period', async () => {
+    const result = await getUserParticipatedPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN ?? '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-31' },
+      targetBranch: 'mui:master',
+    });
+
+    result.map((pr) => {
+      const isParticipated =
+        pr.comments?.includes('oliviertassinari') || pr.reviewers.includes('oliviertassinari');
+      expect(isParticipated).toBe(true);
     });
 
     expect(result).toMatchSnapshot();
