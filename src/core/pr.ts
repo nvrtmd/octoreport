@@ -7,6 +7,14 @@ export async function getUserCreatedPRListInPeriod(options: ActivityQueryOptions
   return userCreatedPRList.filter((pr) => pr.author === options.username);
 }
 
+export async function getUserCreatedPRCountInPeriod(
+  options: ActivityQueryOptions,
+): Promise<number> {
+  const userCreatedPRList = await getUserCreatedPRListInPeriod(options);
+
+  return userCreatedPRList.length;
+}
+
 export async function getUserCreatedPRListInPeriodByLabel(
   options: ActivityQueryOptions,
 ): Promise<PR[]> {
