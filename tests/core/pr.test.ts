@@ -7,8 +7,30 @@ import {
   getUserCreatedPRListInPeriodByLabel,
   getUserPRCountByLabelInPeriod,
   getUserParticipatedPRListInPeriod,
+  getUserPRsByCreationAndParticipation,
 } from '../../src/core';
 config();
+
+describe('getUserPRsByCreationAndParticipation', () => {
+  it('returns pull requests the user has participated in (via comments or reviews) within the specified period', async () => {
+    const result = await getUserPRsByCreationAndParticipation({
+      githubToken: process.env.GITHUB_TOKEN ?? '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-31' },
+      targetBranch: 'mui:master',
+    });
+
+    expect(result.userCreatedPRList[0].author).toBe('oliviertassinari');
+    result.userParticipatedPRList.map((pr) => {
+      const isParticipated =
+        pr.comments?.includes('oliviertassinari') || pr.reviewers.includes('oliviertassinari');
+      expect(isParticipated).toBe(true);
+    });
+
+    expect(result).toMatchSnapshot();
+  });
+});
 
 describe('getUserCreatedPRListInPeriod', () => {
   it('returns an empty array when the user has no pull requests in the given period', async () => {
