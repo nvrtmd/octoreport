@@ -7,33 +7,24 @@ export async function getUserCreatedPRListInPeriod(options: ActivityQueryOptions
   return userCreatedPRList.filter((pr) => pr.author === options.username);
 }
 
-export async function getUserCreatedPRCountInPeriod(
-  options: ActivityQueryOptions,
-): Promise<number> {
-  const userCreatedPRList = await getUserCreatedPRListInPeriod(options);
-
-  return userCreatedPRList.length;
+export async function getUserCreatedPRCountInPeriod(prList: PR[]): Promise<number> {
+  return prList.length;
 }
 
 export async function getUserCreatedPRListInPeriodByLabel(
-  options: ActivityQueryOptions,
+  prList: PR[],
+  labelFilter: string[],
 ): Promise<PR[]> {
-  const userCreatedPRList = await getUserCreatedPRListInPeriod(options);
-
-  return userCreatedPRList.filter((pr) =>
-    options.labelFilter?.some((filter) =>
+  return prList.filter((pr) =>
+    labelFilter.some((filter) =>
       pr.labels.some((label) => label.toLowerCase().includes(filter.toLowerCase())),
     ),
   );
 }
 
-export async function getUserPRCountByLabelInPeriod(
-  options: ActivityQueryOptions,
-): Promise<Record<string, number>> {
-  const userCreatedPRList = await getUserCreatedPRListInPeriod(options);
-
+export async function getUserPRCountByLabelInPeriod(prList: PR[]): Promise<Record<string, number>> {
   const labelCountMap: Record<string, number> = {};
-  userCreatedPRList.map((pr) => {
+  prList.map((pr) => {
     pr.labels.forEach((label) => {
       labelCountMap[label] = (labelCountMap[label] || 0) + 1;
     });
