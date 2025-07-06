@@ -49,7 +49,7 @@ describe('getUserCreatedPRListInPeriod', () => {
 
 describe('getUserCreatedPRCountInPeriod', () => {
   it('returns the number of pull requests created by the user within the specified period', async () => {
-    const result = await getUserCreatedPRCountInPeriod({
+    const prList = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
@@ -57,32 +57,36 @@ describe('getUserCreatedPRCountInPeriod', () => {
       targetBranch: 'mui:v5.x',
     });
 
+    const result = await getUserCreatedPRCountInPeriod(prList);
+
     expect(result).toEqual(14);
   });
 });
 
 describe('getUserCreatedPRListInPeriodByLabel', () => {
   it('filters pull requests that exactly match provided label names (case-sensitive)', async () => {
-    const result = await getUserCreatedPRListInPeriodByLabel({
+    const prList = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-31' },
       targetBranch: 'mui:master',
-      labelFilter: ['docs'],
     });
+
+    const result = await getUserCreatedPRListInPeriodByLabel(prList, ['docs']);
 
     expect(result).toMatchSnapshot();
   });
   it('filters pull requests that include provided label keywords (case-insensitive, partial match)', async () => {
-    const result = await getUserCreatedPRListInPeriodByLabel({
+    const prList = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-10' },
       targetBranch: 'mui:master',
-      labelFilter: ['regression'],
     });
+
+    const result = await getUserCreatedPRListInPeriodByLabel(prList, ['regression']);
 
     expect(result.length).toBe(3);
     expect(result[0].labels).toContain('regression 🐛');
@@ -94,13 +98,16 @@ describe('getUserCreatedPRListInPeriodByLabel', () => {
 
 describe('getUserPRCountByLabelInPeriod', () => {
   it('counts pull requests created by the user within the specified period, grouped by label, and returns an object like {feat: 10, fix: 2, test: 10, ...}', async () => {
-    const result = await getUserPRCountByLabelInPeriod({
+    const prList = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN ?? '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2024-09-10', endDate: '2024-09-20' },
       targetBranch: 'mui:v5.x',
     });
+
+    const result = await getUserPRCountByLabelInPeriod(prList);
+
     expect(result).toEqual({
       'scope: docs-infra': 3,
       security: 1,
