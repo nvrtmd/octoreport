@@ -12,4 +12,5 @@ export default defineConfig({
     js: '#!/usr/bin/env node',
   },
   target: 'es2022',
+  external: ['dotenv'],
 });

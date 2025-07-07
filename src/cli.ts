@@ -1,4 +1,6 @@
-import { getUserCreatedPRListInPeriod } from './core/pr.js';
+import 'dotenv/config';
+
+import { getUserCreatedPRListInPeriod } from './core';
 
 const args = process.argv.slice(2);
 
