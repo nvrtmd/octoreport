@@ -7,18 +7,18 @@ import {
   getUserCreatedPRListInPeriodByLabel,
   getUserPRCountByLabelInPeriod,
   getUserParticipatedPRListInPeriod,
-  getUserPRsByCreationAndParticipation,
+  getUserPRListByCreationAndParticipation,
 } from '../../src/core';
 config();
 
-describe('getUserPRsByCreationAndParticipation', () => {
+describe('getUserPRListByCreationAndParticipation', () => {
   it('returns pull requests the user has participated in (via comments or reviews) within the specified period', async () => {
-    const result = await getUserPRsByCreationAndParticipation({
+    const result = await getUserPRListByCreationAndParticipation({
       githubToken: process.env.GITHUB_TOKEN ?? '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-31' },
-      targetBranch: 'mui:master',
+      targetBranch: 'master',
     });
 
     expect(result.userCreatedPRList[0].author).toBe('oliviertassinari');
@@ -39,7 +39,7 @@ describe('getUserCreatedPRListInPeriod', () => {
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2015-01-01', endDate: '2015-01-10' },
-      targetBranch: 'mui:master',
+      targetBranch: 'master',
     });
 
     expect(result).toEqual([]);
@@ -51,7 +51,7 @@ describe('getUserCreatedPRListInPeriod', () => {
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-31' },
-      targetBranch: 'mui:master',
+      targetBranch: 'master',
     });
 
     expect(result).toMatchSnapshot();
@@ -77,7 +77,7 @@ describe('getUserParticipatedPRListInPeriod', () => {
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-31' },
-      targetBranch: 'mui:master',
+      targetBranch: 'master',
     });
 
     result.map((pr) => {
@@ -102,7 +102,7 @@ describe('getUserCreatedPRCountInPeriod', () => {
 
     const result = await getUserCreatedPRCountInPeriod(prList);
 
-    expect(result).toEqual(14);
+    expect(result).toEqual(2);
   });
 });
 
@@ -113,7 +113,7 @@ describe('getUserCreatedPRListInPeriodByLabel', () => {
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-31' },
-      targetBranch: 'mui:master',
+      targetBranch: 'master',
     });
 
     const result = await getUserCreatedPRListInPeriodByLabel(prList, ['docs']);
@@ -126,7 +126,7 @@ describe('getUserCreatedPRListInPeriodByLabel', () => {
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-10' },
-      targetBranch: 'mui:master',
+      targetBranch: 'master',
     });
 
     const result = await getUserCreatedPRListInPeriodByLabel(prList, ['regression']);
@@ -152,17 +152,11 @@ describe('getUserPRCountByLabelInPeriod', () => {
     const result = await getUserPRCountByLabelInPeriod(prList);
 
     expect(result).toEqual({
-      'scope: docs-infra': 3,
-      security: 1,
-      core: 3,
-      'component: slider': 1,
-      docs: 6,
-      'regression 🐛': 4,
+      docs: 1,
+      'regression 🐛': 1,
       'v5.x': 2,
-      'bug 🐛': 2,
+      'bug 🐛': 1,
       examples: 1,
-      test: 1,
-      website: 2,
     });
   });
 });

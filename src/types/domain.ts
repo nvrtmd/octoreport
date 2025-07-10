@@ -6,6 +6,7 @@ export interface PR {
   mergedAt?: string;
   labels: string[];
   author: string;
+  targetBranch?: string;
   reviewers: string[];
   comments?: string[];
 }
@@ -20,7 +21,7 @@ export interface Participation {
 }
 
 export interface MonthlyActivityReport {
-  createdPRs: PR[];
+  createdPRList: PR[];
   participations: Participation[];
   summary: {
     totalCreated: number;

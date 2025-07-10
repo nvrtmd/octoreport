@@ -75,6 +75,7 @@ export async function fetchPRDetail({
       pullRequest(number: $number) {
         title
         author { login }
+        baseRefName
         assignees(first: 10) { nodes { login } }
         reviews(first: 100) { nodes { author { login }, submittedAt } }
         reviewRequests(first: 10) { nodes { requestedReviewer { ... on User { login } } } }

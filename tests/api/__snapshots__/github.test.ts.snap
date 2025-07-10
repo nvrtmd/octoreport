@@ -8,6 +8,7 @@ exports[`fetchPRDetail > returns every pull request detail in the given reposito
   "author": {
     "login": "oliviertassinari",
   },
+  "baseRefName": "master",
   "comments": {
     "nodes": [
       {
