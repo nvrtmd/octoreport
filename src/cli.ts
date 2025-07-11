@@ -1,24 +1,50 @@
 #!/usr/bin/env node
 import 'dotenv/config';
 
-import { getUserCreatedPRListInPeriod } from './core';
+import inquirer from 'inquirer';
 
-const args = process.argv.slice(2);
+import { getUserPRListByCreationAndParticipation } from './core';
 
-const username = args[0];
-const repository = args[1];
-const period = {
-  startDate: args[2],
-  endDate: args[3],
-};
-const targetBranch = args[4];
+const answers = await inquirer.prompt([
+  {
+    type: 'input',
+    name: 'username',
+    message: '깃헙 유저네임을 입력하세요:',
+  },
+  {
+    type: 'input',
+    name: 'repository',
+    message: '저장소를 입력하세요 (예: owner/repo):',
+  },
+  {
+    type: 'input',
+    name: 'startDate',
+    message: '시작 날짜를 입력하세요 (YYYY-MM-DD):',
+  },
+  {
+    type: 'input',
+    name: 'endDate',
+    message: '종료 날짜를 입력하세요 (YYYY-MM-DD):',
+  },
+  {
+    type: 'input',
+    name: 'targetBranch',
+    message: '타겟 브랜치를 입력하세요 (옵션, 엔터로 생략):',
+  },
+]);
 
-const prList = await getUserCreatedPRListInPeriod({
-  githubToken: process.env.GITHUB_TOKEN ?? '',
-  username,
-  repository,
-  period,
-  targetBranch,
-});
+const { userCreatedPRList, userParticipatedPRList } = await getUserPRListByCreationAndParticipation(
+  {
+    githubToken: process.env.GITHUB_TOKEN ?? '',
+    username: answers.username,
+    repository: answers.repository,
+    period: {
+      startDate: answers.startDate,
+      endDate: answers.endDate,
+    },
+    targetBranch: answers.targetBranch,
+  },
+);
 
-console.log(prList);
+console.log('User Created PRs: ', userCreatedPRList);
+console.log('User Participated PRs: ', userParticipatedPRList);
