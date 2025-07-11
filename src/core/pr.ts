@@ -5,10 +5,21 @@ export function uniqueArray<T>(array: T[]): T[] {
   return Array.from(new Set(array));
 }
 
-export async function getUserPRsByCreationAndParticipation(
+export function filterPRListByTargetBranch(prList: PR[], targetBranch: string): PR[] {
+  const parsedTargetBranch = targetBranch.includes(':') ? targetBranch.split(':')[1] : targetBranch;
+  return prList.filter((pr) => pr.targetBranch === parsedTargetBranch);
+}
+
+async function getPRListByTargetBranch(options: ActivityQueryOptions): Promise<PR[]> {
+  const prList = await fetchAllPRListInPeriod(options);
+  return filterPRListByTargetBranch(prList, options.targetBranch);
+}
+
+export async function getUserPRListByCreationAndParticipation(
   options: ActivityQueryOptions,
 ): Promise<{ userCreatedPRList: PR[]; userParticipatedPRList: PR[] }> {
-  const allPRList = await fetchAllPRListInPeriod(options);
+  const allPRList = await getPRListByTargetBranch(options);
+
   const createdPRList: PR[] = [];
   const participatedPRList: PR[] = [];
 
@@ -32,7 +43,7 @@ export async function getUserPRsByCreationAndParticipation(
 }
 
 export async function getUserCreatedPRListInPeriod(options: ActivityQueryOptions): Promise<PR[]> {
-  const allPRList = await fetchAllPRListInPeriod(options);
+  const allPRList = await getPRListByTargetBranch(options);
 
   return allPRList
     .filter((pr) => pr.author === options.username)
@@ -46,7 +57,7 @@ export async function getUserCreatedPRListInPeriod(options: ActivityQueryOptions
 export async function getUserParticipatedPRListInPeriod(
   options: ActivityQueryOptions,
 ): Promise<PR[]> {
-  const allPRList = await fetchAllPRListInPeriod(options);
+  const allPRList = await getPRListByTargetBranch(options);
 
   const participatedPRList = allPRList
     .filter(

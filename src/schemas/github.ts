@@ -46,6 +46,7 @@ const PRDetailSchema = z.object({
   reviews: z.object({
     nodes: z.array(ReviewSchema),
   }),
+  baseRefName: z.string().optional(),
   assignees: z
     .object({
       nodes: z.array(UserSchema),

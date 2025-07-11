@@ -7,96 +7,6 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2024-09-11T12:44:25Z",
-    "labels": [
-      "scope: docs-infra",
-      "security",
-    ],
-    "mergedAt": "2024-09-30T12:36:38Z",
-    "number": 43711,
-    "reviewers": [
-      "oliviertassinari",
-    ],
-    "title": "[docs-infra] Strengthen CSP",
-    "url": "https://github.com/mui/material-ui/pull/43711",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-11T13:30:02Z",
-    "labels": [
-      "core",
-    ],
-    "mergedAt": "2024-09-11T20:39:34Z",
-    "number": 43712,
-    "reviewers": [],
-    "title": "[core] Remove /.yarn",
-    "url": "https://github.com/mui/material-ui/pull/43712",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-      "oliviertassinari",
-    ],
-    "createdAt": "2024-09-13T17:58:16Z",
-    "labels": [
-      "component: slider",
-      "docs",
-    ],
-    "mergedAt": "2024-09-15T15:05:26Z",
-    "number": 43748,
-    "reviewers": [
-      "aarongarciah",
-    ],
-    "title": "[slider][docs] Polish Music player demo",
-    "url": "https://github.com/mui/material-ui/pull/43748",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-      "oliviertassinari",
-    ],
-    "createdAt": "2024-09-14T00:04:37Z",
-    "labels": [
-      "docs",
-      "regression 🐛",
-      "scope: docs-infra",
-    ],
-    "mergedAt": "2024-09-16T17:19:10Z",
-    "number": 43751,
-    "reviewers": [
-      "mapache-salvaje",
-    ],
-    "title": "[docs-infra] Fix Vale config for TypeScript references",
-    "url": "https://github.com/mui/material-ui/pull/43751",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-14T13:38:28Z",
-    "labels": [
-      "docs",
-      "regression 🐛",
-    ],
-    "mergedAt": "2024-09-16T06:41:54Z",
-    "number": 43752,
-    "reviewers": [
-      "siriwatknp",
-    ],
-    "title": "[docs] Fix MUI Treasury Layout broken links",
-    "url": "https://github.com/mui/material-ui/pull/43752",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
     "createdAt": "2024-09-14T13:43:03Z",
     "labels": [
       "docs",
@@ -108,6 +18,7 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "reviewers": [
       "siriwatknp",
     ],
+    "targetBranch": "v5.x",
     "title": "[docs] Fix MUI Treasury Layout broken links",
     "url": "https://github.com/mui/material-ui/pull/43753",
   },
@@ -128,132 +39,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "reviewers": [
       "mnajdova",
     ],
+    "targetBranch": "v5.x",
     "title": "[examples] Fix v5 clone example instructions",
     "url": "https://github.com/mui/material-ui/pull/43755",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-      "oliviertassinari",
-    ],
-    "createdAt": "2024-09-15T00:29:26Z",
-    "labels": [
-      "bug 🐛",
-      "core",
-    ],
-    "mergedAt": "2024-09-17T13:00:19Z",
-    "number": 43778,
-    "reviewers": [
-      "DiegoAndai",
-    ],
-    "title": "[core] useAutocomplete should have 'use client'",
-    "url": "https://github.com/mui/material-ui/pull/43778",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-18T12:15:03Z",
-    "labels": [
-      "docs",
-    ],
-    "mergedAt": "2024-09-19T12:10:40Z",
-    "number": 43809,
-    "reviewers": [
-      "michaldudak",
-      "oliviertassinari",
-    ],
-    "title": "[docs] Fix 301 to chromium",
-    "url": "https://github.com/mui/material-ui/pull/43809",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-18T16:26:18Z",
-    "labels": [
-      "docs",
-    ],
-    "mergedAt": "2024-09-30T18:14:43Z",
-    "number": 43812,
-    "reviewers": [
-      "aarongarciah",
-    ],
-    "title": "[docs] Format Pigment CSS docs",
-    "url": "https://github.com/mui/material-ui/pull/43812",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-19T19:34:40Z",
-    "labels": [
-      "core",
-      "test",
-    ],
-    "mergedAt": "2024-09-20T11:23:07Z",
-    "number": 43820,
-    "reviewers": [
-      "aarongarciah",
-      "mnajdova",
-      "sai6855",
-    ],
-    "title": "[test] Sync React.version parse logic with codebase",
-    "url": "https://github.com/mui/material-ui/pull/43820",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-19T22:49:09Z",
-    "labels": [
-      "website",
-    ],
-    "mergedAt": "2024-09-28T10:16:12Z",
-    "number": 43822,
-    "reviewers": [
-      "aarongarciah",
-    ],
-    "title": "[website] Improve Next roles section",
-    "url": "https://github.com/mui/material-ui/pull/43822",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-20T20:37:20Z",
-    "labels": [
-      "website",
-    ],
-    "mergedAt": "2024-09-21T00:19:36Z",
-    "number": 43831,
-    "reviewers": [
-      "MBilalShafi",
-    ],
-    "title": "[website] Add 'Row spanning'",
-    "url": "https://github.com/mui/material-ui/pull/43831",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-20T23:47:01Z",
-    "labels": [
-      "regression 🐛",
-      "scope: docs-infra",
-    ],
-    "mergedAt": "2024-10-02T21:51:40Z",
-    "number": 43834,
-    "reviewers": [],
-    "title": "[docs-infra] Fix link in header regression",
-    "url": "https://github.com/mui/material-ui/pull/43834",
   },
 ]
 `;
@@ -278,6 +66,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
       "jedwards1211",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[core] Fix internal version duplication",
     "url": "https://github.com/mui/material-ui/pull/46051",
   },
@@ -296,6 +85,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "reviewers": [
       "nadjakovacev",
     ],
+    "targetBranch": "master",
     "title": "[website] Update values",
     "url": "https://github.com/mui/material-ui/pull/46061",
   },
@@ -315,6 +105,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
       "alexfauquette",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs-infra] Update feedback Node.js to v22",
     "url": "https://github.com/mui/material-ui/pull/46064",
   },
@@ -333,6 +124,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "reviewers": [
       "mapache-salvaje",
     ],
+    "targetBranch": "master",
     "title": "[website] Fix CSS alignment",
     "url": "https://github.com/mui/material-ui/pull/46065",
   },
@@ -354,6 +146,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "reviewers": [
       "mapache-salvaje",
     ],
+    "targetBranch": "master",
     "title": "[docs] Remove oudated scaffoldhub ad",
     "url": "https://github.com/mui/material-ui/pull/46090",
   },
@@ -372,6 +165,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
       "0210shivam",
       "ZeeshanTamboli",
     ],
+    "targetBranch": "master",
     "title": "[docs] Fix GridLegacy docs order",
     "url": "https://github.com/mui/material-ui/pull/46135",
   },
@@ -396,6 +190,7 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
       "alexfauquette",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs-infra] Update feedback Node.js to v22",
     "url": "https://github.com/mui/material-ui/pull/46064",
   },
@@ -417,6 +212,7 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
     "reviewers": [
       "mapache-salvaje",
     ],
+    "targetBranch": "master",
     "title": "[docs] Remove oudated scaffoldhub ad",
     "url": "https://github.com/mui/material-ui/pull/46090",
   },
@@ -435,6 +231,7 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
       "0210shivam",
       "ZeeshanTamboli",
     ],
+    "targetBranch": "master",
     "title": "[docs] Fix GridLegacy docs order",
     "url": "https://github.com/mui/material-ui/pull/46135",
   },
@@ -461,6 +258,7 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
       "jedwards1211",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[core] Fix internal version duplication",
     "url": "https://github.com/mui/material-ui/pull/46051",
   },
@@ -479,6 +277,7 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
     "reviewers": [
       "nadjakovacev",
     ],
+    "targetBranch": "master",
     "title": "[website] Update values",
     "url": "https://github.com/mui/material-ui/pull/46061",
   },
@@ -497,13 +296,14 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
     "reviewers": [
       "mapache-salvaje",
     ],
+    "targetBranch": "master",
     "title": "[website] Fix CSS alignment",
     "url": "https://github.com/mui/material-ui/pull/46065",
   },
 ]
 `;
 
-exports[`getUserPRsByCreationAndParticipation > returns pull requests the user has participated in (via comments or reviews) within the specified period 1`] = `
+exports[`getUserPRListByCreationAndParticipation > returns pull requests the user has participated in (via comments or reviews) within the specified period 1`] = `
 {
   "userCreatedPRList": [
     {
@@ -523,6 +323,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "mbrookes",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[TreeView] Support node label",
       "url": "https://github.com/mui/material-ui/pull/17080",
     },
@@ -541,6 +342,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "eps1lon",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Better document the ref props in the API",
       "url": "https://github.com/mui/material-ui/pull/17198",
     },
@@ -560,6 +362,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "mbrookes",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Only server-side render the popular languages",
       "url": "https://github.com/mui/material-ui/pull/17249",
     },
@@ -581,6 +384,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "joshwooding",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Migration guide to v4: include change to dense Lists",
       "url": "https://github.com/mui/material-ui/pull/17074",
     },
@@ -601,6 +405,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "joshwooding",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Rating] Add Custom prop-type to prop name",
       "url": "https://github.com/mui/material-ui/pull/17078",
     },
@@ -620,6 +425,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[CircularProgress] Document String format for size prop",
       "url": "https://github.com/mui/material-ui/pull/17081",
     },
@@ -639,6 +445,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "joshwooding",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Slider] Avoid mutating user's value prop",
       "url": "https://github.com/mui/material-ui/pull/17085",
     },
@@ -658,6 +465,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Drawer] Fix ref forwarding when variant="persistent"",
       "url": "https://github.com/mui/material-ui/pull/17091",
     },
@@ -679,6 +487,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Rating] Improve signature in docs",
       "url": "https://github.com/mui/material-ui/pull/17093",
     },
@@ -698,6 +507,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Switch] Fix rendering in IE 11 and Safari",
       "url": "https://github.com/mui/material-ui/pull/17095",
     },
@@ -718,6 +528,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Popover] Fix update position action",
       "url": "https://github.com/mui/material-ui/pull/17097",
     },
@@ -736,6 +547,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[MenuItem] Add missing dense classkey",
       "url": "https://github.com/mui/material-ui/pull/17103",
     },
@@ -757,6 +569,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "mbrookes",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Fix popover demo event.target is null",
       "url": "https://github.com/mui/material-ui/pull/17104",
     },
@@ -773,6 +586,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "mergedAt": undefined,
       "number": 17108,
       "reviewers": [],
+      "targetBranch": "master",
       "title": "improve sample code",
       "url": "https://github.com/mui/material-ui/pull/17108",
     },
@@ -795,6 +609,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "oliviertassinari",
         "ryanburr",
       ],
+      "targetBranch": "master",
       "title": "[ButtonGroup] Fix border color when disabled and contained",
       "url": "https://github.com/mui/material-ui/pull/17109",
     },
@@ -813,6 +628,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Improve drawer sample code",
       "url": "https://github.com/mui/material-ui/pull/17114",
     },
@@ -834,6 +650,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "dominictwlee",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Backdrop] Render children inside div",
       "url": "https://github.com/mui/material-ui/pull/17115",
     },
@@ -853,6 +670,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Improve custom styles of the demos",
       "url": "https://github.com/mui/material-ui/pull/17118",
     },
@@ -871,6 +689,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Fix edit dependencies extraction ",
       "url": "https://github.com/mui/material-ui/pull/17120",
     },
@@ -890,6 +709,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Fix typo in modal demo",
       "url": "https://github.com/mui/material-ui/pull/17122",
     },
@@ -909,6 +729,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Popover] Fix anchorEl positioning within popup window",
       "url": "https://github.com/mui/material-ui/pull/17128",
     },
@@ -930,6 +751,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "cmeeren",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[RadioGroup] Make value accept any",
       "url": "https://github.com/mui/material-ui/pull/17132",
     },
@@ -948,6 +770,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[examples] Fix warning in next.js example",
       "url": "https://github.com/mui/material-ui/pull/17133",
     },
@@ -969,6 +792,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Table] Add sticky header support",
       "url": "https://github.com/mui/material-ui/pull/17139",
     },
@@ -990,6 +814,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "keiohtani",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Improve enhanced table variable name",
       "url": "https://github.com/mui/material-ui/pull/17141",
     },
@@ -1009,6 +834,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "lookfirst",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] minimizing bundle: simplify by using craco",
       "url": "https://github.com/mui/material-ui/pull/17143",
     },
@@ -1029,6 +855,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Tooltip] Fix interactive + enterDelay combination",
       "url": "https://github.com/mui/material-ui/pull/17174",
     },
@@ -1048,6 +875,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[examples] Fix warnings Container in _app.js with Next.js ",
       "url": "https://github.com/mui/material-ui/pull/17181",
     },
@@ -1070,6 +898,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "mbrookes",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[ToggleButton] Improve customizability",
       "url": "https://github.com/mui/material-ui/pull/17187",
     },
@@ -1088,6 +917,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "mergedAt": "2019-08-26T21:46:30Z",
       "number": 17189,
       "reviewers": [],
+      "targetBranch": "master",
       "title": "[docs] Missing degree/option symbol",
       "url": "https://github.com/mui/material-ui/pull/17189",
     },
@@ -1107,6 +937,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[TextField] Specs alignment",
       "url": "https://github.com/mui/material-ui/pull/17192",
     },
@@ -1126,6 +957,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "mbrookes",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Minor Update to remove "n°" notations",
       "url": "https://github.com/mui/material-ui/pull/17200",
     },
@@ -1147,6 +979,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "mbrookes",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Badge] Add alignment options to badges",
       "url": "https://github.com/mui/material-ui/pull/17204",
     },
@@ -1168,6 +1001,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Menu] Include 'list' in class key",
       "url": "https://github.com/mui/material-ui/pull/17205",
     },
@@ -1189,6 +1023,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "mbrookes",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Typography] noWrap requires display block",
       "url": "https://github.com/mui/material-ui/pull/17206",
     },
@@ -1207,6 +1042,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "Fix - boxShadow property is not flowing through",
       "url": "https://github.com/mui/material-ui/pull/17207",
     },
@@ -1226,6 +1062,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[core] Fix missing type peer deps",
       "url": "https://github.com/mui/material-ui/pull/17211",
     },
@@ -1244,6 +1081,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Require less strict tsconfig",
       "url": "https://github.com/mui/material-ui/pull/17214",
     },
@@ -1266,6 +1104,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[TextField] Update outlined label when prop changes",
       "url": "https://github.com/mui/material-ui/pull/17217",
     },
@@ -1287,6 +1126,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "eps1lon",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[docs] Improve style of the demos",
       "url": "https://github.com/mui/material-ui/pull/17218",
     },
@@ -1309,6 +1149,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[LinearProgress] Make color adapt to theme type",
       "url": "https://github.com/mui/material-ui/pull/17219",
     },
@@ -1327,6 +1168,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "mergedAt": "2019-08-30T07:06:09Z",
       "number": 17221,
       "reviewers": [],
+      "targetBranch": "master",
       "title": "[CardActionArea] Fix 'border-radius'",
       "url": "https://github.com/mui/material-ui/pull/17221",
     },
@@ -1344,6 +1186,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Button] Fix typo in demo text",
       "url": "https://github.com/mui/material-ui/pull/17230",
     },
@@ -1362,6 +1205,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
       "reviewers": [
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Button] Remove code leftover from < v4",
       "url": "https://github.com/mui/material-ui/pull/17232",
     },
@@ -1387,6 +1231,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "eps1lon",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Slider] Add getAriaLabel prop",
       "url": "https://github.com/mui/material-ui/pull/17240",
     },
@@ -1408,6 +1253,7 @@ exports[`getUserPRsByCreationAndParticipation > returns pull requests the user h
         "mbrookes",
         "oliviertassinari",
       ],
+      "targetBranch": "master",
       "title": "[Badge] Improve shape of 2 digit badge",
       "url": "https://github.com/mui/material-ui/pull/17247",
     },
@@ -1433,6 +1279,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "joshwooding",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Migration guide to v4: include change to dense Lists",
     "url": "https://github.com/mui/material-ui/pull/17074",
   },
@@ -1453,6 +1300,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "joshwooding",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Rating] Add Custom prop-type to prop name",
     "url": "https://github.com/mui/material-ui/pull/17078",
   },
@@ -1473,6 +1321,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mbrookes",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[TreeView] Support node label",
     "url": "https://github.com/mui/material-ui/pull/17080",
   },
@@ -1492,6 +1341,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[CircularProgress] Document String format for size prop",
     "url": "https://github.com/mui/material-ui/pull/17081",
   },
@@ -1511,6 +1361,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "joshwooding",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Slider] Avoid mutating user's value prop",
     "url": "https://github.com/mui/material-ui/pull/17085",
   },
@@ -1530,6 +1381,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Drawer] Fix ref forwarding when variant="persistent"",
     "url": "https://github.com/mui/material-ui/pull/17091",
   },
@@ -1551,6 +1403,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Rating] Improve signature in docs",
     "url": "https://github.com/mui/material-ui/pull/17093",
   },
@@ -1570,6 +1423,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Switch] Fix rendering in IE 11 and Safari",
     "url": "https://github.com/mui/material-ui/pull/17095",
   },
@@ -1590,6 +1444,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Popover] Fix update position action",
     "url": "https://github.com/mui/material-ui/pull/17097",
   },
@@ -1608,6 +1463,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[MenuItem] Add missing dense classkey",
     "url": "https://github.com/mui/material-ui/pull/17103",
   },
@@ -1629,6 +1485,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mbrookes",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Fix popover demo event.target is null",
     "url": "https://github.com/mui/material-ui/pull/17104",
   },
@@ -1645,6 +1502,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "mergedAt": undefined,
     "number": 17108,
     "reviewers": [],
+    "targetBranch": "master",
     "title": "improve sample code",
     "url": "https://github.com/mui/material-ui/pull/17108",
   },
@@ -1667,6 +1525,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "oliviertassinari",
       "ryanburr",
     ],
+    "targetBranch": "master",
     "title": "[ButtonGroup] Fix border color when disabled and contained",
     "url": "https://github.com/mui/material-ui/pull/17109",
   },
@@ -1685,6 +1544,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Improve drawer sample code",
     "url": "https://github.com/mui/material-ui/pull/17114",
   },
@@ -1706,6 +1566,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "dominictwlee",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Backdrop] Render children inside div",
     "url": "https://github.com/mui/material-ui/pull/17115",
   },
@@ -1725,6 +1586,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Improve custom styles of the demos",
     "url": "https://github.com/mui/material-ui/pull/17118",
   },
@@ -1743,6 +1605,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Fix edit dependencies extraction ",
     "url": "https://github.com/mui/material-ui/pull/17120",
   },
@@ -1762,6 +1625,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Fix typo in modal demo",
     "url": "https://github.com/mui/material-ui/pull/17122",
   },
@@ -1781,6 +1645,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Popover] Fix anchorEl positioning within popup window",
     "url": "https://github.com/mui/material-ui/pull/17128",
   },
@@ -1802,6 +1667,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "cmeeren",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[RadioGroup] Make value accept any",
     "url": "https://github.com/mui/material-ui/pull/17132",
   },
@@ -1820,6 +1686,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[examples] Fix warning in next.js example",
     "url": "https://github.com/mui/material-ui/pull/17133",
   },
@@ -1841,6 +1708,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Table] Add sticky header support",
     "url": "https://github.com/mui/material-ui/pull/17139",
   },
@@ -1862,6 +1730,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "keiohtani",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Improve enhanced table variable name",
     "url": "https://github.com/mui/material-ui/pull/17141",
   },
@@ -1881,6 +1750,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "lookfirst",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] minimizing bundle: simplify by using craco",
     "url": "https://github.com/mui/material-ui/pull/17143",
   },
@@ -1901,6 +1771,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Tooltip] Fix interactive + enterDelay combination",
     "url": "https://github.com/mui/material-ui/pull/17174",
   },
@@ -1920,6 +1791,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[examples] Fix warnings Container in _app.js with Next.js ",
     "url": "https://github.com/mui/material-ui/pull/17181",
   },
@@ -1942,6 +1814,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mbrookes",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[ToggleButton] Improve customizability",
     "url": "https://github.com/mui/material-ui/pull/17187",
   },
@@ -1960,6 +1833,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "mergedAt": "2019-08-26T21:46:30Z",
     "number": 17189,
     "reviewers": [],
+    "targetBranch": "master",
     "title": "[docs] Missing degree/option symbol",
     "url": "https://github.com/mui/material-ui/pull/17189",
   },
@@ -1979,6 +1853,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[TextField] Specs alignment",
     "url": "https://github.com/mui/material-ui/pull/17192",
   },
@@ -1997,6 +1872,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "eps1lon",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Better document the ref props in the API",
     "url": "https://github.com/mui/material-ui/pull/17198",
   },
@@ -2016,6 +1892,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mbrookes",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Minor Update to remove "n°" notations",
     "url": "https://github.com/mui/material-ui/pull/17200",
   },
@@ -2037,6 +1914,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mbrookes",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Badge] Add alignment options to badges",
     "url": "https://github.com/mui/material-ui/pull/17204",
   },
@@ -2058,6 +1936,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Menu] Include 'list' in class key",
     "url": "https://github.com/mui/material-ui/pull/17205",
   },
@@ -2079,6 +1958,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mbrookes",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Typography] noWrap requires display block",
     "url": "https://github.com/mui/material-ui/pull/17206",
   },
@@ -2097,6 +1977,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "Fix - boxShadow property is not flowing through",
     "url": "https://github.com/mui/material-ui/pull/17207",
   },
@@ -2116,6 +1997,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[core] Fix missing type peer deps",
     "url": "https://github.com/mui/material-ui/pull/17211",
   },
@@ -2134,6 +2016,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Require less strict tsconfig",
     "url": "https://github.com/mui/material-ui/pull/17214",
   },
@@ -2156,6 +2039,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[TextField] Update outlined label when prop changes",
     "url": "https://github.com/mui/material-ui/pull/17217",
   },
@@ -2177,6 +2061,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "eps1lon",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Improve style of the demos",
     "url": "https://github.com/mui/material-ui/pull/17218",
   },
@@ -2199,6 +2084,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[LinearProgress] Make color adapt to theme type",
     "url": "https://github.com/mui/material-ui/pull/17219",
   },
@@ -2217,6 +2103,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "mergedAt": "2019-08-30T07:06:09Z",
     "number": 17221,
     "reviewers": [],
+    "targetBranch": "master",
     "title": "[CardActionArea] Fix 'border-radius'",
     "url": "https://github.com/mui/material-ui/pull/17221",
   },
@@ -2234,6 +2121,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Button] Fix typo in demo text",
     "url": "https://github.com/mui/material-ui/pull/17230",
   },
@@ -2252,6 +2140,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "reviewers": [
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Button] Remove code leftover from < v4",
     "url": "https://github.com/mui/material-ui/pull/17232",
   },
@@ -2277,6 +2166,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "eps1lon",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Slider] Add getAriaLabel prop",
     "url": "https://github.com/mui/material-ui/pull/17240",
   },
@@ -2298,6 +2188,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mbrookes",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[Badge] Improve shape of 2 digit badge",
     "url": "https://github.com/mui/material-ui/pull/17247",
   },
@@ -2317,6 +2208,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mbrookes",
       "oliviertassinari",
     ],
+    "targetBranch": "master",
     "title": "[docs] Only server-side render the popular languages",
     "url": "https://github.com/mui/material-ui/pull/17249",
   },

@@ -13,12 +13,13 @@ function transformPRListItem(listItem: PRListItem): Omit<PR, 'labels' | 'author'
 
 function transformPRDetail(
   detail: PRDetail,
-): Pick<PR, 'labels' | 'author' | 'reviewers' | 'comments'> {
+): Pick<PR, 'labels' | 'author' | 'reviewers' | 'comments' | 'targetBranch'> {
   return {
     labels: detail.labels.nodes.map((label) => label.name).sort(),
     author: detail.author.login,
     reviewers: detail.reviews.nodes.map((review) => review.author.login).sort(),
     comments: detail.comments?.nodes.map((comment) => comment.author.login).sort() ?? [],
+    targetBranch: detail.baseRefName,
   };
 }
 
