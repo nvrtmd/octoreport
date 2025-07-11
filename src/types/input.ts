@@ -3,7 +3,7 @@ export interface DateRange {
   endDate: string;
 }
 
-export interface ActivityQueryOptions {
+export interface PRQueryParams {
   githubToken: string;
   username: string;
   repository: string;

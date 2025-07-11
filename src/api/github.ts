@@ -7,7 +7,7 @@ import {
   PRDetail,
 } from '../schemas/github';
 import { combinePRData } from '../transformers/github';
-import { ActivityQueryOptions, PR } from '../types';
+import { PRQueryParams, PR } from '../types';
 
 function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
   try {
@@ -21,7 +21,7 @@ function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
 }
 
 export async function fetchPRListInPeriod(
-  options: Pick<ActivityQueryOptions, 'repository' | 'period' | 'githubToken'>,
+  options: Pick<PRQueryParams, 'repository' | 'period' | 'githubToken'>,
 ): Promise<PRListItem[]> {
   let page = 1;
   const prList: PRListItem[] = [];
@@ -117,7 +117,7 @@ export async function fetchPRDetail({
 }
 
 export async function fetchAllPRListInPeriod(
-  options: Pick<ActivityQueryOptions, 'repository' | 'period' | 'githubToken'>,
+  options: Pick<PRQueryParams, 'repository' | 'period' | 'githubToken'>,
 ): Promise<PR[]> {
   const allPRListItems = await fetchPRListInPeriod(options);
   const prList: PR[] = [];

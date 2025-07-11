@@ -1,5 +1,5 @@
 import { fetchAllPRListInPeriod } from '../api';
-import { ActivityQueryOptions, PR } from '../types';
+import { PRQueryParams, PR } from '../types';
 
 export function uniqueArray<T>(array: T[]): T[] {
   return Array.from(new Set(array));
@@ -10,13 +10,13 @@ export function filterPRListByTargetBranch(prList: PR[], targetBranch: string): 
   return prList.filter((pr) => pr.targetBranch === parsedTargetBranch);
 }
 
-async function getPRListByTargetBranch(options: ActivityQueryOptions): Promise<PR[]> {
+async function getPRListByTargetBranch(options: PRQueryParams): Promise<PR[]> {
   const prList = await fetchAllPRListInPeriod(options);
   return filterPRListByTargetBranch(prList, options.targetBranch);
 }
 
 export async function getUserPRListByCreationAndParticipation(
-  options: ActivityQueryOptions,
+  options: PRQueryParams,
 ): Promise<{ userCreatedPRList: PR[]; userParticipatedPRList: PR[] }> {
   const allPRList = await getPRListByTargetBranch(options);
 
@@ -42,7 +42,7 @@ export async function getUserPRListByCreationAndParticipation(
   return { userCreatedPRList: createdPRList, userParticipatedPRList: participatedPRList };
 }
 
-export async function getUserCreatedPRListInPeriod(options: ActivityQueryOptions): Promise<PR[]> {
+export async function getUserCreatedPRListInPeriod(options: PRQueryParams): Promise<PR[]> {
   const allPRList = await getPRListByTargetBranch(options);
 
   return allPRList
@@ -54,9 +54,7 @@ export async function getUserCreatedPRListInPeriod(options: ActivityQueryOptions
     }));
 }
 
-export async function getUserParticipatedPRListInPeriod(
-  options: ActivityQueryOptions,
-): Promise<PR[]> {
+export async function getUserParticipatedPRListInPeriod(options: PRQueryParams): Promise<PR[]> {
   const allPRList = await getPRListByTargetBranch(options);
 
   const participatedPRList = allPRList
