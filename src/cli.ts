@@ -9,27 +9,28 @@ const answers = await inquirer.prompt([
   {
     type: 'input',
     name: 'username',
-    message: '깃헙 유저네임을 입력하세요:',
+    message: 'Please enter your GitHub username (e.g., octocat):',
   },
   {
     type: 'input',
     name: 'repository',
-    message: '저장소를 입력하세요 (예: owner/repo):',
+    message: 'Please enter the repository in the format "owner/repo" (e.g., facebook/react):',
   },
   {
     type: 'input',
     name: 'startDate',
-    message: '시작 날짜를 입력하세요 (YYYY-MM-DD):',
+    message: 'Please enter the start date for the search period (format: YYYY-MM-DD):',
   },
   {
     type: 'input',
     name: 'endDate',
-    message: '종료 날짜를 입력하세요 (YYYY-MM-DD):',
+    message: 'Please enter the end date for the search period (format: YYYY-MM-DD):',
   },
   {
     type: 'input',
     name: 'targetBranch',
-    message: '타겟 브랜치를 입력하세요 (옵션, 엔터로 생략):',
+    message:
+      'Optionally, enter the target branch to filter pull requests (press Enter to skip and show PRs targeting all branches):',
   },
 ]);
 
