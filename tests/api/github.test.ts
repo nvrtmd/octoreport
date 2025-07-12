@@ -1,13 +1,12 @@
-import { config } from 'dotenv';
 import { describe, expect, it } from 'vitest';
 
 import { fetchPRDetail, fetchPRListInPeriod } from '../../src/api';
-config();
+import { getToken } from '../../src/auth/token';
 
 describe('fetchPRListInPeriod', () => {
   it('returns every pull request in the given repository and period', async () => {
     const result = await fetchPRListInPeriod({
-      githubToken: process.env.GITHUB_TOKEN ?? '',
+      githubToken: getToken() ?? '',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-31' },
     });
@@ -19,7 +18,7 @@ describe('fetchPRListInPeriod', () => {
 describe('fetchPRDetail', () => {
   it('returns every pull request detail in the given repository and period', async () => {
     const result = await fetchPRDetail({
-      githubToken: process.env.GITHUB_TOKEN ?? '',
+      githubToken: getToken() ?? '',
       repository: 'mui/material-ui',
       prNumber: 374,
     });
