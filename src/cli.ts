@@ -1,15 +1,24 @@
 #!/usr/bin/env node
-import 'dotenv/config';
-
 import inquirer from 'inquirer';
 
+import { loginWithGitHubDeviceFlow } from './auth/login';
+import { getToken, setToken } from './auth/token';
 import { getUserPRListByCreationAndParticipation } from './core';
+
+const GITHUB_CLIENT_ID = 'Ov23lia7pFpgs8ULT1DL';
+
+if (process.argv[2] === 'login' || !getToken()) {
+  const token = await loginWithGitHubDeviceFlow(GITHUB_CLIENT_ID);
+  setToken(token);
+  console.log('🎉 Authentication successful! You can now use octoreport.');
+}
 
 const answers = await inquirer.prompt([
   {
     type: 'input',
     name: 'username',
-    message: 'Please enter your GitHub username (e.g., octocat):',
+    message:
+      'Optionally, enter the target GitHub username (e.g., octocat) (press Enter to skip and show PRs created by you):',
   },
   {
     type: 'input',
@@ -36,7 +45,7 @@ const answers = await inquirer.prompt([
 
 const { userCreatedPRList, userParticipatedPRList } = await getUserPRListByCreationAndParticipation(
   {
-    githubToken: process.env.GITHUB_TOKEN ?? '',
+    githubToken: getToken() ?? '',
     username: answers.username,
     repository: answers.repository,
     period: {
