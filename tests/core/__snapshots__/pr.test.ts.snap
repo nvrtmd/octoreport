@@ -311,6 +311,104 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
+      "createdAt": "2019-08-19T15:27:07Z",
+      "labels": [
+        "component: modal",
+        "docs",
+      ],
+      "mergedAt": "2019-08-21T08:53:23Z",
+      "number": 17059,
+      "reviewers": [
+        "mbrookes",
+        "oliviertassinari",
+      ],
+      "targetBranch": "master",
+      "title": "[Modal] Add transition documentation",
+      "url": "https://github.com/mui/material-ui/pull/17059",
+    },
+    {
+      "author": "oliviertassinari",
+      "comments": [
+        "mui-pr-bot",
+      ],
+      "createdAt": "2019-08-19T15:37:03Z",
+      "labels": [
+        "docs",
+      ],
+      "mergedAt": "2019-08-20T09:20:23Z",
+      "number": 17060,
+      "reviewers": [
+        "mbrookes",
+      ],
+      "targetBranch": "master",
+      "title": "[docs] Small changes",
+      "url": "https://github.com/mui/material-ui/pull/17060",
+    },
+    {
+      "author": "oliviertassinari",
+      "comments": [
+        "mui-pr-bot",
+      ],
+      "createdAt": "2019-08-19T15:38:26Z",
+      "labels": [
+        "core",
+      ],
+      "mergedAt": "2019-08-21T08:52:48Z",
+      "number": 17061,
+      "reviewers": [
+        "joshwooding",
+      ],
+      "targetBranch": "master",
+      "title": "[core] Classes to hooks",
+      "url": "https://github.com/mui/material-ui/pull/17061",
+    },
+    {
+      "author": "oliviertassinari",
+      "comments": [
+        "mui-pr-bot",
+      ],
+      "createdAt": "2019-08-19T15:39:12Z",
+      "labels": [
+        "component: app bar",
+        "docs",
+      ],
+      "mergedAt": "2019-08-21T08:50:25Z",
+      "number": 17062,
+      "reviewers": [
+        "mbrookes",
+        "oliviertassinari",
+      ],
+      "targetBranch": "master",
+      "title": "[AppBar] Add back to top demo",
+      "url": "https://github.com/mui/material-ui/pull/17062",
+    },
+    {
+      "author": "oliviertassinari",
+      "comments": [
+        "mbrookes",
+        "mui-pr-bot",
+        "nrkroeker",
+        "oliviertassinari",
+      ],
+      "createdAt": "2019-08-19T15:40:12Z",
+      "labels": [
+        "component: divider",
+        "new feature",
+      ],
+      "mergedAt": "2019-08-20T09:18:57Z",
+      "number": 17063,
+      "reviewers": [
+        "sakulstra",
+      ],
+      "targetBranch": "master",
+      "title": "[Divider] Add vertical support",
+      "url": "https://github.com/mui/material-ui/pull/17063",
+    },
+    {
+      "author": "oliviertassinari",
+      "comments": [
+        "mui-pr-bot",
+      ],
       "createdAt": "2019-08-20T23:28:43Z",
       "labels": [
         "component: tree view",
@@ -346,28 +444,28 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "title": "[docs] Better document the ref props in the API",
       "url": "https://github.com/mui/material-ui/pull/17198",
     },
+  ],
+  "userParticipatedPRList": [
     {
-      "author": "oliviertassinari",
+      "author": "Patil2099",
       "comments": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-31T16:20:23Z",
+      "createdAt": "2019-08-19T15:14:49Z",
       "labels": [
+        "component: tooltip",
         "docs",
       ],
-      "mergedAt": "2019-09-01T09:29:02Z",
-      "number": 17249,
+      "mergedAt": "2019-08-20T09:06:22Z",
+      "number": 17058,
       "reviewers": [
-        "mbrookes",
         "oliviertassinari",
       ],
       "targetBranch": "master",
-      "title": "[docs] Only server-side render the popular languages",
-      "url": "https://github.com/mui/material-ui/pull/17249",
+      "title": "[Tooltip] Improve arrow demo",
+      "url": "https://github.com/mui/material-ui/pull/17058",
     },
-  ],
-  "userParticipatedPRList": [
     {
       "author": "zekehernandez",
       "comments": [
@@ -1263,6 +1361,88 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
 
 exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has participated in (via comments or reviews) within the specified period 1`] = `
 [
+  {
+    "author": "Patil2099",
+    "comments": [
+      "mui-pr-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-19T15:14:49Z",
+    "labels": [
+      "component: tooltip",
+      "docs",
+    ],
+    "mergedAt": "2019-08-20T09:06:22Z",
+    "number": 17058,
+    "reviewers": [
+      "oliviertassinari",
+    ],
+    "targetBranch": "master",
+    "title": "[Tooltip] Improve arrow demo",
+    "url": "https://github.com/mui/material-ui/pull/17058",
+  },
+  {
+    "author": "oliviertassinari",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-19T15:27:07Z",
+    "labels": [
+      "component: modal",
+      "docs",
+    ],
+    "mergedAt": "2019-08-21T08:53:23Z",
+    "number": 17059,
+    "reviewers": [
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "targetBranch": "master",
+    "title": "[Modal] Add transition documentation",
+    "url": "https://github.com/mui/material-ui/pull/17059",
+  },
+  {
+    "author": "oliviertassinari",
+    "comments": [
+      "mui-pr-bot",
+    ],
+    "createdAt": "2019-08-19T15:39:12Z",
+    "labels": [
+      "component: app bar",
+      "docs",
+    ],
+    "mergedAt": "2019-08-21T08:50:25Z",
+    "number": 17062,
+    "reviewers": [
+      "mbrookes",
+      "oliviertassinari",
+    ],
+    "targetBranch": "master",
+    "title": "[AppBar] Add back to top demo",
+    "url": "https://github.com/mui/material-ui/pull/17062",
+  },
+  {
+    "author": "oliviertassinari",
+    "comments": [
+      "mbrookes",
+      "mui-pr-bot",
+      "nrkroeker",
+      "oliviertassinari",
+    ],
+    "createdAt": "2019-08-19T15:40:12Z",
+    "labels": [
+      "component: divider",
+      "new feature",
+    ],
+    "mergedAt": "2019-08-20T09:18:57Z",
+    "number": 17063,
+    "reviewers": [
+      "sakulstra",
+    ],
+    "targetBranch": "master",
+    "title": "[Divider] Add vertical support",
+    "url": "https://github.com/mui/material-ui/pull/17063",
+  },
   {
     "author": "zekehernandez",
     "comments": [
@@ -2191,26 +2371,6 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Badge] Improve shape of 2 digit badge",
     "url": "https://github.com/mui/material-ui/pull/17247",
-  },
-  {
-    "author": "oliviertassinari",
-    "comments": [
-      "mui-pr-bot",
-      "oliviertassinari",
-    ],
-    "createdAt": "2019-08-31T16:20:23Z",
-    "labels": [
-      "docs",
-    ],
-    "mergedAt": "2019-09-01T09:29:02Z",
-    "number": 17249,
-    "reviewers": [
-      "mbrookes",
-      "oliviertassinari",
-    ],
-    "targetBranch": "master",
-    "title": "[docs] Only server-side render the popular languages",
-    "url": "https://github.com/mui/material-ui/pull/17249",
   },
 ]
 `;

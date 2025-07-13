@@ -1,3 +1,4 @@
+import { DateTime } from 'luxon';
 import { z } from 'zod';
 
 import {
@@ -7,7 +8,7 @@ import {
   PRDetail,
 } from '../schemas/github';
 import { combinePRData } from '../transformers/github';
-import { PRQueryParams, PR } from '../types';
+import { PRQueryParams, PR, DateRange } from '../types';
 
 function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
   try {
@@ -18,6 +19,21 @@ function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
     }
     throw error;
   }
+}
+
+export function convertDateToUTCISO(date: string, type: 'start' | 'end' = 'start'): string | null {
+  const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const local = DateTime.fromISO(date, { zone: timeZone });
+  if (type === 'start') {
+    return local.startOf('day').toUTC().toISO();
+  }
+  return local.endOf('day').toUTC().toISO();
+}
+
+export function convertPeriodToUTCISO(period: DateRange): DateRange {
+  const startDate = convertDateToUTCISO(period.startDate, 'start') ?? period.startDate;
+  const endDate = convertDateToUTCISO(period.endDate, 'end') ?? period.endDate;
+  return { startDate, endDate };
 }
 
 export async function fetchGitHubUserInfo(
@@ -57,7 +73,8 @@ export async function fetchPRListInPeriod(
   const [owner, repo] = options.repository.split('/');
 
   while (true) {
-    const url = `https://api.github.com/search/issues?q=repo:${owner}/${repo}+is:pr+created:${options.period.startDate}..${options.period.endDate}&sort=created&order=asc&per_page=100&page=${page}`;
+    const { startDate, endDate } = convertPeriodToUTCISO(options.period);
+    const url = `https://api.github.com/search/issues?q=repo:${owner}/${repo}+is:pr+created:${startDate}..${endDate}&sort=created&order=asc&per_page=100&page=${page}`;
 
     const response = await fetch(url, {
       headers: {
