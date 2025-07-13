@@ -1,6 +1,6 @@
 {
   "name": "octoreport",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A modern, secure, and timezone-aware GitHub PR/issue reporting CLI for everyone.",
   "main": "dist/cli.js",
   "type": "module",
