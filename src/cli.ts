@@ -14,7 +14,7 @@ if (process.argv[2] === 'login' || !githubEmail || !(await getGithubToken(github
   const token = await loginWithGitHubDeviceFlow(GITHUB_CLIENT_ID);
   const user = await fetchGitHubUserInfo(token);
   setUserInfo(user);
-  await setGithubToken(githubEmail, token);
+  await setGithubToken(user.email, token);
   console.log(
     '🎉 Successfully logged in! You can now use octoreport. Please run the command again.',
   );
