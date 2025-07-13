@@ -2,8 +2,10 @@ import { describe, expect, it } from 'vitest';
 
 import { fetchPRDetail, fetchPRListInPeriod } from '../../src/api';
 import { getGithubToken } from '../../src/auth/token';
+import { getUserInfo } from '../../src/auth/userInfo';
 
-const githubToken = await getGithubToken();
+const { email: githubEmail } = getUserInfo();
+const githubToken = await getGithubToken(githubEmail);
 
 describe('fetchPRListInPeriod', () => {
   it('returns every pull request in the given repository and period', async () => {

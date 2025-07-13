@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { getGithubToken } from '../../src/auth/token';
+import { getUserInfo } from '../../src/auth/userInfo';
 import {
   getUserCreatedPRCountInPeriod,
   getUserCreatedPRListInPeriod,
@@ -10,7 +11,8 @@ import {
   getUserPRListByCreationAndParticipation,
 } from '../../src/core';
 
-const githubToken = await getGithubToken();
+const { email: githubEmail } = getUserInfo();
+const githubToken = await getGithubToken(githubEmail);
 
 describe('getUserPRListByCreationAndParticipation', () => {
   it('returns pull requests the user has participated in (via comments or reviews) within the specified period', async () => {

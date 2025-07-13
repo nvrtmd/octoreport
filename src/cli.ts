@@ -10,11 +10,11 @@ import { getUserPRListByCreationAndParticipation } from './core';
 const GITHUB_CLIENT_ID = 'Ov23lia7pFpgs8ULT1DL';
 const { username: githubUsername, email: githubEmail } = getUserInfo();
 
-if (process.argv[2] === 'login' || !githubEmail || !(await getGithubToken())) {
+if (process.argv[2] === 'login' || !githubEmail || !(await getGithubToken(githubEmail))) {
   const token = await loginWithGitHubDeviceFlow(GITHUB_CLIENT_ID);
   const user = await fetchGitHubUserInfo(token);
   setUserInfo(user);
-  await setGithubToken(token);
+  await setGithubToken(githubEmail, token);
   console.log(
     '🎉 Successfully logged in! You can now use octoreport. Please run the command again.',
   );
@@ -51,7 +51,7 @@ const answers = await inquirer.prompt([
   },
 ]);
 
-const githubToken = await getGithubToken();
+const githubToken = await getGithubToken(githubEmail);
 const { userCreatedPRList, userParticipatedPRList } = await getUserPRListByCreationAndParticipation(
   {
     githubToken,
