@@ -1,7 +1,7 @@
 {
   "name": "octoreport",
   "version": "0.1.0",
-  "description": "Generate GitHub PR activity reports (created, participated, response time) for users or teams.",
+  "description": "A modern, secure, and timezone-aware GitHub PR/issue reporting CLI for everyone.",
   "main": "dist/cli.js",
   "type": "module",
   "license": "MIT",
