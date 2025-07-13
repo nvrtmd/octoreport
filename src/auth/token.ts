@@ -1,17 +1,17 @@
-import fs from 'fs';
-import os from 'os';
-import path from 'path';
+import keytar from 'keytar';
 
-const configDir = path.join(os.homedir(), '.octoreport');
-const tokenPath = path.join(configDir, 'token.json');
+const { getPassword, setPassword } = keytar;
 
-export function setToken(token: string) {
-  fs.mkdirSync(configDir, { recursive: true });
-  fs.writeFileSync(tokenPath, JSON.stringify({ accessToken: token }), 'utf-8');
+export async function getGithubToken(githubEmail: string): Promise<string> {
+  if (!githubEmail) {
+    throw new Error('GitHub email not found. Please log in first.');
+  }
+  return (await getPassword('octoreport', githubEmail)) ?? '';
 }
 
-export function getToken(): string | null {
-  if (!fs.existsSync(tokenPath)) return null;
-  const { accessToken } = JSON.parse(fs.readFileSync(tokenPath, 'utf-8'));
-  return accessToken;
+export async function setGithubToken(githubEmail: string, token: string) {
+  if (!githubEmail) {
+    throw new Error('GitHub email not found. Please log in first.');
+  }
+  await setPassword('octoreport', githubEmail, token);
 }

@@ -57,6 +57,7 @@
   "dependencies": {
     "@octokit/auth-oauth-device": "^8.0.1",
     "inquirer": "^12.7.0",
+    "keytar": "^7.9.0",
     "zod": "^3.25.67"
   }
 }

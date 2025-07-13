@@ -20,6 +20,35 @@ function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
   }
 }
 
+export async function fetchGitHubUserInfo(
+  githubToken: string,
+): Promise<{ username: string; email: string }> {
+  const response = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${githubToken}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `
+        {
+          viewer {
+            login
+            email
+          }
+        }
+      `,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data.data.viewer;
+}
+
 export async function fetchPRListInPeriod(
   options: Pick<PRQueryParams, 'repository' | 'period' | 'githubToken'>,
 ): Promise<PRListItem[]> {
@@ -64,11 +93,7 @@ export async function fetchPRDetail({
   repository,
   githubToken,
   prNumber,
-}: {
-  repository: string;
-  githubToken: string;
-  prNumber: number;
-}): Promise<PRDetail> {
+}: Pick<PRQueryParams, 'repository' | 'githubToken'> & { prNumber: number }): Promise<PRDetail> {
   const [owner, repo] = repository.split('/');
   const query = `query ($owner: String!, $repo: String!, $number: Int!) {
     repository(owner: $owner, name: $repo) {
