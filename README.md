@@ -26,7 +26,7 @@
 ### Installation
 
 ```bash
-npm  install  -g  octoreport
+npm install -g octoreport
 ```
 
 #### or
@@ -46,7 +46,7 @@ yarn dlx octoreport
 ## Usage
 
 ```bash
-octoreport  [command]
+octoreport [command]
 ```
 
 ### Authenticate with your GitHub account (OAuth Device Flow)
@@ -142,10 +142,10 @@ User Participated PRs:  [
 
 We welcome contributions! 👍🏻
 
-- [x]  Fork this repo
-- [x]  Create a feature branch (git checkout -b feature/your-feature)
-- [x]  Commit your changes (git commit -m "feat: your feature")
-- [x]  Push to your fork and open a Pull Request
+- [x] Fork this repo
+- [x] Create a feature branch (git checkout -b feature/your-feature)
+- [x] Commit your changes (git commit -m "feat: your feature")
+- [x] Push to your fork and open a Pull Request
 
 ## License
 
