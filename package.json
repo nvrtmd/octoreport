@@ -2,9 +2,9 @@
   "name": "octoreport",
   "version": "0.1.0",
   "description": "Generate GitHub PR activity reports (created, participated, response time) for users or teams.",
-  "main": "dist/index.js",
+  "main": "dist/cli.js",
   "type": "module",
-  "types": "dist/index.d.ts",
+  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -16,7 +16,6 @@
     "typescript"
   ],
   "author": "nvrtmd",
-  "license": "MIT",
   "scripts": {
     "build": "tsup src/cli.ts --target es2022 --format esm",
     "test": "vitest run",
