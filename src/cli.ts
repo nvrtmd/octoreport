@@ -1,16 +1,24 @@
 #!/usr/bin/env node
 import inquirer from 'inquirer';
 
+import { fetchGitHubUserInfo } from './api/github';
 import { loginWithGitHubDeviceFlow } from './auth/login';
-import { getToken, setToken } from './auth/token';
+import { getGithubToken, setGithubToken } from './auth/token';
+import { getUserInfo, setUserInfo } from './auth/userInfo';
 import { getUserPRListByCreationAndParticipation } from './core';
 
 const GITHUB_CLIENT_ID = 'Ov23lia7pFpgs8ULT1DL';
+const { username: githubUsername, email: githubEmail } = getUserInfo();
 
-if (process.argv[2] === 'login' || !getToken()) {
+if (process.argv[2] === 'login' || !githubEmail || !(await getGithubToken())) {
   const token = await loginWithGitHubDeviceFlow(GITHUB_CLIENT_ID);
-  setToken(token);
-  console.log('🎉 Authentication successful! You can now use octoreport.');
+  const user = await fetchGitHubUserInfo(token);
+  setUserInfo(user);
+  await setGithubToken(token);
+  console.log(
+    '🎉 Successfully logged in! You can now use octoreport. Please run the command again.',
+  );
+  process.exit(0);
 }
 
 const answers = await inquirer.prompt([
@@ -43,10 +51,11 @@ const answers = await inquirer.prompt([
   },
 ]);
 
+const githubToken = await getGithubToken();
 const { userCreatedPRList, userParticipatedPRList } = await getUserPRListByCreationAndParticipation(
   {
-    githubToken: getToken() ?? '',
-    username: answers.username,
+    githubToken,
+    username: answers.username || githubUsername,
     repository: answers.repository,
     period: {
       startDate: answers.startDate,
