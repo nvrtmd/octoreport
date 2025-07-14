@@ -7,13 +7,13 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2024-09-14T13:43:03Z",
+    "createdAt": "2024-09-14 22:43:03",
     "labels": [
       "docs",
       "regression 🐛",
       "v5.x",
     ],
-    "mergedAt": "2024-09-16T11:17:55Z",
+    "mergedAt": "2024-09-16 20:17:55",
     "number": 43753,
     "reviewers": [
       "siriwatknp",
@@ -28,13 +28,13 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
       "mui-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2024-09-14T14:15:20Z",
+    "createdAt": "2024-09-14 23:15:20",
     "labels": [
       "bug 🐛",
       "examples",
       "v5.x",
     ],
-    "mergedAt": "2024-10-03T11:40:08Z",
+    "mergedAt": "2024-10-03 20:40:08",
     "number": 43755,
     "reviewers": [
       "mnajdova",
@@ -53,13 +53,13 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-01T00:27:00Z",
+    "createdAt": "2025-05-01 09:27:00",
     "labels": [
       "MUI X",
       "core",
       "regression 🐛",
     ],
-    "mergedAt": "2025-05-05T23:41:19Z",
+    "mergedAt": "2025-05-06 08:41:19",
     "number": 46051,
     "reviewers": [
       "Janpot",
@@ -75,12 +75,12 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-02T13:29:40Z",
+    "createdAt": "2025-05-02 22:29:40",
     "labels": [
       "regression 🐛",
       "website",
     ],
-    "mergedAt": "2025-05-06T15:03:19Z",
+    "mergedAt": "2025-05-07 00:03:19",
     "number": 46061,
     "reviewers": [
       "nadjakovacev",
@@ -94,12 +94,12 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-03T14:05:12Z",
+    "createdAt": "2025-05-03 23:05:12",
     "labels": [
       "enhancement",
       "scope: docs-infra",
     ],
-    "mergedAt": "2025-05-05T17:27:16Z",
+    "mergedAt": "2025-05-06 02:27:16",
     "number": 46064,
     "reviewers": [
       "alexfauquette",
@@ -114,12 +114,12 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-03T15:34:05Z",
+    "createdAt": "2025-05-04 00:34:05",
     "labels": [
       "regression 🐛",
       "website",
     ],
-    "mergedAt": "2025-05-07T17:54:29Z",
+    "mergedAt": "2025-05-08 02:54:29",
     "number": 46065,
     "reviewers": [
       "mapache-salvaje",
@@ -135,13 +135,13 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
       "mui-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2025-05-05T22:16:02Z",
+    "createdAt": "2025-05-06 07:16:02",
     "labels": [
       "docs",
       "enhancement",
       "scope: docs-infra",
     ],
-    "mergedAt": "2025-05-07T20:47:34Z",
+    "mergedAt": "2025-05-08 05:47:34",
     "number": 46090,
     "reviewers": [
       "mapache-salvaje",
@@ -155,11 +155,11 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-12T18:54:56Z",
+    "createdAt": "2025-05-13 03:54:56",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2025-05-15T07:27:18Z",
+    "mergedAt": "2025-05-15 16:27:18",
     "number": 46135,
     "reviewers": [
       "0210shivam",
@@ -179,12 +179,12 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-03T14:05:12Z",
+    "createdAt": "2025-05-03 23:05:12",
     "labels": [
       "enhancement",
       "scope: docs-infra",
     ],
-    "mergedAt": "2025-05-05T17:27:16Z",
+    "mergedAt": "2025-05-06 02:27:16",
     "number": 46064,
     "reviewers": [
       "alexfauquette",
@@ -201,13 +201,13 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
       "mui-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2025-05-05T22:16:02Z",
+    "createdAt": "2025-05-06 07:16:02",
     "labels": [
       "docs",
       "enhancement",
       "scope: docs-infra",
     ],
-    "mergedAt": "2025-05-07T20:47:34Z",
+    "mergedAt": "2025-05-08 05:47:34",
     "number": 46090,
     "reviewers": [
       "mapache-salvaje",
@@ -221,11 +221,11 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that exactl
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-12T18:54:56Z",
+    "createdAt": "2025-05-13 03:54:56",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2025-05-15T07:27:18Z",
+    "mergedAt": "2025-05-15 16:27:18",
     "number": 46135,
     "reviewers": [
       "0210shivam",
@@ -245,13 +245,13 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-01T00:27:00Z",
+    "createdAt": "2025-05-01 09:27:00",
     "labels": [
       "MUI X",
       "core",
       "regression 🐛",
     ],
-    "mergedAt": "2025-05-05T23:41:19Z",
+    "mergedAt": "2025-05-06 08:41:19",
     "number": 46051,
     "reviewers": [
       "Janpot",
@@ -267,12 +267,12 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-02T13:29:40Z",
+    "createdAt": "2025-05-02 22:29:40",
     "labels": [
       "regression 🐛",
       "website",
     ],
-    "mergedAt": "2025-05-06T15:03:19Z",
+    "mergedAt": "2025-05-07 00:03:19",
     "number": 46061,
     "reviewers": [
       "nadjakovacev",
@@ -286,12 +286,12 @@ exports[`getUserCreatedPRListInPeriodByLabel > filters pull requests that includ
     "comments": [
       "mui-bot",
     ],
-    "createdAt": "2025-05-03T15:34:05Z",
+    "createdAt": "2025-05-04 00:34:05",
     "labels": [
       "regression 🐛",
       "website",
     ],
-    "mergedAt": "2025-05-07T17:54:29Z",
+    "mergedAt": "2025-05-08 02:54:29",
     "number": 46065,
     "reviewers": [
       "mapache-salvaje",
@@ -311,12 +311,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-19T15:27:07Z",
+      "createdAt": "2019-08-20 00:27:07",
       "labels": [
         "component: modal",
         "docs",
       ],
-      "mergedAt": "2019-08-21T08:53:23Z",
+      "mergedAt": "2019-08-21 17:53:23",
       "number": 17059,
       "reviewers": [
         "mbrookes",
@@ -331,11 +331,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-19T15:37:03Z",
+      "createdAt": "2019-08-20 00:37:03",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-20T09:20:23Z",
+      "mergedAt": "2019-08-20 18:20:23",
       "number": 17060,
       "reviewers": [
         "mbrookes",
@@ -349,11 +349,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-19T15:38:26Z",
+      "createdAt": "2019-08-20 00:38:26",
       "labels": [
         "core",
       ],
-      "mergedAt": "2019-08-21T08:52:48Z",
+      "mergedAt": "2019-08-21 17:52:48",
       "number": 17061,
       "reviewers": [
         "joshwooding",
@@ -367,12 +367,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-19T15:39:12Z",
+      "createdAt": "2019-08-20 00:39:12",
       "labels": [
         "component: app bar",
         "docs",
       ],
-      "mergedAt": "2019-08-21T08:50:25Z",
+      "mergedAt": "2019-08-21 17:50:25",
       "number": 17062,
       "reviewers": [
         "mbrookes",
@@ -390,12 +390,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "nrkroeker",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-19T15:40:12Z",
+      "createdAt": "2019-08-20 00:40:12",
       "labels": [
         "component: divider",
         "new feature",
       ],
-      "mergedAt": "2019-08-20T09:18:57Z",
+      "mergedAt": "2019-08-20 18:18:57",
       "number": 17063,
       "reviewers": [
         "sakulstra",
@@ -409,12 +409,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-20T23:28:43Z",
+      "createdAt": "2019-08-21 08:28:43",
       "labels": [
         "component: tree view",
         "new feature",
       ],
-      "mergedAt": "2019-08-22T08:27:51Z",
+      "mergedAt": "2019-08-22 17:27:51",
       "number": 17080,
       "reviewers": [
         "joshwooding",
@@ -430,11 +430,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-27T10:30:38Z",
+      "createdAt": "2019-08-27 19:30:38",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-28T09:50:19Z",
+      "mergedAt": "2019-08-28 18:50:19",
       "number": 17198,
       "reviewers": [
         "eps1lon",
@@ -452,12 +452,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-19T15:14:49Z",
+      "createdAt": "2019-08-20 00:14:49",
       "labels": [
         "component: tooltip",
         "docs",
       ],
-      "mergedAt": "2019-08-20T09:06:22Z",
+      "mergedAt": "2019-08-20 18:06:22",
       "number": 17058,
       "reviewers": [
         "oliviertassinari",
@@ -471,12 +471,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-20T15:11:25Z",
+      "createdAt": "2019-08-21 00:11:25",
       "labels": [
         "component: list",
         "docs",
       ],
-      "mergedAt": "2019-08-21T08:49:53Z",
+      "mergedAt": "2019-08-21 17:49:53",
       "number": 17074,
       "reviewers": [
         "joshwooding",
@@ -492,12 +492,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-20T21:34:57Z",
+      "createdAt": "2019-08-21 06:34:57",
       "labels": [
         "component: rating",
         "docs",
       ],
-      "mergedAt": "2019-08-22T08:27:19Z",
+      "mergedAt": "2019-08-22 17:27:19",
       "number": 17078,
       "reviewers": [
         "joshwooding",
@@ -512,13 +512,13 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-21T02:32:24Z",
+      "createdAt": "2019-08-21 11:32:24",
       "labels": [
         "component: CircularProgress",
         "component: progress",
         "new feature",
       ],
-      "mergedAt": "2019-08-22T08:26:56Z",
+      "mergedAt": "2019-08-22 17:26:56",
       "number": 17081,
       "reviewers": [
         "oliviertassinari",
@@ -532,12 +532,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-21T11:45:49Z",
+      "createdAt": "2019-08-21 20:45:49",
       "labels": [
         "bug 🐛",
         "component: slider",
       ],
-      "mergedAt": "2019-08-21T17:32:44Z",
+      "mergedAt": "2019-08-22 02:32:44",
       "number": 17085,
       "reviewers": [
         "joshwooding",
@@ -553,12 +553,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-21T16:39:07Z",
+      "createdAt": "2019-08-22 01:39:07",
       "labels": [
         "bug 🐛",
         "component: drawer",
       ],
-      "mergedAt": "2019-08-21T17:31:38Z",
+      "mergedAt": "2019-08-22 02:31:38",
       "number": 17091,
       "reviewers": [
         "oliviertassinari",
@@ -575,12 +575,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-21T17:33:55Z",
+      "createdAt": "2019-08-22 02:33:55",
       "labels": [
         "component: rating",
         "docs",
       ],
-      "mergedAt": "2019-08-22T08:26:24Z",
+      "mergedAt": "2019-08-22 17:26:24",
       "number": 17093,
       "reviewers": [
         "oliviertassinari",
@@ -595,12 +595,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-21T18:15:53Z",
+      "createdAt": "2019-08-22 03:15:53",
       "labels": [
         "bug 🐛",
         "component: switch",
       ],
-      "mergedAt": "2019-08-22T08:28:08Z",
+      "mergedAt": "2019-08-22 17:28:08",
       "number": 17095,
       "reviewers": [
         "oliviertassinari",
@@ -616,12 +616,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "netochaves",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-21T21:20:53Z",
+      "createdAt": "2019-08-22 06:20:53",
       "labels": [
         "bug 🐛",
         "component: Popover",
       ],
-      "mergedAt": "2019-08-23T08:38:33Z",
+      "mergedAt": "2019-08-23 17:38:33",
       "number": 17097,
       "reviewers": [
         "oliviertassinari",
@@ -635,12 +635,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-22T12:12:03Z",
+      "createdAt": "2019-08-22 21:12:03",
       "labels": [
         "component: menu",
         "typescript",
       ],
-      "mergedAt": "2019-08-23T22:24:26Z",
+      "mergedAt": "2019-08-24 07:24:26",
       "number": 17103,
       "reviewers": [
         "oliviertassinari",
@@ -655,11 +655,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T12:52:42Z",
+      "createdAt": "2019-08-22 21:52:42",
       "labels": [
         "component: Popper",
       ],
-      "mergedAt": "2019-08-23T08:33:03Z",
+      "mergedAt": "2019-08-23 17:33:03",
       "number": 17104,
       "reviewers": [
         "adamdicarlo",
@@ -677,11 +677,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T17:08:26Z",
+      "createdAt": "2019-08-23 02:08:26",
       "labels": [
         "component: drawer",
       ],
-      "mergedAt": undefined,
+      "mergedAt": "Not merged yet",
       "number": 17108,
       "reviewers": [],
       "targetBranch": "master",
@@ -695,12 +695,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "oliviertassinari",
         "ryanburr",
       ],
-      "createdAt": "2019-08-22T17:17:19Z",
+      "createdAt": "2019-08-23 02:17:19",
       "labels": [
         "bug 🐛",
         "component: ButtonGroup",
       ],
-      "mergedAt": "2019-08-23T22:27:39Z",
+      "mergedAt": "2019-08-24 07:27:39",
       "number": 17109,
       "reviewers": [
         "behnammodi",
@@ -717,11 +717,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T19:28:13Z",
+      "createdAt": "2019-08-23 04:28:13",
       "labels": [
         "docs",
       ],
-      "mergedAt": undefined,
+      "mergedAt": "Not merged yet",
       "number": 17114,
       "reviewers": [
         "oliviertassinari",
@@ -736,12 +736,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T19:40:01Z",
+      "createdAt": "2019-08-23 04:40:01",
       "labels": [
         "component: backdrop",
         "new feature",
       ],
-      "mergedAt": "2019-08-23T08:44:32Z",
+      "mergedAt": "2019-08-23 17:44:32",
       "number": 17115,
       "reviewers": [
         "behnammodi",
@@ -759,11 +759,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T23:01:25Z",
+      "createdAt": "2019-08-23 08:01:25",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-23T22:37:39Z",
+      "mergedAt": "2019-08-24 07:37:39",
       "number": 17118,
       "reviewers": [
         "oliviertassinari",
@@ -778,11 +778,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "Shubhamchinda",
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-23T05:38:32Z",
+      "createdAt": "2019-08-23 14:38:32",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-23T22:28:28Z",
+      "mergedAt": "2019-08-24 07:28:28",
       "number": 17120,
       "reviewers": [
         "oliviertassinari",
@@ -798,11 +798,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-23T10:43:50Z",
+      "createdAt": "2019-08-23 19:43:50",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-23T11:27:28Z",
+      "mergedAt": "2019-08-23 20:27:28",
       "number": 17122,
       "reviewers": [
         "oliviertassinari",
@@ -817,12 +817,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-23T16:01:32Z",
+      "createdAt": "2019-08-24 01:01:32",
       "labels": [
         "bug 🐛",
         "component: Popover",
       ],
-      "mergedAt": "2019-08-23T22:47:21Z",
+      "mergedAt": "2019-08-24 07:47:21",
       "number": 17128,
       "reviewers": [
         "oliviertassinari",
@@ -838,12 +838,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-24T08:50:24Z",
+      "createdAt": "2019-08-24 17:50:24",
       "labels": [
         "component: radio",
         "new feature",
       ],
-      "mergedAt": "2019-08-25T11:44:38Z",
+      "mergedAt": "2019-08-25 20:44:38",
       "number": 17132,
       "reviewers": [
         "cmeeren",
@@ -859,11 +859,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-24T14:33:52Z",
+      "createdAt": "2019-08-24 23:33:52",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-26T16:18:33Z",
+      "mergedAt": "2019-08-27 01:18:33",
       "number": 17133,
       "reviewers": [
         "oliviertassinari",
@@ -880,12 +880,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-24T21:27:15Z",
+      "createdAt": "2019-08-25 06:27:15",
       "labels": [
         "component: table",
         "new feature",
       ],
-      "mergedAt": "2019-08-28T14:02:27Z",
+      "mergedAt": "2019-08-28 23:02:27",
       "number": 17139,
       "reviewers": [
         "oliviertassinari",
@@ -901,12 +901,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-25T09:51:28Z",
+      "createdAt": "2019-08-25 18:51:28",
       "labels": [
         "component: table",
         "docs",
       ],
-      "mergedAt": "2019-08-26T16:19:35Z",
+      "mergedAt": "2019-08-27 01:19:35",
       "number": 17141,
       "reviewers": [
         "keiohtani",
@@ -921,11 +921,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-26T06:02:50Z",
+      "createdAt": "2019-08-26 15:02:50",
       "labels": [
         "docs",
       ],
-      "mergedAt": undefined,
+      "mergedAt": "Not merged yet",
       "number": 17143,
       "reviewers": [
         "eps1lon",
@@ -943,12 +943,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "skirankumar7",
       ],
-      "createdAt": "2019-08-26T13:54:44Z",
+      "createdAt": "2019-08-26 22:54:44",
       "labels": [
         "bug 🐛",
         "component: tooltip",
       ],
-      "mergedAt": "2019-08-27T08:15:28Z",
+      "mergedAt": "2019-08-27 17:15:28",
       "number": 17174,
       "reviewers": [
         "oliviertassinari",
@@ -964,11 +964,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "oliviertassinari",
         "saltyshiomix",
       ],
-      "createdAt": "2019-08-26T16:06:18Z",
+      "createdAt": "2019-08-27 01:06:18",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-26T16:15:54Z",
+      "mergedAt": "2019-08-27 01:15:54",
       "number": 17181,
       "reviewers": [
         "oliviertassinari",
@@ -985,12 +985,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "oliviertassinari",
         "simshaun",
       ],
-      "createdAt": "2019-08-26T19:18:34Z",
+      "createdAt": "2019-08-27 04:18:34",
       "labels": [
         "component: toggle button",
         "new feature",
       ],
-      "mergedAt": "2019-08-28T09:52:36Z",
+      "mergedAt": "2019-08-28 18:52:36",
       "number": 17187,
       "reviewers": [
         "mbrookes",
@@ -1008,11 +1008,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "oliviertassinari",
         "skube",
       ],
-      "createdAt": "2019-08-26T20:55:22Z",
+      "createdAt": "2019-08-27 05:55:22",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-26T21:46:30Z",
+      "mergedAt": "2019-08-27 06:46:30",
       "number": 17189,
       "reviewers": [],
       "targetBranch": "master",
@@ -1025,12 +1025,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-27T05:45:05Z",
+      "createdAt": "2019-08-27 14:45:05",
       "labels": [
         "component: text field",
         "new feature",
       ],
-      "mergedAt": "2019-08-28T09:48:53Z",
+      "mergedAt": "2019-08-28 18:48:53",
       "number": 17192,
       "reviewers": [
         "oliviertassinari",
@@ -1045,11 +1045,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "merceyz",
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-27T12:41:59Z",
+      "createdAt": "2019-08-27 21:41:59",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-28T09:51:08Z",
+      "mergedAt": "2019-08-28 18:51:08",
       "number": 17200,
       "reviewers": [
         "mbrookes",
@@ -1066,12 +1066,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-27T19:08:46Z",
+      "createdAt": "2019-08-28 04:08:46",
       "labels": [
         "component: badge",
         "new feature",
       ],
-      "mergedAt": "2019-08-31T11:47:36Z",
+      "mergedAt": "2019-08-31 20:47:36",
       "number": 17204,
       "reviewers": [
         "mbrookes",
@@ -1089,12 +1089,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "oliviertassinari",
         "rbrishabh",
       ],
-      "createdAt": "2019-08-27T19:18:34Z",
+      "createdAt": "2019-08-28 04:18:34",
       "labels": [
         "component: menu",
         "typescript",
       ],
-      "mergedAt": "2019-08-28T08:35:54Z",
+      "mergedAt": "2019-08-28 17:35:54",
       "number": 17205,
       "reviewers": [
         "oliviertassinari",
@@ -1110,12 +1110,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-27T19:27:05Z",
+      "createdAt": "2019-08-28 04:27:05",
       "labels": [
         "component: Typography",
         "docs",
       ],
-      "mergedAt": "2019-08-28T14:01:58Z",
+      "mergedAt": "2019-08-28 23:01:58",
       "number": 17206,
       "reviewers": [
         "mbrookes",
@@ -1131,11 +1131,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "rbrishabh",
       ],
-      "createdAt": "2019-08-27T19:33:57Z",
+      "createdAt": "2019-08-28 04:33:57",
       "labels": [
         "package: system",
       ],
-      "mergedAt": undefined,
+      "mergedAt": "Not merged yet",
       "number": 17207,
       "reviewers": [
         "oliviertassinari",
@@ -1150,12 +1150,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "eps1lon",
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-28T12:05:39Z",
+      "createdAt": "2019-08-28 21:05:39",
       "labels": [
         "bug 🐛",
         "typescript",
       ],
-      "mergedAt": "2020-01-05T14:19:44Z",
+      "mergedAt": "2020-01-05 23:19:44",
       "number": 17211,
       "reviewers": [
         "oliviertassinari",
@@ -1169,12 +1169,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-28T13:49:10Z",
+      "createdAt": "2019-08-28 22:49:10",
       "labels": [
         "docs",
         "typescript",
       ],
-      "mergedAt": "2019-08-29T21:49:50Z",
+      "mergedAt": "2019-08-30 06:49:50",
       "number": 17214,
       "reviewers": [
         "oliviertassinari",
@@ -1192,12 +1192,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-28T17:25:45Z",
+      "createdAt": "2019-08-29 02:25:45",
       "labels": [
         "component: text field",
         "new feature",
       ],
-      "mergedAt": "2019-08-29T21:51:06Z",
+      "mergedAt": "2019-08-30 06:51:06",
       "number": 17217,
       "reviewers": [
         "oliviertassinari",
@@ -1214,11 +1214,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-28T18:05:54Z",
+      "createdAt": "2019-08-29 03:05:54",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-30T07:07:35Z",
+      "mergedAt": "2019-08-30 16:07:35",
       "number": 17218,
       "reviewers": [
         "eps1lon",
@@ -1236,13 +1236,13 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-28T18:15:34Z",
+      "createdAt": "2019-08-29 03:15:34",
       "labels": [
         "accessibility",
         "component: LinearProgress",
         "component: progress",
       ],
-      "mergedAt": "2019-08-31T11:56:37Z",
+      "mergedAt": "2019-08-31 20:56:37",
       "number": 17219,
       "reviewers": [
         "oliviertassinari",
@@ -1259,11 +1259,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "redblue9771",
         "stasiukanya",
       ],
-      "createdAt": "2019-08-28T20:36:00Z",
+      "createdAt": "2019-08-29 05:36:00",
       "labels": [
         "bug 🐛",
       ],
-      "mergedAt": "2019-08-30T07:06:09Z",
+      "mergedAt": "2019-08-30 16:06:09",
       "number": 17221,
       "reviewers": [],
       "targetBranch": "master",
@@ -1275,11 +1275,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "comments": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-29T20:11:37Z",
+      "createdAt": "2019-08-30 05:11:37",
       "labels": [
         "docs",
       ],
-      "mergedAt": "2019-08-30T07:05:33Z",
+      "mergedAt": "2019-08-30 16:05:33",
       "number": 17230,
       "reviewers": [
         "oliviertassinari",
@@ -1294,11 +1294,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-30T06:55:17Z",
+      "createdAt": "2019-08-30 15:55:17",
       "labels": [
         "component: button",
       ],
-      "mergedAt": "2019-08-30T07:09:44Z",
+      "mergedAt": "2019-08-30 16:09:44",
       "number": 17232,
       "reviewers": [
         "oliviertassinari",
@@ -1317,12 +1317,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-30T16:22:21Z",
+      "createdAt": "2019-08-31 01:22:21",
       "labels": [
         "accessibility",
         "component: slider",
       ],
-      "mergedAt": "2019-09-02T12:53:50Z",
+      "mergedAt": "2019-09-02 21:53:50",
       "number": 17240,
       "reviewers": [
         "city41",
@@ -1340,12 +1340,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
         "oliviertassinari",
         "skirunman",
       ],
-      "createdAt": "2019-08-31T13:29:00Z",
+      "createdAt": "2019-08-31 22:29:00",
       "labels": [
         "component: badge",
         "new feature",
       ],
-      "mergedAt": "2019-09-01T09:30:16Z",
+      "mergedAt": "2019-09-01 18:30:16",
       "number": 17247,
       "reviewers": [
         "mbrookes",
@@ -1367,12 +1367,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-19T15:14:49Z",
+    "createdAt": "2019-08-20 00:14:49",
     "labels": [
       "component: tooltip",
       "docs",
     ],
-    "mergedAt": "2019-08-20T09:06:22Z",
+    "mergedAt": "2019-08-20 18:06:22",
     "number": 17058,
     "reviewers": [
       "oliviertassinari",
@@ -1386,12 +1386,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-19T15:27:07Z",
+    "createdAt": "2019-08-20 00:27:07",
     "labels": [
       "component: modal",
       "docs",
     ],
-    "mergedAt": "2019-08-21T08:53:23Z",
+    "mergedAt": "2019-08-21 17:53:23",
     "number": 17059,
     "reviewers": [
       "mbrookes",
@@ -1406,12 +1406,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-19T15:39:12Z",
+    "createdAt": "2019-08-20 00:39:12",
     "labels": [
       "component: app bar",
       "docs",
     ],
-    "mergedAt": "2019-08-21T08:50:25Z",
+    "mergedAt": "2019-08-21 17:50:25",
     "number": 17062,
     "reviewers": [
       "mbrookes",
@@ -1429,12 +1429,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "nrkroeker",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-19T15:40:12Z",
+    "createdAt": "2019-08-20 00:40:12",
     "labels": [
       "component: divider",
       "new feature",
     ],
-    "mergedAt": "2019-08-20T09:18:57Z",
+    "mergedAt": "2019-08-20 18:18:57",
     "number": 17063,
     "reviewers": [
       "sakulstra",
@@ -1448,12 +1448,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-20T15:11:25Z",
+    "createdAt": "2019-08-21 00:11:25",
     "labels": [
       "component: list",
       "docs",
     ],
-    "mergedAt": "2019-08-21T08:49:53Z",
+    "mergedAt": "2019-08-21 17:49:53",
     "number": 17074,
     "reviewers": [
       "joshwooding",
@@ -1469,12 +1469,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-20T21:34:57Z",
+    "createdAt": "2019-08-21 06:34:57",
     "labels": [
       "component: rating",
       "docs",
     ],
-    "mergedAt": "2019-08-22T08:27:19Z",
+    "mergedAt": "2019-08-22 17:27:19",
     "number": 17078,
     "reviewers": [
       "joshwooding",
@@ -1489,12 +1489,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-20T23:28:43Z",
+    "createdAt": "2019-08-21 08:28:43",
     "labels": [
       "component: tree view",
       "new feature",
     ],
-    "mergedAt": "2019-08-22T08:27:51Z",
+    "mergedAt": "2019-08-22 17:27:51",
     "number": 17080,
     "reviewers": [
       "joshwooding",
@@ -1510,13 +1510,13 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-21T02:32:24Z",
+    "createdAt": "2019-08-21 11:32:24",
     "labels": [
       "component: CircularProgress",
       "component: progress",
       "new feature",
     ],
-    "mergedAt": "2019-08-22T08:26:56Z",
+    "mergedAt": "2019-08-22 17:26:56",
     "number": 17081,
     "reviewers": [
       "oliviertassinari",
@@ -1530,12 +1530,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-21T11:45:49Z",
+    "createdAt": "2019-08-21 20:45:49",
     "labels": [
       "bug 🐛",
       "component: slider",
     ],
-    "mergedAt": "2019-08-21T17:32:44Z",
+    "mergedAt": "2019-08-22 02:32:44",
     "number": 17085,
     "reviewers": [
       "joshwooding",
@@ -1551,12 +1551,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-21T16:39:07Z",
+    "createdAt": "2019-08-22 01:39:07",
     "labels": [
       "bug 🐛",
       "component: drawer",
     ],
-    "mergedAt": "2019-08-21T17:31:38Z",
+    "mergedAt": "2019-08-22 02:31:38",
     "number": 17091,
     "reviewers": [
       "oliviertassinari",
@@ -1573,12 +1573,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-21T17:33:55Z",
+    "createdAt": "2019-08-22 02:33:55",
     "labels": [
       "component: rating",
       "docs",
     ],
-    "mergedAt": "2019-08-22T08:26:24Z",
+    "mergedAt": "2019-08-22 17:26:24",
     "number": 17093,
     "reviewers": [
       "oliviertassinari",
@@ -1593,12 +1593,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-21T18:15:53Z",
+    "createdAt": "2019-08-22 03:15:53",
     "labels": [
       "bug 🐛",
       "component: switch",
     ],
-    "mergedAt": "2019-08-22T08:28:08Z",
+    "mergedAt": "2019-08-22 17:28:08",
     "number": 17095,
     "reviewers": [
       "oliviertassinari",
@@ -1614,12 +1614,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "netochaves",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-21T21:20:53Z",
+    "createdAt": "2019-08-22 06:20:53",
     "labels": [
       "bug 🐛",
       "component: Popover",
     ],
-    "mergedAt": "2019-08-23T08:38:33Z",
+    "mergedAt": "2019-08-23 17:38:33",
     "number": 17097,
     "reviewers": [
       "oliviertassinari",
@@ -1633,12 +1633,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-22T12:12:03Z",
+    "createdAt": "2019-08-22 21:12:03",
     "labels": [
       "component: menu",
       "typescript",
     ],
-    "mergedAt": "2019-08-23T22:24:26Z",
+    "mergedAt": "2019-08-24 07:24:26",
     "number": 17103,
     "reviewers": [
       "oliviertassinari",
@@ -1653,11 +1653,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-22T12:52:42Z",
+    "createdAt": "2019-08-22 21:52:42",
     "labels": [
       "component: Popper",
     ],
-    "mergedAt": "2019-08-23T08:33:03Z",
+    "mergedAt": "2019-08-23 17:33:03",
     "number": 17104,
     "reviewers": [
       "adamdicarlo",
@@ -1675,11 +1675,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-22T17:08:26Z",
+    "createdAt": "2019-08-23 02:08:26",
     "labels": [
       "component: drawer",
     ],
-    "mergedAt": undefined,
+    "mergedAt": "Not merged yet",
     "number": 17108,
     "reviewers": [],
     "targetBranch": "master",
@@ -1693,12 +1693,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "oliviertassinari",
       "ryanburr",
     ],
-    "createdAt": "2019-08-22T17:17:19Z",
+    "createdAt": "2019-08-23 02:17:19",
     "labels": [
       "bug 🐛",
       "component: ButtonGroup",
     ],
-    "mergedAt": "2019-08-23T22:27:39Z",
+    "mergedAt": "2019-08-24 07:27:39",
     "number": 17109,
     "reviewers": [
       "behnammodi",
@@ -1715,11 +1715,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-22T19:28:13Z",
+    "createdAt": "2019-08-23 04:28:13",
     "labels": [
       "docs",
     ],
-    "mergedAt": undefined,
+    "mergedAt": "Not merged yet",
     "number": 17114,
     "reviewers": [
       "oliviertassinari",
@@ -1734,12 +1734,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-22T19:40:01Z",
+    "createdAt": "2019-08-23 04:40:01",
     "labels": [
       "component: backdrop",
       "new feature",
     ],
-    "mergedAt": "2019-08-23T08:44:32Z",
+    "mergedAt": "2019-08-23 17:44:32",
     "number": 17115,
     "reviewers": [
       "behnammodi",
@@ -1757,11 +1757,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-22T23:01:25Z",
+    "createdAt": "2019-08-23 08:01:25",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-23T22:37:39Z",
+    "mergedAt": "2019-08-24 07:37:39",
     "number": 17118,
     "reviewers": [
       "oliviertassinari",
@@ -1776,11 +1776,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "Shubhamchinda",
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-23T05:38:32Z",
+    "createdAt": "2019-08-23 14:38:32",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-23T22:28:28Z",
+    "mergedAt": "2019-08-24 07:28:28",
     "number": 17120,
     "reviewers": [
       "oliviertassinari",
@@ -1796,11 +1796,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-23T10:43:50Z",
+    "createdAt": "2019-08-23 19:43:50",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-23T11:27:28Z",
+    "mergedAt": "2019-08-23 20:27:28",
     "number": 17122,
     "reviewers": [
       "oliviertassinari",
@@ -1815,12 +1815,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-23T16:01:32Z",
+    "createdAt": "2019-08-24 01:01:32",
     "labels": [
       "bug 🐛",
       "component: Popover",
     ],
-    "mergedAt": "2019-08-23T22:47:21Z",
+    "mergedAt": "2019-08-24 07:47:21",
     "number": 17128,
     "reviewers": [
       "oliviertassinari",
@@ -1836,12 +1836,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-24T08:50:24Z",
+    "createdAt": "2019-08-24 17:50:24",
     "labels": [
       "component: radio",
       "new feature",
     ],
-    "mergedAt": "2019-08-25T11:44:38Z",
+    "mergedAt": "2019-08-25 20:44:38",
     "number": 17132,
     "reviewers": [
       "cmeeren",
@@ -1857,11 +1857,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-24T14:33:52Z",
+    "createdAt": "2019-08-24 23:33:52",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-26T16:18:33Z",
+    "mergedAt": "2019-08-27 01:18:33",
     "number": 17133,
     "reviewers": [
       "oliviertassinari",
@@ -1878,12 +1878,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-24T21:27:15Z",
+    "createdAt": "2019-08-25 06:27:15",
     "labels": [
       "component: table",
       "new feature",
     ],
-    "mergedAt": "2019-08-28T14:02:27Z",
+    "mergedAt": "2019-08-28 23:02:27",
     "number": 17139,
     "reviewers": [
       "oliviertassinari",
@@ -1899,12 +1899,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-25T09:51:28Z",
+    "createdAt": "2019-08-25 18:51:28",
     "labels": [
       "component: table",
       "docs",
     ],
-    "mergedAt": "2019-08-26T16:19:35Z",
+    "mergedAt": "2019-08-27 01:19:35",
     "number": 17141,
     "reviewers": [
       "keiohtani",
@@ -1919,11 +1919,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-26T06:02:50Z",
+    "createdAt": "2019-08-26 15:02:50",
     "labels": [
       "docs",
     ],
-    "mergedAt": undefined,
+    "mergedAt": "Not merged yet",
     "number": 17143,
     "reviewers": [
       "eps1lon",
@@ -1941,12 +1941,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "skirankumar7",
     ],
-    "createdAt": "2019-08-26T13:54:44Z",
+    "createdAt": "2019-08-26 22:54:44",
     "labels": [
       "bug 🐛",
       "component: tooltip",
     ],
-    "mergedAt": "2019-08-27T08:15:28Z",
+    "mergedAt": "2019-08-27 17:15:28",
     "number": 17174,
     "reviewers": [
       "oliviertassinari",
@@ -1962,11 +1962,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "oliviertassinari",
       "saltyshiomix",
     ],
-    "createdAt": "2019-08-26T16:06:18Z",
+    "createdAt": "2019-08-27 01:06:18",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-26T16:15:54Z",
+    "mergedAt": "2019-08-27 01:15:54",
     "number": 17181,
     "reviewers": [
       "oliviertassinari",
@@ -1983,12 +1983,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "oliviertassinari",
       "simshaun",
     ],
-    "createdAt": "2019-08-26T19:18:34Z",
+    "createdAt": "2019-08-27 04:18:34",
     "labels": [
       "component: toggle button",
       "new feature",
     ],
-    "mergedAt": "2019-08-28T09:52:36Z",
+    "mergedAt": "2019-08-28 18:52:36",
     "number": 17187,
     "reviewers": [
       "mbrookes",
@@ -2006,11 +2006,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "oliviertassinari",
       "skube",
     ],
-    "createdAt": "2019-08-26T20:55:22Z",
+    "createdAt": "2019-08-27 05:55:22",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-26T21:46:30Z",
+    "mergedAt": "2019-08-27 06:46:30",
     "number": 17189,
     "reviewers": [],
     "targetBranch": "master",
@@ -2023,12 +2023,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-27T05:45:05Z",
+    "createdAt": "2019-08-27 14:45:05",
     "labels": [
       "component: text field",
       "new feature",
     ],
-    "mergedAt": "2019-08-28T09:48:53Z",
+    "mergedAt": "2019-08-28 18:48:53",
     "number": 17192,
     "reviewers": [
       "oliviertassinari",
@@ -2042,11 +2042,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-27T10:30:38Z",
+    "createdAt": "2019-08-27 19:30:38",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-28T09:50:19Z",
+    "mergedAt": "2019-08-28 18:50:19",
     "number": 17198,
     "reviewers": [
       "eps1lon",
@@ -2062,11 +2062,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "merceyz",
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-27T12:41:59Z",
+    "createdAt": "2019-08-27 21:41:59",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-28T09:51:08Z",
+    "mergedAt": "2019-08-28 18:51:08",
     "number": 17200,
     "reviewers": [
       "mbrookes",
@@ -2083,12 +2083,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-27T19:08:46Z",
+    "createdAt": "2019-08-28 04:08:46",
     "labels": [
       "component: badge",
       "new feature",
     ],
-    "mergedAt": "2019-08-31T11:47:36Z",
+    "mergedAt": "2019-08-31 20:47:36",
     "number": 17204,
     "reviewers": [
       "mbrookes",
@@ -2106,12 +2106,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "oliviertassinari",
       "rbrishabh",
     ],
-    "createdAt": "2019-08-27T19:18:34Z",
+    "createdAt": "2019-08-28 04:18:34",
     "labels": [
       "component: menu",
       "typescript",
     ],
-    "mergedAt": "2019-08-28T08:35:54Z",
+    "mergedAt": "2019-08-28 17:35:54",
     "number": 17205,
     "reviewers": [
       "oliviertassinari",
@@ -2127,12 +2127,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-27T19:27:05Z",
+    "createdAt": "2019-08-28 04:27:05",
     "labels": [
       "component: Typography",
       "docs",
     ],
-    "mergedAt": "2019-08-28T14:01:58Z",
+    "mergedAt": "2019-08-28 23:01:58",
     "number": 17206,
     "reviewers": [
       "mbrookes",
@@ -2148,11 +2148,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "rbrishabh",
     ],
-    "createdAt": "2019-08-27T19:33:57Z",
+    "createdAt": "2019-08-28 04:33:57",
     "labels": [
       "package: system",
     ],
-    "mergedAt": undefined,
+    "mergedAt": "Not merged yet",
     "number": 17207,
     "reviewers": [
       "oliviertassinari",
@@ -2167,12 +2167,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "eps1lon",
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-28T12:05:39Z",
+    "createdAt": "2019-08-28 21:05:39",
     "labels": [
       "bug 🐛",
       "typescript",
     ],
-    "mergedAt": "2020-01-05T14:19:44Z",
+    "mergedAt": "2020-01-05 23:19:44",
     "number": 17211,
     "reviewers": [
       "oliviertassinari",
@@ -2186,12 +2186,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-28T13:49:10Z",
+    "createdAt": "2019-08-28 22:49:10",
     "labels": [
       "docs",
       "typescript",
     ],
-    "mergedAt": "2019-08-29T21:49:50Z",
+    "mergedAt": "2019-08-30 06:49:50",
     "number": 17214,
     "reviewers": [
       "oliviertassinari",
@@ -2209,12 +2209,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-28T17:25:45Z",
+    "createdAt": "2019-08-29 02:25:45",
     "labels": [
       "component: text field",
       "new feature",
     ],
-    "mergedAt": "2019-08-29T21:51:06Z",
+    "mergedAt": "2019-08-30 06:51:06",
     "number": 17217,
     "reviewers": [
       "oliviertassinari",
@@ -2231,11 +2231,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-28T18:05:54Z",
+    "createdAt": "2019-08-29 03:05:54",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-30T07:07:35Z",
+    "mergedAt": "2019-08-30 16:07:35",
     "number": 17218,
     "reviewers": [
       "eps1lon",
@@ -2253,13 +2253,13 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-28T18:15:34Z",
+    "createdAt": "2019-08-29 03:15:34",
     "labels": [
       "accessibility",
       "component: LinearProgress",
       "component: progress",
     ],
-    "mergedAt": "2019-08-31T11:56:37Z",
+    "mergedAt": "2019-08-31 20:56:37",
     "number": 17219,
     "reviewers": [
       "oliviertassinari",
@@ -2276,11 +2276,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "redblue9771",
       "stasiukanya",
     ],
-    "createdAt": "2019-08-28T20:36:00Z",
+    "createdAt": "2019-08-29 05:36:00",
     "labels": [
       "bug 🐛",
     ],
-    "mergedAt": "2019-08-30T07:06:09Z",
+    "mergedAt": "2019-08-30 16:06:09",
     "number": 17221,
     "reviewers": [],
     "targetBranch": "master",
@@ -2292,11 +2292,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "comments": [
       "mui-pr-bot",
     ],
-    "createdAt": "2019-08-29T20:11:37Z",
+    "createdAt": "2019-08-30 05:11:37",
     "labels": [
       "docs",
     ],
-    "mergedAt": "2019-08-30T07:05:33Z",
+    "mergedAt": "2019-08-30 16:05:33",
     "number": 17230,
     "reviewers": [
       "oliviertassinari",
@@ -2311,11 +2311,11 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-30T06:55:17Z",
+    "createdAt": "2019-08-30 15:55:17",
     "labels": [
       "component: button",
     ],
-    "mergedAt": "2019-08-30T07:09:44Z",
+    "mergedAt": "2019-08-30 16:09:44",
     "number": 17232,
     "reviewers": [
       "oliviertassinari",
@@ -2334,12 +2334,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "mui-pr-bot",
       "oliviertassinari",
     ],
-    "createdAt": "2019-08-30T16:22:21Z",
+    "createdAt": "2019-08-31 01:22:21",
     "labels": [
       "accessibility",
       "component: slider",
     ],
-    "mergedAt": "2019-09-02T12:53:50Z",
+    "mergedAt": "2019-09-02 21:53:50",
     "number": 17240,
     "reviewers": [
       "city41",
@@ -2357,12 +2357,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
       "oliviertassinari",
       "skirunman",
     ],
-    "createdAt": "2019-08-31T13:29:00Z",
+    "createdAt": "2019-08-31 22:29:00",
     "labels": [
       "component: badge",
       "new feature",
     ],
-    "mergedAt": "2019-09-01T09:30:16Z",
+    "mergedAt": "2019-09-01 18:30:16",
     "number": 17247,
     "reviewers": [
       "mbrookes",

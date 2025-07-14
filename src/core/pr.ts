@@ -1,13 +1,10 @@
+import { DateTime } from 'luxon';
+
 import { fetchAllPRListInPeriod } from '../api';
 import { PRQueryParams, PR } from '../types';
 
 export function uniqueArray<T>(array: T[]): T[] {
   return Array.from(new Set(array));
-}
-
-export function filterPRListByTargetBranch(prList: PR[], targetBranch: string): PR[] {
-  const parsedTargetBranch = targetBranch.includes(':') ? targetBranch.split(':')[1] : targetBranch;
-  return prList.filter((pr) => pr.targetBranch === parsedTargetBranch);
 }
 
 export async function getUserPRListByCreationAndParticipation(
@@ -27,12 +24,16 @@ export async function getUserPRListByCreationAndParticipation(
         ...pr,
         comments: uniqueArray(pr.comments ?? []),
         reviewers: uniqueArray(pr.reviewers),
+        createdAt: convertUTCISOToLocal(pr.createdAt),
+        mergedAt: pr.mergedAt ? convertUTCISOToLocal(pr.mergedAt) : 'Not merged yet',
       });
     } else if (pr.comments?.includes(options.username) || pr.reviewers.includes(options.username)) {
       participatedPRList.push({
         ...pr,
         comments: uniqueArray(pr.comments ?? []),
         reviewers: uniqueArray(pr.reviewers),
+        createdAt: convertUTCISOToLocal(pr.createdAt),
+        mergedAt: pr.mergedAt ? convertUTCISOToLocal(pr.mergedAt) : 'Not merged yet',
       });
     }
   });
@@ -52,6 +53,8 @@ export async function getUserCreatedPRListInPeriod(options: PRQueryParams): Prom
       ...pr,
       comments: uniqueArray(pr.comments ?? []),
       reviewers: uniqueArray(pr.reviewers),
+      createdAt: convertUTCISOToLocal(pr.createdAt),
+      mergedAt: pr.mergedAt ? convertUTCISOToLocal(pr.mergedAt) : 'Not merged yet',
     }));
 }
 
@@ -69,6 +72,8 @@ export async function getUserParticipatedPRListInPeriod(options: PRQueryParams):
       ...pr,
       comments: uniqueArray(pr.comments ?? []),
       reviewers: uniqueArray(pr.reviewers),
+      createdAt: convertUTCISOToLocal(pr.createdAt),
+      mergedAt: pr.mergedAt ? convertUTCISOToLocal(pr.mergedAt) : 'Not merged yet',
     }));
 
   return participatedPRList;
@@ -97,4 +102,15 @@ export async function getUserPRCountByLabelInPeriod(prList: PR[]): Promise<Recor
     });
   });
   return labelCountMap;
+}
+
+export function filterPRListByTargetBranch(prList: PR[], targetBranch: string): PR[] {
+  const parsedTargetBranch = targetBranch.includes(':') ? targetBranch.split(':')[1] : targetBranch;
+  return prList.filter((pr) => pr.targetBranch === parsedTargetBranch);
+}
+
+export function convertUTCISOToLocal(date: string): string {
+  const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const local = DateTime.fromISO(date, { zone: timeZone });
+  return local.toFormat('yyyy-MM-dd HH:mm:ss');
 }
