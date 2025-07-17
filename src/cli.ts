@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import inquirer from 'inquirer';
+import ora from 'ora';
 
 import { fetchGitHubUserInfo } from './api/github';
 import { loginWithGitHubDeviceFlow } from './auth/login';
@@ -52,6 +53,9 @@ const answers = await inquirer.prompt([
 ]);
 
 const githubToken = await getGithubToken(githubEmail);
+const spinner = ora('🔎 Loading GitHub PR data...').start();
+spinner.spinner = 'dots12';
+
 const { userCreatedPRList, userParticipatedPRList } = await getUserPRListByCreationAndParticipation(
   {
     githubToken,
@@ -65,5 +69,7 @@ const { userCreatedPRList, userParticipatedPRList } = await getUserPRListByCreat
   },
 );
 
-console.log('User Created PRs: ', userCreatedPRList);
-console.log('User Participated PRs: ', userParticipatedPRList);
+spinner.succeed('✅ GitHub PR data loaded successfully!');
+
+console.log('\n🐙📊 User Created PRs:\n', userCreatedPRList);
+console.log('\n🐙📊 User Participated PRs:\n', userParticipatedPRList);
