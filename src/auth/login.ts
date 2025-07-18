@@ -35,12 +35,13 @@ export async function login() {
 
   if (!githubToken) {
     const newGithubToken = await loginWithGitHubDeviceFlow(GITHUB_CLIENT_ID);
-    const user = await fetchGitHubUserInfo(newGithubToken);
-    setUserInfo(user);
-    await setGithubToken(user.email, newGithubToken);
+    const { login: username, email } = await fetchGitHubUserInfo(newGithubToken);
+    setUserInfo({ username, email });
+    await setGithubToken(email, newGithubToken);
     console.log(
       '🎉 Successfully logged in! You can now use octoreport. Please run the command again.',
     );
+    return { email, username };
   }
 
   return { email, username };

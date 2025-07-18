@@ -38,7 +38,7 @@ export function convertPeriodToUTCISO(period: DateRange): DateRange {
 
 export async function fetchGitHubUserInfo(
   githubToken: string,
-): Promise<{ username: string; email: string }> {
+): Promise<{ login: string; email: string }> {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {

@@ -18,7 +18,6 @@ export function getPackageInfo(): PackageInfo {
     join(__dirname, '../../package.json'), // build (dist/src/cli/setup)
     join(__dirname, '../package.json'), // build (dist/src/cli)
     join(__dirname, '../../package.json'), // build (dist/src)
-    join(__dirname, '../../../package.json'), // build (dist)
   ];
 
   let packageJsonPath: string | null = null;

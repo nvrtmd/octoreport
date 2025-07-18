@@ -7,7 +7,6 @@ import { withCommonSetup } from './withCommonSetup';
 export function createTotalCommand(program: Command) {
   program
     .command('total')
-    .alias('-t')
     .description('Get total PR activity report including created and participated PR list')
     .action(async () => {
       await withCommonSetup(async (answers, githubToken, username, spinner) => {

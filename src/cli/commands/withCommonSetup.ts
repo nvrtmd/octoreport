@@ -13,8 +13,8 @@ export async function withCommonSetup<T>(
   ) => Promise<T>,
 ) {
   const { email, username } = await login();
-  const answers = await promptCommonQuestions();
   const githubToken = await getGithubToken(email);
+  const answers = await promptCommonQuestions();
 
   const spinner = ora({
     text: '🐙🔎 Processing...',
