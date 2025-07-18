@@ -1,157 +1,192 @@
-# octoreport
+# @octoreport/core
 
-> A modern, secure, and timezone-aware GitHub PR/issue reporting CLI for everyone. Users can retrieve a list of pull requests either created by themselves or another GitHub user, as well as pull requests in which the user has participated through comments or reviews, within a specific repository—filtered by a specified time period and target branch.
+<img width="1024" height="640" alt="octoreport_logo_lite" src="https://github.com/user-attachments/assets/bfcbe8a9-7ea1-45bf-8ca1-b0b70b921473" />
+
+> A modern, timezone-aware GitHub PR/issue analytics core library. Provides the foundational logic for retrieving and analyzing pull requests from GitHub repositories with flexible filtering capabilities.
 
 ## Features
 
-🔒 Secure GitHub authentication (OAuth Device Flow, keytar-based token storage)
+🔒 **GitHub API Integration**: Direct integration with GitHub GraphQL and REST APIs
 
-📊 PR/Issue search and reporting with flexible filters
+📊 **PR Analytics**: Comprehensive search and reporting with flexible filters
 
-🌏 Timezone-aware date queries (powered by luxon)
+🌏 **Timezone-Aware**: Powered by luxon for accurate date handling across timezones
 
-⚡ Fast, modern TypeScript codebase
+⚡ **Fast & Modern**: Built with TypeScript for type safety and performance
 
-🧪 Well-tested with Vitest
+🧪 **Well-Tested**: Comprehensive test coverage with Vitest
 
-🛠️ Easily extensible and open for contributions
+🛠️ **Modular Design**: Clean, extensible architecture for easy integration
 
-## Getting Started
+🔐 **Authentication Agnostic**: Works with any GitHub token (OAuth, PAT, etc.)
+
+## Installation
+
+```bash
+npm install @octoreport/core
+```
 
 ### Prerequisites
 
 - Node.js >= 18
 - npm or yarn
+- GitHub token (OAuth token, Personal Access Token, etc.)
 
-### Installation
+## Quick Start
 
-```bash
-npm install -g octoreport
-```
+```typescript
+import { getUserPRListByCreationAndParticipation } from '@octoreport/core';
 
-#### or
-
-##### For Yarn Classic
-
-```bash
-yarn global add octoreport
-```
-
-##### For Yarn Berry (v2+)
-
-```bash
-yarn dlx octoreport
-```
-
-## Usage
-
-```bash
-octoreport [command]
-```
-
-### Authenticate with your GitHub account (OAuth Device Flow)
-
-```bash
-octoreport login
-```
-
-### Use interactive prompt
-- When you run the octoreport command, you will be guided through an interactive prompt.
-- Follow the prompts and provide the requested information to generate your GitHub PR report.
-
-```bash
-octoreport
-```
-
-#### You will be prompted for the following parameters:
-
-**🔎 Optionally, enter the target GitHub username (e.g., octocat) (press Enter to skip and show PRs created by you):**
-
-⤷ Type the GitHub username you want to search for, or press Enter to use your own account.
-
-**🔎 Please enter the repository in the format "owner/repo" (e.g., facebook/react):**
-
-⤷ Enter the repository you want to search in, using the format owner/repo.
-
-**🔎 Please enter the start date for the search period (format: YYYY-MM-DD):**
-
-⤷ Enter the start date for your search period. Use the format YYYY-MM-DD (e.g., 2025-07-01).
-
-**🔎 Please enter the end date for the search period (format: YYYY-MM-DD):**
-
-⤷ Enter the end date for your search period. Use the format YYYY-MM-DD (e.g., 2025-07-10).
-
-**🔎 Optionally, enter the target branch to filter pull requests (press Enter to skip and show PRs targeting all branches):**
-
-⤷ Type the branch name to filter PRs by target branch, or press Enter to include all branches.
-
-## Example Output
-
-```bash
-User Created PRs:  [
-  {
-    number: 17059,
-    title: '[Modal] Add transition documentation',
-    url: 'https://github.com/mui/material-ui/pull/17059',
-    createdAt: '2019-08-19T15:27:07Z',
-    mergedAt: '2019-08-21T08:53:23Z',
-    labels: [ 'component: modal', 'docs' ],
-    author: 'oliviertassinari',
-    reviewers: [ 'mbrookes', 'oliviertassinari' ],
-    comments: [ 'mui-pr-bot' ],
-    targetBranch: 'master'
+// Get both created and participated PRs
+const results = await getUserPRListByCreationAndParticipation({
+  username: 'octocat',
+  repository: 'octoreport/core',
+  period: {
+    startDate: '2025-07-01',
+    endDate: '2025-07-20',
   },
-  // ...
-]
-User Participated PRs:  [
-  {
-    number: 17058,
-    title: '[Tooltip] Improve arrow demo',
-    url: 'https://github.com/mui/material-ui/pull/17058',
-    createdAt: '2019-08-19T15:14:49Z',
-    mergedAt: '2019-08-20T09:06:22Z',
-    labels: [ 'component: tooltip', 'docs' ],
-    author: 'Patil2099',
-    reviewers: [ 'oliviertassinari' ],
-    comments: [ 'mui-pr-bot', 'oliviertassinari' ],
-    targetBranch: 'master'
+  targetBranch: 'main',
+  githubToken: 'YOUR_GITHUB_TOKEN',
+});
+
+console.log('🐙📊 User Created PRs:\n', result.userCreatedPRList);
+console.log('🐙📊 User Participated PRs:\n', result.userParticipatedPRList);
+```
+
+## API Reference
+
+### Core Functions
+
+```typescript
+import {
+  getUserPRListByCreationAndParticipation,
+  getUserCreatedPRListInPeriod,
+  getUserParticipatedPRListInPeriod,
+  getUserCreatedPRCountInPeriod,
+  getUserCreatedPRListInPeriodByLabel,
+  getUserPRCountByLabelInPeriod,
+} from '@octoreport/core';
+
+// Get both created and participated PRs
+const results = await getUserPRListByCreationAndParticipation({
+  username: 'octocat',
+  repository: 'octoreport/core',
+  period: {
+    startDate: '2025-07-01',
+    endDate: '2025-07-20',
   },
-  // ...
-]
+  githubToken: 'YOUR_GITHUB_TOKEN',
+});
+
+// Get only created PRs
+const createdPRs = await getUserCreatedPRListInPeriod({
+  username: 'octocat',
+  repository: 'octoreport/core',
+  period: {
+    startDate: '2025-07-01',
+    endDate: '2025-07-20',
+  },
+  githubToken: 'YOUR_GITHUB_TOKEN',
+});
+
+// Get only participated PRs
+const participatedPRs = await getUserParticipatedPRListInPeriod({
+  username: 'octocat',
+  repository: 'octoreport/core',
+  period: {
+    startDate: '2025-07-01',
+    endDate: '2025-07-20',
+  },
+  githubToken: 'YOUR_GITHUB_TOKEN',
+});
+
+// Get count of created PRs
+const prCount = await getUserCreatedPRCountInPeriod(createdPRs);
+
+// Filter PRs by labels
+const bugPRs = await getUserCreatedPRListInPeriodByLabel(createdPRs, ['enhancement', 'bugfix']);
+
+// Get label statistics
+const labelStats = await getUserPRCountByLabelInPeriod(createdPRs);
+// Returns: { 'bug': 5, 'feature': 3, 'docs': 2 }
+```
+
+### GitHub API Functions
+
+```typescript
+import { fetchGitHubUserInfo, fetchAllPRListInPeriod } from '@octoreport/core';
+
+// Get user information
+const userInfo = await fetchGitHubUserInfo('YOUR_GITHUB_TOKEN');
+// Returns: { login: 'octocat', email: 'octocat@example.com' }
+
+// Get all PRs in a period
+const allPRs = await fetchAllPRListInPeriod({
+  repository: 'octoreport/core',
+  period: {
+    startDate: '2025-07-01',
+    endDate: '2025-07-20',
+  },
+  githubToken: 'YOUR_GITHUB_TOKEN',
+});
 ```
 
 ## Authentication
 
-- **octoreport** uses GitHub OAuth Device Flow for secure authentication.
-- Tokens are stored securely using keytar (OS-native credential storage).
-- No need to manually create or manage PATs.
-- Supports multiple accounts.
+This library is **authentication agnostic** - it works with any valid GitHub token:
+
+- **Personal Access Tokens (PAT)**: Classic GitHub tokens
+- **OAuth Access Tokens**: From OAuth applications
+
+### Getting a GitHub Token
+
+- **Personal Access Token**: Go to GitHub Settings → Developer settings → Personal access tokens
+- **OAuth Token**: Create an OAuth app and implement the OAuth flow
+
+### Required Scopes
+
+For full functionality, your token needs these scopes:
+
+- `repo` - Access private repositories
+- `read:user` - Read user profile information
 
 ## Timezone Handling
 
-- All date inputs are interpreted in your local timezone (auto-detected).
-- Dates are converted to UTC ISO 8601 before querying the GitHub API, ensuring accurate results regardless of your location.
-- Powered by luxon.
-
-## Configuration
-
-- User configuration (e.g., GitHub username, email address) is stored in `~/.octoreport/`.
-- Tokens are never stored in plain text.
+- All date inputs are interpreted in the local timezone (auto-detected)
+- Dates are converted to UTC ISO 8601 before querying GitHub API
+- Powered by luxon for robust timezone support
 
 ## Contributing
 
 We welcome contributions! 👍🏻
 
-- [x] Fork this repo
-- [x] Create a feature branch (git checkout -b feature/your-feature)
-- [x] Commit your changes (git commit -m "feat: your feature")
-- [x] Push to your fork and open a Pull Request
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m "feat: your feature"`)
+4. Push to your fork and open a Pull Request
+
+### Development Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/octoreport/core.git
+cd core
+
+# Install dependencies
+npm install
+
+# Run tests
+npm test
+
+# Build the library
+npm run build
+```
 
 ## License
 
-- This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
 - [luxon](https://moment.github.io/luxon/) for timezone handling
-- [keytar](https://github.com/atom/node-keytar) for secure credential storage
+- [@octokit/rest](https://github.com/octokit/rest.js) for GitHub API integration patterns
