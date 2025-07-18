@@ -17,7 +17,7 @@
   ],
   "author": "nvrtmd",
   "scripts": {
-    "build": "tsup src/cli.ts --target es2022 --format esm",
+    "build": "tsup src/cli/index.ts --target es2022 --format esm",
     "test": "vitest run",
     "dev:test": "vitest",
     "prepublishOnly": "npm run build && npm run test",
@@ -28,7 +28,7 @@
     "prepare": "husky"
   },
   "bin": {
-    "octoreport": "./dist/cli.js"
+    "octoreport": "./dist/index.js"
   },
   "devDependencies": {
     "@types/luxon": "^3.6.2",
@@ -56,6 +56,7 @@
   "homepage": "https://github.com/nvrtmd/octoreport#readme",
   "dependencies": {
     "@octokit/auth-oauth-device": "^8.0.1",
+    "commander": "^14.0.0",
     "inquirer": "^12.7.0",
     "keytar": "^7.9.0",
     "luxon": "^3.7.1",

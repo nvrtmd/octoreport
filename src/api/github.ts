@@ -176,7 +176,7 @@ export async function fetchAllPRListInPeriod(
         const prData = combinePRData(prItem, prDetail);
         prList.push(prData);
       } catch (error) {
-        console.error(`Failed to process PR #${prItem.number}:`, error);
+        console.warn(`⚠️ Failed to process PR #${prItem.number}: ${error}`);
       }
     }),
   );
