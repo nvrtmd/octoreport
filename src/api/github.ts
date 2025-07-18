@@ -38,7 +38,7 @@ export function convertPeriodToUTCISO(period: DateRange): DateRange {
 
 export async function fetchGitHubUserInfo(
   githubToken: string,
-): Promise<{ username: string; email: string }> {
+): Promise<{ login: string; email: string }> {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
@@ -176,7 +176,7 @@ export async function fetchAllPRListInPeriod(
         const prData = combinePRData(prItem, prDetail);
         prList.push(prData);
       } catch (error) {
-        console.error(`Failed to process PR #${prItem.number}:`, error);
+        console.warn(`⚠️ Failed to process PR #${prItem.number}: ${error}`);
       }
     }),
   );

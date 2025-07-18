@@ -1,5 +1,13 @@
 import { createOAuthDeviceAuth } from '@octokit/auth-oauth-device';
 
+import { fetchGitHubUserInfo } from '../api/github';
+
+import { getGithubToken, setGithubToken } from './token';
+import { getUserInfo } from './userInfo';
+import { setUserInfo } from './userInfo';
+
+const GITHUB_CLIENT_ID = 'Ov23lia7pFpgs8ULT1DL';
+
 export async function loginWithGitHubDeviceFlow(
   clientId: string,
   scopes: string[] = ['repo', 'read:user'],
@@ -19,4 +27,22 @@ export async function loginWithGitHubDeviceFlow(
 
   const authentication = await auth({ type: 'oauth' });
   return authentication.token;
+}
+
+export async function login() {
+  const { email, username } = getUserInfo();
+  const githubToken = email ? await getGithubToken(email) : null;
+
+  if (!githubToken) {
+    const newGithubToken = await loginWithGitHubDeviceFlow(GITHUB_CLIENT_ID);
+    const { login: username, email } = await fetchGitHubUserInfo(newGithubToken);
+    setUserInfo({ username, email });
+    await setGithubToken(email, newGithubToken);
+    console.log(
+      '🎉 Successfully logged in! You can now use octoreport. Please run the command again.',
+    );
+    return { email, username };
+  }
+
+  return { email, username };
 }
