@@ -25,7 +25,8 @@ export async function withCommonSetup<T>(
   try {
     await command(answers, githubToken, username, spinner);
   } catch (error) {
-    spinner.fail('❌ Failed to execute command. Please try again.');
+    const errorMessage = error instanceof Error && error.message ? error.message : 'Unknown error';
+    spinner.fail(`❌ Failed to execute command: ${errorMessage}. Please try again.`);
     console.error(error);
   } finally {
     spinner.stop();
