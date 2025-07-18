@@ -1,4 +1,4 @@
-#!/bin/sh	npm test
+#!/bin/sh	
 
 # 1. ESLint 검사	
 npm run lint	

@@ -1,7 +1,5 @@
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 
-import { getGithubToken } from '../../src/auth/token';
-import { getUserInfo } from '../../src/auth/userInfo';
 import {
   getUserCreatedPRCountInPeriod,
   getUserCreatedPRListInPeriod,
@@ -11,13 +9,16 @@ import {
   getUserPRListByCreationAndParticipation,
 } from '../../src/core';
 
-const { email: githubEmail } = getUserInfo();
-const githubToken = await getGithubToken(githubEmail);
+beforeAll(() => {
+  if (!process.env.GITHUB_TOKEN) {
+    console.warn('⚠️  GITHUB_TOKEN environment variable is not set. Some tests may be skipped.');
+  }
+});
 
 describe('getUserPRListByCreationAndParticipation', () => {
   it('returns pull requests the user has participated in (via comments or reviews) within the specified period', async () => {
     const result = await getUserPRListByCreationAndParticipation({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-31' },
@@ -38,7 +39,7 @@ describe('getUserPRListByCreationAndParticipation', () => {
 describe('getUserCreatedPRListInPeriod', () => {
   it('returns an empty array when the user has no pull requests in the given period', async () => {
     const result = await getUserCreatedPRListInPeriod({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2015-01-01', endDate: '2015-01-10' },
@@ -50,7 +51,7 @@ describe('getUserCreatedPRListInPeriod', () => {
 
   it('returns pull requests created by the user within the specified date range', async () => {
     const result = await getUserCreatedPRListInPeriod({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-31' },
@@ -62,7 +63,7 @@ describe('getUserCreatedPRListInPeriod', () => {
 
   it('filters pull requests that target a specific branch', async () => {
     const result = await getUserCreatedPRListInPeriod({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2024-09-10', endDate: '2024-09-20' },
@@ -76,7 +77,7 @@ describe('getUserCreatedPRListInPeriod', () => {
 describe('getUserParticipatedPRListInPeriod', () => {
   it('returns pull requests the user has participated in (via comments or reviews) within the specified period', async () => {
     const result = await getUserParticipatedPRListInPeriod({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-31' },
@@ -96,7 +97,7 @@ describe('getUserParticipatedPRListInPeriod', () => {
 describe('getUserCreatedPRCountInPeriod', () => {
   it('returns the number of pull requests created by the user within the specified period', async () => {
     const prList = await getUserCreatedPRListInPeriod({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2024-09-10', endDate: '2024-09-20' },
@@ -112,7 +113,7 @@ describe('getUserCreatedPRCountInPeriod', () => {
 describe('getUserCreatedPRListInPeriodByLabel', () => {
   it('filters pull requests that exactly match provided label names (case-sensitive)', async () => {
     const prList = await getUserCreatedPRListInPeriod({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-31' },
@@ -125,7 +126,7 @@ describe('getUserCreatedPRListInPeriodByLabel', () => {
   });
   it('filters pull requests that include provided label keywords (case-insensitive, partial match)', async () => {
     const prList = await getUserCreatedPRListInPeriod({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2025-05-01', endDate: '2025-05-10' },
@@ -145,7 +146,7 @@ describe('getUserCreatedPRListInPeriodByLabel', () => {
 describe('getUserPRCountByLabelInPeriod', () => {
   it('counts pull requests created by the user within the specified period, grouped by label, and returns an object like {feat: 10, fix: 2, test: 10, ...}', async () => {
     const prList = await getUserCreatedPRListInPeriod({
-      githubToken,
+      githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2024-09-10', endDate: '2024-09-20' },
