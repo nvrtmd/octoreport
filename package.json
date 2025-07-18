@@ -1,10 +1,10 @@
 {
-  "name": "octoreport",
-  "version": "0.1.2",
-  "description": "A modern, secure, and timezone-aware GitHub PR/issue reporting CLI for everyone.",
-  "main": "dist/cli.js",
+  "name": "@octoreport/core",
+  "version": "0.1.0",
+  "description": "The core logic for octoreport - A modern, secure, and timezone-aware GitHub PR/issue analytics reporting tool.",
   "type": "module",
-  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -13,11 +13,24 @@
     "report",
     "pr",
     "activity",
+    "pr-analysis",
     "typescript"
   ],
   "author": "nvrtmd",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/octoreport/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/octoreport/core/issues"
+  },
+  "homepage": "https://github.com/octoreport/core#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "tsup src/cli/index.ts --target es2022 --format esm",
+    "build": "tsup src/index.ts --dts --target es2022 --format esm,cjs",
     "test": "vitest run",
     "dev:test": "vitest",
     "prepublishOnly": "npm run build && npm run test",
@@ -26,9 +39,6 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"
-  },
-  "bin": {
-    "octoreport": "./dist/index.js"
   },
   "devDependencies": {
     "@types/luxon": "^3.6.2",
@@ -46,21 +56,10 @@
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nvrtmd/octoreport.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nvrtmd/octoreport/issues"
-  },
-  "homepage": "https://github.com/nvrtmd/octoreport#readme",
   "dependencies": {
     "@octokit/auth-oauth-device": "^8.0.1",
-    "commander": "^14.0.0",
-    "inquirer": "^12.7.0",
     "keytar": "^7.9.0",
     "luxon": "^3.7.1",
-    "ora": "^8.2.0",
     "zod": "^3.25.67"
   }
 }
