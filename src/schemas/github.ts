@@ -71,6 +71,12 @@ const PRDetailSchema = z.object({
       ),
     })
     .optional(),
+  state: z.enum(['OPEN', 'CLOSED', 'MERGED']),
+  isDraft: z.boolean(),
+  merged: z.boolean(),
+  mergedAt: z.string().nullable().optional(),
+  mergeable: z.enum(['MERGEABLE', 'CONFLICTING', 'UNKNOWN']),
+  reviewDecision: z.enum(['CHANGES_REQUESTED', 'APPROVED', 'REVIEW_REQUIRED']).nullable(),
 });
 
 export const PRDetailResponseSchema = z.object({

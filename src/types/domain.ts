@@ -9,6 +9,11 @@ export interface PR {
   targetBranch?: string;
   reviewers: string[];
   comments?: string[];
+  state: 'OPEN' | 'CLOSED' | 'MERGED';
+  isDraft: boolean;
+  merged: boolean;
+  mergeable: 'MERGEABLE' | 'CONFLICTING' | 'UNKNOWN';
+  reviewDecision?: 'CHANGES_REQUESTED' | 'APPROVED' | 'REVIEW_REQUIRED';
 }
 
 export interface Participation {
