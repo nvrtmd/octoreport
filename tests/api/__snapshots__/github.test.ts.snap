@@ -25,6 +25,7 @@ exports[`fetchPRDetail > returns every pull request detail in the given reposito
       },
     ],
   },
+  "isDraft": false,
   "labels": {
     "nodes": [
       {
@@ -32,12 +33,16 @@ exports[`fetchPRDetail > returns every pull request detail in the given reposito
       },
     ],
   },
+  "mergeable": "CONFLICTING",
+  "merged": false,
+  "reviewDecision": "REVIEW_REQUIRED",
   "reviewRequests": {
     "nodes": [],
   },
   "reviews": {
     "nodes": [],
   },
+  "state": "CLOSED",
   "title": "Update app-bar.jsx",
 }
 `;

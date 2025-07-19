@@ -123,6 +123,11 @@ export async function fetchPRDetail({
         reviewRequests(first: 10) { nodes { requestedReviewer { ... on User { login } } } }
         comments(first: 10) { nodes { author { login }, createdAt } }
         labels(first: 10) { nodes { name } }
+        state
+        isDraft
+        merged
+        mergeable
+        reviewDecision
       }
     }
   }`;

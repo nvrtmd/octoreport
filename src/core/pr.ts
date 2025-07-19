@@ -79,7 +79,7 @@ export async function getUserParticipatedPRListInPeriod(options: PRQueryParams):
   return participatedPRList;
 }
 
-export async function getUserCreatedPRCountInPeriod(prList: PR[]): Promise<number> {
+export function getUserCreatedPRCountInPeriod(prList: PR[]): number {
   return prList.length;
 }
 
@@ -94,7 +94,7 @@ export async function getUserCreatedPRListInPeriodByLabel(
   );
 }
 
-export async function getUserPRCountByLabelInPeriod(prList: PR[]): Promise<Record<string, number>> {
+export function getUserPRCountByLabelInPeriod(prList: PR[]): Record<string, number> {
   const labelCountMap: Record<string, number> = {};
   prList.map((pr) => {
     pr.labels.forEach((label) => {
