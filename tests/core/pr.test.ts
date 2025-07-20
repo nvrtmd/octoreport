@@ -120,7 +120,7 @@ describe('getUserCreatedPRListInPeriodByLabel', () => {
       targetBranch: 'master',
     });
 
-    const result = await getUserCreatedPRListInPeriodByLabel(prList, ['docs']);
+    const result = getUserCreatedPRListInPeriodByLabel(prList, ['docs']);
 
     expect(result).toMatchSnapshot();
   });
@@ -133,7 +133,7 @@ describe('getUserCreatedPRListInPeriodByLabel', () => {
       targetBranch: 'master',
     });
 
-    const result = await getUserCreatedPRListInPeriodByLabel(prList, ['regression']);
+    const result = getUserCreatedPRListInPeriodByLabel(prList, ['regression']);
 
     expect(result.length).toBe(3);
     expect(result[0].labels).toContain('regression 🐛');
@@ -153,7 +153,7 @@ describe('getUserPRCountByLabelInPeriod', () => {
       targetBranch: 'mui:v5.x',
     });
 
-    const result = await getUserPRCountByLabelInPeriod(prList);
+    const result = getUserPRCountByLabelInPeriod(prList);
 
     expect(result).toEqual({
       docs: 1,

@@ -26,7 +26,7 @@ function transformPRDetail(
     isDraft: detail.isDraft,
     merged: detail.merged,
     mergeable: detail.mergeable,
-    reviewDecision: detail.reviewDecision ?? undefined,
+    reviewDecision: detail.reviewDecision,
   };
 }
 

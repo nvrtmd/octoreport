@@ -17,10 +17,7 @@ export function getUserCreatedPRCountInPeriod(prList: PR[]): number {
   return prList.length;
 }
 
-export async function getUserCreatedPRListInPeriodByLabel(
-  prList: PR[],
-  labelFilter: string[],
-): Promise<PR[]> {
+export function getUserCreatedPRListInPeriodByLabel(prList: PR[], labelFilter: string[]): PR[] {
   return prList.filter((pr) =>
     labelFilter.some((filter) =>
       pr.labels.some((label) => label.toLowerCase().includes(filter.toLowerCase())),
@@ -30,7 +27,7 @@ export async function getUserCreatedPRListInPeriodByLabel(
 
 export function getUserPRCountByLabelInPeriod(prList: PR[]): Record<string, number> {
   const labelCountMap: Record<string, number> = {};
-  prList.map((pr) => {
+  prList.forEach((pr) => {
     pr.labels.forEach((label) => {
       labelCountMap[label] = (labelCountMap[label] || 0) + 1;
     });
