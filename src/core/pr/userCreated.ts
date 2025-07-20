@@ -26,6 +26,10 @@ export function getUserCreatedPRListInPeriodByLabel(prList: PR[], labelFilter: s
 export function getUserPRCountByLabelInPeriod(prList: PR[]): Record<string, number> {
   const labelCountMap: Record<string, number> = {};
   prList.forEach((pr) => {
+    if (pr.labels.length === 0) {
+      labelCountMap['N/A'] = (labelCountMap['N/A'] || 0) + 1;
+      return;
+    }
     pr.labels.forEach((label) => {
       labelCountMap[label] = (labelCountMap[label] || 0) + 1;
     });

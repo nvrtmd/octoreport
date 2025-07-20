@@ -120,4 +120,20 @@ describe('getUserPRCountByLabelInPeriod', () => {
       examples: 1,
     });
   });
+
+  it('counts pull requests with no labels as "N/A" in the label count result', async () => {
+    const prList = await getUserCreatedPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      username: 'alexfauquette',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-10-01', endDate: '2024-10-20' },
+      targetBranch: 'mui:v5.x',
+    });
+
+    const result = getUserPRCountByLabelInPeriod(prList);
+
+    expect(result).toEqual({
+      'N/A': 1,
+    });
+  });
 });
