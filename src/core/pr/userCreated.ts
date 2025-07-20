@@ -30,7 +30,7 @@ export async function getUserCreatedPRListInPeriodByLabel(
 
 export function getUserPRCountByLabelInPeriod(prList: PR[]): Record<string, number> {
   const labelCountMap: Record<string, number> = {};
-  prList.map((pr) => {
+  prList.forEach((pr) => {
     pr.labels.forEach((label) => {
       labelCountMap[label] = (labelCountMap[label] || 0) + 1;
     });
