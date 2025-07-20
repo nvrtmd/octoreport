@@ -101,10 +101,10 @@ const participatedPRs = await getUserParticipatedPRListInPeriod({
 });
 
 // Get count of created PRs
-const prCount = await getUserCreatedPRCountInPeriod(createdPRs);
+const prCount = getUserCreatedPRCountInPeriod(createdPRs);
 
 // Filter PRs by labels
-const bugPRs = await getUserCreatedPRListInPeriodByLabel(createdPRs, ['enhancement', 'bugfix']);
+const bugPRs = getUserCreatedPRListInPeriodByLabel(createdPRs, ['enhancement', 'bugfix']);
 
 // Get label statistics
 const labelStats = await getUserPRCountByLabelInPeriod(createdPRs);
