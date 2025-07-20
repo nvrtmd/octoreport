@@ -1,5 +1,5 @@
-import { PRListItem, PRDetail } from '../schemas/github';
-import { PR } from '../types';
+import { PRListItem, PRDetail } from '@/schemas';
+import { PR } from '@/types';
 
 function transformPRListItem(
   listItem: PRListItem,

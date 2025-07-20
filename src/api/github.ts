@@ -1,14 +1,9 @@
 import { DateTime } from 'luxon';
 import { z } from 'zod';
 
-import {
-  PRListResponseSchema,
-  PRDetailResponseSchema,
-  PRListItem,
-  PRDetail,
-} from '../schemas/github';
-import { combinePRData } from '../transformers/github';
-import { PRQueryParams, PR, DateRange } from '../types';
+import { PRListResponseSchema, PRDetailResponseSchema, PRListItem, PRDetail } from '@/schemas';
+import { combinePRData } from '@/transformers';
+import { PRQueryParams, PR, DateRange } from '@/types';
 
 function validateApiResponse<T>(data: unknown, schema: z.ZodSchema<T>): T {
   try {

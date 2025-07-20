@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 
-import { fetchPRDetail, fetchPRListInPeriod } from '../../src/api';
+import { fetchPRDetail, fetchPRListInPeriod } from '@/api';
 
 beforeAll(() => {
   if (!process.env.GITHUB_TOKEN) {

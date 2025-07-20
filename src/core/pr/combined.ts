@@ -1,8 +1,6 @@
-import { fetchAllPRListInPeriod } from '../../api';
-import { PRQueryParams, PR } from '../../types';
-
-import { normalizePRData } from './common';
-import { filterPRListByTargetBranch } from './filters';
+import { fetchAllPRListInPeriod } from '@/api';
+import { filterPRListByTargetBranch, normalizePRData } from '@/core';
+import { PR, PRQueryParams } from '@/types';
 
 export async function getUserPRListByCreationAndParticipation(
   options: PRQueryParams,

@@ -1,5 +1,5 @@
-import { PR } from '../../types';
-import { uniqueArray, convertUTCISOToLocal } from '../utils';
+import { uniqueArray, convertUTCISOToLocal } from '@/core';
+import { PR } from '@/types';
 
 export function normalizePRData(pr: PR): PR {
   return {
