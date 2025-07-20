@@ -8,7 +8,7 @@ export interface PR {
   author: string;
   targetBranch?: string;
   reviewers: string[];
-  comments?: string[];
+  commenters?: string[];
   state: 'OPEN' | 'CLOSED' | 'MERGED';
   isDraft: boolean;
   merged: boolean;

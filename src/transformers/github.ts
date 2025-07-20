@@ -20,7 +20,7 @@ function transformPRDetail(
     labels: detail.labels.nodes.map((label) => label.name).sort(),
     author: detail.author.login,
     reviewers: detail.reviews.nodes.map((review) => review.author.login).sort(),
-    comments: detail.comments?.nodes.map((comment) => comment.author.login).sort() ?? [],
+    commenters: detail.comments?.nodes.map((comment) => comment.author.login).sort() ?? [],
     targetBranch: detail.baseRefName,
     state: detail.state,
     isDraft: detail.isDraft,
