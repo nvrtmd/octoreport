@@ -25,7 +25,7 @@ describe('getUserPRListByCreationAndParticipation', () => {
     expect(result.userCreatedPRList[0].author).toBe('oliviertassinari');
     result.userParticipatedPRList.map((pr) => {
       const isParticipated =
-        pr.commenters?.includes('oliviertassinari') || pr.reviewers.includes('oliviertassinari');
+        pr.commenters?.includes('oliviertassinari') || pr.reviewers?.includes('oliviertassinari');
       expect(isParticipated).toBe(true);
     });
 
@@ -51,7 +51,7 @@ describe('getUserCreatedPRListInPeriod', () => {
       githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
-      period: { startDate: '2025-05-01', endDate: '2025-05-31' },
+      period: { startDate: '2025-05-01', endDate: '2025-05-15' },
       targetBranch: 'master',
     });
 
@@ -83,7 +83,7 @@ describe('getUserParticipatedPRListInPeriod', () => {
 
     result.map((pr) => {
       const isParticipated =
-        pr.commenters?.includes('oliviertassinari') || pr.reviewers.includes('oliviertassinari');
+        pr.commenters?.includes('oliviertassinari') || pr.reviewers?.includes('oliviertassinari');
       expect(isParticipated).toBe(true);
     });
 

@@ -3,6 +3,7 @@
 exports[`filterPRListByLabel > filters pull requests that exactly match provided label names (case-sensitive) 1`] = `
 [
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -17,6 +18,7 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "merged": true,
     "mergedAt": "2025-05-06 02:27:16",
     "number": 46064,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "alexfauquette",
@@ -26,8 +28,10 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "targetBranch": "master",
     "title": "[docs-infra] Update feedback Node.js to v22",
     "url": "https://github.com/mui/material-ui/pull/46064",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mapache-salvaje",
@@ -45,6 +49,7 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "merged": true,
     "mergedAt": "2025-05-08 05:47:34",
     "number": 46090,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mapache-salvaje",
@@ -53,8 +58,10 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "targetBranch": "master",
     "title": "[docs] Remove oudated scaffoldhub ad",
     "url": "https://github.com/mui/material-ui/pull/46090",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -68,6 +75,7 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "merged": true,
     "mergedAt": "2025-05-15 16:27:18",
     "number": 46135,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "0210shivam",
@@ -77,6 +85,7 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "targetBranch": "master",
     "title": "[docs] Fix GridLegacy docs order",
     "url": "https://github.com/mui/material-ui/pull/46135",
+    "user": "oliviertassinari",
   },
 ]
 `;
@@ -84,6 +93,7 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
 exports[`filterPRListByLabel > filters pull requests that include provided label keywords (case-insensitive, partial match) 1`] = `
 [
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -99,6 +109,7 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "merged": true,
     "mergedAt": "2025-05-06 08:41:19",
     "number": 46051,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "Janpot",
@@ -109,8 +120,10 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "targetBranch": "master",
     "title": "[core] Fix internal version duplication",
     "url": "https://github.com/mui/material-ui/pull/46051",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -125,6 +138,7 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "merged": true,
     "mergedAt": "2025-05-07 00:03:19",
     "number": 46061,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "nadjakovacev",
@@ -133,8 +147,10 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "targetBranch": "master",
     "title": "[website] Update values",
     "url": "https://github.com/mui/material-ui/pull/46061",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -149,6 +165,7 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "merged": true,
     "mergedAt": "2025-05-08 02:54:29",
     "number": 46065,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mapache-salvaje",
@@ -157,6 +174,7 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "targetBranch": "master",
     "title": "[website] Fix CSS alignment",
     "url": "https://github.com/mui/material-ui/pull/46065",
+    "user": "oliviertassinari",
   },
 ]
 `;

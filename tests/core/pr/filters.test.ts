@@ -15,7 +15,7 @@ describe('filterPRListByLabel', () => {
       githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
-      period: { startDate: '2025-05-01', endDate: '2025-05-31' },
+      period: { startDate: '2025-05-01', endDate: '2025-05-15' },
       targetBranch: 'master',
     });
 

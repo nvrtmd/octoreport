@@ -1,7 +1,12 @@
 import { DateTime } from 'luxon';
 import { z } from 'zod';
 
-import { PRListResponseSchema, PRDetailResponseSchema, PRListItem, PRDetail } from '@/schemas';
+import {
+  PRListResponseSchema,
+  PRDetailResponseSchema,
+  PRListItemRaw,
+  PRDetailRaw,
+} from '@/schemas';
 import { combinePRData } from '@/transformers';
 import { PRQueryParams, PR, DateRange } from '@/types';
 
@@ -62,9 +67,9 @@ export async function fetchGitHubUserInfo(
 
 export async function fetchPRListInPeriod(
   options: Pick<PRQueryParams, 'repository' | 'period' | 'githubToken'>,
-): Promise<PRListItem[]> {
+): Promise<PRListItemRaw[]> {
   let page = 1;
-  const prList: PRListItem[] = [];
+  const prList: PRListItemRaw[] = [];
   const [owner, repo] = options.repository.split('/');
 
   while (true) {
@@ -105,7 +110,9 @@ export async function fetchPRDetail({
   repository,
   githubToken,
   prNumber,
-}: Pick<PRQueryParams, 'repository' | 'githubToken'> & { prNumber: number }): Promise<PRDetail> {
+}: Pick<PRQueryParams, 'repository' | 'githubToken'> & {
+  prNumber: number;
+}): Promise<PRDetailRaw | null> {
   const [owner, repo] = repository.split('/');
   const query = `query ($owner: String!, $repo: String!, $number: Int!) {
     repository(owner: $owner, name: $repo) {
@@ -122,6 +129,7 @@ export async function fetchPRDetail({
         isDraft
         merged
         mergeable
+        mergedAt
         reviewDecision
       }
     }

@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon';
 
-export function uniqueArray<T>(array: T[]): T[] {
-  return Array.from(new Set(array));
+export function uniqueArray<T>(array: T[] | null): T[] | null {
+  return array ? Array.from(new Set(array)) : null;
 }
 
 export function convertUTCISOToLocal(date: string): string {

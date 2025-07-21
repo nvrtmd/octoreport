@@ -1,3 +1,4 @@
+import { filterPRListByAuthor } from '@/core';
 import { PR } from '@/types';
 
 export function getPRCount(prList: PR[]): number {
@@ -7,7 +8,7 @@ export function getPRCount(prList: PR[]): number {
 export function getPRCountByLabel(prList: PR[]): Record<string, number> {
   const labelCountMap: Record<string, number> = {};
   prList.forEach((pr) => {
-    if (pr.labels.length === 0) {
+    if (!pr.labels) {
       labelCountMap['N/A'] = (labelCountMap['N/A'] || 0) + 1;
       return;
     }
@@ -22,19 +23,26 @@ export function separatePRListByUserParticipation(
   prList: PR[],
   username: string,
 ): {
-  createdPRList: PR[];
-  participatedPRList: PR[];
+  userCreatedPRList: PR[];
+  userParticipatedPRList: PR[];
 } {
-  const createdPRList: PR[] = [];
-  const participatedPRList: PR[] = [];
+  const userCreatedPRList: PR[] = [];
+  const userParticipatedPRList: PR[] = [];
 
   prList.forEach((pr) => {
     if (pr.author === username) {
-      createdPRList.push(pr);
-    } else if (pr.reviewers.includes(username) || pr.commenters?.includes(username)) {
-      participatedPRList.push(pr);
+      userCreatedPRList.push(pr);
+    } else if (pr.reviewers?.includes(username) || pr.commenters?.includes(username)) {
+      userParticipatedPRList.push(pr);
     }
   });
 
-  return { createdPRList, participatedPRList };
+  return { userCreatedPRList, userParticipatedPRList };
+}
+
+export function getUserPRRatio(prList: PR[], username: string): number {
+  const userCreatedPRList = filterPRListByAuthor(prList, username);
+  const userCreatedPRCount = userCreatedPRList.length;
+  const totalPRCount = prList.length;
+  return totalPRCount > 0 ? userCreatedPRCount / totalPRCount : 0;
 }

@@ -3,6 +3,7 @@
 exports[`getUserCreatedPRListInPeriod > filters pull requests that target a specific branch 1`] = `
 [
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -18,6 +19,7 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "merged": true,
     "mergedAt": "2024-09-16 20:17:55",
     "number": 43753,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "siriwatknp",
@@ -26,8 +28,10 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "targetBranch": "v5.x",
     "title": "[docs] Fix MUI Treasury Layout broken links",
     "url": "https://github.com/mui/material-ui/pull/43753",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -44,6 +48,9 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "merged": true,
     "mergedAt": "2024-10-03 20:40:08",
     "number": 43755,
+    "requestedReviewers": [
+      "alelthomas",
+    ],
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mnajdova",
@@ -52,6 +59,7 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
     "targetBranch": "v5.x",
     "title": "[examples] Fix v5 clone example instructions",
     "url": "https://github.com/mui/material-ui/pull/43755",
+    "user": "oliviertassinari",
   },
 ]
 `;
@@ -59,6 +67,7 @@ exports[`getUserCreatedPRListInPeriod > filters pull requests that target a spec
 exports[`getUserCreatedPRListInPeriod > returns pull requests created by the user within the specified date range 1`] = `
 [
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -74,6 +83,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "merged": true,
     "mergedAt": "2025-05-06 08:41:19",
     "number": 46051,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "Janpot",
@@ -84,8 +94,10 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "targetBranch": "master",
     "title": "[core] Fix internal version duplication",
     "url": "https://github.com/mui/material-ui/pull/46051",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -100,6 +112,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "merged": true,
     "mergedAt": "2025-05-07 00:03:19",
     "number": 46061,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "nadjakovacev",
@@ -108,8 +121,10 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "targetBranch": "master",
     "title": "[website] Update values",
     "url": "https://github.com/mui/material-ui/pull/46061",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -124,6 +139,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "merged": true,
     "mergedAt": "2025-05-06 02:27:16",
     "number": 46064,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "alexfauquette",
@@ -133,8 +149,10 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "targetBranch": "master",
     "title": "[docs-infra] Update feedback Node.js to v22",
     "url": "https://github.com/mui/material-ui/pull/46064",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -149,6 +167,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "merged": true,
     "mergedAt": "2025-05-08 02:54:29",
     "number": 46065,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mapache-salvaje",
@@ -157,8 +176,10 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "targetBranch": "master",
     "title": "[website] Fix CSS alignment",
     "url": "https://github.com/mui/material-ui/pull/46065",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mapache-salvaje",
@@ -176,6 +197,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "merged": true,
     "mergedAt": "2025-05-08 05:47:34",
     "number": 46090,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mapache-salvaje",
@@ -184,8 +206,10 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "targetBranch": "master",
     "title": "[docs] Remove oudated scaffoldhub ad",
     "url": "https://github.com/mui/material-ui/pull/46090",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-bot",
@@ -199,6 +223,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "merged": true,
     "mergedAt": "2025-05-15 16:27:18",
     "number": 46135,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "0210shivam",
@@ -208,6 +233,7 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
     "targetBranch": "master",
     "title": "[docs] Fix GridLegacy docs order",
     "url": "https://github.com/mui/material-ui/pull/46135",
+    "user": "oliviertassinari",
   },
 ]
 `;
@@ -216,11 +242,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
 {
   "userCreatedPRList": [
     {
+      "assignees": [],
       "author": "oliviertassinari",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-19T15:27:07Z",
+      "createdAt": "2019-08-20 00:27:07",
       "isDraft": false,
       "labels": [
         "component: modal",
@@ -228,11 +255,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-21T08:53:23Z",
+      "mergedAt": "2019-08-21 17:53:23",
       "number": 17059,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
-        "mbrookes",
         "mbrookes",
         "oliviertassinari",
       ],
@@ -240,45 +267,50 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Modal] Add transition documentation",
       "url": "https://github.com/mui/material-ui/pull/17059",
+      "user": "oliviertassinari",
     },
     {
+      "assignees": [],
       "author": "oliviertassinari",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-19T15:37:03Z",
+      "createdAt": "2019-08-20 00:37:03",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-20T09:20:23Z",
+      "mergedAt": "2019-08-20 18:20:23",
       "number": 17060,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
-        "mbrookes",
         "mbrookes",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[docs] Small changes",
       "url": "https://github.com/mui/material-ui/pull/17060",
+      "user": "oliviertassinari",
     },
     {
+      "assignees": [],
       "author": "oliviertassinari",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-19T15:38:26Z",
+      "createdAt": "2019-08-20 00:38:26",
       "isDraft": false,
       "labels": [
         "core",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-21T08:52:48Z",
+      "mergedAt": "2019-08-21 17:52:48",
       "number": 17061,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
       "reviewers": [
         "joshwooding",
@@ -287,13 +319,15 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[core] Classes to hooks",
       "url": "https://github.com/mui/material-ui/pull/17061",
+      "user": "oliviertassinari",
     },
     {
+      "assignees": [],
       "author": "oliviertassinari",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-19T15:39:12Z",
+      "createdAt": "2019-08-20 00:39:12",
       "isDraft": false,
       "labels": [
         "component: app bar",
@@ -301,38 +335,30 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-21T08:50:25Z",
+      "mergedAt": "2019-08-21 17:50:25",
       "number": 17062,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "mbrookes",
-        "mbrookes",
-        "mbrookes",
-        "mbrookes",
-        "oliviertassinari",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[AppBar] Add back to top demo",
       "url": "https://github.com/mui/material-ui/pull/17062",
+      "user": "oliviertassinari",
     },
     {
+      "assignees": [],
       "author": "oliviertassinari",
       "commenters": [
         "mbrookes",
-        "mbrookes",
-        "mbrookes",
         "mui-pr-bot",
         "nrkroeker",
-        "nrkroeker",
-        "nrkroeker",
-        "oliviertassinari",
-        "oliviertassinari",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-19T15:40:12Z",
+      "createdAt": "2019-08-20 00:40:12",
       "isDraft": false,
       "labels": [
         "component: divider",
@@ -340,8 +366,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-20T09:18:57Z",
+      "mergedAt": "2019-08-20 18:18:57",
       "number": 17063,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
       "reviewers": [
         "sakulstra",
@@ -350,13 +377,15 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Divider] Add vertical support",
       "url": "https://github.com/mui/material-ui/pull/17063",
+      "user": "oliviertassinari",
     },
     {
+      "assignees": [],
       "author": "oliviertassinari",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-20T23:28:43Z",
+      "createdAt": "2019-08-21 08:28:43",
       "isDraft": false,
       "labels": [
         "component: tree view",
@@ -364,8 +393,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-22T08:27:51Z",
+      "mergedAt": "2019-08-22 17:27:51",
       "number": 17080,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
       "reviewers": [
         "joshwooding",
@@ -376,42 +406,45 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[TreeView] Support node label",
       "url": "https://github.com/mui/material-ui/pull/17080",
+      "user": "oliviertassinari",
     },
     {
+      "assignees": [],
       "author": "oliviertassinari",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-27T10:30:38Z",
+      "createdAt": "2019-08-27 19:30:38",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-28T09:50:19Z",
+      "mergedAt": "2019-08-28 18:50:19",
       "number": 17198,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
       "reviewers": [
         "eps1lon",
-        "eps1lon",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[docs] Better document the ref props in the API",
       "url": "https://github.com/mui/material-ui/pull/17198",
+      "user": "oliviertassinari",
     },
   ],
   "userParticipatedPRList": [
     {
+      "assignees": [],
       "author": "Patil2099",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-19T15:14:49Z",
+      "createdAt": "2019-08-20 00:14:49",
       "isDraft": false,
       "labels": [
         "component: tooltip",
@@ -419,8 +452,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-20T09:06:22Z",
+      "mergedAt": "2019-08-20 18:06:22",
       "number": 17058,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -429,13 +463,15 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Tooltip] Improve arrow demo",
       "url": "https://github.com/mui/material-ui/pull/17058",
+      "user": "Patil2099",
     },
     {
+      "assignees": [],
       "author": "zekehernandez",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-20T15:11:25Z",
+      "createdAt": "2019-08-21 00:11:25",
       "isDraft": false,
       "labels": [
         "component: list",
@@ -443,8 +479,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-21T08:49:53Z",
+      "mergedAt": "2019-08-21 17:49:53",
       "number": 17074,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "joshwooding",
@@ -454,14 +491,16 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[docs] Migration guide to v4: include change to dense Lists",
       "url": "https://github.com/mui/material-ui/pull/17074",
+      "user": "zekehernandez",
     },
     {
+      "assignees": [],
       "author": "netochaves",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-20T21:34:57Z",
+      "createdAt": "2019-08-21 06:34:57",
       "isDraft": false,
       "labels": [
         "component: rating",
@@ -469,8 +508,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-22T08:27:19Z",
+      "mergedAt": "2019-08-22 17:27:19",
       "number": 17078,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "joshwooding",
@@ -480,13 +520,15 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Rating] Add Custom prop-type to prop name",
       "url": "https://github.com/mui/material-ui/pull/17078",
+      "user": "netochaves",
     },
     {
+      "assignees": [],
       "author": "devsumanmdn",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-21T02:32:24Z",
+      "createdAt": "2019-08-21 11:32:24",
       "isDraft": false,
       "labels": [
         "component: CircularProgress",
@@ -495,8 +537,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-22T08:26:56Z",
+      "mergedAt": "2019-08-22 17:26:56",
       "number": 17081,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -505,13 +548,15 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[CircularProgress] Document String format for size prop",
       "url": "https://github.com/mui/material-ui/pull/17081",
+      "user": "devsumanmdn",
     },
     {
+      "assignees": [],
       "author": "elmeerr",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-21T11:45:49Z",
+      "createdAt": "2019-08-21 20:45:49",
       "isDraft": false,
       "labels": [
         "bug 🐛",
@@ -519,8 +564,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-21T17:32:44Z",
+      "mergedAt": "2019-08-22 02:32:44",
       "number": 17085,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "joshwooding",
@@ -530,14 +576,16 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Slider] Avoid mutating user's value prop",
       "url": "https://github.com/mui/material-ui/pull/17085",
+      "user": "elmeerr",
     },
     {
+      "assignees": [],
       "author": "ZachStoltz",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-21T16:39:07Z",
+      "createdAt": "2019-08-22 01:39:07",
       "isDraft": false,
       "labels": [
         "bug 🐛",
@@ -545,8 +593,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-21T17:31:38Z",
+      "mergedAt": "2019-08-22 02:31:38",
       "number": 17091,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -555,20 +604,18 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Drawer] Fix ref forwarding when variant="persistent"",
       "url": "https://github.com/mui/material-ui/pull/17091",
+      "user": "ZachStoltz",
     },
     {
+      "assignees": [],
       "author": "cmeeren",
       "commenters": [
-        "cmeeren",
         "cmeeren",
         "merceyz",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-21T17:33:55Z",
+      "createdAt": "2019-08-22 02:33:55",
       "isDraft": false,
       "labels": [
         "component: rating",
@@ -576,8 +623,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-22T08:26:24Z",
+      "mergedAt": "2019-08-22 17:26:24",
       "number": 17093,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -586,14 +634,16 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Rating] Improve signature in docs",
       "url": "https://github.com/mui/material-ui/pull/17093",
+      "user": "cmeeren",
     },
     {
+      "assignees": [],
       "author": "rbrishabh",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-21T18:15:53Z",
+      "createdAt": "2019-08-22 03:15:53",
       "isDraft": false,
       "labels": [
         "bug 🐛",
@@ -601,8 +651,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-22T08:28:08Z",
+      "mergedAt": "2019-08-22 17:28:08",
       "number": 17095,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -611,16 +662,17 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Switch] Fix rendering in IE 11 and Safari",
       "url": "https://github.com/mui/material-ui/pull/17095",
+      "user": "rbrishabh",
     },
     {
+      "assignees": [],
       "author": "netochaves",
       "commenters": [
         "mui-pr-bot",
         "netochaves",
         "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-21T21:20:53Z",
+      "createdAt": "2019-08-22 06:20:53",
       "isDraft": false,
       "labels": [
         "bug 🐛",
@@ -628,8 +680,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T08:38:33Z",
+      "mergedAt": "2019-08-23 17:38:33",
       "number": 17097,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -638,13 +691,15 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Popover] Fix update position action",
       "url": "https://github.com/mui/material-ui/pull/17097",
+      "user": "netochaves",
     },
     {
+      "assignees": [],
       "author": "JapuDCret",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-22T12:12:03Z",
+      "createdAt": "2019-08-22 21:12:03",
       "isDraft": false,
       "labels": [
         "component: menu",
@@ -652,78 +707,83 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T22:24:26Z",
+      "mergedAt": "2019-08-24 07:24:26",
       "number": 17103,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[MenuItem] Add missing dense classkey",
       "url": "https://github.com/mui/material-ui/pull/17103",
+      "user": "JapuDCret",
     },
     {
+      "assignees": [],
       "author": "spaceexperiment",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T12:52:42Z",
+      "createdAt": "2019-08-22 21:52:42",
       "isDraft": false,
       "labels": [
         "component: Popper",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T08:33:03Z",
+      "mergedAt": "2019-08-23 17:33:03",
       "number": 17104,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "adamdicarlo",
-        "adamdicarlo",
         "behnammodi",
         "mbrookes",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[docs] Fix popover demo event.target is null",
       "url": "https://github.com/mui/material-ui/pull/17104",
+      "user": "spaceexperiment",
     },
     {
+      "assignees": [],
       "author": "behnammodi",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T17:08:26Z",
+      "createdAt": "2019-08-23 02:08:26",
       "isDraft": false,
       "labels": [
         "component: drawer",
       ],
       "mergeable": "UNKNOWN",
       "merged": false,
-      "mergedAt": undefined,
+      "mergedAt": null,
       "number": 17108,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
-      "reviewers": [],
+      "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
       "title": "improve sample code",
       "url": "https://github.com/mui/material-ui/pull/17108",
+      "user": "behnammodi",
     },
     {
+      "assignees": [],
       "author": "ryanburr",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
         "ryanburr",
       ],
-      "createdAt": "2019-08-22T17:17:19Z",
+      "createdAt": "2019-08-23 02:17:19",
       "isDraft": false,
       "labels": [
         "bug 🐛",
@@ -731,13 +791,12 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T22:27:39Z",
+      "mergedAt": "2019-08-24 07:27:39",
       "number": 17109,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "behnammodi",
-        "behnammodi",
-        "oliviertassinari",
         "oliviertassinari",
         "ryanburr",
       ],
@@ -745,22 +804,25 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[ButtonGroup] Fix border color when disabled and contained",
       "url": "https://github.com/mui/material-ui/pull/17109",
+      "user": "ryanburr",
     },
     {
+      "assignees": [],
       "author": "behnammodi",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T19:28:13Z",
+      "createdAt": "2019-08-23 04:28:13",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": false,
-      "mergedAt": undefined,
+      "mergedAt": null,
       "number": 17114,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -769,14 +831,16 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[docs] Improve drawer sample code",
       "url": "https://github.com/mui/material-ui/pull/17114",
+      "user": "behnammodi",
     },
     {
+      "assignees": [],
       "author": "dominictwlee",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T19:40:01Z",
+      "createdAt": "2019-08-23 04:40:01",
       "isDraft": false,
       "labels": [
         "component: backdrop",
@@ -784,39 +848,39 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T08:44:32Z",
+      "mergedAt": "2019-08-23 17:44:32",
       "number": 17115,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "behnammodi",
-        "behnammodi",
-        "behnammodi",
         "dominictwlee",
-        "oliviertassinari",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[Backdrop] Render children inside div",
       "url": "https://github.com/mui/material-ui/pull/17115",
+      "user": "dominictwlee",
     },
     {
+      "assignees": [],
       "author": "behnammodi",
       "commenters": [
         "behnammodi",
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-22T23:01:25Z",
+      "createdAt": "2019-08-23 08:01:25",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T22:37:39Z",
+      "mergedAt": "2019-08-24 07:37:39",
       "number": 17118,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -825,22 +889,25 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[docs] Improve custom styles of the demos",
       "url": "https://github.com/mui/material-ui/pull/17118",
+      "user": "behnammodi",
     },
     {
+      "assignees": [],
       "author": "Shubhamchinda",
       "commenters": [
         "Shubhamchinda",
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-23T05:38:32Z",
+      "createdAt": "2019-08-23 14:38:32",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T22:28:28Z",
+      "mergedAt": "2019-08-24 07:28:28",
       "number": 17120,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -849,29 +916,26 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[docs] Fix edit dependencies extraction ",
       "url": "https://github.com/mui/material-ui/pull/17120",
+      "user": "Shubhamchinda",
     },
     {
+      "assignees": [],
       "author": "Shubhamchinda",
       "commenters": [
         "Shubhamchinda",
-        "Shubhamchinda",
-        "Shubhamchinda",
-        "Shubhamchinda",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-23T10:43:50Z",
+      "createdAt": "2019-08-23 19:43:50",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T11:27:28Z",
+      "mergedAt": "2019-08-23 20:27:28",
       "number": 17122,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -880,15 +944,16 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[docs] Fix typo in modal demo",
       "url": "https://github.com/mui/material-ui/pull/17122",
+      "user": "Shubhamchinda",
     },
     {
+      "assignees": [],
       "author": "zekehernandez",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-23T16:01:32Z",
+      "createdAt": "2019-08-24 01:01:32",
       "isDraft": false,
       "labels": [
         "bug 🐛",
@@ -896,8 +961,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-23T22:47:21Z",
+      "mergedAt": "2019-08-24 07:47:21",
       "number": 17128,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -906,22 +972,17 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Popover] Fix anchorEl positioning within popup window",
       "url": "https://github.com/mui/material-ui/pull/17128",
+      "user": "zekehernandez",
     },
     {
+      "assignees": [],
       "author": "cmeeren",
       "commenters": [
         "cmeeren",
-        "cmeeren",
-        "cmeeren",
-        "cmeeren",
-        "cmeeren",
-        "cmeeren",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-24T08:50:24Z",
+      "createdAt": "2019-08-24 17:50:24",
       "isDraft": false,
       "labels": [
         "component: radio",
@@ -929,41 +990,37 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-25T11:44:38Z",
+      "mergedAt": "2019-08-25 20:44:38",
       "number": 17132,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "cmeeren",
-        "cmeeren",
-        "cmeeren",
-        "cmeeren",
-        "cmeeren",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[RadioGroup] Make value accept any",
       "url": "https://github.com/mui/material-ui/pull/17132",
+      "user": "cmeeren",
     },
     {
+      "assignees": [],
       "author": "Janpot",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-24T14:33:52Z",
+      "createdAt": "2019-08-24 23:33:52",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-26T16:18:33Z",
+      "mergedAt": "2019-08-27 01:18:33",
       "number": 17133,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -972,22 +1029,18 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[examples] Fix warning in next.js example",
       "url": "https://github.com/mui/material-ui/pull/17133",
+      "user": "Janpot",
     },
     {
+      "assignees": [],
       "author": "egerardus",
       "commenters": [
         "egerardus",
-        "egerardus",
-        "egerardus",
-        "mbrookes",
-        "mbrookes",
         "mbrookes",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-24T21:27:15Z",
+      "createdAt": "2019-08-25 06:27:15",
       "isDraft": false,
       "labels": [
         "component: table",
@@ -995,8 +1048,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-28T14:02:27Z",
+      "mergedAt": "2019-08-28 23:02:27",
       "number": 17139,
+      "requestedReviewers": [
+        "mbrookes",
+      ],
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1005,15 +1061,17 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Table] Add sticky header support",
       "url": "https://github.com/mui/material-ui/pull/17139",
+      "user": "egerardus",
     },
     {
+      "assignees": [],
       "author": "keiohtani",
       "commenters": [
         "keiohtani",
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-25T09:51:28Z",
+      "createdAt": "2019-08-25 18:51:28",
       "isDraft": false,
       "labels": [
         "component: table",
@@ -1021,64 +1079,57 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-26T16:19:35Z",
+      "mergedAt": "2019-08-27 01:19:35",
       "number": 17141,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "keiohtani",
-        "keiohtani",
-        "oliviertassinari",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[docs] Improve enhanced table variable name",
       "url": "https://github.com/mui/material-ui/pull/17141",
+      "user": "keiohtani",
     },
     {
+      "assignees": [],
       "author": "lookfirst",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-26T06:02:50Z",
+      "createdAt": "2019-08-26 15:02:50",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": false,
-      "mergedAt": undefined,
+      "mergedAt": null,
       "number": 17143,
+      "requestedReviewers": null,
       "reviewDecision": "CHANGES_REQUESTED",
       "reviewers": [
         "eps1lon",
-        "eps1lon",
         "lookfirst",
-        "lookfirst",
-        "lookfirst",
-        "lookfirst",
-        "lookfirst",
-        "lookfirst",
-        "lookfirst",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "CLOSED",
       "targetBranch": "master",
       "title": "[docs] minimizing bundle: simplify by using craco",
       "url": "https://github.com/mui/material-ui/pull/17143",
+      "user": "lookfirst",
     },
     {
+      "assignees": [],
       "author": "kiransiluveru",
       "commenters": [
         "eps1lon",
         "mui-pr-bot",
         "skirankumar7",
       ],
-      "createdAt": "2019-08-26T13:54:44Z",
+      "createdAt": "2019-08-26 22:54:44",
       "isDraft": false,
       "labels": [
         "bug 🐛",
@@ -1086,8 +1137,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-27T08:15:28Z",
+      "mergedAt": "2019-08-27 17:15:28",
       "number": 17174,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1096,23 +1148,26 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Tooltip] Fix interactive + enterDelay combination",
       "url": "https://github.com/mui/material-ui/pull/17174",
+      "user": "kiransiluveru",
     },
     {
+      "assignees": [],
       "author": "saltyshiomix",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
         "saltyshiomix",
       ],
-      "createdAt": "2019-08-26T16:06:18Z",
+      "createdAt": "2019-08-27 01:06:18",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-26T16:15:54Z",
+      "mergedAt": "2019-08-27 01:15:54",
       "number": 17181,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1121,22 +1176,18 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[examples] Fix warnings Container in _app.js with Next.js ",
       "url": "https://github.com/mui/material-ui/pull/17181",
+      "user": "saltyshiomix",
     },
     {
+      "assignees": [],
       "author": "simshaun",
       "commenters": [
         "mbrookes",
-        "mbrookes",
-        "mbrookes",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "simshaun",
-        "simshaun",
-        "simshaun",
         "simshaun",
       ],
-      "createdAt": "2019-08-26T19:18:34Z",
+      "createdAt": "2019-08-27 04:18:34",
       "isDraft": false,
       "labels": [
         "component: toggle button",
@@ -1144,8 +1195,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-28T09:52:36Z",
+      "mergedAt": "2019-08-28 18:52:36",
       "number": 17187,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "mbrookes",
@@ -1155,41 +1207,43 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[ToggleButton] Improve customizability",
       "url": "https://github.com/mui/material-ui/pull/17187",
+      "user": "simshaun",
     },
     {
+      "assignees": [],
       "author": "skube",
       "commenters": [
         "mbrookes",
-        "mbrookes",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "skube",
         "skube",
       ],
-      "createdAt": "2019-08-26T20:55:22Z",
+      "createdAt": "2019-08-27 05:55:22",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-26T21:46:30Z",
+      "mergedAt": "2019-08-27 06:46:30",
       "number": 17189,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
-      "reviewers": [],
+      "reviewers": null,
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[docs] Missing degree/option symbol",
       "url": "https://github.com/mui/material-ui/pull/17189",
+      "user": "skube",
     },
     {
+      "assignees": [],
       "author": "elmeerr",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-27T05:45:05Z",
+      "createdAt": "2019-08-27 14:45:05",
       "isDraft": false,
       "labels": [
         "component: text field",
@@ -1197,8 +1251,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-28T09:48:53Z",
+      "mergedAt": "2019-08-28 18:48:53",
       "number": 17192,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1207,22 +1262,25 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[TextField] Specs alignment",
       "url": "https://github.com/mui/material-ui/pull/17192",
+      "user": "elmeerr",
     },
     {
+      "assignees": [],
       "author": "skube",
       "commenters": [
         "merceyz",
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-27T12:41:59Z",
+      "createdAt": "2019-08-27 21:41:59",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-28T09:51:08Z",
+      "mergedAt": "2019-08-28 18:51:08",
       "number": 17200,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "mbrookes",
@@ -1232,22 +1290,17 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[docs] Minor Update to remove "n°" notations",
       "url": "https://github.com/mui/material-ui/pull/17200",
+      "user": "skube",
     },
     {
+      "assignees": [],
       "author": "ahtcx",
       "commenters": [
         "ahtcx",
-        "ahtcx",
-        "ahtcx",
-        "ahtcx",
-        "ahtcx",
-        "ahtcx",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-27T19:08:46Z",
+      "createdAt": "2019-08-28 04:08:46",
       "isDraft": false,
       "labels": [
         "component: badge",
@@ -1255,37 +1308,30 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-31T11:47:36Z",
+      "mergedAt": "2019-08-31 20:47:36",
       "number": 17204,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "mbrookes",
-        "mbrookes",
-        "mbrookes",
-        "mbrookes",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[Badge] Add alignment options to badges",
       "url": "https://github.com/mui/material-ui/pull/17204",
+      "user": "ahtcx",
     },
     {
+      "assignees": [],
       "author": "rbrishabh",
       "commenters": [
         "eps1lon",
         "mui-pr-bot",
         "oliviertassinari",
         "rbrishabh",
-        "rbrishabh",
       ],
-      "createdAt": "2019-08-27T19:18:34Z",
+      "createdAt": "2019-08-28 04:18:34",
       "isDraft": false,
       "labels": [
         "component: menu",
@@ -1293,8 +1339,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-28T08:35:54Z",
+      "mergedAt": "2019-08-28 17:35:54",
       "number": 17205,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1303,15 +1350,17 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Menu] Include 'list' in class key",
       "url": "https://github.com/mui/material-ui/pull/17205",
+      "user": "rbrishabh",
     },
     {
+      "assignees": [],
       "author": "rbrishabh",
       "commenters": [
         "eps1lon",
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-27T19:27:05Z",
+      "createdAt": "2019-08-28 04:27:05",
       "isDraft": false,
       "labels": [
         "component: Typography",
@@ -1319,11 +1368,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-28T14:01:58Z",
+      "mergedAt": "2019-08-28 23:01:58",
       "number": 17206,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
-        "mbrookes",
         "mbrookes",
         "oliviertassinari",
       ],
@@ -1331,22 +1380,25 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Typography] noWrap requires display block",
       "url": "https://github.com/mui/material-ui/pull/17206",
+      "user": "rbrishabh",
     },
     {
+      "assignees": [],
       "author": "rbrishabh",
       "commenters": [
         "mui-pr-bot",
         "rbrishabh",
       ],
-      "createdAt": "2019-08-27T19:33:57Z",
+      "createdAt": "2019-08-28 04:33:57",
       "isDraft": false,
       "labels": [
         "package: system",
       ],
       "mergeable": "UNKNOWN",
       "merged": false,
-      "mergedAt": undefined,
+      "mergedAt": null,
       "number": 17207,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
       "reviewers": [
         "oliviertassinari",
@@ -1355,14 +1407,18 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "Fix - boxShadow property is not flowing through",
       "url": "https://github.com/mui/material-ui/pull/17207",
+      "user": "rbrishabh",
     },
     {
+      "assignees": [
+        "eps1lon",
+      ],
       "author": "eps1lon",
       "commenters": [
         "eps1lon",
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-28T12:05:39Z",
+      "createdAt": "2019-08-28 21:05:39",
       "isDraft": false,
       "labels": [
         "bug 🐛",
@@ -1370,8 +1426,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2020-01-05T14:19:44Z",
+      "mergedAt": "2020-01-05 23:19:44",
       "number": 17211,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1380,13 +1437,15 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[core] Fix missing type peer deps",
       "url": "https://github.com/mui/material-ui/pull/17211",
+      "user": "eps1lon",
     },
     {
+      "assignees": [],
       "author": "eps1lon",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-28T13:49:10Z",
+      "createdAt": "2019-08-28 22:49:10",
       "isDraft": false,
       "labels": [
         "docs",
@@ -1394,8 +1453,11 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-29T21:49:50Z",
+      "mergedAt": "2019-08-30 06:49:50",
       "number": 17214,
+      "requestedReviewers": [
+        "mbrookes",
+      ],
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1404,20 +1466,19 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[docs] Require less strict tsconfig",
       "url": "https://github.com/mui/material-ui/pull/17214",
+      "user": "eps1lon",
     },
     {
+      "assignees": [],
       "author": "Shubhamchinda",
       "commenters": [
         "Shubhamchinda",
         "eps1lon",
-        "eps1lon",
-        "kamami",
         "kamami",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-28T17:25:45Z",
+      "createdAt": "2019-08-29 02:25:45",
       "isDraft": false,
       "labels": [
         "component: text field",
@@ -1425,8 +1486,9 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-29T21:51:06Z",
+      "mergedAt": "2019-08-30 06:51:06",
       "number": 17217,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1435,29 +1497,27 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[TextField] Update outlined label when prop changes",
       "url": "https://github.com/mui/material-ui/pull/17217",
+      "user": "Shubhamchinda",
     },
     {
+      "assignees": [],
       "author": "behnammodi",
       "commenters": [
-        "behnammodi",
-        "behnammodi",
-        "behnammodi",
         "behnammodi",
         "eps1lon",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-28T18:05:54Z",
+      "createdAt": "2019-08-29 03:05:54",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-30T07:07:35Z",
+      "mergedAt": "2019-08-30 16:07:35",
       "number": 17218,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "eps1lon",
@@ -1467,18 +1527,18 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[docs] Improve style of the demos",
       "url": "https://github.com/mui/material-ui/pull/17218",
+      "user": "behnammodi",
     },
     {
+      "assignees": [],
       "author": "ahtcx",
       "commenters": [
         "ahtcx",
         "mbrookes",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-28T18:15:34Z",
+      "createdAt": "2019-08-29 03:15:34",
       "isDraft": false,
       "labels": [
         "accessibility",
@@ -1487,57 +1547,62 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-31T11:56:37Z",
+      "mergedAt": "2019-08-31 20:56:37",
       "number": 17219,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[LinearProgress] Make color adapt to theme type",
       "url": "https://github.com/mui/material-ui/pull/17219",
+      "user": "ahtcx",
     },
     {
+      "assignees": [],
       "author": "stasiukanya",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
         "redblue9771",
         "stasiukanya",
       ],
-      "createdAt": "2019-08-28T20:36:00Z",
+      "createdAt": "2019-08-29 05:36:00",
       "isDraft": false,
       "labels": [
         "bug 🐛",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-30T07:06:09Z",
+      "mergedAt": "2019-08-30 16:06:09",
       "number": 17221,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
-      "reviewers": [],
+      "reviewers": null,
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[CardActionArea] Fix 'border-radius'",
       "url": "https://github.com/mui/material-ui/pull/17221",
+      "user": "stasiukanya",
     },
     {
+      "assignees": [],
       "author": "jasonkylefrank",
       "commenters": [
         "mui-pr-bot",
       ],
-      "createdAt": "2019-08-29T20:11:37Z",
+      "createdAt": "2019-08-30 05:11:37",
       "isDraft": false,
       "labels": [
         "docs",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-30T07:05:33Z",
+      "mergedAt": "2019-08-30 16:05:33",
       "number": 17230,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1546,22 +1611,25 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Button] Fix typo in demo text",
       "url": "https://github.com/mui/material-ui/pull/17230",
+      "user": "jasonkylefrank",
     },
     {
+      "assignees": [],
       "author": "sakulstra",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
       ],
-      "createdAt": "2019-08-30T06:55:17Z",
+      "createdAt": "2019-08-30 15:55:17",
       "isDraft": false,
       "labels": [
         "component: button",
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-08-30T07:09:44Z",
+      "mergedAt": "2019-08-30 16:09:44",
       "number": 17232,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "oliviertassinari",
@@ -1570,22 +1638,20 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "targetBranch": "master",
       "title": "[Button] Remove code leftover from < v4",
       "url": "https://github.com/mui/material-ui/pull/17232",
+      "user": "sakulstra",
     },
     {
+      "assignees": [],
       "author": "city41",
       "commenters": [
         "angel-langdon",
         "city41",
-        "city41",
         "eps1lon",
-        "mbrookes",
         "mbrookes",
         "mui-pr-bot",
         "oliviertassinari",
-        "oliviertassinari",
-        "oliviertassinari",
       ],
-      "createdAt": "2019-08-30T16:22:21Z",
+      "createdAt": "2019-08-31 01:22:21",
       "isDraft": false,
       "labels": [
         "accessibility",
@@ -1593,30 +1659,30 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-09-02T12:53:50Z",
+      "mergedAt": "2019-09-02 21:53:50",
       "number": 17240,
+      "requestedReviewers": null,
       "reviewDecision": "APPROVED",
       "reviewers": [
         "city41",
         "eps1lon",
-        "eps1lon",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[Slider] Add getAriaLabel prop",
       "url": "https://github.com/mui/material-ui/pull/17240",
+      "user": "city41",
     },
     {
+      "assignees": [],
       "author": "mbrookes",
       "commenters": [
         "mui-pr-bot",
         "oliviertassinari",
         "skirunman",
-        "skirunman",
       ],
-      "createdAt": "2019-08-31T13:29:00Z",
+      "createdAt": "2019-08-31 22:29:00",
       "isDraft": false,
       "labels": [
         "component: badge",
@@ -1624,19 +1690,19 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       ],
       "mergeable": "UNKNOWN",
       "merged": true,
-      "mergedAt": "2019-09-01T09:30:16Z",
+      "mergedAt": "2019-09-01 18:30:16",
       "number": 17247,
+      "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
       "reviewers": [
         "mbrookes",
-        "mbrookes",
-        "oliviertassinari",
         "oliviertassinari",
       ],
       "state": "MERGED",
       "targetBranch": "master",
       "title": "[Badge] Improve shape of 2 digit badge",
       "url": "https://github.com/mui/material-ui/pull/17247",
+      "user": "mbrookes",
     },
   ],
 }
@@ -1645,6 +1711,7 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
 exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has participated in (via comments or reviews) within the specified period 1`] = `
 [
   {
+    "assignees": [],
     "author": "Patil2099",
     "commenters": [
       "mui-pr-bot",
@@ -1660,6 +1727,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-20 18:06:22",
     "number": 17058,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -1668,8 +1736,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Tooltip] Improve arrow demo",
     "url": "https://github.com/mui/material-ui/pull/17058",
+    "user": "Patil2099",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-pr-bot",
@@ -1684,6 +1754,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-21 17:53:23",
     "number": 17059,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mbrookes",
@@ -1693,8 +1764,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Modal] Add transition documentation",
     "url": "https://github.com/mui/material-ui/pull/17059",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-pr-bot",
@@ -1709,6 +1782,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-21 17:50:25",
     "number": 17062,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mbrookes",
@@ -1718,8 +1792,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[AppBar] Add back to top demo",
     "url": "https://github.com/mui/material-ui/pull/17062",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mbrookes",
@@ -1737,6 +1813,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-20 18:18:57",
     "number": 17063,
+    "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
     "reviewers": [
       "sakulstra",
@@ -1745,8 +1822,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Divider] Add vertical support",
     "url": "https://github.com/mui/material-ui/pull/17063",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "zekehernandez",
     "commenters": [
       "mui-pr-bot",
@@ -1761,6 +1840,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-21 17:49:53",
     "number": 17074,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "joshwooding",
@@ -1770,8 +1850,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Migration guide to v4: include change to dense Lists",
     "url": "https://github.com/mui/material-ui/pull/17074",
+    "user": "zekehernandez",
   },
   {
+    "assignees": [],
     "author": "netochaves",
     "commenters": [
       "mui-pr-bot",
@@ -1787,6 +1869,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-22 17:27:19",
     "number": 17078,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "joshwooding",
@@ -1796,8 +1879,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Rating] Add Custom prop-type to prop name",
     "url": "https://github.com/mui/material-ui/pull/17078",
+    "user": "netochaves",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-pr-bot",
@@ -1812,6 +1897,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-22 17:27:51",
     "number": 17080,
+    "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
     "reviewers": [
       "joshwooding",
@@ -1822,8 +1908,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[TreeView] Support node label",
     "url": "https://github.com/mui/material-ui/pull/17080",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "devsumanmdn",
     "commenters": [
       "mui-pr-bot",
@@ -1839,6 +1927,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-22 17:26:56",
     "number": 17081,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -1847,8 +1936,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[CircularProgress] Document String format for size prop",
     "url": "https://github.com/mui/material-ui/pull/17081",
+    "user": "devsumanmdn",
   },
   {
+    "assignees": [],
     "author": "elmeerr",
     "commenters": [
       "mui-pr-bot",
@@ -1863,6 +1954,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-22 02:32:44",
     "number": 17085,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "joshwooding",
@@ -1872,8 +1964,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Slider] Avoid mutating user's value prop",
     "url": "https://github.com/mui/material-ui/pull/17085",
+    "user": "elmeerr",
   },
   {
+    "assignees": [],
     "author": "ZachStoltz",
     "commenters": [
       "mui-pr-bot",
@@ -1889,6 +1983,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-22 02:31:38",
     "number": 17091,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -1897,8 +1992,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Drawer] Fix ref forwarding when variant="persistent"",
     "url": "https://github.com/mui/material-ui/pull/17091",
+    "user": "ZachStoltz",
   },
   {
+    "assignees": [],
     "author": "cmeeren",
     "commenters": [
       "cmeeren",
@@ -1916,6 +2013,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-22 17:26:24",
     "number": 17093,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -1924,8 +2022,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Rating] Improve signature in docs",
     "url": "https://github.com/mui/material-ui/pull/17093",
+    "user": "cmeeren",
   },
   {
+    "assignees": [],
     "author": "rbrishabh",
     "commenters": [
       "mui-pr-bot",
@@ -1941,6 +2041,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-22 17:28:08",
     "number": 17095,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -1949,8 +2050,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Switch] Fix rendering in IE 11 and Safari",
     "url": "https://github.com/mui/material-ui/pull/17095",
+    "user": "rbrishabh",
   },
   {
+    "assignees": [],
     "author": "netochaves",
     "commenters": [
       "mui-pr-bot",
@@ -1967,6 +2070,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-23 17:38:33",
     "number": 17097,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -1975,8 +2079,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Popover] Fix update position action",
     "url": "https://github.com/mui/material-ui/pull/17097",
+    "user": "netochaves",
   },
   {
+    "assignees": [],
     "author": "JapuDCret",
     "commenters": [
       "mui-pr-bot",
@@ -1991,6 +2097,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-24 07:24:26",
     "number": 17103,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -1999,8 +2106,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[MenuItem] Add missing dense classkey",
     "url": "https://github.com/mui/material-ui/pull/17103",
+    "user": "JapuDCret",
   },
   {
+    "assignees": [],
     "author": "spaceexperiment",
     "commenters": [
       "mui-pr-bot",
@@ -2015,6 +2124,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-23 17:33:03",
     "number": 17104,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "adamdicarlo",
@@ -2026,8 +2136,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Fix popover demo event.target is null",
     "url": "https://github.com/mui/material-ui/pull/17104",
+    "user": "spaceexperiment",
   },
   {
+    "assignees": [],
     "author": "behnammodi",
     "commenters": [
       "mui-pr-bot",
@@ -2040,16 +2152,19 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     ],
     "mergeable": "UNKNOWN",
     "merged": false,
-    "mergedAt": "Not merged yet",
+    "mergedAt": null,
     "number": 17108,
+    "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
-    "reviewers": [],
+    "reviewers": null,
     "state": "CLOSED",
     "targetBranch": "master",
     "title": "improve sample code",
     "url": "https://github.com/mui/material-ui/pull/17108",
+    "user": "behnammodi",
   },
   {
+    "assignees": [],
     "author": "ryanburr",
     "commenters": [
       "mui-pr-bot",
@@ -2066,6 +2181,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-24 07:27:39",
     "number": 17109,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "behnammodi",
@@ -2076,8 +2192,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[ButtonGroup] Fix border color when disabled and contained",
     "url": "https://github.com/mui/material-ui/pull/17109",
+    "user": "ryanburr",
   },
   {
+    "assignees": [],
     "author": "behnammodi",
     "commenters": [
       "mui-pr-bot",
@@ -2090,8 +2208,9 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     ],
     "mergeable": "UNKNOWN",
     "merged": false,
-    "mergedAt": "Not merged yet",
+    "mergedAt": null,
     "number": 17114,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2100,8 +2219,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Improve drawer sample code",
     "url": "https://github.com/mui/material-ui/pull/17114",
+    "user": "behnammodi",
   },
   {
+    "assignees": [],
     "author": "dominictwlee",
     "commenters": [
       "mui-pr-bot",
@@ -2117,6 +2238,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-23 17:44:32",
     "number": 17115,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "behnammodi",
@@ -2127,8 +2249,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Backdrop] Render children inside div",
     "url": "https://github.com/mui/material-ui/pull/17115",
+    "user": "dominictwlee",
   },
   {
+    "assignees": [],
     "author": "behnammodi",
     "commenters": [
       "behnammodi",
@@ -2144,6 +2268,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-24 07:37:39",
     "number": 17118,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2152,8 +2277,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Improve custom styles of the demos",
     "url": "https://github.com/mui/material-ui/pull/17118",
+    "user": "behnammodi",
   },
   {
+    "assignees": [],
     "author": "Shubhamchinda",
     "commenters": [
       "Shubhamchinda",
@@ -2168,6 +2295,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-24 07:28:28",
     "number": 17120,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2176,8 +2304,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Fix edit dependencies extraction ",
     "url": "https://github.com/mui/material-ui/pull/17120",
+    "user": "Shubhamchinda",
   },
   {
+    "assignees": [],
     "author": "Shubhamchinda",
     "commenters": [
       "Shubhamchinda",
@@ -2193,6 +2323,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-23 20:27:28",
     "number": 17122,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2201,8 +2332,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Fix typo in modal demo",
     "url": "https://github.com/mui/material-ui/pull/17122",
+    "user": "Shubhamchinda",
   },
   {
+    "assignees": [],
     "author": "zekehernandez",
     "commenters": [
       "mui-pr-bot",
@@ -2218,6 +2351,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-24 07:47:21",
     "number": 17128,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2226,8 +2360,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Popover] Fix anchorEl positioning within popup window",
     "url": "https://github.com/mui/material-ui/pull/17128",
+    "user": "zekehernandez",
   },
   {
+    "assignees": [],
     "author": "cmeeren",
     "commenters": [
       "cmeeren",
@@ -2244,6 +2380,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-25 20:44:38",
     "number": 17132,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "cmeeren",
@@ -2253,8 +2390,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[RadioGroup] Make value accept any",
     "url": "https://github.com/mui/material-ui/pull/17132",
+    "user": "cmeeren",
   },
   {
+    "assignees": [],
     "author": "Janpot",
     "commenters": [
       "mui-pr-bot",
@@ -2269,6 +2408,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-27 01:18:33",
     "number": 17133,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2277,8 +2417,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[examples] Fix warning in next.js example",
     "url": "https://github.com/mui/material-ui/pull/17133",
+    "user": "Janpot",
   },
   {
+    "assignees": [],
     "author": "egerardus",
     "commenters": [
       "egerardus",
@@ -2296,6 +2438,9 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-28 23:02:27",
     "number": 17139,
+    "requestedReviewers": [
+      "mbrookes",
+    ],
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2304,8 +2449,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Table] Add sticky header support",
     "url": "https://github.com/mui/material-ui/pull/17139",
+    "user": "egerardus",
   },
   {
+    "assignees": [],
     "author": "keiohtani",
     "commenters": [
       "keiohtani",
@@ -2322,6 +2469,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-27 01:19:35",
     "number": 17141,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "keiohtani",
@@ -2331,8 +2479,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Improve enhanced table variable name",
     "url": "https://github.com/mui/material-ui/pull/17141",
+    "user": "keiohtani",
   },
   {
+    "assignees": [],
     "author": "lookfirst",
     "commenters": [
       "mui-pr-bot",
@@ -2344,8 +2494,9 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     ],
     "mergeable": "UNKNOWN",
     "merged": false,
-    "mergedAt": "Not merged yet",
+    "mergedAt": null,
     "number": 17143,
+    "requestedReviewers": null,
     "reviewDecision": "CHANGES_REQUESTED",
     "reviewers": [
       "eps1lon",
@@ -2356,8 +2507,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] minimizing bundle: simplify by using craco",
     "url": "https://github.com/mui/material-ui/pull/17143",
+    "user": "lookfirst",
   },
   {
+    "assignees": [],
     "author": "kiransiluveru",
     "commenters": [
       "eps1lon",
@@ -2374,6 +2527,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-27 17:15:28",
     "number": 17174,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2382,8 +2536,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Tooltip] Fix interactive + enterDelay combination",
     "url": "https://github.com/mui/material-ui/pull/17174",
+    "user": "kiransiluveru",
   },
   {
+    "assignees": [],
     "author": "saltyshiomix",
     "commenters": [
       "mui-pr-bot",
@@ -2399,6 +2555,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-27 01:15:54",
     "number": 17181,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2407,8 +2564,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[examples] Fix warnings Container in _app.js with Next.js ",
     "url": "https://github.com/mui/material-ui/pull/17181",
+    "user": "saltyshiomix",
   },
   {
+    "assignees": [],
     "author": "simshaun",
     "commenters": [
       "mbrookes",
@@ -2426,6 +2585,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-28 18:52:36",
     "number": 17187,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mbrookes",
@@ -2435,8 +2595,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[ToggleButton] Improve customizability",
     "url": "https://github.com/mui/material-ui/pull/17187",
+    "user": "simshaun",
   },
   {
+    "assignees": [],
     "author": "skube",
     "commenters": [
       "mbrookes",
@@ -2453,14 +2615,17 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-27 06:46:30",
     "number": 17189,
+    "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
-    "reviewers": [],
+    "reviewers": null,
     "state": "MERGED",
     "targetBranch": "master",
     "title": "[docs] Missing degree/option symbol",
     "url": "https://github.com/mui/material-ui/pull/17189",
+    "user": "skube",
   },
   {
+    "assignees": [],
     "author": "elmeerr",
     "commenters": [
       "mui-pr-bot",
@@ -2476,6 +2641,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-28 18:48:53",
     "number": 17192,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2484,8 +2650,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[TextField] Specs alignment",
     "url": "https://github.com/mui/material-ui/pull/17192",
+    "user": "elmeerr",
   },
   {
+    "assignees": [],
     "author": "oliviertassinari",
     "commenters": [
       "mui-pr-bot",
@@ -2499,6 +2667,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-28 18:50:19",
     "number": 17198,
+    "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
     "reviewers": [
       "eps1lon",
@@ -2508,8 +2677,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Better document the ref props in the API",
     "url": "https://github.com/mui/material-ui/pull/17198",
+    "user": "oliviertassinari",
   },
   {
+    "assignees": [],
     "author": "skube",
     "commenters": [
       "merceyz",
@@ -2524,6 +2695,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-28 18:51:08",
     "number": 17200,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mbrookes",
@@ -2533,8 +2705,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Minor Update to remove "n°" notations",
     "url": "https://github.com/mui/material-ui/pull/17200",
+    "user": "skube",
   },
   {
+    "assignees": [],
     "author": "ahtcx",
     "commenters": [
       "ahtcx",
@@ -2551,6 +2725,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-31 20:47:36",
     "number": 17204,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mbrookes",
@@ -2560,8 +2735,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Badge] Add alignment options to badges",
     "url": "https://github.com/mui/material-ui/pull/17204",
+    "user": "ahtcx",
   },
   {
+    "assignees": [],
     "author": "rbrishabh",
     "commenters": [
       "eps1lon",
@@ -2579,6 +2756,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-28 17:35:54",
     "number": 17205,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2587,8 +2765,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Menu] Include 'list' in class key",
     "url": "https://github.com/mui/material-ui/pull/17205",
+    "user": "rbrishabh",
   },
   {
+    "assignees": [],
     "author": "rbrishabh",
     "commenters": [
       "eps1lon",
@@ -2605,6 +2785,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-28 23:01:58",
     "number": 17206,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "mbrookes",
@@ -2614,8 +2795,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Typography] noWrap requires display block",
     "url": "https://github.com/mui/material-ui/pull/17206",
+    "user": "rbrishabh",
   },
   {
+    "assignees": [],
     "author": "rbrishabh",
     "commenters": [
       "mui-pr-bot",
@@ -2628,8 +2811,9 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     ],
     "mergeable": "UNKNOWN",
     "merged": false,
-    "mergedAt": "Not merged yet",
+    "mergedAt": null,
     "number": 17207,
+    "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
     "reviewers": [
       "oliviertassinari",
@@ -2638,8 +2822,12 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "Fix - boxShadow property is not flowing through",
     "url": "https://github.com/mui/material-ui/pull/17207",
+    "user": "rbrishabh",
   },
   {
+    "assignees": [
+      "eps1lon",
+    ],
     "author": "eps1lon",
     "commenters": [
       "eps1lon",
@@ -2655,6 +2843,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2020-01-05 23:19:44",
     "number": 17211,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2663,8 +2852,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[core] Fix missing type peer deps",
     "url": "https://github.com/mui/material-ui/pull/17211",
+    "user": "eps1lon",
   },
   {
+    "assignees": [],
     "author": "eps1lon",
     "commenters": [
       "mui-pr-bot",
@@ -2679,6 +2870,9 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-30 06:49:50",
     "number": 17214,
+    "requestedReviewers": [
+      "mbrookes",
+    ],
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2687,8 +2881,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Require less strict tsconfig",
     "url": "https://github.com/mui/material-ui/pull/17214",
+    "user": "eps1lon",
   },
   {
+    "assignees": [],
     "author": "Shubhamchinda",
     "commenters": [
       "Shubhamchinda",
@@ -2707,6 +2903,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-30 06:51:06",
     "number": 17217,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2715,8 +2912,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[TextField] Update outlined label when prop changes",
     "url": "https://github.com/mui/material-ui/pull/17217",
+    "user": "Shubhamchinda",
   },
   {
+    "assignees": [],
     "author": "behnammodi",
     "commenters": [
       "behnammodi",
@@ -2733,6 +2932,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-30 16:07:35",
     "number": 17218,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "eps1lon",
@@ -2742,8 +2942,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[docs] Improve style of the demos",
     "url": "https://github.com/mui/material-ui/pull/17218",
+    "user": "behnammodi",
   },
   {
+    "assignees": [],
     "author": "ahtcx",
     "commenters": [
       "ahtcx",
@@ -2762,6 +2964,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-31 20:56:37",
     "number": 17219,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2770,8 +2973,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[LinearProgress] Make color adapt to theme type",
     "url": "https://github.com/mui/material-ui/pull/17219",
+    "user": "ahtcx",
   },
   {
+    "assignees": [],
     "author": "stasiukanya",
     "commenters": [
       "mui-pr-bot",
@@ -2788,14 +2993,17 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-30 16:06:09",
     "number": 17221,
+    "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
-    "reviewers": [],
+    "reviewers": null,
     "state": "MERGED",
     "targetBranch": "master",
     "title": "[CardActionArea] Fix 'border-radius'",
     "url": "https://github.com/mui/material-ui/pull/17221",
+    "user": "stasiukanya",
   },
   {
+    "assignees": [],
     "author": "jasonkylefrank",
     "commenters": [
       "mui-pr-bot",
@@ -2809,6 +3017,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-30 16:05:33",
     "number": 17230,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2817,8 +3026,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Button] Fix typo in demo text",
     "url": "https://github.com/mui/material-ui/pull/17230",
+    "user": "jasonkylefrank",
   },
   {
+    "assignees": [],
     "author": "sakulstra",
     "commenters": [
       "mui-pr-bot",
@@ -2833,6 +3044,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-08-30 16:09:44",
     "number": 17232,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "oliviertassinari",
@@ -2841,8 +3053,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Button] Remove code leftover from < v4",
     "url": "https://github.com/mui/material-ui/pull/17232",
+    "user": "sakulstra",
   },
   {
+    "assignees": [],
     "author": "city41",
     "commenters": [
       "angel-langdon",
@@ -2862,6 +3076,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-09-02 21:53:50",
     "number": 17240,
+    "requestedReviewers": null,
     "reviewDecision": "APPROVED",
     "reviewers": [
       "city41",
@@ -2872,8 +3087,10 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Slider] Add getAriaLabel prop",
     "url": "https://github.com/mui/material-ui/pull/17240",
+    "user": "city41",
   },
   {
+    "assignees": [],
     "author": "mbrookes",
     "commenters": [
       "mui-pr-bot",
@@ -2890,6 +3107,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "merged": true,
     "mergedAt": "2019-09-01 18:30:16",
     "number": 17247,
+    "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
     "reviewers": [
       "mbrookes",
@@ -2899,6 +3117,7 @@ exports[`getUserParticipatedPRListInPeriod > returns pull requests the user has 
     "targetBranch": "master",
     "title": "[Badge] Improve shape of 2 digit badge",
     "url": "https://github.com/mui/material-ui/pull/17247",
+    "user": "mbrookes",
   },
 ]
 `;

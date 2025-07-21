@@ -1,41 +1,55 @@
-import { PRListItem, PRDetail } from '@/schemas';
-import { PR } from '@/types';
+import { PRListItemRaw, PRDetailRaw } from '@/schemas';
+import { PR, PRListItem, PRDetail } from '@/types';
 
-function transformPRListItem(
-  listItem: PRListItem,
-): Pick<PR, 'number' | 'title' | 'url' | 'createdAt' | 'mergedAt'> {
+function transformPRListItem(listItem: PRListItemRaw): PRListItem {
   return {
     number: listItem.number,
     title: listItem.title,
     url: listItem.html_url,
     createdAt: listItem.created_at,
-    mergedAt: listItem.pull_request.merged_at ?? undefined,
+    user: listItem.user?.login ?? null,
   };
 }
 
-function transformPRDetail(
-  detail: PRDetail,
-): Omit<PR, 'number' | 'title' | 'url' | 'createdAt' | 'mergedAt'> {
+function transformPRDetail(detail: PRDetailRaw): PRDetail {
   return {
-    labels: detail.labels.nodes.map((label) => label.name).sort(),
-    author: detail.author.login,
-    reviewers: detail.reviews.nodes.map((review) => review.author.login).sort(),
-    commenters: detail.comments?.nodes.map((comment) => comment.author.login).sort() ?? [],
+    labels: getArrayOrNull(detail.labels?.nodes, (label) => label.name),
+    author: detail.author?.login ?? null,
+    assignees: detail.assignees.nodes.map((assignee) => assignee.login).sort(),
+    reviewers: getArrayOrNull(detail.reviews?.nodes, (review) => review?.author?.login),
+    commenters: getArrayOrNull(detail.comments?.nodes, (comment) => comment.author?.login),
     targetBranch: detail.baseRefName,
     state: detail.state,
     isDraft: detail.isDraft,
     merged: detail.merged,
     mergeable: detail.mergeable,
-    reviewDecision: detail.reviewDecision,
+    mergedAt: detail.mergedAt,
+    reviewDecision: detail.reviewDecision ?? null,
+    requestedReviewers: getArrayOrNull(detail.reviewRequests?.nodes, (node) => {
+      if (!node.requestedReviewer) return null;
+      return 'login' in node.requestedReviewer ? node.requestedReviewer.login : null;
+    }),
   };
 }
 
-export function combinePRData(listItem: PRListItem, detail: PRDetail): PR {
+export function combinePRData(listItem: PRListItemRaw, detail: PRDetailRaw | null): PR {
   const listItemData = transformPRListItem(listItem);
-  const detailData = transformPRDetail(detail);
+  const detailData = detail ? transformPRDetail(detail) : {};
 
   return {
     ...listItemData,
     ...detailData,
   };
+}
+
+function getArrayOrNull<T>(
+  arr: T[] | null | undefined,
+  extractor: (item: T) => string | null | undefined,
+): string[] | null {
+  if (!arr) return null;
+  const result = arr
+    .map(extractor)
+    .filter((str): str is string => !!str)
+    .sort();
+  return result.length > 0 ? result : null;
 }

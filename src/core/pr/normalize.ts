@@ -4,9 +4,9 @@ import { PR } from '@/types';
 export function normalizePRData(pr: PR): PR {
   return {
     ...pr,
-    commenters: uniqueArray(pr.commenters ?? []),
-    reviewers: uniqueArray(pr.reviewers),
+    commenters: pr.commenters ? uniqueArray(pr.commenters) : null,
+    reviewers: pr.reviewers ? uniqueArray(pr.reviewers) : null,
     createdAt: convertUTCISOToLocal(pr.createdAt),
-    mergedAt: pr.mergedAt ? convertUTCISOToLocal(pr.mergedAt) : 'Not merged yet',
+    mergedAt: pr.mergedAt ? convertUTCISOToLocal(pr.mergedAt) : null,
   };
 }
