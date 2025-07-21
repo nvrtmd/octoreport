@@ -37,7 +37,7 @@ npm install @octoreport/core
 ```typescript
 import { getUserPRListByCreationAndParticipation } from '@octoreport/core';
 
-// Get both created and participated PRs
+// Get both user created and participated(by comment or review) PRs
 const results = await getUserPRListByCreationAndParticipation({
   username: 'octocat',
   repository: 'octoreport/core',
@@ -65,9 +65,12 @@ import {
   getUserCreatedPRCountInPeriod,
   getUserCreatedPRListInPeriodByLabel,
   getUserPRCountByLabelInPeriod,
+  separatePRListByUserParticipation,
+  getUserPRRatio,
+  getAllPRListInPeriod,
 } from '@octoreport/core';
 
-// Get both created and participated PRs
+// Get both user created and participated PRs
 const results = await getUserPRListByCreationAndParticipation({
   username: 'octocat',
   repository: 'octoreport/core',
@@ -78,7 +81,7 @@ const results = await getUserPRListByCreationAndParticipation({
   githubToken: 'YOUR_GITHUB_TOKEN',
 });
 
-// Get only created PRs
+// Get only user created PRs
 const createdPRs = await getUserCreatedPRListInPeriod({
   username: 'octocat',
   repository: 'octoreport/core',
@@ -89,7 +92,7 @@ const createdPRs = await getUserCreatedPRListInPeriod({
   githubToken: 'YOUR_GITHUB_TOKEN',
 });
 
-// Get only participated PRs
+// Get only user participated PRs
 const participatedPRs = await getUserParticipatedPRListInPeriod({
   username: 'octocat',
   repository: 'octoreport/core',
@@ -99,6 +102,27 @@ const participatedPRs = await getUserParticipatedPRListInPeriod({
   },
   githubToken: 'YOUR_GITHUB_TOKEN',
 });
+
+// Get all PRs in period (including those without detail data)
+const allPRs = await getAllPRListInPeriod({
+  username: 'octocat',
+  repository: 'octoreport/core',
+  period: {
+    startDate: '2025-07-01',
+    endDate: '2025-07-20',
+  },
+  githubToken: 'YOUR_GITHUB_TOKEN',
+});
+
+// Separate PRs by user participation
+const { userCreatedPRList, userParticipatedPRList } = separatePRListByUserParticipation(
+  allPRs,
+  'octocat',
+);
+
+// Get user PR ratio (created vs total)
+const userRatio = getUserPRRatio(allPRs, 'octocat');
+// Returns: 0.25 (25% of PRs were created by the user)
 
 // Get count of created PRs
 const prCount = getUserCreatedPRCountInPeriod(createdPRs);
@@ -129,6 +153,36 @@ const allPRs = await fetchAllPRListInPeriod({
   },
   githubToken: 'YOUR_GITHUB_TOKEN',
 });
+```
+
+## Data Structure
+
+The library uses a flexible PR data structure that combines basic PR information with optional detailed data:
+
+```typescript
+interface PR {
+  // Basic PR information (always available)
+  number: number;
+  title: string;
+  url: string;
+  createdAt: string;
+  user: string | null;
+
+  // Detailed information (may be null if API access is limited)
+  targetBranch?: string;
+  assignees?: string[];
+  state?: 'OPEN' | 'CLOSED' | 'MERGED';
+  merged?: boolean;
+  isDraft?: boolean;
+  mergeable?: 'MERGEABLE' | 'CONFLICTING' | 'UNKNOWN';
+  labels?: string[] | null;
+  author?: string | null;
+  reviewers?: string[] | null;
+  commenters?: string[] | null;
+  reviewDecision?: 'CHANGES_REQUESTED' | 'APPROVED' | 'REVIEW_REQUIRED' | null;
+  mergedAt?: string | null;
+  requestedReviewers?: string[] | null;
+}
 ```
 
 ## Authentication
