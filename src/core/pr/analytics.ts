@@ -1,5 +1,18 @@
-import { filterPRListByAuthor } from '@/core';
 import { PR } from '@/types';
+
+export function groupPRListByLabel(prList: PR[]): Record<string, PR[]> {
+  const prListByLabelMap: Record<string, PR[]> = {};
+  prList.forEach((pr) => {
+    if (!pr.labels) {
+      prListByLabelMap['N/A'] = [pr];
+      return;
+    }
+    pr.labels.forEach((label) => {
+      prListByLabelMap[label] = [...(prListByLabelMap[label] || []), pr];
+    });
+  });
+  return prListByLabelMap;
+}
 
 export function getPRCount(prList: PR[]): number {
   return prList.length;
@@ -40,9 +53,16 @@ export function separatePRListByUserParticipation(
   return { userCreatedPRList, userParticipatedPRList };
 }
 
-export function getUserPRRatio(prList: PR[], username: string): number {
-  const userCreatedPRList = filterPRListByAuthor(prList, username);
+export function getUserCreatedPRRatio(prList: PR[], username: string): number {
+  const { userCreatedPRList } = separatePRListByUserParticipation(prList, username);
   const userCreatedPRCount = userCreatedPRList.length;
   const totalPRCount = prList.length;
   return totalPRCount > 0 ? userCreatedPRCount / totalPRCount : 0;
+}
+
+export function getUserParticipatedPRRatio(prList: PR[], username: string): number {
+  const { userParticipatedPRList } = separatePRListByUserParticipation(prList, username);
+  const userParticipatedPRCount = userParticipatedPRList.length;
+  const totalPRCount = prList.length;
+  return totalPRCount > 0 ? userParticipatedPRCount / totalPRCount : 0;
 }
