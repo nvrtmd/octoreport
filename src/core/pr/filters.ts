@@ -14,8 +14,14 @@ export function filterPRListByCommenter(prList: PR[], username: string): PR[] {
 
 export function filterPRListByParticipation(prList: PR[], username: string): PR[] {
   return prList.filter(
-    (pr) => pr.reviewers?.includes(username) || pr.commenters?.includes(username),
+    (pr) =>
+      pr.author !== username &&
+      (pr.reviewers?.includes(username) || pr.commenters?.includes(username)),
   );
+}
+
+export function filterPRListByOthers(prList: PR[], username: string): PR[] {
+  return prList.filter((pr) => pr.author !== username);
 }
 
 export function filterPRListByTargetBranch(prList: PR[], targetBranch: string): PR[] {
