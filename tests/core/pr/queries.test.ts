@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 
 import {
+  getAllPRListInPeriod,
   getUserPRListByCreationAndParticipation,
   getUserCreatedPRListInPeriod,
   getUserParticipatedPRListInPeriod,
@@ -10,6 +11,20 @@ beforeAll(() => {
   if (!process.env.GITHUB_TOKEN) {
     console.warn('⚠️  GITHUB_TOKEN environment variable is not set. Some tests may be skipped.');
   }
+});
+
+describe('getAllPRListInPeriod', () => {
+  it('returns all pull requests within the specified period', async () => {
+    const result = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-13', endDate: '2024-09-15' },
+      targetBranch: '',
+    });
+
+    expect(result).toMatchSnapshot();
+  });
 });
 
 describe('getUserPRListByCreationAndParticipation', () => {
@@ -83,7 +98,8 @@ describe('getUserParticipatedPRListInPeriod', () => {
 
     result.map((pr) => {
       const isParticipated =
-        pr.commenters?.includes('oliviertassinari') || pr.reviewers?.includes('oliviertassinari');
+        pr.author !== 'oliviertassinari' &&
+        (pr.commenters?.includes('oliviertassinari') || pr.reviewers?.includes('oliviertassinari'));
       expect(isParticipated).toBe(true);
     });
 

@@ -6,13 +6,31 @@ import {
   getPRCount,
   getPRCountByLabel,
   separatePRListByUserParticipation,
-  getUserPRRatio,
+  getUserCreatedPRRatio,
+  groupPRListByLabel,
+  getUserParticipatedPRRatio,
 } from '@/core';
 
 beforeAll(() => {
   if (!process.env.GITHUB_TOKEN) {
     console.warn('⚠️  GITHUB_TOKEN environment variable is not set. Some tests may be skipped.');
   }
+});
+
+describe('groupPRListByLabel', () => {
+  it('returns the pull requests grouped by label', async () => {
+    const prList = await getUserCreatedPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2025-05-01', endDate: '2025-05-10' },
+      targetBranch: 'master',
+    });
+
+    const result = groupPRListByLabel(prList);
+
+    expect(result).toMatchSnapshot();
+  });
 });
 
 describe('getPRCount', () => {
@@ -85,18 +103,32 @@ describe('separatePRListByUserParticipation', () => {
   });
 });
 
-describe('getUserPRRatio', () => {
-  it('returns the ratio of pull requests the user has requested within the specified period', async () => {
+describe('getUserCreatedPRRatio', () => {
+  it('returns the ratio of pull requests the user has created within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
-      period: { startDate: '2019-08-20', endDate: '2019-08-25' },
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
     });
 
-    const result = getUserPRRatio(prList, 'oliviertassinari');
+    const result = getUserCreatedPRRatio(prList, 'oliviertassinari');
 
-    expect(result).toEqual(6 / 38);
+    expect(result).toEqual(6 / 30);
+  });
+});
+
+describe('getUserParticipatedPRRatio', () => {
+  it('returns the ratio of pull requests the user has participated in within the specified period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+    const result = getUserParticipatedPRRatio(prList, 'oliviertassinari');
+    expect(result).toEqual(18 / 30);
   });
 });
