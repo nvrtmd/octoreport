@@ -7,11 +7,11 @@ import {
   getPRCountByLabel,
   separatePRListByUserParticipation,
   getUserCreatedPRRatio,
-  groupPRListByLabel,
+  getPRListByLabel,
   getUserParticipatedPRRatio,
   getPRStatus,
   getUserPRStatistics,
-  getUserActivityByDate,
+  getUserCreationAndParticipationCountByDate,
 } from '@/core';
 
 beforeAll(() => {
@@ -20,7 +20,7 @@ beforeAll(() => {
   }
 });
 
-describe('groupPRListByLabel', () => {
+describe('getPRListByLabel', () => {
   it('returns the pull requests grouped by label', async () => {
     const prList = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
@@ -30,7 +30,7 @@ describe('groupPRListByLabel', () => {
       targetBranch: 'master',
     });
 
-    const result = groupPRListByLabel(prList);
+    const result = getPRListByLabel(prList);
 
     expect(result).toMatchSnapshot();
   });
@@ -201,7 +201,7 @@ describe('getUserPRStatistics', () => {
   });
 });
 
-describe('getUserActivityByDate', () => {
+describe('getUserCreationAndParticipationCountByDate', () => {
   it('returns the activity of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
@@ -211,7 +211,7 @@ describe('getUserActivityByDate', () => {
       targetBranch: 'master',
     });
 
-    const result = getUserActivityByDate(prList, 'oliviertassinari');
+    const result = getUserCreationAndParticipationCountByDate(prList, 'oliviertassinari');
     expect(result).toEqual({
       '2019-08-20': { created: 5, participated: 1 },
       '2019-08-21': { created: 1, participated: 4 },

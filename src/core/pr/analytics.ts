@@ -2,7 +2,7 @@ import { isUserParticipatedInPR } from './filters';
 
 import { PR, PRDetail } from '@/types';
 
-export function groupPRListByLabel(prList: PR[]): Record<string, PR[]> {
+export function getPRListByLabel(prList: PR[]): Record<string, PR[]> {
   const prListByLabelMap: Record<string, PR[]> = {};
   prList.forEach((pr) => {
     if (!pr.labels) {
@@ -118,7 +118,7 @@ export function getUserPRStatistics(prList: PR[], username: string): UserPRStati
   };
 }
 
-export function getUserActivityByDate(
+export function getUserCreationAndParticipationCountByDate(
   prList: PR[],
   username: string,
 ): Record<string, Record<'created' | 'participated', number>> {
