@@ -8,7 +8,11 @@
     "declaration": true,
     "esModuleInterop": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src", "tests", "vitest.config.ts", "lint-staged.config.cjs", "tsup.config.ts"],
   "exclude": ["node_modules", "dist"]

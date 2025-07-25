@@ -1,0 +1,12 @@
+import { uniqueArray, convertUTCISOToLocal } from '@/core';
+import { PR } from '@/types';
+
+export function normalizePRData(pr: PR): PR {
+  return {
+    ...pr,
+    commenters: pr.commenters ? uniqueArray(pr.commenters) : null,
+    reviewers: pr.reviewers ? uniqueArray(pr.reviewers) : null,
+    createdAt: convertUTCISOToLocal(pr.createdAt),
+    mergedAt: pr.mergedAt ? convertUTCISOToLocal(pr.mergedAt) : null,
+  };
+}

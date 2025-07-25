@@ -1,0 +1,180 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`filterPRListByLabel > filters pull requests that exactly match provided label names (case-sensitive) 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-03 23:05:12",
+    "isDraft": false,
+    "labels": [
+      "enhancement",
+      "scope: docs-infra",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-06 02:27:16",
+    "number": 46064,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewers": [
+      "alexfauquette",
+      "oliviertassinari",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs-infra] Update feedback Node.js to v22",
+    "url": "https://github.com/mui/material-ui/pull/46064",
+    "user": "oliviertassinari",
+  },
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mapache-salvaje",
+      "mui-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2025-05-06 07:16:02",
+    "isDraft": false,
+    "labels": [
+      "docs",
+      "enhancement",
+      "scope: docs-infra",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-08 05:47:34",
+    "number": 46090,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewers": [
+      "mapache-salvaje",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs] Remove oudated scaffoldhub ad",
+    "url": "https://github.com/mui/material-ui/pull/46090",
+    "user": "oliviertassinari",
+  },
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-13 03:54:56",
+    "isDraft": false,
+    "labels": [
+      "docs",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-15 16:27:18",
+    "number": 46135,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewers": [
+      "0210shivam",
+      "ZeeshanTamboli",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs] Fix GridLegacy docs order",
+    "url": "https://github.com/mui/material-ui/pull/46135",
+    "user": "oliviertassinari",
+  },
+]
+`;
+
+exports[`filterPRListByLabel > filters pull requests that include provided label keywords (case-insensitive, partial match) 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-01 09:27:00",
+    "isDraft": false,
+    "labels": [
+      "MUI X",
+      "core",
+      "regression 🐛",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-06 08:41:19",
+    "number": 46051,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewers": [
+      "Janpot",
+      "jedwards1211",
+      "oliviertassinari",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[core] Fix internal version duplication",
+    "url": "https://github.com/mui/material-ui/pull/46051",
+    "user": "oliviertassinari",
+  },
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-02 22:29:40",
+    "isDraft": false,
+    "labels": [
+      "regression 🐛",
+      "website",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-07 00:03:19",
+    "number": 46061,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewers": [
+      "nadjakovacev",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[website] Update values",
+    "url": "https://github.com/mui/material-ui/pull/46061",
+    "user": "oliviertassinari",
+  },
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-04 00:34:05",
+    "isDraft": false,
+    "labels": [
+      "regression 🐛",
+      "website",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-08 02:54:29",
+    "number": 46065,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewers": [
+      "mapache-salvaje",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[website] Fix CSS alignment",
+    "url": "https://github.com/mui/material-ui/pull/46065",
+    "user": "oliviertassinari",
+  },
+]
+`;

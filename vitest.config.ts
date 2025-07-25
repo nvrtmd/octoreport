@@ -1,3 +1,5 @@
+import path from 'path';
+
 import dotenv from 'dotenv';
 import { defineConfig } from 'vitest/config';
 
@@ -8,5 +10,10 @@ export default defineConfig({
     globals: true,
     environment: 'node',
     setupFiles: ['./tests/setup.ts'],
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
   },
 });

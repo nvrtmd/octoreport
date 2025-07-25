@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 
-import { fetchPRDetail, fetchPRListInPeriod } from '../../src/api';
+import { fetchPRDetail, fetchPRListInPeriod } from '@/api';
 
 beforeAll(() => {
   if (!process.env.GITHUB_TOKEN) {
@@ -13,7 +13,7 @@ describe('fetchPRListInPeriod', () => {
     const result = await fetchPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
       repository: 'mui/material-ui',
-      period: { startDate: '2025-05-01', endDate: '2025-05-31' },
+      period: { startDate: '2025-05-01', endDate: '2025-05-05' },
     });
 
     expect(result).toMatchSnapshot();
@@ -25,7 +25,7 @@ describe('fetchPRDetail', () => {
     const result = await fetchPRDetail({
       githubToken: process.env.GITHUB_TOKEN || '',
       repository: 'mui/material-ui',
-      prNumber: 374,
+      prNumber: 46061,
     });
 
     expect(result).toMatchSnapshot();

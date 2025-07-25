@@ -1,19 +1,28 @@
-export interface PR {
+export type PR = PRListItem & Partial<PRDetail>;
+
+export interface PRListItem {
   number: number;
   title: string;
   url: string;
   createdAt: string;
-  mergedAt?: string;
-  labels: string[];
-  author: string;
-  targetBranch?: string;
-  reviewers: string[];
-  comments?: string[];
+  user: string | null;
+}
+
+export interface PRDetail {
+  targetBranch: string;
+  assignees: string[];
   state: 'OPEN' | 'CLOSED' | 'MERGED';
-  isDraft: boolean;
   merged: boolean;
+  isDraft: boolean;
   mergeable: 'MERGEABLE' | 'CONFLICTING' | 'UNKNOWN';
-  reviewDecision: 'CHANGES_REQUESTED' | 'APPROVED' | 'REVIEW_REQUIRED' | null;
+
+  labels?: string[] | null;
+  author?: string | null;
+  reviewers?: string[] | null;
+  commenters?: string[] | null;
+  reviewDecision?: 'CHANGES_REQUESTED' | 'APPROVED' | 'REVIEW_REQUIRED' | null;
+  mergedAt?: string | null;
+  requestedReviewers?: string[] | null;
 }
 
 export interface Participation {

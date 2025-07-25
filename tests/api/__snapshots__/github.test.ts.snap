@@ -13,15 +13,9 @@ exports[`fetchPRDetail > returns every pull request detail in the given reposito
     "nodes": [
       {
         "author": {
-          "login": "oliviertassinari",
+          "login": "mui-bot",
         },
-        "createdAt": "2015-02-26T22:34:36Z",
-      },
-      {
-        "author": {
-          "login": "hai-cea",
-        },
-        "createdAt": "2015-03-01T20:51:01Z",
+        "createdAt": "2025-05-02T13:33:29Z",
       },
     ],
   },
@@ -29,21 +23,32 @@ exports[`fetchPRDetail > returns every pull request detail in the given reposito
   "labels": {
     "nodes": [
       {
-        "name": "component: app bar",
+        "name": "website",
+      },
+      {
+        "name": "regression 🐛",
       },
     ],
   },
-  "mergeable": "CONFLICTING",
-  "merged": false,
-  "reviewDecision": "REVIEW_REQUIRED",
+  "mergeable": "UNKNOWN",
+  "merged": true,
+  "mergedAt": "2025-05-06T15:03:19Z",
+  "reviewDecision": "APPROVED",
   "reviewRequests": {
     "nodes": [],
   },
   "reviews": {
-    "nodes": [],
+    "nodes": [
+      {
+        "author": {
+          "login": "nadjakovacev",
+        },
+        "submittedAt": "2025-05-06T12:08:29Z",
+      },
+    ],
   },
-  "state": "CLOSED",
-  "title": "Update app-bar.jsx",
+  "state": "MERGED",
+  "title": "[website] Update values",
 }
 `;
 
@@ -51,13 +56,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
 [
   {
     "created_at": "2025-04-30T22:17:44Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46050",
     "number": 46050,
-    "pull_request": {
-      "merged_at": "2025-06-25T11:44:59Z",
-    },
-    "state": "closed",
     "title": "Bump vite [SECURITY]",
     "user": {
       "login": "renovate[bot]",
@@ -65,13 +65,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-01T00:27:00Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46051",
     "number": 46051,
-    "pull_request": {
-      "merged_at": "2025-05-05T23:41:19Z",
-    },
-    "state": "closed",
     "title": "[core] Fix internal version duplication",
     "user": {
       "login": "oliviertassinari",
@@ -79,13 +74,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-01T03:20:43Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46052",
     "number": 46052,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
     "title": "Lock file maintenance",
     "user": {
       "login": "renovate[bot]",
@@ -93,13 +83,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-01T09:36:59Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46053",
     "number": 46053,
-    "pull_request": {
-      "merged_at": "2025-05-01T15:11:39Z",
-    },
-    "state": "closed",
     "title": "[core] Avoid the need for \`@mui/material/themeCssVarsAugmentation\`",
     "user": {
       "login": "Janpot",
@@ -107,13 +92,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-01T14:29:12Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46054",
     "number": 46054,
-    "pull_request": {
-      "merged_at": "2025-05-01T18:58:31Z",
-    },
-    "state": "closed",
     "title": "[code-infra] Correct some manually curated .d.ts files",
     "user": {
       "login": "Janpot",
@@ -121,13 +101,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-01T19:21:03Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46055",
     "number": 46055,
-    "pull_request": {
-      "merged_at": "2025-05-02T10:12:22Z",
-    },
-    "state": "closed",
     "title": "[website] Adds Rita Iglesias to the team members (About page)",
     "user": {
       "login": "rita-codes",
@@ -135,13 +110,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-02T05:23:37Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46056",
     "number": 46056,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
     "title": "feat(Autocomplete): add \`suppressTextareaWarning\` prop to optionally …",
     "user": {
       "login": "aks30498",
@@ -149,13 +119,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-02T06:37:53Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46057",
     "number": 46057,
-    "pull_request": {
-      "merged_at": "2025-05-16T03:44:51Z",
-    },
-    "state": "closed",
     "title": "[docs][material-ui][Grid] Update grid migration guide",
     "user": {
       "login": "sai6855",
@@ -163,13 +128,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-02T07:40:34Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46058",
     "number": 46058,
-    "pull_request": {
-      "merged_at": "2025-05-22T08:47:43Z",
-    },
-    "state": "closed",
     "title": "[docs][ToggleButtonGroup] Add spacing demo",
     "user": {
       "login": "sai6855",
@@ -177,13 +137,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-02T12:53:51Z",
-    "draft": true,
     "html_url": "https://github.com/mui/material-ui/pull/46060",
     "number": 46060,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
     "title": "[experiment][core] Upgrade MUI X packages to v8 ",
     "user": {
       "login": "alexfauquette",
@@ -191,13 +146,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-02T13:29:40Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46061",
     "number": 46061,
-    "pull_request": {
-      "merged_at": "2025-05-06T15:03:19Z",
-    },
-    "state": "closed",
     "title": "[website] Update values",
     "user": {
       "login": "oliviertassinari",
@@ -205,13 +155,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-03T14:05:12Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46064",
     "number": 46064,
-    "pull_request": {
-      "merged_at": "2025-05-05T17:27:16Z",
-    },
-    "state": "closed",
     "title": "[docs-infra] Update feedback Node.js to v22",
     "user": {
       "login": "oliviertassinari",
@@ -219,13 +164,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-03T15:34:05Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46065",
     "number": 46065,
-    "pull_request": {
-      "merged_at": "2025-05-07T17:54:29Z",
-    },
-    "state": "closed",
     "title": "[website] Fix CSS alignment",
     "user": {
       "login": "oliviertassinari",
@@ -233,13 +173,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:06:47Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46066",
     "number": 46066,
-    "pull_request": {
-      "merged_at": "2025-05-05T07:25:38Z",
-    },
-    "state": "closed",
     "title": "Bump @netlify/functions to ^3.1.3",
     "user": {
       "login": "renovate[bot]",
@@ -247,13 +182,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:08:33Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46067",
     "number": 46067,
-    "pull_request": {
-      "merged_at": "2025-05-05T07:28:00Z",
-    },
-    "state": "closed",
     "title": "Bump @tailwindcss/postcss to ^4.1.5",
     "user": {
       "login": "renovate[bot]",
@@ -261,13 +191,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:10:04Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46068",
     "number": 46068,
-    "pull_request": {
-      "merged_at": "2025-05-05T09:24:52Z",
-    },
-    "state": "closed",
     "title": "Bump @types/react-dom to ^19.1.3",
     "user": {
       "login": "renovate[bot]",
@@ -275,13 +200,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:11:57Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46069",
     "number": 46069,
-    "pull_request": {
-      "merged_at": "2025-05-05T09:25:35Z",
-    },
-    "state": "closed",
     "title": "Bump babel to ^7.27.1",
     "user": {
       "login": "renovate[bot]",
@@ -289,13 +209,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:12:05Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46070",
     "number": 46070,
-    "pull_request": {
-      "merged_at": "2025-05-05T07:29:38Z",
-    },
-    "state": "closed",
     "title": "Bump github/codeql-action action to v3.28.17",
     "user": {
       "login": "renovate[bot]",
@@ -303,13 +218,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:13:16Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46071",
     "number": 46071,
-    "pull_request": {
-      "merged_at": "2025-05-05T07:30:31Z",
-    },
-    "state": "closed",
     "title": "Bump MUI X to 7.29.2",
     "user": {
       "login": "renovate[bot]",
@@ -317,13 +227,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:14:17Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46072",
     "number": 46072,
-    "pull_request": {
-      "merged_at": "2025-05-05T07:31:25Z",
-    },
-    "state": "closed",
     "title": "Bump react-virtuoso to ^4.12.7",
     "user": {
       "login": "renovate[bot]",
@@ -331,13 +236,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:15:35Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46073",
     "number": 46073,
-    "pull_request": {
-      "merged_at": "2025-05-05T08:16:28Z",
-    },
-    "state": "closed",
     "title": "Bump tailwindcss to ^4.1.5",
     "user": {
       "login": "renovate[bot]",
@@ -345,13 +245,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:16:41Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46074",
     "number": 46074,
-    "pull_request": {
-      "merged_at": "2025-05-05T08:14:54Z",
-    },
-    "state": "closed",
     "title": "Bump tsx to ^4.19.4",
     "user": {
       "login": "renovate[bot]",
@@ -359,13 +254,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:17:46Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46075",
     "number": 46075,
-    "pull_request": {
-      "merged_at": "2025-05-05T07:32:47Z",
-    },
-    "state": "closed",
     "title": "Bump typescript-eslint to ^8.31.1",
     "user": {
       "login": "renovate[bot]",
@@ -373,13 +263,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:18:41Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46076",
     "number": 46076,
-    "pull_request": {
-      "merged_at": "2025-05-05T07:34:19Z",
-    },
-    "state": "closed",
     "title": "Bump mocha to ^11.2.2",
     "user": {
       "login": "renovate[bot]",
@@ -387,13 +272,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:19:34Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46077",
     "number": 46077,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
     "title": "Bump express to ^5.1.0",
     "user": {
       "login": "renovate[bot]",
@@ -401,13 +281,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:20:32Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46078",
     "number": 46078,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
     "title": "Bump MUI X to 8.2.0 (major)",
     "user": {
       "login": "renovate[bot]",
@@ -415,13 +290,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:21:22Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46079",
     "number": 46079,
-    "pull_request": {
-      "merged_at": "2025-05-05T09:22:07Z",
-    },
-    "state": "closed",
     "title": "Bump piscina to ^5.0.0",
     "user": {
       "login": "renovate[bot]",
@@ -429,13 +299,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:22:10Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46080",
     "number": 46080,
-    "pull_request": {
-      "merged_at": "2025-05-05T08:24:48Z",
-    },
-    "state": "closed",
     "title": "Bump postcss-combine-media-query to ^2.0.0",
     "user": {
       "login": "renovate[bot]",
@@ -443,13 +308,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:22:59Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46081",
     "number": 46081,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
     "title": "Bump react-docgen to ^8.0.0",
     "user": {
       "login": "renovate[bot]",
@@ -457,13 +317,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-04T03:23:45Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46082",
     "number": 46082,
-    "pull_request": {
-      "merged_at": "2025-05-05T09:06:03Z",
-    },
-    "state": "closed",
     "title": "Bump react-error-boundary to ^6.0.0",
     "user": {
       "login": "renovate[bot]",
@@ -471,13 +326,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-05T04:07:04Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46083",
     "number": 46083,
-    "pull_request": {
-      "merged_at": "2025-05-05T14:02:10Z",
-    },
-    "state": "closed",
     "title": "[styled-engine] Infer \`ownerState\` from props in \`styled\`",
     "user": {
       "login": "siriwatknp",
@@ -485,13 +335,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-05T10:04:20Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46084",
     "number": 46084,
-    "pull_request": {
-      "merged_at": "2025-05-05T11:32:13Z",
-    },
-    "state": "closed",
     "title": "[performance] Remove unnecessary clsx() usages",
     "user": {
       "login": "sai6855",
@@ -499,13 +344,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-05T12:08:49Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46085",
     "number": 46085,
-    "pull_request": {
-      "merged_at": "2025-05-06T07:34:46Z",
-    },
-    "state": "closed",
     "title": "[website] Add Follower24 as backlink sponsor",
     "user": {
       "login": "rluzists1",
@@ -513,13 +353,8 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-05T13:17:58Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46086",
     "number": 46086,
-    "pull_request": {
-      "merged_at": "2025-05-05T13:38:46Z",
-    },
-    "state": "closed",
     "title": "[docs-infra] Fix docs API dark mode color",
     "user": {
       "login": "alexfauquette",
@@ -527,1498 +362,9 @@ exports[`fetchPRListInPeriod > returns every pull request in the given repositor
   },
   {
     "created_at": "2025-05-05T14:21:13Z",
-    "draft": false,
     "html_url": "https://github.com/mui/material-ui/pull/46087",
     "number": 46087,
-    "pull_request": {
-      "merged_at": "2025-05-06T08:42:36Z",
-    },
-    "state": "closed",
     "title": "[release] v7.1.0",
-    "user": {
-      "login": "siriwatknp",
-    },
-  },
-  {
-    "created_at": "2025-05-05T17:27:47Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46088",
-    "number": 46088,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "open",
-    "title": "[docs] Full screen demos in new tab",
-    "user": {
-      "login": "cherniavskii",
-    },
-  },
-  {
-    "created_at": "2025-05-05T20:29:42Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46089",
-    "number": 46089,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "Joy UI chat template: move textAreaValue state inside MessageInput",
-    "user": {
-      "login": "emileindik",
-    },
-  },
-  {
-    "created_at": "2025-05-05T22:16:02Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46090",
-    "number": 46090,
-    "pull_request": {
-      "merged_at": "2025-05-07T20:47:34Z",
-    },
-    "state": "closed",
-    "title": "[docs] Remove oudated scaffoldhub ad",
-    "user": {
-      "login": "oliviertassinari",
-    },
-  },
-  {
-    "created_at": "2025-05-07T06:04:58Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46098",
-    "number": 46098,
-    "pull_request": {
-      "merged_at": "2025-05-29T06:33:25Z",
-    },
-    "state": "closed",
-    "title": "[material-ui][Chip] Add slots and slotProps",
-    "user": {
-      "login": "sai6855",
-    },
-  },
-  {
-    "created_at": "2025-05-07T08:18:47Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46099",
-    "number": 46099,
-    "pull_request": {
-      "merged_at": "2025-05-07T09:59:17Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Remove required checkout workflows in circleci",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-07T10:22:03Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46100",
-    "number": 46100,
-    "pull_request": {
-      "merged_at": "2025-05-07T12:14:07Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Remove checkout job altogether",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-07T12:11:54Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46103",
-    "number": 46103,
-    "pull_request": {
-      "merged_at": "2025-05-07T12:38:32Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Avoid running continuous release on forks",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-07T12:24:54Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46104",
-    "number": 46104,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[docs-infra] Remove unnecessary layout wrappper",
-    "user": {
-      "login": "cherniavskii",
-    },
-  },
-  {
-    "created_at": "2025-05-07T14:32:13Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46106",
-    "number": 46106,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[WIP] Migrate \`react-docgen\` to v8",
-    "user": {
-      "login": "ZeeshanTamboli",
-    },
-  },
-  {
-    "created_at": "2025-05-08T16:39:21Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46108",
-    "number": 46108,
-    "pull_request": {
-      "merged_at": "2025-05-09T07:30:19Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Import mocha type instead of global",
-    "user": {
-      "login": "JCQuintas",
-    },
-  },
-  {
-    "created_at": "2025-05-09T09:28:58Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46109",
-    "number": 46109,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[joy-ui][Modal] Is it expected for actions to be presented inverted #42185",
-    "user": {
-      "login": "syedalinaqihasni",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:41:52Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46111",
-    "number": 46111,
-    "pull_request": {
-      "merged_at": "2025-05-12T12:22:03Z",
-    },
-    "state": "closed",
-    "title": "Bump @netlify/functions to ^3.1.8",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:43:13Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46112",
-    "number": 46112,
-    "pull_request": {
-      "merged_at": "2025-05-12T14:00:27Z",
-    },
-    "state": "closed",
-    "title": "Bump @next/eslint-plugin-next to ^15.3.2",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:44:35Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46113",
-    "number": 46113,
-    "pull_request": {
-      "merged_at": "2025-05-12T14:26:08Z",
-    },
-    "state": "closed",
-    "title": "Bump @tailwindcss/postcss to ^4.1.6",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:45:55Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46114",
-    "number": 46114,
-    "pull_request": {
-      "merged_at": "2025-05-13T06:48:54Z",
-    },
-    "state": "closed",
-    "title": "Bump @types/node to ^20.17.46",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:47:33Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46115",
-    "number": 46115,
-    "pull_request": {
-      "merged_at": "2025-05-13T08:04:43Z",
-    },
-    "state": "closed",
-    "title": "Bump React to ^19.1.4",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:49:21Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46116",
-    "number": 46116,
-    "pull_request": {
-      "merged_at": "2025-05-13T08:06:36Z",
-    },
-    "state": "closed",
-    "title": "Bump @vitest/browser to ^3.1.3",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:50:55Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46117",
-    "number": 46117,
-    "pull_request": {
-      "merged_at": "2025-05-13T08:58:52Z",
-    },
-    "state": "closed",
-    "title": "Bump @vitest/coverage-v8 to ^3.1.3",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:52:39Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46118",
-    "number": 46118,
-    "pull_request": {
-      "merged_at": "2025-05-13T08:33:31Z",
-    },
-    "state": "closed",
-    "title": "Bump babel to ^7.27.2",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:54:25Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46119",
-    "number": 46119,
-    "pull_request": {
-      "merged_at": "2025-05-13T06:54:02Z",
-    },
-    "state": "closed",
-    "title": "Bump eslint-config-prettier to ^10.1.5",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:56:12Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46120",
-    "number": 46120,
-    "pull_request": {
-      "merged_at": "2025-05-13T06:54:49Z",
-    },
-    "state": "closed",
-    "title": "Bump execa to ^9.5.3",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:57:55Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46121",
-    "number": 46121,
-    "pull_request": {
-      "merged_at": "2025-05-13T06:56:19Z",
-    },
-    "state": "closed",
-    "title": "Bump flexsearch to ^0.8.164",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T02:59:22Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46122",
-    "number": 46122,
-    "pull_request": {
-      "merged_at": "2025-05-13T09:27:37Z",
-    },
-    "state": "closed",
-    "title": "Bump MUI X to 7.29.3",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T03:00:47Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46123",
-    "number": 46123,
-    "pull_request": {
-      "merged_at": "2025-05-13T07:00:00Z",
-    },
-    "state": "closed",
-    "title": "Bump next to ^15.3.2",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T03:02:14Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46124",
-    "number": 46124,
-    "pull_request": {
-      "merged_at": "2025-05-13T08:32:54Z",
-    },
-    "state": "closed",
-    "title": "Bump styled-components to ^6.1.18",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T03:03:27Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46125",
-    "number": 46125,
-    "pull_request": {
-      "merged_at": "2025-05-13T08:10:43Z",
-    },
-    "state": "closed",
-    "title": "Bump tailwindcss to ^4.1.6",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T03:04:44Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46126",
-    "number": 46126,
-    "pull_request": {
-      "merged_at": "2025-05-13T10:33:00Z",
-    },
-    "state": "closed",
-    "title": "Bump vitest to ^3.1.3",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-11T05:39:49Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46127",
-    "number": 46127,
-    "pull_request": {
-      "merged_at": "2025-05-15T06:21:19Z",
-    },
-    "state": "closed",
-    "title": "[docs][Grid] Remove direction \`column\` and \`column-reverse\` from the demo",
-    "user": {
-      "login": "0210shivam",
-    },
-  },
-  {
-    "created_at": "2025-05-12T05:00:53Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46129",
-    "number": 46129,
-    "pull_request": {
-      "merged_at": "2025-05-21T03:34:31Z",
-    },
-    "state": "closed",
-    "title": "[system] Skip styled component from being transformed",
-    "user": {
-      "login": "siriwatknp",
-    },
-  },
-  {
-    "created_at": "2025-05-12T08:36:29Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46132",
-    "number": 46132,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[styled-engine] Fix style overrides \`variants\` type",
-    "user": {
-      "login": "ZeeshanTamboli",
-    },
-  },
-  {
-    "created_at": "2025-05-12T09:42:59Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46133",
-    "number": 46133,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[code-infra] Prepare for vitest upgrade",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-12T18:54:56Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46135",
-    "number": 46135,
-    "pull_request": {
-      "merged_at": "2025-05-15T07:27:18Z",
-    },
-    "state": "closed",
-    "title": "[docs] Fix GridLegacy docs order",
-    "user": {
-      "login": "oliviertassinari",
-    },
-  },
-  {
-    "created_at": "2025-05-13T13:55:47Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46138",
-    "number": 46138,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[code-infra] Move to async version of \`act\`",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-13T20:16:08Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46141",
-    "number": 46141,
-    "pull_request": {
-      "merged_at": "2025-05-14T08:48:59Z",
-    },
-    "state": "closed",
-    "title": "[Autocomplete] Add note in JSDoc for non-TextField components in \`renderInput\`",
-    "user": {
-      "login": "khllbnomrn",
-    },
-  },
-  {
-    "created_at": "2025-05-14T05:58:32Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46144",
-    "number": 46144,
-    "pull_request": {
-      "merged_at": "2025-05-14T06:46:04Z",
-    },
-    "state": "closed",
-    "title": "[material-ui][Menu] Remove depreacted \`MenuListProps\` from demos",
-    "user": {
-      "login": "sai6855",
-    },
-  },
-  {
-    "created_at": "2025-05-14T06:55:04Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46145",
-    "number": 46145,
-    "pull_request": {
-      "merged_at": "2025-05-14T13:20:08Z",
-    },
-    "state": "closed",
-    "title": "[Autocomplete] Prevent \`renderValue\` from being skipped when value is 0",
-    "user": {
-      "login": "LakshitAgarwal",
-    },
-  },
-  {
-    "created_at": "2025-05-14T19:08:52Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46147",
-    "number": 46147,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "open",
-    "title": "[core] refactor: remove manual displayName",
-    "user": {
-      "login": "romgrk",
-    },
-  },
-  {
-    "created_at": "2025-05-15T07:09:27Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46149",
-    "number": 46149,
-    "pull_request": {
-      "merged_at": "2025-05-19T03:25:33Z",
-    },
-    "state": "closed",
-    "title": "[material-ui][TablePaginationActions] export TablePaginationActions as new component",
-    "user": {
-      "login": "sai6855",
-    },
-  },
-  {
-    "created_at": "2025-05-15T12:33:07Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46151",
-    "number": 46151,
-    "pull_request": {
-      "merged_at": "2025-05-16T05:54:19Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Remove unnecessary ref from \`HighlightedCode\` component",
-    "user": {
-      "login": "ZeeshanTamboli",
-    },
-  },
-  {
-    "created_at": "2025-05-16T03:45:42Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46153",
-    "number": 46153,
-    "pull_request": {
-      "merged_at": "2025-05-16T05:45:20Z",
-    },
-    "state": "closed",
-    "title": "[docs][material-ui][Grid] Update grid migration guide (@sai6855)",
-    "user": {
-      "login": "github-actions[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-16T06:38:59Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46154",
-    "number": 46154,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:26:17Z",
-    },
-    "state": "closed",
-    "title": "[system] Update the type for borderRadius",
-    "user": {
-      "login": "codiini",
-    },
-  },
-  {
-    "created_at": "2025-05-16T10:56:02Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46155",
-    "number": 46155,
-    "pull_request": {
-      "merged_at": "2025-05-28T09:44:16Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Move packages to mui/mui-public",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:45:59Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46159",
-    "number": 46159,
-    "pull_request": {
-      "merged_at": "2025-05-19T07:17:11Z",
-    },
-    "state": "closed",
-    "title": "Bump @tailwindcss/postcss to ^4.1.7",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:47:24Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46160",
-    "number": 46160,
-    "pull_request": {
-      "merged_at": "2025-05-19T06:48:35Z",
-    },
-    "state": "closed",
-    "title": "Bump @types/node to ^20.17.48",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:48:48Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46161",
-    "number": 46161,
-    "pull_request": {
-      "merged_at": "2025-05-19T06:52:32Z",
-    },
-    "state": "closed",
-    "title": "Bump @types/react-dom to ^19.1.5",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:48:55Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46162",
-    "number": 46162,
-    "pull_request": {
-      "merged_at": "2025-05-19T06:53:05Z",
-    },
-    "state": "closed",
-    "title": "Bump aws-cli to 5.3.3",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:50:11Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46163",
-    "number": 46163,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:05:53Z",
-    },
-    "state": "closed",
-    "title": "Bump flexsearch to ^0.8.167",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:50:19Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46164",
-    "number": 46164,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:06:39Z",
-    },
-    "state": "closed",
-    "title": "Bump github/codeql-action action to v3.28.18",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:51:38Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46165",
-    "number": 46165,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:07:16Z",
-    },
-    "state": "closed",
-    "title": "Bump material-ui-popup-state to ^5.3.6",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:53:13Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46166",
-    "number": 46166,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:08:48Z",
-    },
-    "state": "closed",
-    "title": "Bump MUI X to 8.3.1",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:54:39Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46167",
-    "number": 46167,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:09:12Z",
-    },
-    "state": "closed",
-    "title": "Bump nx to ^20.8.2",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:56:12Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46168",
-    "number": 46168,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:09:43Z",
-    },
-    "state": "closed",
-    "title": "Bump tailwindcss to ^4.1.7",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:57:39Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46169",
-    "number": 46169,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:19:39Z",
-    },
-    "state": "closed",
-    "title": "Bump webpack to ^5.99.8",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T01:59:09Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46170",
-    "number": 46170,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:11:01Z",
-    },
-    "state": "closed",
-    "title": "Bump @arethetypeswrong/cli to ^0.18.1",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T02:00:35Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46171",
-    "number": 46171,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:52:38Z",
-    },
-    "state": "closed",
-    "title": "Bump @argos-ci/core to ^3.2.0",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T02:01:50Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46172",
-    "number": 46172,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:15:56Z",
-    },
-    "state": "closed",
-    "title": "Bump @slack/bolt to ^4.3.0",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T02:03:06Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46173",
-    "number": 46173,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:41:38Z",
-    },
-    "state": "closed",
-    "title": "Bump @toolpad/core to ^0.15.0",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T02:04:25Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46174",
-    "number": 46174,
-    "pull_request": {
-      "merged_at": "2025-05-19T13:03:18Z",
-    },
-    "state": "closed",
-    "title": "Bump markdownlint-cli2 to ^0.18.1",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-18T02:05:50Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46175",
-    "number": 46175,
-    "pull_request": {
-      "merged_at": "2025-05-19T08:53:39Z",
-    },
-    "state": "closed",
-    "title": "Bump mocha to ^11.3.0",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-19T06:17:05Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46176",
-    "number": 46176,
-    "pull_request": {
-      "merged_at": "2025-05-22T11:15:11Z",
-    },
-    "state": "closed",
-    "title": "[docs] Clarify Next.js + Tailwind CSS v3 integration requirements",
-    "user": {
-      "login": "chaitanyasharma1011",
-    },
-  },
-  {
-    "created_at": "2025-05-19T06:49:15Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46177",
-    "number": 46177,
-    "pull_request": {
-      "merged_at": "2025-05-19T11:36:31Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Avoid loading barrel file during type checking",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-19T11:38:30Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46178",
-    "number": 46178,
-    "pull_request": {
-      "merged_at": "2025-05-29T09:38:24Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Add plugin to check for index file access",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-19T13:09:02Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46179",
-    "number": 46179,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[WIP] test CI",
-    "user": {
-      "login": "sai6855",
-    },
-  },
-  {
-    "created_at": "2025-05-20T08:19:04Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46180",
-    "number": 46180,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "open",
-    "title": "Add watch mode using chokidar in buildTypes script",
-    "user": {
-      "login": "yuito-it",
-    },
-  },
-  {
-    "created_at": "2025-05-20T15:13:36Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46182",
-    "number": 46182,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "open",
-    "title": "[code-infra] Fix \`test_types_next\` job",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-21T00:47:49Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46183",
-    "number": 46183,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "open",
-    "title": "Create MUI Symbols Library",
-    "user": {
-      "login": "dav-is",
-    },
-  },
-  {
-    "created_at": "2025-05-21T03:35:22Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46184",
-    "number": 46184,
-    "pull_request": {
-      "merged_at": "2025-05-21T08:51:56Z",
-    },
-    "state": "closed",
-    "title": "[system] Skip styled component from being transformed (@siriwatknp)",
-    "user": {
-      "login": "github-actions[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-21T07:25:28Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46185",
-    "number": 46185,
-    "pull_request": {
-      "merged_at": "2025-05-23T12:22:25Z",
-    },
-    "state": "closed",
-    "title": "[docs][material-ui][Dialog] Remove deprecated TransitionComponent from demo",
-    "user": {
-      "login": "sai6855",
-    },
-  },
-  {
-    "created_at": "2025-05-21T08:44:23Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46186",
-    "number": 46186,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[docs][material-ui] Fix CutomizedTreeView demo",
-    "user": {
-      "login": "sai6855",
-    },
-  },
-  {
-    "created_at": "2025-05-21T09:19:13Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46187",
-    "number": 46187,
-    "pull_request": {
-      "merged_at": "2025-05-29T01:43:21Z",
-    },
-    "state": "closed",
-    "title": "[types] Fix variant props callback type to spread \`ownerState\`",
-    "user": {
-      "login": "siriwatknp",
-    },
-  },
-  {
-    "created_at": "2025-05-21T13:49:53Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46190",
-    "number": 46190,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[code-infra] Canary PRs",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-22T13:38:19Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46194",
-    "number": 46194,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "open",
-    "title": "MUI Symbols Built Sub-PR",
-    "user": {
-      "login": "dav-is",
-    },
-  },
-  {
-    "created_at": "2025-05-23T13:16:38Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46196",
-    "number": 46196,
-    "pull_request": {
-      "merged_at": "2025-05-26T07:10:28Z",
-    },
-    "state": "closed",
-    "title": "[SnackbarContent] Fix \`square\` prop not working",
-    "user": {
-      "login": "0210shivam",
-    },
-  },
-  {
-    "created_at": "2025-05-23T14:08:22Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46197",
-    "number": 46197,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "open",
-    "title": "[blog][WIP] Details about charts improvements",
-    "user": {
-      "login": "alexfauquette",
-    },
-  },
-  {
-    "created_at": "2025-05-23T16:33:44Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46198",
-    "number": 46198,
-    "pull_request": {
-      "merged_at": "2025-05-24T08:48:33Z",
-    },
-    "state": "closed",
-    "title": "[SnackbarContent] Fix error when theme value is CSS variable",
-    "user": {
-      "login": "0210shivam",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:03:00Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46199",
-    "number": 46199,
-    "pull_request": {
-      "merged_at": "2025-05-26T08:55:25Z",
-    },
-    "state": "closed",
-    "title": "Bump @netlify/functions to ^3.1.9",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:04:22Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46200",
-    "number": 46200,
-    "pull_request": {
-      "merged_at": "2025-05-26T14:17:52Z",
-    },
-    "state": "closed",
-    "title": "Bump @types/lodash to ^4.17.17",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:05:49Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46201",
-    "number": 46201,
-    "pull_request": {
-      "merged_at": "2025-05-26T18:08:21Z",
-    },
-    "state": "closed",
-    "title": "Bump @types/node to ^20.17.50",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:07:18Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46202",
-    "number": 46202,
-    "pull_request": {
-      "merged_at": "2025-05-28T06:54:32Z",
-    },
-    "state": "closed",
-    "title": "Bump @types/react to ^19.1.6",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:08:42Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46203",
-    "number": 46203,
-    "pull_request": {
-      "merged_at": "2025-05-28T09:35:11Z",
-    },
-    "state": "closed",
-    "title": "Bump @vitest/browser to ^3.1.4",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:10:04Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46204",
-    "number": 46204,
-    "pull_request": {
-      "merged_at": "2025-05-28T14:28:41Z",
-    },
-    "state": "closed",
-    "title": "Bump @vitest/coverage-v8 to ^3.1.4",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:10:11Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46205",
-    "number": 46205,
-    "pull_request": {
-      "merged_at": "2025-05-28T14:55:12Z",
-    },
-    "state": "closed",
-    "title": "Bump aws-cli to 5.3.4",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:11:38Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46206",
-    "number": 46206,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:04:49Z",
-    },
-    "state": "closed",
-    "title": "Bump chance to ^1.1.13",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:13:08Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46207",
-    "number": 46207,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:05:15Z",
-    },
-    "state": "closed",
-    "title": "Bump flexsearch to ^0.8.204",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:14:39Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46208",
-    "number": 46208,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:05:47Z",
-    },
-    "state": "closed",
-    "title": "Bump marked to ^15.0.12",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:16:02Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46209",
-    "number": 46209,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:56:17Z",
-    },
-    "state": "closed",
-    "title": "Bump react-router-dom to ^6.30.1",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:17:09Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46210",
-    "number": 46210,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:08:59Z",
-    },
-    "state": "closed",
-    "title": "Bump vitest to ^3.1.4",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:18:04Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46211",
-    "number": 46211,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:56:39Z",
-    },
-    "state": "closed",
-    "title": "Bump webpack to ^5.99.9",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:19:15Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46212",
-    "number": 46212,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:57:40Z",
-    },
-    "state": "closed",
-    "title": "Bump @googleapis/sheets to ^9.8.0",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:20:21Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46213",
-    "number": 46213,
-    "pull_request": {
-      "merged_at": "2025-05-28T16:44:29Z",
-    },
-    "state": "closed",
-    "title": "Bump @slack/bolt to ^4.4.0",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:21:31Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46214",
-    "number": 46214,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:09:26Z",
-    },
-    "state": "closed",
-    "title": "Bump @vitejs/plugin-react to ^4.5.0",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-25T02:22:56Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46215",
-    "number": 46215,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:57:07Z",
-    },
-    "state": "closed",
-    "title": "Bump mocha to ^11.5.0",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-26T09:51:56Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46217",
-    "number": 46217,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "open",
-    "title": "[docs-infra][Draft] Refactor max-width implementation",
-    "user": {
-      "login": "alexfauquette",
-    },
-  },
-  {
-    "created_at": "2025-05-26T16:15:54Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46220",
-    "number": 46220,
-    "pull_request": {
-      "merged_at": "2025-06-02T09:00:09Z",
-    },
-    "state": "closed",
-    "title": "[docs-infra] Fix stackblitz for js projects",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-26T19:38:49Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46221",
-    "number": 46221,
-    "pull_request": {
-      "merged_at": "2025-05-28T14:44:30Z",
-    },
-    "state": "closed",
-    "title": "[docs][templates] Fix rendering of logos in dark mode",
-    "user": {
-      "login": "sai6855",
-    },
-  },
-  {
-    "created_at": "2025-05-27T04:04:00Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46222",
-    "number": 46222,
-    "pull_request": {
-      "merged_at": "2025-05-28T11:20:51Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Bump eslint to v9",
-    "user": {
-      "login": "brijeshb42",
-    },
-  },
-  {
-    "created_at": "2025-05-27T12:29:52Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46224",
-    "number": 46224,
-    "pull_request": {
-      "merged_at": "2025-06-23T15:02:39Z",
-    },
-    "state": "closed",
-    "title": "[docs] Add introduction to MCP ",
-    "user": {
-      "login": "bharatkashyap",
-    },
-  },
-  {
-    "created_at": "2025-05-27T15:23:57Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46227",
-    "number": 46227,
-    "pull_request": {
-      "merged_at": "2025-05-28T09:08:30Z",
-    },
-    "state": "closed",
-    "title": "[code-infra] Move \`chai\` to peerDep",
-    "user": {
-      "login": "JCQuintas",
-    },
-  },
-  {
-    "created_at": "2025-05-28T11:56:12Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46228",
-    "number": 46228,
-    "pull_request": {
-      "merged_at": "2025-05-30T09:33:52Z",
-    },
-    "state": "closed",
-    "title": "[website] Open Account Executive and Account Manager roles",
-    "user": {
-      "login": "DanailH",
-    },
-  },
-  {
-    "created_at": "2025-05-28T14:41:53Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46229",
-    "number": 46229,
-    "pull_request": {
-      "merged_at": "2025-05-28T15:01:28Z",
-    },
-    "state": "closed",
-    "title": "[docs] Fix typo in dark mode docs",
-    "user": {
-      "login": "ZeeshanTamboli",
-    },
-  },
-  {
-    "created_at": "2025-05-29T03:44:12Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46230",
-    "number": 46230,
-    "pull_request": {
-      "merged_at": "2025-05-31T01:35:04Z",
-    },
-    "state": "closed",
-    "title": "[mui-plugin-rtl] fix RTL does not work with CSS layer with a new package",
-    "user": {
-      "login": "siriwatknp",
-    },
-  },
-  {
-    "created_at": "2025-05-29T05:43:16Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46231",
-    "number": 46231,
-    "pull_request": {
-      "merged_at": "2025-06-27T10:21:07Z",
-    },
-    "state": "closed",
-    "title": "[website] Fix pricing page content",
-    "user": {
-      "login": "prakhargupta1",
-    },
-  },
-  {
-    "created_at": "2025-05-29T09:46:36Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46233",
-    "number": 46233,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "Bump next to 15.2.2 [SECURITY]",
-    "user": {
-      "login": "renovate[bot]",
-    },
-  },
-  {
-    "created_at": "2025-05-29T14:38:29Z",
-    "draft": true,
-    "html_url": "https://github.com/mui/material-ui/pull/46234",
-    "number": 46234,
-    "pull_request": {
-      "merged_at": null,
-    },
-    "state": "closed",
-    "title": "[code-infra] Add rule for chai",
-    "user": {
-      "login": "Janpot",
-    },
-  },
-  {
-    "created_at": "2025-05-30T06:28:39Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46237",
-    "number": 46237,
-    "pull_request": {
-      "merged_at": "2025-06-02T06:41:18Z",
-    },
-    "state": "closed",
-    "title": "v7.1.1",
-    "user": {
-      "login": "siriwatknp",
-    },
-  },
-  {
-    "created_at": "2025-05-30T06:38:37Z",
-    "draft": false,
-    "html_url": "https://github.com/mui/material-ui/pull/46238",
-    "number": 46238,
-    "pull_request": {
-      "merged_at": "2025-06-02T06:48:28Z",
-    },
-    "state": "closed",
-    "title": "v6.4.12",
     "user": {
       "login": "siriwatknp",
     },
