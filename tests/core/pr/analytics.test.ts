@@ -9,6 +9,8 @@ import {
   getUserCreatedPRRatio,
   groupPRListByLabel,
   getUserParticipatedPRRatio,
+  getPRStatus,
+  getUserPRStatistics,
 } from '@/core';
 
 beforeAll(() => {
@@ -130,5 +132,70 @@ describe('getUserParticipatedPRRatio', () => {
     });
     const result = getUserParticipatedPRRatio(prList, 'oliviertassinari');
     expect(result).toEqual(18 / 30);
+  });
+});
+
+describe('getPRStatus', () => {
+  it('returns the status count of pull requests in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = getPRStatus(prList);
+    expect(result).toEqual({
+      OPEN: 0,
+      CLOSED: 8,
+      MERGED: 22,
+    });
+  });
+});
+
+describe('getUserPRStatistics', () => {
+  it('returns the statistics of pull requests in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = getUserPRStatistics(prList, 'oliviertassinari');
+    expect(prList).toMatchSnapshot();
+
+    expect(result).toHaveProperty('totalPRCount');
+    expect(result).toHaveProperty('userCreatedPR');
+    expect(result).toHaveProperty('userParticipatedPR');
+
+    expect(result.totalPRCount).toBe(30);
+
+    expect(result.userCreatedPR.count).toBe(6);
+    expect(result.userCreatedPR.ratio).toBe(6 / 30);
+    expect(result.userCreatedPR.status.OPEN).toBe(0);
+    expect(result.userCreatedPR.status.CLOSED).toBe(0);
+    expect(result.userCreatedPR.status.MERGED).toBe(6);
+
+    expect(result.userCreatedPR.countByLabel['component: modal']).toBe(1);
+    expect(result.userCreatedPR.countByLabel.docs).toBe(3);
+    expect(result.userCreatedPR.countByLabel['component: tree view']).toBe(1);
+    expect(result.userCreatedPR.countByLabel['new feature']).toBe(2);
+    expect(result.userCreatedPR.countByLabel['component: app bar']).toBe(1);
+    expect(result.userCreatedPR.countByLabel['component: divider']).toBe(1);
+    expect(result.userCreatedPR.countByLabel.core).toBe(1);
+
+    expect(result.userParticipatedPR.count).toBe(18);
+    expect(result.userParticipatedPR.ratio).toBe(18 / 30);
+    expect(result.userParticipatedPR.status.OPEN).toBe(0);
+    expect(result.userParticipatedPR.status.CLOSED).toBe(2);
+    expect(result.userParticipatedPR.status.MERGED).toBe(16);
+
+    expect(result.userParticipatedPR.countByLabel.docs).toBe(8);
+    expect(result.userParticipatedPR.countByLabel['bug 🐛']).toBe(5);
+    expect(result.userParticipatedPR.countByLabel['component: drawer']).toBe(2);
+    expect(result.userParticipatedPR.countByLabel['new feature']).toBe(2);
   });
 });
