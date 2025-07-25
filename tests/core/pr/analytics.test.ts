@@ -11,6 +11,7 @@ import {
   getUserParticipatedPRRatio,
   getPRStatus,
   getUserPRStatistics,
+  getUserActivityByDate,
 } from '@/core';
 
 beforeAll(() => {
@@ -197,5 +198,25 @@ describe('getUserPRStatistics', () => {
     expect(result.userParticipatedPR.countByLabel['bug 🐛']).toBe(5);
     expect(result.userParticipatedPR.countByLabel['component: drawer']).toBe(2);
     expect(result.userParticipatedPR.countByLabel['new feature']).toBe(2);
+  });
+});
+
+describe('getUserActivityByDate', () => {
+  it('returns the activity of pull requests in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      username: 'oliviertassinari',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = getUserActivityByDate(prList, 'oliviertassinari');
+    expect(result).toEqual({
+      '2019-08-20': { created: 5, participated: 1 },
+      '2019-08-21': { created: 1, participated: 4 },
+      '2019-08-22': { created: 0, participated: 6 },
+      '2019-08-23': { created: 0, participated: 7 },
+    });
   });
 });

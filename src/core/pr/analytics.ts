@@ -1,3 +1,5 @@
+import { isUserParticipatedInPR } from './filters';
+
 import { PR, PRDetail } from '@/types';
 
 export function groupPRListByLabel(prList: PR[]): Record<string, PR[]> {
@@ -114,4 +116,26 @@ export function getUserPRStatistics(prList: PR[], username: string): UserPRStati
       status: getPRStatus(userParticipatedPRList),
     },
   };
+}
+
+export function getUserActivityByDate(
+  prList: PR[],
+  username: string,
+): Record<string, Record<'created' | 'participated', number>> {
+  const activityByDateMap: Record<string, Record<'created' | 'participated', number>> = {};
+  prList.forEach((pr) => {
+    const createdAt = pr.createdAt.split(' ')[0];
+    if (pr.author === username) {
+      activityByDateMap[createdAt] = {
+        created: (activityByDateMap[createdAt]?.created || 0) + 1,
+        participated: activityByDateMap[createdAt]?.participated || 0,
+      };
+    } else if (isUserParticipatedInPR(pr, username)) {
+      activityByDateMap[createdAt] = {
+        created: activityByDateMap[createdAt]?.created || 0,
+        participated: (activityByDateMap[createdAt]?.participated || 0) + 1,
+      };
+    }
+  });
+  return activityByDateMap;
 }

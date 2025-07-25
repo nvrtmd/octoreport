@@ -12,12 +12,15 @@ export function filterPRListByCommenter(prList: PR[], username: string): PR[] {
   return prList.filter((pr) => pr.commenters?.includes(username));
 }
 
-export function filterPRListByParticipation(prList: PR[], username: string): PR[] {
-  return prList.filter(
-    (pr) =>
-      pr.author !== username &&
-      (pr.reviewers?.includes(username) || pr.commenters?.includes(username)),
+export function isUserParticipatedInPR(pr: PR, username: string): boolean {
+  return !!(
+    pr.author !== username &&
+    (pr.reviewers?.includes(username) || pr.commenters?.includes(username))
   );
+}
+
+export function filterPRListByParticipation(prList: PR[], username: string): PR[] {
+  return prList.filter((pr) => isUserParticipatedInPR(pr, username));
 }
 
 export function filterPRListByOthers(prList: PR[], username: string): PR[] {
