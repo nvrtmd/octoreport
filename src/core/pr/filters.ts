@@ -1,7 +1,18 @@
 import { PR } from '@/types';
 
+export function isUserCreatedPR(pr: PR, username: string): boolean {
+  return pr.author === username;
+}
+
+export function isUserParticipatedInPR(pr: PR, username: string): boolean {
+  return !!(
+    pr.author !== username &&
+    (pr.reviewers?.includes(username) || pr.commenters?.includes(username))
+  );
+}
+
 export function filterPRListByAuthor(prList: PR[], username: string): PR[] {
-  return prList.filter((pr) => pr.author === username);
+  return prList.filter((pr) => isUserCreatedPR(pr, username));
 }
 
 export function filterPRListByReviewer(prList: PR[], username: string): PR[] {
@@ -10,13 +21,6 @@ export function filterPRListByReviewer(prList: PR[], username: string): PR[] {
 
 export function filterPRListByCommenter(prList: PR[], username: string): PR[] {
   return prList.filter((pr) => pr.commenters?.includes(username));
-}
-
-export function isUserParticipatedInPR(pr: PR, username: string): boolean {
-  return !!(
-    pr.author !== username &&
-    (pr.reviewers?.includes(username) || pr.commenters?.includes(username))
-  );
 }
 
 export function filterPRListByParticipation(prList: PR[], username: string): PR[] {
