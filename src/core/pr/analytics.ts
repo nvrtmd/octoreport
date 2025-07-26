@@ -2,38 +2,6 @@ import { isUserParticipatedInPR } from './filters';
 
 import { PR, PRDetail } from '@/types';
 
-export function getPRListByLabel(prList: PR[]): Record<string, PR[]> {
-  const prListByLabelMap: Record<string, PR[]> = {};
-  prList.forEach((pr) => {
-    if (!pr.labels) {
-      prListByLabelMap['N/A'] = [pr];
-      return;
-    }
-    pr.labels.forEach((label) => {
-      prListByLabelMap[label] = [...(prListByLabelMap[label] || []), pr];
-    });
-  });
-  return prListByLabelMap;
-}
-
-export function getPRCount(prList: PR[]): number {
-  return prList.length;
-}
-
-export function getPRCountByLabel(prList: PR[]): Record<string, number> {
-  const labelCountMap: Record<string, number> = {};
-  prList.forEach((pr) => {
-    if (!pr.labels) {
-      labelCountMap['N/A'] = (labelCountMap['N/A'] || 0) + 1;
-      return;
-    }
-    pr.labels.forEach((label) => {
-      labelCountMap[label] = (labelCountMap[label] || 0) + 1;
-    });
-  });
-  return labelCountMap;
-}
-
 export function separatePRListByUserParticipation(
   prList: PR[],
   username: string,
@@ -53,6 +21,60 @@ export function separatePRListByUserParticipation(
   });
 
   return { userCreatedPRList, userParticipatedPRList };
+}
+
+export function getPRListByLabel(prList: PR[]): Record<string, PR[]> {
+  const prListByLabelMap: Record<string, PR[]> = {};
+  prList.forEach((pr) => {
+    if (!pr.labels) {
+      prListByLabelMap['N/A'] = [pr];
+      return;
+    }
+    pr.labels.forEach((label) => {
+      prListByLabelMap[label] = [...(prListByLabelMap[label] || []), pr];
+    });
+  });
+  return prListByLabelMap;
+}
+
+export function getPRCount(prList: PR[]): number {
+  return prList.length;
+}
+
+export function getUserCreationAndParticipationCountByDate(
+  prList: PR[],
+  username: string,
+): Record<string, Record<'created' | 'participated', number>> {
+  const activityByDateMap: Record<string, Record<'created' | 'participated', number>> = {};
+  prList.forEach((pr) => {
+    const createdAt = pr.createdAt.split(' ')[0];
+    if (pr.author === username) {
+      activityByDateMap[createdAt] = {
+        created: (activityByDateMap[createdAt]?.created || 0) + 1,
+        participated: activityByDateMap[createdAt]?.participated || 0,
+      };
+    } else if (isUserParticipatedInPR(pr, username)) {
+      activityByDateMap[createdAt] = {
+        created: activityByDateMap[createdAt]?.created || 0,
+        participated: (activityByDateMap[createdAt]?.participated || 0) + 1,
+      };
+    }
+  });
+  return activityByDateMap;
+}
+
+export function getPRCountByLabel(prList: PR[]): Record<string, number> {
+  const labelCountMap: Record<string, number> = {};
+  prList.forEach((pr) => {
+    if (!pr.labels) {
+      labelCountMap['N/A'] = (labelCountMap['N/A'] || 0) + 1;
+      return;
+    }
+    pr.labels.forEach((label) => {
+      labelCountMap[label] = (labelCountMap[label] || 0) + 1;
+    });
+  });
+  return labelCountMap;
 }
 
 export function getUserCreatedPRRatio(prList: PR[], username: string): number {
@@ -116,26 +138,4 @@ export function getUserPRStatistics(prList: PR[], username: string): UserPRStati
       status: getPRStatus(userParticipatedPRList),
     },
   };
-}
-
-export function getUserCreationAndParticipationCountByDate(
-  prList: PR[],
-  username: string,
-): Record<string, Record<'created' | 'participated', number>> {
-  const activityByDateMap: Record<string, Record<'created' | 'participated', number>> = {};
-  prList.forEach((pr) => {
-    const createdAt = pr.createdAt.split(' ')[0];
-    if (pr.author === username) {
-      activityByDateMap[createdAt] = {
-        created: (activityByDateMap[createdAt]?.created || 0) + 1,
-        participated: activityByDateMap[createdAt]?.participated || 0,
-      };
-    } else if (isUserParticipatedInPR(pr, username)) {
-      activityByDateMap[createdAt] = {
-        created: activityByDateMap[createdAt]?.created || 0,
-        participated: (activityByDateMap[createdAt]?.participated || 0) + 1,
-      };
-    }
-  });
-  return activityByDateMap;
 }
