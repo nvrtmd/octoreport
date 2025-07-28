@@ -17,7 +17,6 @@ describe('getAllPRListInPeriod', () => {
   it('returns all pull requests within the specified period', async () => {
     const result = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2024-09-13', endDate: '2024-09-15' },
       targetBranch: '',

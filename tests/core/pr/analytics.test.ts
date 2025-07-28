@@ -30,7 +30,6 @@ describe('groupPRListByUserRole', () => {
   it('separates PR list into created and participated PRs for a specific user', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -116,7 +115,6 @@ describe('countUserPRListByDateAndRole', () => {
   it('returns the activity of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -136,7 +134,6 @@ describe('groupPRListByDateAndRole', () => {
   it('returns the list of pull requests the user has created and participated in within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -160,7 +157,6 @@ describe('countUserCreatedPRByDate', () => {
   it('returns the ratio of pull requests the user has created within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -179,7 +175,6 @@ describe('groupUserCreatedPRListByDate', () => {
   it('returns the list of pull requests the user has created within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -197,7 +192,6 @@ describe('countUserParticipatedPRByDate', () => {
   it('returns the ratio of pull requests the user has created within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -218,7 +212,6 @@ describe('groupUserParticipatedPRListByDate', () => {
   it('returns the ratio of pull requests the user has created within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -238,7 +231,6 @@ describe('calculateUserCreatedPRRatio', () => {
   it('returns the ratio of pull requests the user has created within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -254,7 +246,6 @@ describe('calculateUserParticipatedPRRatio', () => {
   it('returns the ratio of pull requests the user has participated in within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -268,7 +259,6 @@ describe('countPRListByStatus', () => {
   it('returns the status count of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -287,7 +277,6 @@ describe('groupPRListByStatus', () => {
   it('returns the status count of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
@@ -305,7 +294,6 @@ describe('calculateUserPRStatistics', () => {
   it('returns the statistics of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',

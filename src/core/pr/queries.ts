@@ -8,7 +8,9 @@ import {
 } from '@/core';
 import { PR, PRQueryParams } from '@/types';
 
-export async function getAllPRListInPeriod(options: PRQueryParams): Promise<PR[]> {
+export async function getAllPRListInPeriod(
+  options: Pick<PRQueryParams, 'repository' | 'period' | 'githubToken' | 'targetBranch'>,
+): Promise<PR[]> {
   let allPRList = await fetchAllPRListInPeriod(options);
   if (options.targetBranch) {
     allPRList = filterPRListByTargetBranch(allPRList, options.targetBranch);
