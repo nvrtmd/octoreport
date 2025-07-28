@@ -121,16 +121,26 @@ export async function fetchPRDetail({
         author { login }
         baseRefName
         assignees(first: 10) { nodes { login } }
-        reviews(first: 100) { nodes { author { login }, submittedAt } }
-        reviewRequests(first: 10) { nodes { requestedReviewer { ... on User { login } } } }
-        comments(first: 10) { nodes { author { login }, createdAt } }
-        labels(first: 10) { nodes { name } }
+        reviews(first: 50) { nodes { author { login }, submittedAt } }
+        reviewRequests(first: 50) { nodes { requestedReviewer { ... on User { login } } } }
+        comments(first: 50) { nodes { author { login }, createdAt } }
+        labels(first: 50) { nodes { name } }
         state
         isDraft
         merged
         mergeable
         mergedAt
         reviewDecision
+        timelineItems(first: 100, itemTypes: [REVIEW_REQUESTED_EVENT]) {
+          nodes {
+            ... on ReviewRequestedEvent {
+              requestedReviewer {
+                ... on User { login }
+              }
+              createdAt
+            }
+          }
+        }
       }
     }
   }`;

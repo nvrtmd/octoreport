@@ -29,6 +29,10 @@ function transformPRDetail(detail: PRDetailRaw): PRDetail {
       if (!node.requestedReviewer) return null;
       return 'login' in node.requestedReviewer ? node.requestedReviewer.login : null;
     }),
+    reviewRequestRecipientSet: getArrayOrNull(detail.timelineItems.nodes, (node) => {
+      if (!node.requestedReviewer) return null;
+      return 'login' in node.requestedReviewer ? node.requestedReviewer.login : null;
+    }),
   };
 }
 

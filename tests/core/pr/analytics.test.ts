@@ -3,15 +3,30 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import {
   getAllPRListInPeriod,
   getUserCreatedPRListInPeriod,
-  getPRCount,
-  getPRCountByLabel,
-  separatePRListByUserParticipation,
-  getUserCreatedPRRatio,
+  countTotalPRList,
+  countPRListByLabel,
+  groupPRListByUserRole,
+  calculateUserCreatedPRRatio,
   groupPRListByLabel,
-  getUserParticipatedPRRatio,
-  getPRStatus,
-  getUserPRStatistics,
-  getUserActivityByDate,
+  calculateUserParticipatedPRRatio,
+  countPRListByStatus,
+  calculateUserPRStatistics,
+  countUserPRListByDateAndRole,
+  groupPRListByDateAndRole,
+  countUserCreatedPRListByDate,
+  groupUserCreatedPRListByDate,
+  countUserParticipatedPRListByDate,
+  groupUserParticipatedPRListByDate,
+  groupPRListByStatus,
+  countTotalReviewRequestsForUser,
+  countReviewRequestsCompletedByUser,
+  countReviewRequestsPendingByUser,
+  countSelfInitiatedReviewedPRListByUser,
+  countPRListReviewedByUser,
+  countPRListCommentedByUser,
+  countPRListParticipatedByUser,
+  groupPRListByReviewStatus,
+  calculateUserReviewStatistics,
 } from '@/core';
 
 beforeAll(() => {
@@ -20,23 +35,7 @@ beforeAll(() => {
   }
 });
 
-describe('groupPRListByLabel', () => {
-  it('returns the pull requests grouped by label', async () => {
-    const prList = await getUserCreatedPRListInPeriod({
-      githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
-      repository: 'mui/material-ui',
-      period: { startDate: '2025-05-01', endDate: '2025-05-10' },
-      targetBranch: 'master',
-    });
-
-    const result = groupPRListByLabel(prList);
-
-    expect(result).toMatchSnapshot();
-  });
-});
-
-describe('getPRCount', () => {
+describe('countTotalPRList', () => {
   it('returns the number of pull requests in the given period', async () => {
     const prList = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
@@ -46,13 +45,28 @@ describe('getPRCount', () => {
       targetBranch: 'mui:v5.x',
     });
 
-    const result = getPRCount(prList);
+    const result = countTotalPRList(prList);
 
     expect(result).toEqual(2);
   });
 });
 
-describe('getPRCountByLabel', () => {
+describe('groupPRListByUserRole', () => {
+  it('separates PR list into created and participated PRs for a specific user', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = groupPRListByUserRole(prList, 'oliviertassinari');
+
+    expect(result).toMatchSnapshot();
+  });
+});
+
+describe('countPRListByLabel', () => {
   it('counts pull requests created by the user within the specified period, grouped by label, and returns an object like {feat: 10, fix: 2, test: 10, ...}', async () => {
     const prList = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
@@ -62,7 +76,7 @@ describe('getPRCountByLabel', () => {
       targetBranch: 'mui:v5.x',
     });
 
-    const result = getPRCountByLabel(prList);
+    const result = countPRListByLabel(prList);
 
     expect(result).toEqual({
       docs: 1,
@@ -82,7 +96,7 @@ describe('getPRCountByLabel', () => {
       targetBranch: 'mui:v5.x',
     });
 
-    const result = getPRCountByLabel(prList);
+    const result = countPRListByLabel(prList);
 
     expect(result).toEqual({
       'N/A': 1,
@@ -90,63 +104,176 @@ describe('getPRCountByLabel', () => {
   });
 });
 
-describe('separatePRListByUserParticipation', () => {
-  it('separates PR list into created and participated PRs for a specific user', async () => {
-    const prList = await getAllPRListInPeriod({
+describe('groupPRListByLabel', () => {
+  it('returns the pull requests grouped by label', async () => {
+    const prList = await getUserCreatedPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
-      period: { startDate: '2019-08-20', endDate: '2019-08-31' },
+      period: { startDate: '2025-05-01', endDate: '2025-05-05' },
       targetBranch: 'master',
     });
 
-    const result = separatePRListByUserParticipation(prList, 'oliviertassinari');
+    const result = groupPRListByLabel(prList);
 
     expect(result).toMatchSnapshot();
   });
 });
 
-describe('getUserCreatedPRRatio', () => {
-  it('returns the ratio of pull requests the user has created within the specified period', async () => {
+describe('countUserPRListByDateAndRole', () => {
+  it('returns the activity of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
     });
 
-    const result = getUserCreatedPRRatio(prList, 'oliviertassinari');
+    const result = countUserPRListByDateAndRole(prList, 'oliviertassinari');
+    expect(result).toEqual({
+      '2019-08-20': { created: 5, participated: 1 },
+      '2019-08-21': { created: 1, participated: 4 },
+      '2019-08-22': { created: 0, participated: 6 },
+      '2019-08-23': { created: 0, participated: 7 },
+    });
+  });
+});
+
+describe('groupPRListByDateAndRole', () => {
+  it('returns the list of pull requests the user has created and participated in within the specified period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = groupPRListByDateAndRole(prList, 'oliviertassinari');
+
+    expect(result).toMatchSnapshot();
+    expect(result['2019-08-20'].created.length).toBe(5);
+    expect(result['2019-08-20'].participated.length).toBe(1);
+    expect(result['2019-08-21'].created.length).toBe(1);
+    expect(result['2019-08-21'].participated.length).toBe(4);
+    expect(result['2019-08-22'].created.length).toBe(0);
+    expect(result['2019-08-22'].participated.length).toBe(6);
+    expect(result['2019-08-23'].created.length).toBe(0);
+    expect(result['2019-08-23'].participated.length).toBe(7);
+  });
+});
+
+describe('countUserCreatedPRListByDate', () => {
+  it('returns the ratio of pull requests the user has created within the specified period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = countUserCreatedPRListByDate(prList, 'oliviertassinari');
+
+    expect(result).toEqual({
+      '2019-08-20': 5,
+      '2019-08-21': 1,
+    });
+  });
+});
+
+describe('groupUserCreatedPRListByDate', () => {
+  it('returns the list of pull requests the user has created within the specified period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = groupUserCreatedPRListByDate(prList, 'oliviertassinari');
+
+    expect(result).toMatchSnapshot();
+    expect(result['2019-08-20'].length).toBe(5);
+    expect(result['2019-08-21'].length).toBe(1);
+  });
+});
+
+describe('countUserParticipatedPRListByDate', () => {
+  it('returns the ratio of pull requests the user has created within the specified period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = countUserParticipatedPRListByDate(prList, 'oliviertassinari');
+
+    expect(result).toEqual({
+      '2019-08-20': 1,
+      '2019-08-21': 4,
+      '2019-08-22': 6,
+      '2019-08-23': 7,
+    });
+  });
+});
+
+describe('groupUserParticipatedPRListByDate', () => {
+  it('returns the ratio of pull requests the user has created within the specified period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = groupUserParticipatedPRListByDate(prList, 'oliviertassinari');
+
+    expect(result).toMatchSnapshot();
+    expect(result['2019-08-20'].length).toBe(1);
+    expect(result['2019-08-21'].length).toBe(4);
+    expect(result['2019-08-22'].length).toBe(6);
+    expect(result['2019-08-23'].length).toBe(7);
+  });
+});
+
+describe('calculateUserCreatedPRRatio', () => {
+  it('returns the ratio of pull requests the user has created within the specified period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2019-08-20', endDate: '2019-08-23' },
+      targetBranch: 'master',
+    });
+
+    const result = calculateUserCreatedPRRatio(prList, 'oliviertassinari');
 
     expect(result).toEqual(6 / 30);
   });
 });
 
-describe('getUserParticipatedPRRatio', () => {
+describe('calculateUserParticipatedPRRatio', () => {
   it('returns the ratio of pull requests the user has participated in within the specified period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
     });
-    const result = getUserParticipatedPRRatio(prList, 'oliviertassinari');
+    const result = calculateUserParticipatedPRRatio(prList, 'oliviertassinari');
     expect(result).toEqual(18 / 30);
   });
 });
 
-describe('getPRStatus', () => {
+describe('countPRListByStatus', () => {
   it('returns the status count of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
     });
 
-    const result = getPRStatus(prList);
+    const result = countPRListByStatus(prList);
     expect(result).toEqual({
       OPEN: 0,
       CLOSED: 8,
@@ -155,68 +282,206 @@ describe('getPRStatus', () => {
   });
 });
 
-describe('getUserPRStatistics', () => {
-  it('returns the statistics of pull requests in the given period', async () => {
+describe('groupPRListByStatus', () => {
+  it('returns the status count of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
     });
 
-    const result = getUserPRStatistics(prList, 'oliviertassinari');
-    expect(prList).toMatchSnapshot();
-
-    expect(result).toHaveProperty('totalPRCount');
-    expect(result).toHaveProperty('userCreatedPR');
-    expect(result).toHaveProperty('userParticipatedPR');
-
-    expect(result.totalPRCount).toBe(30);
-
-    expect(result.userCreatedPR.count).toBe(6);
-    expect(result.userCreatedPR.ratio).toBe(6 / 30);
-    expect(result.userCreatedPR.status.OPEN).toBe(0);
-    expect(result.userCreatedPR.status.CLOSED).toBe(0);
-    expect(result.userCreatedPR.status.MERGED).toBe(6);
-
-    expect(result.userCreatedPR.countByLabel['component: modal']).toBe(1);
-    expect(result.userCreatedPR.countByLabel.docs).toBe(3);
-    expect(result.userCreatedPR.countByLabel['component: tree view']).toBe(1);
-    expect(result.userCreatedPR.countByLabel['new feature']).toBe(2);
-    expect(result.userCreatedPR.countByLabel['component: app bar']).toBe(1);
-    expect(result.userCreatedPR.countByLabel['component: divider']).toBe(1);
-    expect(result.userCreatedPR.countByLabel.core).toBe(1);
-
-    expect(result.userParticipatedPR.count).toBe(18);
-    expect(result.userParticipatedPR.ratio).toBe(18 / 30);
-    expect(result.userParticipatedPR.status.OPEN).toBe(0);
-    expect(result.userParticipatedPR.status.CLOSED).toBe(2);
-    expect(result.userParticipatedPR.status.MERGED).toBe(16);
-
-    expect(result.userParticipatedPR.countByLabel.docs).toBe(8);
-    expect(result.userParticipatedPR.countByLabel['bug 🐛']).toBe(5);
-    expect(result.userParticipatedPR.countByLabel['component: drawer']).toBe(2);
-    expect(result.userParticipatedPR.countByLabel['new feature']).toBe(2);
+    const result = groupPRListByStatus(prList);
+    expect(result).toMatchSnapshot();
+    expect(result.OPEN.length).toBe(0);
+    expect(result.CLOSED.length).toBe(8);
+    expect(result.MERGED.length).toBe(22);
   });
 });
 
-describe('getUserActivityByDate', () => {
-  it('returns the activity of pull requests in the given period', async () => {
+describe('calculateUserPRStatistics', () => {
+  it('returns the statistics of pull requests in the given period', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
-      username: 'oliviertassinari',
       repository: 'mui/material-ui',
       period: { startDate: '2019-08-20', endDate: '2019-08-23' },
       targetBranch: 'master',
     });
 
-    const result = getUserActivityByDate(prList, 'oliviertassinari');
-    expect(result).toEqual({
-      '2019-08-20': { created: 5, participated: 1 },
-      '2019-08-21': { created: 1, participated: 4 },
-      '2019-08-22': { created: 0, participated: 6 },
-      '2019-08-23': { created: 0, participated: 7 },
+    const result = calculateUserPRStatistics(prList, 'oliviertassinari');
+    expect(prList).toMatchSnapshot();
+
+    expect(result).toHaveProperty('totalPRListCount');
+    expect(result).toHaveProperty('created');
+    expect(result).toHaveProperty('participated');
+
+    expect(result.totalPRListCount).toBe(30);
+
+    expect(result.created.count).toBe(6);
+    expect(result.created.ratio).toBe(6 / 30);
+    expect(result.created.status.OPEN).toBe(0);
+    expect(result.created.status.CLOSED).toBe(0);
+    expect(result.created.status.MERGED).toBe(6);
+
+    expect(result.created.countByLabel['component: modal']).toBe(1);
+    expect(result.created.countByLabel.docs).toBe(3);
+    expect(result.created.countByLabel['component: tree view']).toBe(1);
+    expect(result.created.countByLabel['new feature']).toBe(2);
+    expect(result.created.countByLabel['component: app bar']).toBe(1);
+    expect(result.created.countByLabel['component: divider']).toBe(1);
+    expect(result.created.countByLabel.core).toBe(1);
+
+    expect(result.participated.count).toBe(18);
+    expect(result.participated.ratio).toBe(18 / 30);
+    expect(result.participated.status.OPEN).toBe(0);
+    expect(result.participated.status.CLOSED).toBe(2);
+    expect(result.participated.status.MERGED).toBe(16);
+
+    expect(result.participated.countByLabel.docs).toBe(8);
+    expect(result.participated.countByLabel['bug 🐛']).toBe(5);
+    expect(result.participated.countByLabel['component: drawer']).toBe(2);
+    expect(result.participated.countByLabel['new feature']).toBe(2);
+  });
+});
+
+describe('countTotalReviewRequestsForUser', () => {
+  it('returns the total number of review requests for the user in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
     });
+
+    const result = countTotalReviewRequestsForUser(prList, 'siriwatknp');
+    expect(result).toBe(7);
+  });
+});
+
+describe('countReviewRequestsCompletedByUser', () => {
+  it('returns the total number of review requests completed by the user in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
+    });
+
+    const result = countReviewRequestsCompletedByUser(prList, 'siriwatknp');
+    expect(result).toBe(4);
+  });
+});
+
+describe('countReviewRequestsPendingByUser', () => {
+  it('returns the total number of review requests pending by the user in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
+    });
+
+    const result = countReviewRequestsPendingByUser(prList, 'siriwatknp');
+    expect(result).toBe(3);
+  });
+});
+
+describe('countSelfInitiatedReviewedPRListByUser', () => {
+  it('returns the total number of self-initiated reviews by the user in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
+    });
+
+    const result = countSelfInitiatedReviewedPRListByUser(prList, 'Janpot');
+    expect(result).toBe(3);
+  });
+});
+
+describe('countPRListReviewedByUser', () => {
+  it('returns the total number of PRs reviewed by the user in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
+    });
+
+    const result = countPRListReviewedByUser(prList, 'Janpot');
+    expect(result).toBe(5);
+  });
+});
+
+describe('countPRListCommentedByUser', () => {
+  it('returns the total number of PRs commented by the user in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
+    });
+
+    const result = countPRListCommentedByUser(prList, 'Janpot');
+    expect(result).toBe(3);
+  });
+});
+
+describe('countPRListParticipatedByUser', () => {
+  it('returns the total number of PRs participated by the user in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
+    });
+
+    const result = countPRListParticipatedByUser(prList, 'Janpot');
+    expect(result).toBe(5);
+  });
+});
+
+describe('groupPRListByReviewStatus', () => {
+  it('returns the PRs grouped by review status', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
+    });
+
+    const result = groupPRListByReviewStatus(prList, 'Janpot');
+    expect(result).toMatchSnapshot();
+    expect(result.reviewedByRequest.length).toBe(2);
+    expect(result.pendingReviewRequest.length).toBe(1);
+    expect(result.selfInitiatedReviewed.length).toBe(3);
+    expect(result.uninvolvedInReview.length).toBe(15);
+  });
+});
+
+describe('calculateUserReviewStatistics', () => {
+  it('returns the review statistics of the user in the given period', async () => {
+    const prList = await getAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-12', endDate: '2024-09-14' },
+      targetBranch: 'master',
+    });
+
+    const result = calculateUserReviewStatistics(prList, 'Janpot');
+    expect(result).toMatchSnapshot();
+    expect(result.reviewedByRequest.count).toBe(2);
+    expect(result.reviewedByRequest.ratioToTotal).toBe(2 / 26);
+    expect(result.reviewedByRequest.ratioToRequested).toBe(2 / 3);
+    expect(result.pendingReviewRequest.count).toBe(1);
+    expect(result.pendingReviewRequest.ratioToTotal).toBe(1 / 26);
+    expect(result.pendingReviewRequest.ratioToRequested).toBe(1 / 3);
+    expect(result.selfInitiatedReviewed.count).toBe(3);
+    expect(result.selfInitiatedReviewed.ratioToTotal).toBe(3 / 26);
+    expect(result.selfInitiatedReviewed.ratioToRequested).toBeNull();
+    expect(result.uninvolvedInReview.count).toBe(15);
+    expect(result.uninvolvedInReview.ratioToTotal).toBe(15 / 26);
+    expect(result.uninvolvedInReview.ratioToRequested).toBeNull();
   });
 });

@@ -1,5 +1,180 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`filterCompletedReviewRequestPRList > filters pull requests that have been completed review request by the specified user 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "sai6855",
+    "commenters": [
+      "mui-bot",
+      "sai6855",
+    ],
+    "createdAt": "2024-09-13 01:57:59",
+    "isDraft": false,
+    "labels": [
+      "component: CircularProgress",
+      "docs",
+      "package: material-ui",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2024-09-13 15:18:17",
+    "number": 43734,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "ZeeshanTamboli",
+    ],
+    "reviewers": [
+      "ZeeshanTamboli",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs][material-ui][CircularProgress] Add Circular size demo",
+    "url": "https://github.com/mui/material-ui/pull/43734",
+    "user": "sai6855",
+  },
+]
+`;
+
+exports[`filterPRListByAuthor > filters pull requests that are authored by the specified user 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-01 09:27:00",
+    "isDraft": false,
+    "labels": [
+      "MUI X",
+      "core",
+      "regression 🐛",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-06 08:41:19",
+    "number": 46051,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
+    "reviewers": [
+      "Janpot",
+      "jedwards1211",
+      "oliviertassinari",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[core] Fix internal version duplication",
+    "url": "https://github.com/mui/material-ui/pull/46051",
+    "user": "oliviertassinari",
+  },
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-02 22:29:40",
+    "isDraft": false,
+    "labels": [
+      "regression 🐛",
+      "website",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-07 00:03:19",
+    "number": 46061,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "nadjakovacev",
+    ],
+    "reviewers": [
+      "nadjakovacev",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[website] Update values",
+    "url": "https://github.com/mui/material-ui/pull/46061",
+    "user": "oliviertassinari",
+  },
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-03 23:05:12",
+    "isDraft": false,
+    "labels": [
+      "enhancement",
+      "scope: docs-infra",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-06 02:27:16",
+    "number": 46064,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "alexfauquette",
+    ],
+    "reviewers": [
+      "alexfauquette",
+      "oliviertassinari",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs-infra] Update feedback Node.js to v22",
+    "url": "https://github.com/mui/material-ui/pull/46064",
+    "user": "oliviertassinari",
+  },
+]
+`;
+
+exports[`filterPRListByCommenter > filters pull requests that have ever been commented by the specified user 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "sai6855",
+    "commenters": [
+      "ZeeshanTamboli",
+      "mui-bot",
+      "sai6855",
+    ],
+    "createdAt": "2025-05-02 16:40:34",
+    "isDraft": false,
+    "labels": [
+      "component: toggle button",
+      "docs",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-22 17:47:43",
+    "number": 46058,
+    "requestedReviewers": [
+      "siriwatknp",
+    ],
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "ZeeshanTamboli",
+      "siriwatknp",
+    ],
+    "reviewers": [
+      "ZeeshanTamboli",
+      "sai6855",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs][ToggleButtonGroup] Add spacing demo",
+    "url": "https://github.com/mui/material-ui/pull/46058",
+    "user": "sai6855",
+  },
+]
+`;
+
 exports[`filterPRListByLabel > filters pull requests that exactly match provided label names (case-sensitive) 1`] = `
 [
   {
@@ -20,6 +195,9 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "number": 46064,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "alexfauquette",
+    ],
     "reviewers": [
       "alexfauquette",
       "oliviertassinari",
@@ -51,6 +229,9 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "number": 46090,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "mapache-salvaje",
+    ],
     "reviewers": [
       "mapache-salvaje",
     ],
@@ -77,6 +258,7 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "number": 46135,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "0210shivam",
       "ZeeshanTamboli",
@@ -111,6 +293,7 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "number": 46051,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "Janpot",
       "jedwards1211",
@@ -140,6 +323,9 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "number": 46061,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "nadjakovacev",
+    ],
     "reviewers": [
       "nadjakovacev",
     ],
@@ -167,6 +353,9 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "number": 46065,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "mapache-salvaje",
+    ],
     "reviewers": [
       "mapache-salvaje",
     ],
@@ -174,6 +363,562 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "targetBranch": "master",
     "title": "[website] Fix CSS alignment",
     "url": "https://github.com/mui/material-ui/pull/46065",
+    "user": "oliviertassinari",
+  },
+]
+`;
+
+exports[`filterPRListByParticipation > filters pull requests that have ever been commented or reviewed by the specified user 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "aks30498",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-02 14:23:37",
+    "isDraft": false,
+    "labels": [
+      "component: autocomplete",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": false,
+    "mergedAt": null,
+    "number": 46056,
+    "requestedReviewers": null,
+    "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": [
+      "ZeeshanTamboli",
+    ],
+    "reviewers": [
+      "ZeeshanTamboli",
+    ],
+    "state": "CLOSED",
+    "targetBranch": "master",
+    "title": "feat(Autocomplete): add \`suppressTextareaWarning\` prop to optionally …",
+    "url": "https://github.com/mui/material-ui/pull/46056",
+    "user": "aks30498",
+  },
+  {
+    "assignees": [],
+    "author": "sai6855",
+    "commenters": [
+      "ZeeshanTamboli",
+      "mui-bot",
+      "sai6855",
+    ],
+    "createdAt": "2025-05-02 16:40:34",
+    "isDraft": false,
+    "labels": [
+      "component: toggle button",
+      "docs",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-22 17:47:43",
+    "number": 46058,
+    "requestedReviewers": [
+      "siriwatknp",
+    ],
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "ZeeshanTamboli",
+      "siriwatknp",
+    ],
+    "reviewers": [
+      "ZeeshanTamboli",
+      "sai6855",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs][ToggleButtonGroup] Add spacing demo",
+    "url": "https://github.com/mui/material-ui/pull/46058",
+    "user": "sai6855",
+  },
+]
+`;
+
+exports[`filterPRListByReviewer > filters pull requests that have ever been reviewed by the specified user 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-03 23:05:12",
+    "isDraft": false,
+    "labels": [
+      "enhancement",
+      "scope: docs-infra",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-06 02:27:16",
+    "number": 46064,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "alexfauquette",
+    ],
+    "reviewers": [
+      "alexfauquette",
+      "oliviertassinari",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs-infra] Update feedback Node.js to v22",
+    "url": "https://github.com/mui/material-ui/pull/46064",
+    "user": "oliviertassinari",
+  },
+]
+`;
+
+exports[`filterPRListByTargetBranch > filters pull requests that are targeting the specified branch 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2024-09-14T13:43:03Z",
+    "isDraft": false,
+    "labels": [
+      "docs",
+      "regression 🐛",
+      "v5.x",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2024-09-16T11:17:55Z",
+    "number": 43753,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "siriwatknp",
+    ],
+    "reviewers": [
+      "siriwatknp",
+    ],
+    "state": "MERGED",
+    "targetBranch": "v5.x",
+    "title": "[docs] Fix MUI Treasury Layout broken links",
+    "url": "https://github.com/mui/material-ui/pull/43753",
+    "user": "oliviertassinari",
+  },
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+      "oliviertassinari",
+      "oliviertassinari",
+    ],
+    "createdAt": "2024-09-14T14:15:20Z",
+    "isDraft": false,
+    "labels": [
+      "bug 🐛",
+      "examples",
+      "v5.x",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2024-10-03T11:40:08Z",
+    "number": 43755,
+    "requestedReviewers": [
+      "alelthomas",
+    ],
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "alelthomas",
+    ],
+    "reviewers": [
+      "mnajdova",
+    ],
+    "state": "MERGED",
+    "targetBranch": "v5.x",
+    "title": "[examples] Fix v5 clone example instructions",
+    "url": "https://github.com/mui/material-ui/pull/43755",
+    "user": "oliviertassinari",
+  },
+]
+`;
+
+exports[`filterPRListNotAuthoredByUser > filters pull requests that are not authored by the specified user 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "renovate",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-01 07:17:44",
+    "isDraft": false,
+    "labels": [
+      "dependencies",
+      "security",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-06-25 20:44:59",
+    "number": 46050,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
+    "reviewers": [
+      "Janpot",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "Bump vite [SECURITY]",
+    "url": "https://github.com/mui/material-ui/pull/46050",
+    "user": "renovate[bot]",
+  },
+  {
+    "assignees": [],
+    "author": "renovate",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-01 12:20:43",
+    "isDraft": false,
+    "labels": [
+      "dependencies",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": false,
+    "mergedAt": null,
+    "number": 46052,
+    "requestedReviewers": null,
+    "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
+    "reviewers": null,
+    "state": "CLOSED",
+    "targetBranch": "master",
+    "title": "Lock file maintenance",
+    "url": "https://github.com/mui/material-ui/pull/46052",
+    "user": "renovate[bot]",
+  },
+  {
+    "assignees": [],
+    "author": "Janpot",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-01 18:36:59",
+    "isDraft": false,
+    "labels": [
+      "core",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-02 00:11:39",
+    "number": 46053,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "siriwatknp",
+    ],
+    "reviewers": [
+      "siriwatknp",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[core] Avoid the need for \`@mui/material/themeCssVarsAugmentation\`",
+    "url": "https://github.com/mui/material-ui/pull/46053",
+    "user": "Janpot",
+  },
+  {
+    "assignees": [],
+    "author": "Janpot",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-01 23:29:12",
+    "isDraft": false,
+    "labels": [
+      "scope: code-infra",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-02 03:58:31",
+    "number": 46054,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
+    "reviewers": [
+      "LukasTy",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[code-infra] Correct some manually curated .d.ts files",
+    "url": "https://github.com/mui/material-ui/pull/46054",
+    "user": "Janpot",
+  },
+  {
+    "assignees": [
+      "rita-codes",
+    ],
+    "author": "rita-codes",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-02 04:21:03",
+    "isDraft": false,
+    "labels": [
+      "website",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-02 19:12:22",
+    "number": 46055,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "DanailH",
+    ],
+    "reviewers": [
+      "DanailH",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[website] Adds Rita Iglesias to the team members (About page)",
+    "url": "https://github.com/mui/material-ui/pull/46055",
+    "user": "rita-codes",
+  },
+  {
+    "assignees": [],
+    "author": "aks30498",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-02 14:23:37",
+    "isDraft": false,
+    "labels": [
+      "component: autocomplete",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": false,
+    "mergedAt": null,
+    "number": 46056,
+    "requestedReviewers": null,
+    "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": [
+      "ZeeshanTamboli",
+    ],
+    "reviewers": [
+      "ZeeshanTamboli",
+    ],
+    "state": "CLOSED",
+    "targetBranch": "master",
+    "title": "feat(Autocomplete): add \`suppressTextareaWarning\` prop to optionally …",
+    "url": "https://github.com/mui/material-ui/pull/46056",
+    "user": "aks30498",
+  },
+  {
+    "assignees": [],
+    "author": "sai6855",
+    "commenters": [
+      "github-actions",
+      "mui-bot",
+      "sai6855",
+    ],
+    "createdAt": "2025-05-02 15:37:53",
+    "isDraft": false,
+    "labels": [
+      "component: Grid",
+      "docs",
+      "needs cherry-pick",
+      "package: material-ui",
+      "package: system",
+      "v6.x",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-16 12:44:51",
+    "number": 46057,
+    "requestedReviewers": null,
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "siriwatknp",
+    ],
+    "reviewers": [
+      "siriwatknp",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs][material-ui][Grid] Update grid migration guide",
+    "url": "https://github.com/mui/material-ui/pull/46057",
+    "user": "sai6855",
+  },
+  {
+    "assignees": [],
+    "author": "sai6855",
+    "commenters": [
+      "ZeeshanTamboli",
+      "mui-bot",
+      "sai6855",
+    ],
+    "createdAt": "2025-05-02 16:40:34",
+    "isDraft": false,
+    "labels": [
+      "component: toggle button",
+      "docs",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2025-05-22 17:47:43",
+    "number": 46058,
+    "requestedReviewers": [
+      "siriwatknp",
+    ],
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "ZeeshanTamboli",
+      "siriwatknp",
+    ],
+    "reviewers": [
+      "ZeeshanTamboli",
+      "sai6855",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs][ToggleButtonGroup] Add spacing demo",
+    "url": "https://github.com/mui/material-ui/pull/46058",
+    "user": "sai6855",
+  },
+  {
+    "assignees": [],
+    "author": "alexfauquette",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2025-05-02 21:53:51",
+    "isDraft": true,
+    "labels": [
+      "core",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": false,
+    "mergedAt": null,
+    "number": 46060,
+    "requestedReviewers": null,
+    "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
+    "reviewers": null,
+    "state": "CLOSED",
+    "targetBranch": "master",
+    "title": "[experiment][core] Upgrade MUI X packages to v8 ",
+    "url": "https://github.com/mui/material-ui/pull/46060",
+    "user": "alexfauquette",
+  },
+]
+`;
+
+exports[`filterPRListSelfInitiatedReviewedByUser > filters pull requests that have been reviewed by the specified user who have not been requested to review 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "hiro0218",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2024-09-14 23:02:44",
+    "isDraft": false,
+    "labels": [
+      "docs",
+      "package: pigment-css",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2024-09-17 16:27:10",
+    "number": 43754,
+    "requestedReviewers": [
+      "alelthomas",
+    ],
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "alelthomas",
+    ],
+    "reviewers": [
+      "ZeeshanTamboli",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs][pigment-css] Fix typo globalCSS -> globalCss",
+    "url": "https://github.com/mui/material-ui/pull/43754",
+    "user": "hiro0218",
+  },
+]
+`;
+
+exports[`filterPendingReviewRequestPRList > filters pull requests that have pending review request by the specified user 1`] = `
+[
+  {
+    "assignees": [],
+    "author": "hiro0218",
+    "commenters": [
+      "mui-bot",
+    ],
+    "createdAt": "2024-09-14 23:02:44",
+    "isDraft": false,
+    "labels": [
+      "docs",
+      "package: pigment-css",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2024-09-17 16:27:10",
+    "number": 43754,
+    "requestedReviewers": [
+      "alelthomas",
+    ],
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "alelthomas",
+    ],
+    "reviewers": [
+      "ZeeshanTamboli",
+    ],
+    "state": "MERGED",
+    "targetBranch": "master",
+    "title": "[docs][pigment-css] Fix typo globalCSS -> globalCss",
+    "url": "https://github.com/mui/material-ui/pull/43754",
+    "user": "hiro0218",
+  },
+  {
+    "assignees": [],
+    "author": "oliviertassinari",
+    "commenters": [
+      "mui-bot",
+      "oliviertassinari",
+    ],
+    "createdAt": "2024-09-14 23:15:20",
+    "isDraft": false,
+    "labels": [
+      "bug 🐛",
+      "examples",
+      "v5.x",
+    ],
+    "mergeable": "UNKNOWN",
+    "merged": true,
+    "mergedAt": "2024-10-03 20:40:08",
+    "number": 43755,
+    "requestedReviewers": [
+      "alelthomas",
+    ],
+    "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "alelthomas",
+    ],
+    "reviewers": [
+      "mnajdova",
+    ],
+    "state": "MERGED",
+    "targetBranch": "v5.x",
+    "title": "[examples] Fix v5 clone example instructions",
+    "url": "https://github.com/mui/material-ui/pull/43755",
     "user": "oliviertassinari",
   },
 ]
