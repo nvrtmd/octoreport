@@ -887,78 +887,7 @@ exports[`filterPendingReviewRequestPRList > filters pull requests that have pend
 ]
 `;
 
-exports[`filterPendingReviewRequestPRList > filters pull requests that have pending review request by the specified user 2`] = `
-[
-  {
-    "assignees": [],
-    "author": "hiro0218",
-    "commenters": [
-      "mui-bot",
-    ],
-    "createdAt": "2024-09-14 23:02:44",
-    "isDraft": false,
-    "labels": [
-      "docs",
-      "package: pigment-css",
-    ],
-    "mergeable": "UNKNOWN",
-    "merged": true,
-    "mergedAt": "2024-09-17 16:27:10",
-    "number": 43754,
-    "requestedReviewers": [
-      "alelthomas",
-    ],
-    "reviewDecision": "APPROVED",
-    "reviewRequestRecipientSet": [
-      "alelthomas",
-    ],
-    "reviewers": [
-      "ZeeshanTamboli",
-    ],
-    "state": "MERGED",
-    "targetBranch": "master",
-    "title": "[docs][pigment-css] Fix typo globalCSS -> globalCss",
-    "url": "https://github.com/mui/material-ui/pull/43754",
-    "user": "hiro0218",
-  },
-  {
-    "assignees": [],
-    "author": "oliviertassinari",
-    "commenters": [
-      "mui-bot",
-      "oliviertassinari",
-    ],
-    "createdAt": "2024-09-14 23:15:20",
-    "isDraft": false,
-    "labels": [
-      "bug 🐛",
-      "examples",
-      "v5.x",
-    ],
-    "mergeable": "UNKNOWN",
-    "merged": true,
-    "mergedAt": "2024-10-03 20:40:08",
-    "number": 43755,
-    "requestedReviewers": [
-      "alelthomas",
-    ],
-    "reviewDecision": "APPROVED",
-    "reviewRequestRecipientSet": [
-      "alelthomas",
-    ],
-    "reviewers": [
-      "mnajdova",
-    ],
-    "state": "MERGED",
-    "targetBranch": "v5.x",
-    "title": "[examples] Fix v5 clone example instructions",
-    "url": "https://github.com/mui/material-ui/pull/43755",
-    "user": "oliviertassinari",
-  },
-]
-`;
-
-exports[`filterReviewedPRListWithoutBeingRequested > filters pull requests that have been reviewed by the specified user who have not been requested to review 1`] = `
+exports[`filterSelfInitiatedReviewedPRList > filters pull requests that have been reviewed by the specified user who have not been requested to review 1`] = `
 [
   {
     "assignees": [],

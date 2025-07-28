@@ -72,7 +72,7 @@ export function filterPendingReviewRequestPRList(prList: PR[], username: string)
   return prList.filter((pr) => hasPendingReviewRequest(pr, username));
 }
 
-export function filterReviewedPRListWithoutBeingRequested(prList: PR[], username: string): PR[] {
+export function filterSelfInitiatedReviewedPRList(prList: PR[], username: string): PR[] {
   return prList.filter(
     (pr) => hasUserReviewed(pr, username) && !hasUserBeenRequestedToReview(pr, username),
   );
