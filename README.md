@@ -49,8 +49,8 @@ const results = await getUserPRListByCreationAndParticipation({
   githubToken: 'YOUR_GITHUB_TOKEN',
 });
 
-console.log('🐙📊 User Created PRs:\n', result.userCreatedPRList);
-console.log('🐙📊 User Participated PRs:\n', result.userParticipatedPRList);
+console.log('🐙📊 User Created PRs:\n', result.created);
+console.log('🐙📊 User Participated PRs:\n', result.created);
 ```
 
 ## API Reference
@@ -115,7 +115,7 @@ const allPRs = await getAllPRListInPeriod({
 });
 
 // Separate PRs by user participation
-const { userCreatedPRList, userParticipatedPRList } = separatePRListByUserParticipation(
+const { created, created } = separatePRListByUserParticipation(
   allPRs,
   'octocat',
 );

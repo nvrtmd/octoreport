@@ -2,7 +2,7 @@ import { describe, it, expect, beforeAll } from 'vitest';
 
 import {
   getAllPRListInPeriod,
-  getUserPRListByCreationAndParticipation,
+  getUserPRActivityListInPeriod,
   getUserCreatedPRListInPeriod,
   getUserParticipatedPRListInPeriod,
 } from '@/core';
@@ -27,9 +27,9 @@ describe('getAllPRListInPeriod', () => {
   });
 });
 
-describe('getUserPRListByCreationAndParticipation', () => {
+describe('getUserPRActivityListInPeriod', () => {
   it('returns pull requests the user has participated in (via comments or reviews) within the specified period', async () => {
-    const result = await getUserPRListByCreationAndParticipation({
+    const result = await getUserPRActivityListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
       username: 'oliviertassinari',
       repository: 'mui/material-ui',
@@ -37,8 +37,8 @@ describe('getUserPRListByCreationAndParticipation', () => {
       targetBranch: 'master',
     });
 
-    expect(result.userCreatedPRList[0].author).toBe('oliviertassinari');
-    result.userParticipatedPRList.map((pr) => {
+    expect(result.created[0].author).toBe('oliviertassinari');
+    result.participated.map((pr) => {
       const isParticipated =
         pr.commenters?.includes('oliviertassinari') || pr.reviewers?.includes('oliviertassinari');
       expect(isParticipated).toBe(true);

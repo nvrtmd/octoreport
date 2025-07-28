@@ -25,22 +25,3 @@ export interface PRDetail {
   mergedAt?: string | null;
   requestedReviewers?: string[] | null;
 }
-
-export interface Participation {
-  pr: PR;
-  reviewSubmittedAt?: string;
-  commentedAt?: string;
-  responseTimeInHours?: number;
-  respondedInTime?: boolean;
-  role: 'reviewer' | 'commenter';
-}
-
-export interface MonthlyActivityReport {
-  createdPRList: PR[];
-  participations: Participation[];
-  summary: {
-    totalCreated: number;
-    totalParticipated: number;
-    averageResponseTimeHours?: number;
-  };
-}

@@ -4,7 +4,7 @@ import {
   filterPRListByTargetBranch,
   filterPRListByParticipation,
   normalizePRData,
-  separatePRListByUserParticipation,
+  groupPRListByUserRole,
 } from '@/core';
 import { PR, PRQueryParams } from '@/types';
 
@@ -17,17 +17,14 @@ export async function getAllPRListInPeriod(options: PRQueryParams): Promise<PR[]
   return allPRList.map(normalizePRData);
 }
 
-export async function getUserPRListByCreationAndParticipation(
+export async function getUserPRActivityListInPeriod(
   options: PRQueryParams,
-): Promise<{ userCreatedPRList: PR[]; userParticipatedPRList: PR[] }> {
+): Promise<{ created: PR[]; participated: PR[] }> {
   const allPRList = await getAllPRListInPeriod(options);
 
-  const { userCreatedPRList, userParticipatedPRList } = separatePRListByUserParticipation(
-    allPRList,
-    options.username,
-  );
+  const { created, participated } = groupPRListByUserRole(allPRList, options.username);
 
-  return { userCreatedPRList, userParticipatedPRList };
+  return { created, participated };
 }
 
 export async function getUserCreatedPRListInPeriod(options: PRQueryParams): Promise<PR[]> {

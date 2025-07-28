@@ -1557,9 +1557,9 @@ exports[`getUserCreatedPRListInPeriod > returns pull requests created by the use
 ]
 `;
 
-exports[`getUserPRListByCreationAndParticipation > returns pull requests the user has participated in (via comments or reviews) within the specified period 1`] = `
+exports[`getUserPRActivityListInPeriod > returns pull requests the user has participated in (via comments or reviews) within the specified period 1`] = `
 {
-  "userCreatedPRList": [
+  "created": [
     {
       "assignees": [],
       "author": "oliviertassinari",
@@ -1768,7 +1768,7 @@ exports[`getUserPRListByCreationAndParticipation > returns pull requests the use
       "user": "oliviertassinari",
     },
   ],
-  "userParticipatedPRList": [
+  "participated": [
     {
       "assignees": [],
       "author": "Patil2099",

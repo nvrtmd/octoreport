@@ -35,6 +35,10 @@ export function filterPRListByAuthor(prList: PR[], username: string): PR[] {
   return prList.filter((pr) => hasUserAuthoredPR(pr, username));
 }
 
+export function filterPRListNotAuthoredByUser(prList: PR[], username: string): PR[] {
+  return prList.filter((pr) => !hasUserAuthoredPR(pr, username));
+}
+
 export function filterPRListByReviewer(prList: PR[], username: string): PR[] {
   return prList.filter((pr) => pr.reviewers?.includes(username));
 }
@@ -45,10 +49,6 @@ export function filterPRListByCommenter(prList: PR[], username: string): PR[] {
 
 export function filterPRListByParticipation(prList: PR[], username: string): PR[] {
   return prList.filter((pr) => hasUserParticipatedInPR(pr, username));
-}
-
-export function filterPRListNotAuthoredByUser(prList: PR[], username: string): PR[] {
-  return prList.filter((pr) => pr.author !== username);
 }
 
 export function filterPRListByTargetBranch(prList: PR[], targetBranch: string): PR[] {
