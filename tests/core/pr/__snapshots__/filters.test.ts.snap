@@ -20,6 +20,9 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "number": 46064,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "alexfauquette",
+    ],
     "reviewers": [
       "alexfauquette",
       "oliviertassinari",
@@ -51,6 +54,9 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "number": 46090,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "mapache-salvaje",
+    ],
     "reviewers": [
       "mapache-salvaje",
     ],
@@ -77,6 +83,7 @@ exports[`filterPRListByLabel > filters pull requests that exactly match provided
     "number": 46135,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "0210shivam",
       "ZeeshanTamboli",
@@ -111,6 +118,7 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "number": 46051,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "Janpot",
       "jedwards1211",
@@ -140,6 +148,9 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "number": 46061,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "nadjakovacev",
+    ],
     "reviewers": [
       "nadjakovacev",
     ],
@@ -167,6 +178,9 @@ exports[`filterPRListByLabel > filters pull requests that include provided label
     "number": 46065,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "mapache-salvaje",
+    ],
     "reviewers": [
       "mapache-salvaje",
     ],

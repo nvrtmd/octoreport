@@ -72,6 +72,16 @@ const PRDetailSchema = z.object({
   mergedAt: z.string().nullable().optional(),
   mergeable: z.enum(['MERGEABLE', 'CONFLICTING', 'UNKNOWN']),
   reviewDecision: z.enum(['CHANGES_REQUESTED', 'APPROVED', 'REVIEW_REQUIRED']).nullable(),
+  timelineItems: z.object({
+    nodes: z
+      .array(
+        z.object({
+          requestedReviewer: UserSchema.or(z.object({ name: z.null() })).nullable(),
+          createdAt: z.string().optional(),
+        }),
+      )
+      .nullable(),
+  }),
 });
 
 export const PRDetailResponseSchema = z.object({

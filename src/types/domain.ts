@@ -15,6 +15,7 @@ export interface PRDetail {
   merged: boolean;
   isDraft: boolean;
   mergeable: 'MERGEABLE' | 'CONFLICTING' | 'UNKNOWN';
+  reviewRequestRecipientSet: PRDetail['requestedReviewers'];
 
   labels?: string[] | null;
   author?: string | null;

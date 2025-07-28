@@ -22,6 +22,7 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46051,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "Janpot",
         "jedwards1211",
@@ -54,6 +55,7 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46051,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "Janpot",
         "jedwards1211",
@@ -88,6 +90,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46090,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mapache-salvaje",
+      ],
       "reviewers": [
         "mapache-salvaje",
       ],
@@ -117,6 +122,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46064,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "alexfauquette",
+      ],
       "reviewers": [
         "alexfauquette",
         "oliviertassinari",
@@ -148,6 +156,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46090,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mapache-salvaje",
+      ],
       "reviewers": [
         "mapache-salvaje",
       ],
@@ -178,6 +189,7 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46051,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "Janpot",
         "jedwards1211",
@@ -207,6 +219,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46061,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "nadjakovacev",
+      ],
       "reviewers": [
         "nadjakovacev",
       ],
@@ -234,6 +249,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46065,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mapache-salvaje",
+      ],
       "reviewers": [
         "mapache-salvaje",
       ],
@@ -263,6 +281,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46064,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "alexfauquette",
+      ],
       "reviewers": [
         "alexfauquette",
         "oliviertassinari",
@@ -294,6 +315,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46090,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mapache-salvaje",
+      ],
       "reviewers": [
         "mapache-salvaje",
       ],
@@ -323,6 +347,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46061,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "nadjakovacev",
+      ],
       "reviewers": [
         "nadjakovacev",
       ],
@@ -350,6 +377,9 @@ exports[`getPRListByLabel > returns the pull requests grouped by label 1`] = `
       "number": 46065,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mapache-salvaje",
+      ],
       "reviewers": [
         "mapache-salvaje",
       ],
@@ -383,6 +413,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17065,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -408,6 +439,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17066,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -432,6 +464,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17089,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -456,6 +489,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17107,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -481,6 +515,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17108,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -505,6 +540,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17111,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -529,6 +565,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17112,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -554,6 +591,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17114,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -584,6 +622,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17058,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -611,6 +650,9 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17059,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mbrookes",
+      ],
       "reviewers": [
         "mbrookes",
         "oliviertassinari",
@@ -638,6 +680,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17060,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "mbrookes",
       ],
@@ -664,6 +707,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17061,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
       ],
@@ -691,6 +735,9 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17062,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mbrookes",
+      ],
       "reviewers": [
         "mbrookes",
         "oliviertassinari",
@@ -722,6 +769,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17063,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "sakulstra",
       ],
@@ -749,6 +797,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17074,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -778,6 +827,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17078,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -806,6 +856,9 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17080,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": [
+        "joshwooding",
+      ],
       "reviewers": [
         "joshwooding",
         "mbrookes",
@@ -836,6 +889,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17081,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -863,6 +917,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17085,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -892,6 +947,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17091,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -922,6 +978,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17093,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -950,6 +1007,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17095,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -979,6 +1037,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17097,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -1006,6 +1065,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17103,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -1033,6 +1093,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17104,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "adamdicarlo",
         "behnammodi",
@@ -1065,6 +1126,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17109,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "behnammodi",
         "oliviertassinari",
@@ -1095,6 +1157,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17115,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "behnammodi",
         "dominictwlee",
@@ -1125,6 +1188,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17118,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -1152,6 +1216,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17120,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -1180,6 +1245,7 @@ exports[`getPRListByStatus > returns the status count of pull requests in the gi
       "number": 17122,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -1216,6 +1282,9 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17059,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": [
+          "mbrookes",
+        ],
         "reviewers": [
           "mbrookes",
           "oliviertassinari",
@@ -1243,6 +1312,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17060,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "mbrookes",
         ],
@@ -1269,6 +1339,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17061,
         "requestedReviewers": null,
         "reviewDecision": "REVIEW_REQUIRED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "joshwooding",
         ],
@@ -1296,6 +1367,9 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17062,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": [
+          "mbrookes",
+        ],
         "reviewers": [
           "mbrookes",
           "oliviertassinari",
@@ -1327,6 +1401,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17063,
         "requestedReviewers": null,
         "reviewDecision": "REVIEW_REQUIRED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "sakulstra",
         ],
@@ -1357,6 +1432,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17058,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1388,6 +1464,9 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17080,
         "requestedReviewers": null,
         "reviewDecision": "REVIEW_REQUIRED",
+        "reviewRequestRecipientSet": [
+          "joshwooding",
+        ],
         "reviewers": [
           "joshwooding",
           "mbrookes",
@@ -1419,6 +1498,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17074,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "joshwooding",
           "oliviertassinari",
@@ -1448,6 +1528,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17078,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "joshwooding",
           "oliviertassinari",
@@ -1477,6 +1558,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17081,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1504,6 +1586,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17085,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "joshwooding",
           "oliviertassinari",
@@ -1538,6 +1621,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17091,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1568,6 +1652,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17093,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1596,6 +1681,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17095,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1625,6 +1711,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17097,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1652,6 +1739,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17103,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1679,6 +1767,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17104,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "adamdicarlo",
           "behnammodi",
@@ -1714,6 +1803,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17108,
         "requestedReviewers": null,
         "reviewDecision": "REVIEW_REQUIRED",
+        "reviewRequestRecipientSet": null,
         "reviewers": null,
         "state": "CLOSED",
         "targetBranch": "master",
@@ -1741,6 +1831,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17109,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "behnammodi",
           "oliviertassinari",
@@ -1770,6 +1861,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17114,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1798,6 +1890,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17115,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "behnammodi",
           "dominictwlee",
@@ -1828,6 +1921,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17118,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1855,6 +1949,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17120,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1883,6 +1978,7 @@ exports[`getUserCreationAndParticipationPRListByDate > returns the list of pull 
         "number": 17122,
         "requestedReviewers": null,
         "reviewDecision": "APPROVED",
+        "reviewRequestRecipientSet": null,
         "reviewers": [
           "oliviertassinari",
         ],
@@ -1918,6 +2014,9 @@ exports[`getUserCreationPRListByDate > returns the list of pull requests the use
       "number": 17059,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mbrookes",
+      ],
       "reviewers": [
         "mbrookes",
         "oliviertassinari",
@@ -1945,6 +2044,7 @@ exports[`getUserCreationPRListByDate > returns the list of pull requests the use
       "number": 17060,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "mbrookes",
       ],
@@ -1971,6 +2071,7 @@ exports[`getUserCreationPRListByDate > returns the list of pull requests the use
       "number": 17061,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
       ],
@@ -1998,6 +2099,9 @@ exports[`getUserCreationPRListByDate > returns the list of pull requests the use
       "number": 17062,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mbrookes",
+      ],
       "reviewers": [
         "mbrookes",
         "oliviertassinari",
@@ -2029,6 +2133,7 @@ exports[`getUserCreationPRListByDate > returns the list of pull requests the use
       "number": 17063,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "sakulstra",
       ],
@@ -2058,6 +2163,9 @@ exports[`getUserCreationPRListByDate > returns the list of pull requests the use
       "number": 17080,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": [
+        "joshwooding",
+      ],
       "reviewers": [
         "joshwooding",
         "mbrookes",
@@ -2094,6 +2202,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17058,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2121,6 +2230,9 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17059,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "mbrookes",
+    ],
     "reviewers": [
       "mbrookes",
       "oliviertassinari",
@@ -2148,6 +2260,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17060,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "mbrookes",
     ],
@@ -2174,6 +2287,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17061,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "joshwooding",
     ],
@@ -2201,6 +2315,9 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17062,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": [
+      "mbrookes",
+    ],
     "reviewers": [
       "mbrookes",
       "oliviertassinari",
@@ -2232,6 +2349,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17063,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "sakulstra",
     ],
@@ -2258,6 +2376,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17065,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": null,
     "state": "CLOSED",
     "targetBranch": "master",
@@ -2283,6 +2402,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17066,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": null,
     "state": "CLOSED",
     "targetBranch": "master",
@@ -2308,6 +2428,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17074,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "joshwooding",
       "oliviertassinari",
@@ -2337,6 +2458,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17078,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "joshwooding",
       "oliviertassinari",
@@ -2365,6 +2487,9 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17080,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": [
+      "joshwooding",
+    ],
     "reviewers": [
       "joshwooding",
       "mbrookes",
@@ -2395,6 +2520,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17081,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2422,6 +2548,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17085,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "joshwooding",
       "oliviertassinari",
@@ -2449,6 +2576,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17089,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": null,
     "state": "CLOSED",
     "targetBranch": "master",
@@ -2475,6 +2603,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17091,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2505,6 +2634,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17093,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2533,6 +2663,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17095,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2562,6 +2693,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17097,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2589,6 +2721,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17103,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2616,6 +2749,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17104,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "adamdicarlo",
       "behnammodi",
@@ -2645,6 +2779,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17107,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": null,
     "state": "CLOSED",
     "targetBranch": "master",
@@ -2670,6 +2805,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17108,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": null,
     "state": "CLOSED",
     "targetBranch": "master",
@@ -2697,6 +2833,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17109,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "behnammodi",
       "oliviertassinari",
@@ -2725,6 +2862,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17111,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": null,
     "state": "CLOSED",
     "targetBranch": "master",
@@ -2749,6 +2887,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17112,
     "requestedReviewers": null,
     "reviewDecision": "REVIEW_REQUIRED",
+    "reviewRequestRecipientSet": null,
     "reviewers": null,
     "state": "CLOSED",
     "targetBranch": "master",
@@ -2774,6 +2913,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17114,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2802,6 +2942,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17115,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "behnammodi",
       "dominictwlee",
@@ -2832,6 +2973,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17118,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2859,6 +3001,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17120,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2887,6 +3030,7 @@ exports[`getUserPRStatistics > returns the statistics of pull requests in the gi
     "number": 17122,
     "requestedReviewers": null,
     "reviewDecision": "APPROVED",
+    "reviewRequestRecipientSet": null,
     "reviewers": [
       "oliviertassinari",
     ],
@@ -2921,6 +3065,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17058,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -2950,6 +3095,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17074,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -2979,6 +3125,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17078,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -3008,6 +3155,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17081,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3035,6 +3183,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17085,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -3066,6 +3215,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17091,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3096,6 +3246,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17093,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3124,6 +3275,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17095,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3153,6 +3305,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17097,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3180,6 +3333,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17103,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3207,6 +3361,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17104,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "adamdicarlo",
         "behnammodi",
@@ -3239,6 +3394,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17108,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -3266,6 +3422,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17109,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "behnammodi",
         "oliviertassinari",
@@ -3295,6 +3452,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17114,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3323,6 +3481,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17115,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "behnammodi",
         "dominictwlee",
@@ -3353,6 +3512,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17118,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3380,6 +3540,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17120,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3408,6 +3569,7 @@ exports[`getUserParticipationPRListByDate > returns the ratio of pull requests t
       "number": 17122,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3442,6 +3604,9 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17059,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mbrookes",
+      ],
       "reviewers": [
         "mbrookes",
         "oliviertassinari",
@@ -3469,6 +3634,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17060,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "mbrookes",
       ],
@@ -3495,6 +3661,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17061,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
       ],
@@ -3522,6 +3689,9 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17062,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": [
+        "mbrookes",
+      ],
       "reviewers": [
         "mbrookes",
         "oliviertassinari",
@@ -3553,6 +3723,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17063,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "sakulstra",
       ],
@@ -3580,6 +3751,9 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17080,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": [
+        "joshwooding",
+      ],
       "reviewers": [
         "joshwooding",
         "mbrookes",
@@ -3612,6 +3786,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17058,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3639,6 +3814,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17074,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -3668,6 +3844,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17078,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -3697,6 +3874,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17081,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3724,6 +3902,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17085,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "joshwooding",
         "oliviertassinari",
@@ -3753,6 +3932,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17091,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3783,6 +3963,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17093,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3811,6 +3992,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17095,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3840,6 +4022,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17097,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3867,6 +4050,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17103,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -3894,6 +4078,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17104,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "adamdicarlo",
         "behnammodi",
@@ -3924,6 +4109,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17108,
       "requestedReviewers": null,
       "reviewDecision": "REVIEW_REQUIRED",
+      "reviewRequestRecipientSet": null,
       "reviewers": null,
       "state": "CLOSED",
       "targetBranch": "master",
@@ -3951,6 +4137,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17109,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "behnammodi",
         "oliviertassinari",
@@ -3980,6 +4167,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17114,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -4008,6 +4196,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17115,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "behnammodi",
         "dominictwlee",
@@ -4038,6 +4227,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17118,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -4065,6 +4255,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17120,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],
@@ -4093,6 +4284,7 @@ exports[`separatePRListByUserParticipation > separates PR list into created and 
       "number": 17122,
       "requestedReviewers": null,
       "reviewDecision": "APPROVED",
+      "reviewRequestRecipientSet": null,
       "reviewers": [
         "oliviertassinari",
       ],

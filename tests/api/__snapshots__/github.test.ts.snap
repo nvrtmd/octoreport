@@ -48,6 +48,16 @@ exports[`fetchPRDetail > returns every pull request detail in the given reposito
     ],
   },
   "state": "MERGED",
+  "timelineItems": {
+    "nodes": [
+      {
+        "createdAt": "2025-05-02T22:58:49Z",
+        "requestedReviewer": {
+          "login": "nadjakovacev",
+        },
+      },
+    ],
+  },
   "title": "[website] Update values",
 }
 `;

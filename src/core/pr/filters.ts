@@ -1,18 +1,38 @@
 import { PR } from '@/types';
 
-export function isUserCreatedPR(pr: PR, username: string): boolean {
+export function hasUserAuthoredPR(pr: PR, username: string): boolean {
   return pr.author === username;
 }
 
-export function isUserParticipatedInPR(pr: PR, username: string): boolean {
+export function hasUserParticipatedInPR(pr: PR, username: string): boolean {
   return !!(
     pr.author !== username &&
     (pr.reviewers?.includes(username) || pr.commenters?.includes(username))
   );
 }
 
+export function hasUserBeenRequestedToReview(pr: PR, username: string): boolean {
+  return !!pr.reviewRequestRecipientSet?.some((item) => item === username);
+}
+
+export function hasUnrespondedReviewRequest(pr: PR, username: string): boolean {
+  return !!pr.requestedReviewers?.some((reviewer) => reviewer === username);
+}
+
+export function hasUserReviewed(pr: PR, username: string): boolean {
+  return !!pr.reviewers?.some((reviewer) => reviewer === username);
+}
+
+export function hasUserCommented(pr: PR, username: string): boolean {
+  return !!pr.commenters?.some((commenter) => commenter === username);
+}
+
+export function hasCompletedReviewRequest(pr: PR, username: string): boolean {
+  return hasUserBeenRequestedToReview(pr, username) && !hasUnrespondedReviewRequest(pr, username);
+}
+
 export function filterPRListByAuthor(prList: PR[], username: string): PR[] {
-  return prList.filter((pr) => isUserCreatedPR(pr, username));
+  return prList.filter((pr) => hasUserAuthoredPR(pr, username));
 }
 
 export function filterPRListByReviewer(prList: PR[], username: string): PR[] {
@@ -20,14 +40,14 @@ export function filterPRListByReviewer(prList: PR[], username: string): PR[] {
 }
 
 export function filterPRListByCommenter(prList: PR[], username: string): PR[] {
-  return prList.filter((pr) => pr.commenters?.includes(username));
+  return prList.filter((pr) => hasUserCommented(pr, username));
 }
 
 export function filterPRListByParticipation(prList: PR[], username: string): PR[] {
-  return prList.filter((pr) => isUserParticipatedInPR(pr, username));
+  return prList.filter((pr) => hasUserParticipatedInPR(pr, username));
 }
 
-export function filterPRListByOthers(prList: PR[], username: string): PR[] {
+export function filterPRListNotAuthoredByUser(prList: PR[], username: string): PR[] {
   return prList.filter((pr) => pr.author !== username);
 }
 
@@ -42,4 +62,8 @@ export function filterPRListByLabel(prList: PR[], labelFilter: string[]): PR[] {
       pr.labels?.some((label) => label.toLowerCase().includes(filter.toLowerCase())),
     ),
   );
+}
+
+export function filterPRListByUnrespondedReviewRequest(prList: PR[], username: string): PR[] {
+  return prList.filter((pr) => hasUnrespondedReviewRequest(pr, username));
 }
