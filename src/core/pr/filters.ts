@@ -4,6 +4,7 @@ export function hasUserAuthoredPR(pr: PR, username: string): boolean {
   return pr.author === username;
 }
 
+// TODO: Make it optional to include cases where author is a username
 export function hasUserParticipatedInPR(pr: PR, username: string): boolean {
   return !!(
     pr.author !== username &&
@@ -72,7 +73,7 @@ export function filterPendingReviewRequestPRList(prList: PR[], username: string)
   return prList.filter((pr) => hasPendingReviewRequest(pr, username));
 }
 
-export function filterSelfInitiatedReviewedPRList(prList: PR[], username: string): PR[] {
+export function filterPRListSelfInitiatedReviewedByUser(prList: PR[], username: string): PR[] {
   return prList.filter(
     (pr) => hasUserReviewed(pr, username) && !hasUserBeenRequestedToReview(pr, username),
   );

@@ -13,7 +13,7 @@ import {
   getUserCreatedPRListInPeriod,
   filterCompletedReviewRequestPRList,
   filterPendingReviewRequestPRList,
-  filterSelfInitiatedReviewedPRList,
+  filterPRListSelfInitiatedReviewedByUser,
 } from '@/core';
 
 beforeAll(() => {
@@ -190,7 +190,7 @@ describe('filterPendingReviewRequestPRList', () => {
   });
 });
 
-describe('filterSelfInitiatedReviewedPRList', () => {
+describe('filterPRListSelfInitiatedReviewedByUser', () => {
   it('filters pull requests that have been reviewed by the specified user who have not been requested to review', async () => {
     const prList = await getAllPRListInPeriod({
       githubToken: process.env.GITHUB_TOKEN || '',
@@ -199,7 +199,7 @@ describe('filterSelfInitiatedReviewedPRList', () => {
       targetBranch: '',
     });
 
-    const result = filterSelfInitiatedReviewedPRList(prList, 'ZeeshanTamboli');
+    const result = filterPRListSelfInitiatedReviewedByUser(prList, 'ZeeshanTamboli');
 
     expect(result.length).toBe(1);
     expect(result[0].title).toBe('[docs][pigment-css] Fix typo globalCSS -> globalCss');
