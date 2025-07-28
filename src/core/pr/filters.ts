@@ -7,28 +7,28 @@ export function hasUserAuthoredPR(pr: PR, username: string): boolean {
 export function hasUserParticipatedInPR(pr: PR, username: string): boolean {
   return !!(
     pr.author !== username &&
-    (pr.reviewers?.includes(username) || pr.commenters?.includes(username))
+    (hasUserReviewed(pr, username) || hasUserCommented(pr, username))
   );
 }
 
 export function hasUserBeenRequestedToReview(pr: PR, username: string): boolean {
-  return !!pr.reviewRequestRecipientSet?.some((item) => item === username);
+  return !!pr.reviewRequestRecipientSet?.includes(username) && pr.author !== username;
 }
 
-export function hasUnrespondedReviewRequest(pr: PR, username: string): boolean {
-  return !!pr.requestedReviewers?.some((reviewer) => reviewer === username);
+export function hasPendingReviewRequest(pr: PR, username: string): boolean {
+  return !!pr.requestedReviewers?.includes(username) && pr.author !== username;
 }
 
 export function hasUserReviewed(pr: PR, username: string): boolean {
-  return !!pr.reviewers?.some((reviewer) => reviewer === username);
+  return !!pr.reviewers?.includes(username) && pr.author !== username;
 }
 
 export function hasUserCommented(pr: PR, username: string): boolean {
-  return !!pr.commenters?.some((commenter) => commenter === username);
+  return !!pr.commenters?.includes(username) && pr.author !== username;
 }
 
 export function hasCompletedReviewRequest(pr: PR, username: string): boolean {
-  return hasUserBeenRequestedToReview(pr, username) && !hasUnrespondedReviewRequest(pr, username);
+  return hasUserBeenRequestedToReview(pr, username) && !hasPendingReviewRequest(pr, username);
 }
 
 export function filterPRListByAuthor(prList: PR[], username: string): PR[] {
@@ -40,7 +40,7 @@ export function filterPRListNotAuthoredByUser(prList: PR[], username: string): P
 }
 
 export function filterPRListByReviewer(prList: PR[], username: string): PR[] {
-  return prList.filter((pr) => pr.reviewers?.includes(username));
+  return prList.filter((pr) => hasUserReviewed(pr, username));
 }
 
 export function filterPRListByCommenter(prList: PR[], username: string): PR[] {
@@ -64,6 +64,16 @@ export function filterPRListByLabel(prList: PR[], labelFilter: string[]): PR[] {
   );
 }
 
-export function filterPRListByUnrespondedReviewRequest(prList: PR[], username: string): PR[] {
-  return prList.filter((pr) => hasUnrespondedReviewRequest(pr, username));
+export function filterCompletedReviewRequestPRList(prList: PR[], username: string): PR[] {
+  return prList.filter((pr) => hasCompletedReviewRequest(pr, username));
+}
+
+export function filterPendingReviewRequestPRList(prList: PR[], username: string): PR[] {
+  return prList.filter((pr) => hasPendingReviewRequest(pr, username));
+}
+
+export function filterReviewedPRListWithoutBeingRequested(prList: PR[], username: string): PR[] {
+  return prList.filter(
+    (pr) => hasUserReviewed(pr, username) && !hasUserBeenRequestedToReview(pr, username),
+  );
 }
