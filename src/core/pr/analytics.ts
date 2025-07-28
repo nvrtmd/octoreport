@@ -1,4 +1,17 @@
-import { hasUserParticipatedInPR, hasUserAuthoredPR } from './filters';
+import {
+  hasUserParticipatedInPR,
+  hasUserAuthoredPR,
+  filterCompletedReviewRequestPRList,
+  filterPendingReviewRequestPRList,
+  filterPRListByReviewer,
+  filterPRListByCommenter,
+  filterPRListByParticipation,
+  hasCompletedReviewRequest,
+  hasPendingReviewRequest,
+  hasUserReviewed,
+  hasUserBeenRequestedToReview,
+  filterPRListSelfInitiatedReviewedByUser,
+} from './filters';
 
 import { PR, PRDetail } from '@/types';
 
@@ -99,7 +112,10 @@ export function groupPRListByDateAndRole(
   return prListByDateMap;
 }
 
-export function countUserCreatedPRByDate(prList: PR[], username: string): Record<string, number> {
+export function countUserCreatedPRListByDate(
+  prList: PR[],
+  username: string,
+): Record<string, number> {
   const creationCountByDateMap: Record<string, number> = {};
   prList.forEach((pr) => {
     const createdAt = extractDateFromDateTime(pr.createdAt);
@@ -121,7 +137,7 @@ export function groupUserCreatedPRListByDate(prList: PR[], username: string): Re
   return creationPRListByDateMap;
 }
 
-export function countUserParticipatedPRByDate(
+export function countUserParticipatedPRListByDate(
   prList: PR[],
   username: string,
 ): Record<string, number> {
@@ -222,6 +238,127 @@ export function calculateUserPRStatistics(prList: PR[], username: string): UserP
       ratio: calculateUserParticipatedPRRatio(prList, username),
       countByLabel: countPRListByLabel(participated),
       status: countPRListByStatus(participated),
+    },
+  };
+}
+
+export function countTotalReviewRequestsForUser(prList: PR[], username: string): number {
+  const totalReviewRequests = prList.filter((pr) => hasUserBeenRequestedToReview(pr, username));
+  return totalReviewRequests.length;
+}
+
+export function countReviewRequestsCompletedByUser(prList: PR[], username: string): number {
+  const completedReviewRequests = filterCompletedReviewRequestPRList(prList, username);
+  return completedReviewRequests.length;
+}
+
+export function countReviewRequestsPendingByUser(prList: PR[], username: string): number {
+  const pendingReviewRequests = filterPendingReviewRequestPRList(prList, username);
+  return pendingReviewRequests.length;
+}
+
+export function countSelfInitiatedReviewedPRListByUser(prList: PR[], username: string): number {
+  const selfInitiatedReviews = filterPRListSelfInitiatedReviewedByUser(prList, username);
+  return selfInitiatedReviews.length;
+}
+
+export function countPRListReviewedByUser(prList: PR[], username: string): number {
+  const prListReviewedByUser = filterPRListByReviewer(prList, username);
+  return prListReviewedByUser.length;
+}
+
+export function countPRListCommentedByUser(prList: PR[], username: string): number {
+  const prListCommentedByUser = filterPRListByCommenter(prList, username);
+  return prListCommentedByUser.length;
+}
+
+export function countPRListParticipatedByUser(prList: PR[], username: string): number {
+  const prListParticipatedByUser = filterPRListByParticipation(prList, username);
+  return prListParticipatedByUser.length;
+}
+
+const REVIEW_STATUS = [
+  'reviewedByRequest',
+  'pendingReviewRequest',
+  'selfInitiatedReviewed',
+  'uninvolvedInReview',
+] as const;
+type ReviewStatus = (typeof REVIEW_STATUS)[number];
+
+export function groupPRListByReviewStatus(
+  prList: PR[],
+  username: string,
+): Record<ReviewStatus, PR[]> {
+  const prListByReviewStatusMap: Record<ReviewStatus, PR[]> = {
+    [REVIEW_STATUS[0]]: [],
+    [REVIEW_STATUS[1]]: [],
+    [REVIEW_STATUS[2]]: [],
+    [REVIEW_STATUS[3]]: [],
+  };
+
+  prList.forEach((pr) => {
+    if (hasCompletedReviewRequest(pr, username)) {
+      prListByReviewStatusMap[REVIEW_STATUS[0]].push(pr);
+    } else if (hasPendingReviewRequest(pr, username)) {
+      prListByReviewStatusMap[REVIEW_STATUS[1]].push(pr);
+    } else if (hasUserReviewed(pr, username)) {
+      prListByReviewStatusMap[REVIEW_STATUS[2]].push(pr);
+    } else if (!hasUserAuthoredPR(pr, username)) {
+      prListByReviewStatusMap[REVIEW_STATUS[3]].push(pr);
+    }
+  });
+
+  return prListByReviewStatusMap;
+}
+
+interface ReviewStatistics {
+  count: number;
+  ratioToRequested: number | null;
+  ratioToTotal: number | null;
+}
+
+interface UserReviewStatistics {
+  reviewedByRequest: ReviewStatistics;
+  pendingReviewRequest: ReviewStatistics;
+  selfInitiatedReviewed: ReviewStatistics;
+  uninvolvedInReview: ReviewStatistics;
+}
+
+export function calculateUserReviewStatistics(
+  prList: PR[],
+  username: string,
+): UserReviewStatistics {
+  const { reviewedByRequest, pendingReviewRequest, selfInitiatedReviewed, uninvolvedInReview } =
+    groupPRListByReviewStatus(prList, username);
+  const totalPRListCount = countTotalPRList(prList);
+  const totalRequestedCount = countTotalReviewRequestsForUser(prList, username);
+  const isTotalCountValid = totalPRListCount > 0;
+  const isRequestedCountValid = totalRequestedCount > 0;
+
+  return {
+    reviewedByRequest: {
+      count: reviewedByRequest.length,
+      ratioToRequested: isRequestedCountValid
+        ? reviewedByRequest.length / totalRequestedCount
+        : null,
+      ratioToTotal: isTotalCountValid ? reviewedByRequest.length / totalPRListCount : null,
+    },
+    pendingReviewRequest: {
+      count: pendingReviewRequest.length,
+      ratioToRequested: isRequestedCountValid
+        ? pendingReviewRequest.length / totalRequestedCount
+        : null,
+      ratioToTotal: isTotalCountValid ? pendingReviewRequest.length / totalPRListCount : null,
+    },
+    selfInitiatedReviewed: {
+      count: selfInitiatedReviewed.length,
+      ratioToTotal: isTotalCountValid ? selfInitiatedReviewed.length / totalPRListCount : null,
+      ratioToRequested: null,
+    },
+    uninvolvedInReview: {
+      count: uninvolvedInReview.length,
+      ratioToTotal: isTotalCountValid ? uninvolvedInReview.length / totalPRListCount : null,
+      ratioToRequested: null,
     },
   };
 }
