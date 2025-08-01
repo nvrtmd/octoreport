@@ -11,9 +11,10 @@ import {
   hasUserReviewed,
   hasUserBeenRequestedToReview,
   filterPRListSelfInitiatedReviewedByUser,
+  filterParticipationByUser,
 } from './filters';
 
-import { PR, PRDetail } from '@/types';
+import { PR, PRDetail, Participation } from '@/types';
 
 export function countTotalPRList(prList: PR[]): number {
   return prList.length;
@@ -365,4 +366,19 @@ export function calculateUserReviewStatistics(
 
 function extractDateFromDateTime(datetime: string): string {
   return datetime.split(' ')[0];
+}
+
+export function getFirstParticipationTime(
+  participation: Participation[],
+  username: string,
+): string | null {
+  if (!participation || participation.length === 0) {
+    return null;
+  }
+  const filteredParticipationByUser = filterParticipationByUser(participation, username);
+  const timestamps = filteredParticipationByUser
+    .filter((item): item is NonNullable<typeof item> => item !== null)
+    .map((item) => ('submittedAt' in item ? item.submittedAt : item.createdAt))
+    .filter((timestamp): timestamp is string => timestamp !== 'Invalid Date' && timestamp !== null);
+  return timestamps.sort((a, b) => new Date(a).getTime() - new Date(b).getTime())[0] ?? null;
 }

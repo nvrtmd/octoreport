@@ -1,5 +1,5 @@
 import { uniqueArray, convertUTCISOToLocal } from '@/core';
-import { PR } from '@/types';
+import { PR, Participation } from '@/types';
 
 export function normalizePRData(pr: PR): PR {
   return {
@@ -12,4 +12,8 @@ export function normalizePRData(pr: PR): PR {
       ? uniqueArray(pr.reviewRequestRecipientSet)
       : null,
   };
+}
+
+export function normalizeParticipation(pr: PR): Participation[] {
+  return [...(pr.reviews || []), ...(pr.comments || [])];
 }
