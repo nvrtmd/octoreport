@@ -8,5 +8,8 @@ export function normalizePRData(pr: PR): PR {
     reviewers: pr.reviewers ? uniqueArray(pr.reviewers) : null,
     createdAt: convertUTCISOToLocal(pr.createdAt),
     mergedAt: pr.mergedAt ? convertUTCISOToLocal(pr.mergedAt) : null,
+    reviewRequestRecipientSet: pr.reviewRequestRecipientSet
+      ? uniqueArray(pr.reviewRequestRecipientSet)
+      : null,
   };
 }

@@ -1,3 +1,5 @@
+import { CommentsRaw, PRDetailRaw, ReviewsRaw } from '@/schemas/github';
+
 export type PR = PRListItem & Partial<PRDetail>;
 
 export interface PRListItem {
@@ -9,19 +11,24 @@ export interface PRListItem {
 }
 
 export interface PRDetail {
-  targetBranch: string;
+  targetBranch: PRDetailRaw['baseRefName'];
   assignees: string[];
-  state: 'OPEN' | 'CLOSED' | 'MERGED';
-  merged: boolean;
-  isDraft: boolean;
-  mergeable: 'MERGEABLE' | 'CONFLICTING' | 'UNKNOWN';
+  state: PRDetailRaw['state'];
+  merged: PRDetailRaw['merged'];
+  isDraft: PRDetailRaw['isDraft'];
+  mergeable: PRDetailRaw['mergeable'];
+  timelineItems: PRDetailRaw['timelineItems']['nodes'];
   reviewRequestRecipientSet: PRDetail['requestedReviewers'];
 
   labels?: string[] | null;
   author?: string | null;
   reviewers?: string[] | null;
+  reviews: (ReviewsRaw | null)[] | null;
+  comments: CommentsRaw[] | null;
   commenters?: string[] | null;
-  reviewDecision?: 'CHANGES_REQUESTED' | 'APPROVED' | 'REVIEW_REQUIRED' | null;
-  mergedAt?: string | null;
+  reviewDecision?: PRDetailRaw['reviewDecision'] | null;
+  mergedAt?: PRDetailRaw['mergedAt'] | null;
   requestedReviewers?: string[] | null;
 }
+
+export type Participation = ReviewsRaw | CommentsRaw | null;

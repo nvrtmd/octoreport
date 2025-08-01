@@ -13,6 +13,11 @@ const ReviewSchema = z.object({
   submittedAt: z.string().nullable(),
 });
 
+const CommentSchema = z.object({
+  author: UserSchema.nullable(),
+  createdAt: z.string(),
+});
+
 const PRListItemSchema = z.object({
   number: z.number(),
   title: z.string(),
@@ -57,14 +62,7 @@ const PRDetailSchema = z.object({
     })
     .optional(),
   comments: z.object({
-    nodes: z
-      .array(
-        z.object({
-          author: UserSchema.nullable(),
-          createdAt: z.string(),
-        }),
-      )
-      .nullable(),
+    nodes: z.array(CommentSchema).nullable(),
   }),
   state: z.enum(['OPEN', 'CLOSED', 'MERGED']),
   isDraft: z.boolean(),
@@ -94,3 +92,5 @@ export const PRDetailResponseSchema = z.object({
 
 export type PRDetailRaw = z.infer<typeof PRDetailSchema>;
 export type PRDetailResponseRaw = z.infer<typeof PRDetailResponseSchema>;
+export type ReviewsRaw = z.infer<typeof ReviewSchema>;
+export type CommentsRaw = z.infer<typeof CommentSchema>;
