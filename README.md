@@ -1,24 +1,26 @@
 # @octoreport/core
 
-<img width="1024" height="640" alt="octoreport_logo_lite" src="https://github.com/user-attachments/assets/bfcbe8a9-7ea1-45bf-8ca1-b0b70b921473" />
+![](https://github.com/user-attachments/assets/bfcbe8a9-7ea1-45bf-8ca1-b0b70b921473)
 
-> A modern, timezone-aware GitHub PR/issue analytics core library. Provides the foundational logic for retrieving and analyzing pull requests from GitHub repositories with flexible filtering capabilities.
+> A modern, timezone-aware analytics core library for GitHub pull requests and issues. It provides the foundational logic for retrieving, filtering, and analyzing PR data with flexible conditions and precise participation tracking.
 
 ## Features
 
-🔒 **GitHub API Integration**: Direct integration with GitHub GraphQL and REST APIs
+🔒 **GitHub API Integration**: Seamlessly integrates with both GitHub GraphQL and REST APIs
 
-📊 **PR Analytics**: Comprehensive search and reporting with flexible filters
+📊 **PR Analytics**: Offers advanced query and reporting features with flexible filtering
 
-🌏 **Timezone-Aware**: Powered by luxon for accurate date handling across timezones
+⏰ **Participation Tracking**: Accurately tracks user participation time and engagement patterns
 
-⚡ **Fast & Modern**: Built with TypeScript for type safety and performance
+🌏 **Timezone-Aware**: Built on Luxon for reliable timezone handling and date normalization
 
-🧪 **Well-Tested**: Comprehensive test coverage with Vitest
+⚡ **Fast & Modern**: Developed in TypeScript for robust type safety and performance
 
-🛠️ **Modular Design**: Clean, extensible architecture for easy integration
+🧪 **Test Coverage**: Includes comprehensive test suites using Vitest
 
-🔐 **Authentication Agnostic**: Works with any GitHub token (OAuth, PAT, etc.)
+🛠️ **Modular Design**: Clean, extensible structure with isolated analytics modules
+
+🔐 **Authentication Agnostic**: Compatible with any GitHub token (PAT, OAuth, etc.)
 
 ## Installation
 
@@ -49,8 +51,8 @@ const results = await getUserPRListByCreationAndParticipation({
   githubToken: 'YOUR_GITHUB_TOKEN',
 });
 
-console.log('🐙📊 User Created PRs:\n', result.created);
-console.log('🐙📊 User Participated PRs:\n', result.created);
+console.log('🐙📊 User Created PRs:\n', results.created);
+console.log('🐙📊 User Participated PRs:\n', results.participated);
 ```
 
 ## API Reference
@@ -69,9 +71,10 @@ import {
   getUserPRRatio,
   getAllPRListInPeriod,
 } from '@octoreport/core';
+//Each function provides fine-grained access to user-created and participated PRs with various filtering options, label breakdowns, and statistical ratios.
 
 // Get both user created and participated PRs
-const results = await getUserPRListByCreationAndParticipation({
+const totalPRActivities = await getUserPRListByCreationAndParticipation({
   username: 'octocat',
   repository: 'octoreport/core',
   period: {
@@ -115,10 +118,7 @@ const allPRs = await getAllPRListInPeriod({
 });
 
 // Separate PRs by user participation
-const { created, created } = separatePRListByUserParticipation(
-  allPRs,
-  'octocat',
-);
+const { created, participated } = separatePRListByUserParticipation(allPRs, 'octocat');
 
 // Get user PR ratio (created vs total)
 const userRatio = getUserPRRatio(allPRs, 'octocat');
@@ -134,6 +134,33 @@ const bugPRs = getUserCreatedPRListInPeriodByLabel(createdPRs, ['enhancement', '
 const labelStats = await getUserPRCountByLabelInPeriod(createdPRs);
 // Returns: { 'bug': 5, 'feature': 3, 'docs': 2 }
 ```
+
+### Analytics Functions
+
+```typescript
+import {
+  calculateUserPRStatistics,
+  calculateUserReviewStatistics,
+  getFirstParticipationTime,
+} from '@octoreport/core';
+
+// Get comprehensive user PR statistics
+const userStats = calculateUserPRStatistics(allPRs, 'octocat');
+// Returns detailed statistics including counts, ratios, and breakdowns
+
+// Get user review statistics
+const reviewStats = calculateUserReviewStatistics(allPRs, 'octocat');
+// Returns review participation statistics
+
+// Get first participation time for a user
+const firstParticipation = getFirstParticipationTime(participationData, 'octocat');
+// Returns: '2025-07-15T10:30:00Z' or null if no participation
+```
+
+- Use these functions to compute:
+  - Participation breakdowns
+  - Review contribution stats
+  - First-time engagement timestamps
 
 ### GitHub API Functions
 
@@ -155,9 +182,11 @@ const allPRs = await fetchAllPRListInPeriod({
 });
 ```
 
+- Provides lightweight wrappers for GitHub GraphQL and REST API operations.
+
 ## Data Structure
 
-The library uses a flexible PR data structure that combines basic PR information with optional detailed data:
+All PRs conform to a normalized data shape:
 
 ```typescript
 interface PR {
@@ -182,7 +211,34 @@ interface PR {
   reviewDecision?: 'CHANGES_REQUESTED' | 'APPROVED' | 'REVIEW_REQUIRED' | null;
   mergedAt?: string | null;
   requestedReviewers?: string[] | null;
+
+  // Participation data
+  reviews?: (ReviewsRaw | null)[] | null;
+  comments?: CommentsRaw[] | null;
 }
+
+interface Participation {
+  author?: { login: string };
+  createdAt?: string;
+  submittedAt?: string;
+}
+```
+
+## Architecture
+
+The library is organized into modular components for better maintainability:
+
+```
+src/core/pr/
+├── analytics/          # Analytics and statistics functions
+│   ├── counts.ts      # Counting functions
+│   ├── groups.ts      # Grouping functions
+│   ├── statistics.ts  # Statistical calculations
+│   ├── participations.ts # Participation tracking
+│   └── types.ts       # Analytics-specific types
+├── filters.ts         # PR filtering functions
+├── queries.ts         # Data retrieval functions
+└── normalize.ts       # Data normalization
 ```
 
 ## Authentication
@@ -206,9 +262,11 @@ For full functionality, your token needs these scopes:
 
 ## Timezone Handling
 
-- All date inputs are interpreted in the local timezone (auto-detected)
-- Dates are converted to UTC ISO 8601 before querying GitHub API
-- Powered by luxon for robust timezone support
+- All input dates are interpreted in the local timezone (auto-detected)
+
+- Dates are converted to UTC ISO 8601 before querying GitHub APIs
+
+- Powered by [luxon](https://moment.github.io/luxon/) for consistent behavior across environments
 
 ## Contributing
 
