@@ -1,4 +1,4 @@
-import { PR } from '@/types';
+import { PR, Participation } from '@/types';
 
 export function hasUserAuthoredPR(pr: PR, username: string): boolean {
   return pr.author === username;
@@ -77,4 +77,14 @@ export function filterPRListSelfInitiatedReviewedByUser(prList: PR[], username: 
   return prList.filter(
     (pr) => hasUserReviewed(pr, username) && !hasUserBeenRequestedToReview(pr, username),
   );
+}
+
+export function filterParticipationByUser(
+  participation: Participation[],
+  username: string,
+): Participation[] {
+  if (!participation) {
+    return [];
+  }
+  return participation.filter((item) => item?.author?.login === username);
 }

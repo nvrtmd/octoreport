@@ -16,6 +16,8 @@ function transformPRDetail(detail: PRDetailRaw): PRDetail {
     labels: getArrayOrNull(detail.labels?.nodes, (label) => label.name),
     author: detail.author?.login ?? null,
     assignees: detail.assignees.nodes.map((assignee) => assignee.login).sort(),
+    reviews: detail.reviews?.nodes ?? null,
+    comments: detail.comments.nodes,
     reviewers: getArrayOrNull(detail.reviews?.nodes, (review) => review?.author?.login),
     commenters: getArrayOrNull(detail.comments?.nodes, (comment) => comment.author?.login),
     targetBranch: detail.baseRefName,
@@ -29,6 +31,7 @@ function transformPRDetail(detail: PRDetailRaw): PRDetail {
       if (!node.requestedReviewer) return null;
       return 'login' in node.requestedReviewer ? node.requestedReviewer.login : null;
     }),
+    timelineItems: detail.timelineItems.nodes,
     reviewRequestRecipientSet: getArrayOrNull(detail.timelineItems.nodes, (node) => {
       if (!node.requestedReviewer) return null;
       return 'login' in node.requestedReviewer ? node.requestedReviewer.login : null;

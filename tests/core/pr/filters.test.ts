@@ -14,6 +14,8 @@ import {
   filterCompletedReviewRequestPRList,
   filterPendingReviewRequestPRList,
   filterPRListSelfInitiatedReviewedByUser,
+  filterParticipationByUser,
+  normalizeParticipation,
 } from '@/core';
 
 beforeAll(() => {
@@ -204,5 +206,24 @@ describe('filterPRListSelfInitiatedReviewedByUser', () => {
     expect(result.length).toBe(1);
     expect(result[0].title).toBe('[docs][pigment-css] Fix typo globalCSS -> globalCss');
     expect(result).toMatchSnapshot();
+  });
+});
+
+describe('filterParticipationByUser', () => {
+  it('filters participation by the specified user', async () => {
+    const allPRList = await fetchAllPRListInPeriod({
+      githubToken: process.env.GITHUB_TOKEN || '',
+      repository: 'mui/material-ui',
+      period: { startDate: '2024-09-13', endDate: '2024-09-14' },
+    });
+
+    const filteredParticipation = filterParticipationByUser(
+      normalizeParticipation(allPRList[0]),
+      'Janpot',
+    );
+
+    expect(filteredParticipation.length).toBe(2);
+    expect(filteredParticipation[0]?.author?.login).toBe('Janpot');
+    expect(filteredParticipation[1]?.author?.login).toBe('Janpot');
   });
 });
