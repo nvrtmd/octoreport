@@ -18,6 +18,12 @@ const CommentSchema = z.object({
   createdAt: z.string(),
 });
 
+const PartialUserSchema = UserSchema.partial();
+
+const RequestedReviewerSchema = PartialUserSchema.or(
+  z.object({ name: z.null() }).partial(),
+).nullable();
+
 const PRListItemSchema = z.object({
   number: z.number(),
   title: z.string(),
@@ -56,7 +62,7 @@ const PRDetailSchema = z.object({
     .object({
       nodes: z.array(
         z.object({
-          requestedReviewer: UserSchema.or(z.object({ name: z.null() })).nullable(),
+          requestedReviewer: RequestedReviewerSchema,
         }),
       ),
     })
@@ -74,7 +80,7 @@ const PRDetailSchema = z.object({
     nodes: z
       .array(
         z.object({
-          requestedReviewer: UserSchema.or(z.object({ name: z.null() })).nullable(),
+          requestedReviewer: RequestedReviewerSchema,
           createdAt: z.string().optional(),
         }),
       )
