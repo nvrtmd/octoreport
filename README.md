@@ -1,6 +1,8 @@
 # @octoreport/core
 
-![](https://github.com/user-attachments/assets/bfcbe8a9-7ea1-45bf-8ca1-b0b70b921473)
+<h1 align="center">
+	<img width="500px" src="media/logo.png" alt="octoreport">
+</h1>
 
 > A modern, timezone-aware analytics core library for GitHub pull requests and issues. It provides the foundational logic for retrieving, filtering, and analyzing PR data with flexible conditions and precise participation tracking.
 
