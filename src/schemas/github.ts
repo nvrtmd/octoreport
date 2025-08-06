@@ -8,6 +8,24 @@ const UserSchema = z.object({
   login: z.string(),
 });
 
+export const GitHubUserInfoSchema = z.object({
+  login: z.string(),
+  email: z.string().email(),
+  scopeList: z.array(z.string()).refine(
+    (scopeList) => {
+      const hasReadUser = scopeList.includes('read:user');
+      const hasRepoScope = scopeList.includes('repo') || scopeList.includes('public_repo');
+
+      return hasReadUser && hasRepoScope;
+    },
+    {
+      message: `Scope list must include 'read:user' and either 'repo' or 'public_repo'`,
+    },
+  ),
+});
+
+export type GitHubUserInfo = z.infer<typeof GitHubUserInfoSchema>;
+
 const ReviewSchema = z.object({
   author: UserSchema.nullable(),
   submittedAt: z.string().nullable(),

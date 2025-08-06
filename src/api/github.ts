@@ -6,6 +6,8 @@ import {
   PRDetailResponseSchema,
   PRListItemRaw,
   PRDetailRaw,
+  GitHubUserInfoSchema,
+  GitHubUserInfo,
 } from '@/schemas';
 import { combinePRData } from '@/transformers';
 import { PRQueryParams, PR, DateRange } from '@/types';
@@ -36,9 +38,7 @@ export function convertPeriodToUTCISO(period: DateRange): DateRange {
   return { startDate, endDate };
 }
 
-export async function fetchGitHubUserInfo(
-  githubToken: string,
-): Promise<{ login: string; email: string }> {
+export async function fetchGitHubUserInfo(githubToken: string): Promise<GitHubUserInfo> {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
@@ -61,8 +61,36 @@ export async function fetchGitHubUserInfo(
     throw new Error(`HTTP error! status: ${response.status}`);
   }
 
+  const scopesHeader = response.headers.get('x-oauth-scopes');
+  if (!scopesHeader) {
+    throw new Error('Invalid response structure: missing x-oauth-scopes header');
+  }
+  const scopeList = scopesHeader.split(',').map((scope) => scope.trim());
+
   const data = await response.json();
-  return data.data.viewer;
+  if (data.errors) {
+    const errorMessage = data.errors[0]?.message || 'GraphQL error occurred';
+    throw new Error(`GraphQL error: ${errorMessage}`);
+  }
+  if (!data.data) {
+    throw new Error('Invalid response structure: missing data field');
+  }
+  if (!data.data.viewer) {
+    throw new Error('Invalid response structure: missing viewer field');
+  }
+
+  try {
+    const validatedUserInfo = GitHubUserInfoSchema.parse({
+      ...data.data.viewer,
+      scopeList,
+    });
+    return validatedUserInfo;
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      throw new Error(`User info validation failed: ${error.message}`);
+    }
+    throw error;
+  }
 }
 
 export async function fetchPRListInPeriod(
@@ -201,4 +229,60 @@ export async function fetchAllPRListInPeriod(
 
   prList.sort((a, b) => a.number - b.number);
   return prList;
+}
+
+export async function testGitHubToken(githubToken: string): Promise<void> {
+  try {
+    console.log('🔍 Testing GitHub token...');
+
+    const response = await fetch('https://api.github.com/graphql', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${githubToken}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query: `
+          {
+            viewer {
+              login
+              email
+            }
+          }
+        `,
+      }),
+    });
+
+    console.log('📊 Response status:', response.status);
+    console.log('📊 Response headers:', Object.fromEntries(response.headers.entries()));
+
+    const data = await response.json();
+    console.log('📊 Raw response:', JSON.stringify(data, null, 2));
+
+    if (data.errors) {
+      console.error('❌ GraphQL errors:', data.errors);
+      throw new Error(`GraphQL errors: ${JSON.stringify(data.errors)}`);
+    }
+
+    if (!data.data?.viewer) {
+      console.error('❌ No viewer data in response');
+      throw new Error('No viewer data in response');
+    }
+
+    // Zod 스키마로 검증
+    try {
+      const validatedUserInfo = GitHubUserInfoSchema.parse(data.data.viewer);
+      console.log('✅ Token is valid! User:', validatedUserInfo.login);
+      console.log('📧 Email:', validatedUserInfo.email);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        console.error('❌ User info validation failed:', error.message);
+        throw new Error(`User info validation failed: ${error.message}`);
+      }
+      throw error;
+    }
+  } catch (error) {
+    console.error('❌ Token test failed:', error);
+    throw error;
+  }
 }
