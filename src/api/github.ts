@@ -112,7 +112,16 @@ export async function fetchPRListInPeriod(
     });
 
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      switch (response.status) {
+        case 422:
+          throw new Error(
+            `⚠️ It looks like your GitHub token isn’t authorized via SAML SSO for the private repository you’re trying to access.
+Please visit 📎 https://github.com/settings/tokens, locate your token, click “Configure SSO”, and approve it for your organization.
+Once you’ve completed SSO authorization, run the command again.`,
+          );
+        default:
+          throw new Error(`HTTP error! status: ${response.status}`);
+      }
     }
 
     const rawData = await response.json();
