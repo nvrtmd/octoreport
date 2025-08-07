@@ -53,6 +53,7 @@ To protect the repository from inadvertently committing secrets (API tokens, pri
    ```bash
    git secrets --add '^gh[pousr]_[A-Za-z0-9_]{36}$'
    git secrets --add '^github_pat_[A-Za-z0-9]{22}_[A-Za-z0-9]{59}$'
+   git secrets --add 'ghp_[A-Za-z0-9]{36}'
    ```
 
 4. **Verify setup:**

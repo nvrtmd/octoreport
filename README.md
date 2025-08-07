@@ -294,6 +294,7 @@ npm install
 git secrets --install
 git secrets --add '^gh[pousr]_[A-Za-z0-9_]{36}$'
 git secrets --add '^github_pat_[A-Za-z0-9]{22}_[A-Za-z0-9]{59}$'
+git secrets --add 'ghp_[A-Za-z0-9]{36}'
 
 # Run tests
 npm test
