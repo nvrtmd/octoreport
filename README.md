@@ -274,12 +274,13 @@ For full functionality, your token needs these scopes:
 
 We welcome contributions! 👍🏻
 
-1. Fork this repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m "feat: your feature"`)
-4. Push to your fork and open a Pull Request
+Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting any changes. The guidelines include:
 
-### Development Setup
+- **Security Setup**: Required git-secrets configuration to prevent token leaks
+- **Development Workflow**: Branching, testing, and PR process
+- **Code Style**: TypeScript guidelines and quality standards
+
+### Quick Start for Contributors
 
 ```bash
 # Clone the repository
@@ -289,12 +290,19 @@ cd core
 # Install dependencies
 npm install
 
+# Set up git-secrets (REQUIRED)
+git secrets --install
+git secrets --add '^gh[pousr]_[A-Za-z0-9_]{36}$'
+git secrets --add '^github_pat_[A-Za-z0-9]{22}_[A-Za-z0-9]{59}$'
+
 # Run tests
 npm test
 
 # Build the library
 npm run build
 ```
+
+**⚠️ Important**: This project handles GitHub API tokens, so git-secrets setup is mandatory. See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed setup instructions.
 
 ## License
 
