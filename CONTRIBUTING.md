@@ -5,7 +5,7 @@ Thank you for your interest in contributing to the octoreport libraries! We welc
 ## Table of Contents
 
 1. [Prerequisites](#prerequisites)
-2. [Setting Up Git Secrets](#setting-up-git-secrets)
+2. [Setting Up Secret Scanning](#setting-up-secret-scanning)
 3. [Branching and Workflow](#branching-and-workflow)
 4. [Code Style and Quality](#code-style-and-quality)
 5. [Committing Changes](#committing-changes)
@@ -22,48 +22,52 @@ Before contributing, please ensure you have:
 - A GitHub account.
 - A local clone of the repository.
 - Node.js and npm installed (for development and testing).
-- [`git-secrets`](https://github.com/awslabs/git-secrets) installed globally to prevent accidental inclusion of sensitive tokens.
+- [`detect-secrets`](https://github.com/Yelp/detect-secrets) installed to prevent accidental inclusion of sensitive tokens.
 
 ---
 
-## Setting Up Git Secrets
+## Setting Up Secret Scanning
 
-To protect the repository from inadvertently committing secrets (API tokens, private keys, etc.), we require all contributors to configure `git-secrets`.
+To protect the repository from inadvertently committing secrets (API tokens, private keys, etc.), we require all contributors to use `detect-secrets`.
 
-1. **Install `git-secrets`:**
-
-   ```bash
-   # macOS (Homebrew)
-   brew install git-secrets
-
-   # Ubuntu/Debian
-   sudo apt-get update
-   sudo apt-get install git-secrets
-   ```
-
-2. **Install Git hooks:**
+1. **Install `detect-secrets`:**
 
    ```bash
-   cd path/to/octoreport-repo
-   git secrets --install
+   # Recommended via pipx (safe and isolated)
+   brew install pipx
+   pipx ensurepath
+   pipx install detect-secrets
    ```
 
-3. **Add custom token patterns:**
+2. **Make sure the baseline file exists (already committed to the repo):**
 
    ```bash
-   git secrets --add '^gh[pousr]_[A-Za-z0-9_]{36}$'
-   git secrets --add '^github_pat_[A-Za-z0-9]{22}_[A-Za-z0-9]{59}$'
-   git secrets --add 'ghp_[A-Za-z0-9]{36}'
+   ls .secrets.baseline
    ```
 
-4. **Verify setup:**
+   Husky pre-commit hook will automatically block commits containing new secrets that are not in the baseline.
+
+3. **If you need to update the baseline after removing or allowlisting false positives:**
 
    ```bash
-   git secrets --list
+   detect-secrets scan \
+     --exclude-files 'node_modules/.*' \
+     --exclude-files '.*package-lock\.json' \
+     --exclude-files '.*yarn\.lock' \
+     > .secrets.baseline
 
+   git add .secrets.baseline
+   git commit -m "chore(security): update detect-secrets baseline"
    ```
 
-Any attempt to commit a file containing secrets will be blocked. If you encounter a blocked commit, please remove the secret from the code or add it to an environment variable.
+4. **False positives can be ignored inline:**
+
+   ```typescript
+   // pragma: allowlist secret
+   const DEMO_KEY = 'not-a-real-secret';
+   ```
+
+Any attempt to commit a file containing secrets will be blocked locally, and CI will re-check during pull requests and pushes to main.
 
 ---
 
@@ -124,7 +128,7 @@ feat(parser): support new syntax for octoreport config
 
 1. **Open a Pull Request (PR)** against the `main` branch.
 2. **Describe** your changes and link any related issues.
-3. **Wait for CI checks** to pass (lint, tests, security scans).
+3. **Wait for CI checks** to pass (lint, tests, and detect-secrets scan).
 4. Engage in the **review** process: address feedback, make requested changes.
 5. Once approved, a maintainer will **merge** your PR.
 
@@ -132,7 +136,7 @@ feat(parser): support new syntax for octoreport config
 
 ## Reporting Issues
 
-If you discover a bug or have a suggestion, please open an [issue](https://github.com/octoreport/cli/issues). Provide clear steps to reproduce the issue and any relevant logs or screenshots.
+If you discover a bug or have a suggestion, please open an [issue](https://github.com/octoreport/core/issues). Provide clear steps to reproduce the issue and any relevant logs or screenshots.
 
 ---
 
