@@ -188,7 +188,7 @@ const allPRs = await fetchAllPRListInPeriod({
 
 ## Data Structure
 
-All PRs conform to a normalized data shape:
+All PRs follow the same normalized structure:
 
 ```typescript
 interface PR {
@@ -243,67 +243,58 @@ src/core/pr/
 └── normalize.ts       # Data normalization
 ```
 
-## Authentication
+## Security
 
-This library is **authentication agnostic** - it works with any valid GitHub token:
+This library does not store tokens or credentials.
+It is authentication agnostic and accepts any valid GitHub token.
 
-- **Personal Access Tokens (PAT)**: Classic GitHub tokens
-- **OAuth Access Tokens**: From OAuth applications
+**Required scopes:**
 
-### Getting a GitHub Token
+- `repo` (private repo access)
+- `read:user`
 
-- **Personal Access Token**: Go to GitHub Settings → Developer settings → Personal access tokens
-- **OAuth Token**: Create an OAuth app and implement the OAuth flow
+## Development
 
-### Required Scopes
+### Setup
 
-For full functionality, your token needs these scopes:
+```bash
+git clone https://github.com/octoreport/core.git
+cd core
+npm install
+```
 
-- `repo` - Access private repositories
-- `read:user` - Read user profile information
+### Scripts
 
-## Timezone Handling
+```bash
+npm run build         # Build the library
+npm test              # Run all tests
+npm run lint          # Lint source
+npm run lint:fix      # Fix lint issues
+npm run format        # Format code
+```
 
-- All input dates are interpreted in the local timezone (auto-detected)
+### Testing
 
-- Dates are converted to UTC ISO 8601 before querying GitHub APIs
-
-- Powered by [luxon](https://moment.github.io/luxon/) for consistent behavior across environments
+```bash
+npm test              # Run all tests
+npm run dev:test      # Run tests in watch mode
+```
 
 ## Contributing
 
-We welcome contributions! 👍🏻
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting any changes. The guidelines include:
+**Security Note**: This repo uses detect-secrets in pre-commit and CI.
+All contributors must have detect-secrets installed and an up-to-date `.secrets.baseline`.
 
-- **Security Setup**: Required git-secrets configuration to prevent token leaks
-- **Development Workflow**: Branching, testing, and PR process
-- **Code Style**: TypeScript guidelines and quality standards
-
-### Quick Start for Contributors
+Quick start:
 
 ```bash
-# Clone the repository
-git clone https://github.com/octoreport/core.git
-cd core
-
-# Install dependencies
-npm install
-
-# Set up git-secrets (REQUIRED)
-git secrets --install
-git secrets --add '^gh[pousr]_[A-Za-z0-9_]{36}$'
-git secrets --add '^github_pat_[A-Za-z0-9]{22}_[A-Za-z0-9]{59}$'
-git secrets --add 'ghp_[A-Za-z0-9]{36}'
-
-# Run tests
-npm test
-
-# Build the library
-npm run build
+brew install pipx
+pipx install detect-secrets
+detect-secrets scan > .secrets.baseline
+git add .secrets.baseline
 ```
-
-**⚠️ Important**: This project handles GitHub API tokens, so git-secrets setup is mandatory. See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed setup instructions.
 
 ## License
 
