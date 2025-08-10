@@ -1,27 +1,18 @@
-# 0️⃣ git-secrets 검사 (시크릿 유출 방지)
-git secrets --scan
+# 0) detect-secrets: scan only staged files (A,C,M,R)
+git diff --cached --name-only -z --diff-filter=ACMR | \
+  xargs -0 -n 100 detect-secrets-hook --baseline .secrets.baseline
 if [ $? -ne 0 ]; then
-  echo "❌ Secret detected! Commit aborted by git-secrets. Please check changes for any GitHub tokens."
+  echo "❌ Secret detected by detect-secrets. Commit aborted."
+  echo "   -> If REAL: remove from code, rotate the key, and move to GitHub Actions Secrets/.env."
+  echo "   -> If FALSE POSITIVE: add '// pragma: allowlist secret' and update baseline."
   exit 1
 fi
 
-# 1️⃣ ESLint 검사
-npm run lint
-if [ $? -ne 0 ]; then
-  echo "❌ Lint failed. Commit aborted."
-  exit 1
-fi
+# 1) ESLint (fail on warnings too)
+npm run lint --max-warnings=0 || { echo "❌ Lint failed. Commit aborted."; exit 1; }
 
-# 2️⃣ (필요 시) 테스트 실행
-# npm run test
-# if [ $? -ne 0 ]; then
-#   echo "❌ Tests failed. Commit aborted."
-#   exit 1
-# fi
+# 2) (Optional) Tests
+# npm run test || { echo "❌ Tests failed. Commit aborted."; exit 1; }
 
-# 3️⃣ lint-staged 실행
-npx lint-staged
-if [ $? -ne 0 ]; then
-  echo "❌ Lint-staged failed. Commit aborted."
-  exit 1
-fi
+# 3) lint-staged
+npx lint-staged || { echo "❌ lint-staged failed. Commit aborted."; exit 1; }
