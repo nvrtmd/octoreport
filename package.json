@@ -1,6 +1,6 @@
 {
   "name": "@octoreport/core",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "The core logic for octoreport - A modern, secure, and timezone-aware GitHub PR/issue analytics reporting tool.",
   "type": "module",
   "main": "dist/index.js",
