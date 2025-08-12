@@ -14,12 +14,13 @@ export const GitHubUserInfoSchema = z.object({
   scopeList: z.array(z.string()).refine(
     (scopeList) => {
       const hasReadUser = scopeList.includes('read:user');
+      const hasUserEmail = scopeList.includes('user:email');
       const hasRepoScope = scopeList.includes('repo') || scopeList.includes('public_repo');
 
-      return hasReadUser && hasRepoScope;
+      return hasReadUser && hasUserEmail && hasRepoScope;
     },
     {
-      message: `Scope list must include 'read:user' and either 'repo' or 'public_repo'`,
+      message: `Scope list must include 'read:user', 'user:email', and either 'repo' or 'public_repo'`,
     },
   ),
 });
