@@ -49,8 +49,8 @@ export async function fetchGitHubUserInfo(githubToken: string): Promise<GitHubUs
       query: `
         {
           viewer {
+            id
             login
-            email
           }
         }
       `,
@@ -255,7 +255,7 @@ export async function testGitHubToken(githubToken: string): Promise<void> {
           {
             viewer {
               login
-              email
+              id
             }
           }
         `,
@@ -278,11 +278,9 @@ export async function testGitHubToken(githubToken: string): Promise<void> {
       throw new Error('No viewer data in response');
     }
 
-    // Zod 스키마로 검증
     try {
       const validatedUserInfo = GitHubUserInfoSchema.parse(data.data.viewer);
       console.log('✅ Token is valid! User:', validatedUserInfo.login);
-      console.log('📧 Email:', validatedUserInfo.email);
     } catch (error) {
       if (error instanceof z.ZodError) {
         console.error('❌ User info validation failed:', error.message);

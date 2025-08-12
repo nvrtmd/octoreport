@@ -171,7 +171,7 @@ import { fetchGitHubUserInfo, fetchAllPRListInPeriod } from '@octoreport/core';
 
 // Get user information
 const userInfo = await fetchGitHubUserInfo('YOUR_GITHUB_TOKEN');
-// Returns: { login: 'octocat', email: 'octocat@example.com' }
+// Returns: { login: 'octocat', id: 'MDQ6VXNlcjc5OTk1', scopeList: ['read:user', 'repo'] }
 
 // Get all PRs in a period
 const allPRs = await fetchAllPRListInPeriod({
